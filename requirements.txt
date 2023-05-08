@@ -5,8 +5,8 @@ markdown>=3.2
 pymdown-extensions>=7.0
 mkdocs-material-extensions>=1.0
 mkdocs-git-revision-date-localized-plugin>=0.7.3
-mkdocs==1.2.3
-mkdocs-material==8.1.3
+mkdocs==1.4.3
+mkdocs-material==9.1.9
 mkdocs-simple-hooks==0.1.3
 mkdocs-exclude==1.0.2
 mdx-truly-sane-lists==1.2
