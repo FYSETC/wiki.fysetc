@@ -1,0 +1,244 @@
+# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
+
+# Permission is hereby granted, free of charge, to any person obtaining a copy
+# of this software and associated documentation files (the "Software"), to
+# deal in the Software without restriction, including without limitation the
+# rights to use, copy, modify, merge, publish, distribute, sublicense, and/or
+# sell copies of the Software, and to permit persons to whom the Software is
+# furnished to do so, subject to the following conditions:
+
+# The above copyright notice and this permission notice shall be included in
+# all copies or substantial portions of the Software.
+
+# THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+# IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+# FITNESS FOR A PARTICULAR PURPOSE AND NON-INFRINGEMENT. IN NO EVENT SHALL THE
+# AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+# LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING
+# FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
+# IN THE SOFTWARE.
+
+# Project information
+site_name: FYSETC WIKI
+site_url: http://wiki.fysetc.com
+site_author: Eli Wong
+site_description: >-
+  FYSETC product documentation 
+
+# Repository
+repo_name: All Products
+repo_url: https://github.com/fysetc/
+edit_uri: ""
+
+# Copyright
+copyright: Copyright &copy; 2014 - 2020 FYSETC Co,Ltd
+
+# Configuration
+theme:
+  locale: en
+  name: material
+  #custom_dir: material5.1.5
+
+  # 404 page
+  static_templates:
+    - 404.html
+
+  # Don't include MkDocs' JavaScript
+  include_search_page: false
+  search_index_only: true
+
+  # Default values, taken from mkdocs_theme.yml
+  language: en
+  features: 
+    #- tabs
+    - instant
+    #- toc.integrate
+  palette:
+    primary: indigo
+    accent: indigo
+  font:
+    text: Roboto
+    code: Roboto Mono
+  icon:
+    logo: logo
+  favicon: assets/favicon.ico
+
+# Plugins
+plugins:
+  - search
+  - minify:
+      minify_html: true
+
+# Customization
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: 'https://github.com/fysetc'
+    - icon: fontawesome/brands/facebook
+      link: 'https://www.facebook.com/groups/197476557529090/'
+    - icon: fontawesome/brands/google-plus
+      link: 'https://plus.google.com/communities/102413556437521044568'
+
+# Extensions
+markdown_extensions:
+  - markdown.extensions.admonition
+  - markdown.extensions.attr_list
+  - markdown.extensions.codehilite:
+      guess_lang: false
+  - markdown.extensions.def_list
+  - markdown.extensions.footnotes
+  - markdown.extensions.meta
+  - markdown.extensions.toc:
+      permalink: true
+      #slugify: !!python/name:pymdownx.slugs.uslugify
+  - pymdownx.arithmatex
+  - pymdownx.betterem:
+      smart_enable: all
+  - pymdownx.caret
+  - pymdownx.critic
+  - pymdownx.details
+  - pymdownx.emoji:
+      emoji_index: !!python/name:pymdownx.emoji.twemoji
+      emoji_generator: !!python/name:pymdownx.emoji.to_svg
+  - pymdownx.highlight:
+      linenums_style: pymdownx-inline
+  - pymdownx.inlinehilite
+  - pymdownx.keys
+  - pymdownx.magiclink:
+      repo_url_shorthand: true
+      user: squidfunk
+      repo: mkdocs-material
+  - pymdownx.mark
+  - pymdownx.smartsymbols
+  - pymdownx.snippets:
+      check_paths: true
+  - pymdownx.superfences
+  - pymdownx.tabbed
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.tilde
+
+# Page tree
+nav:
+- FYSETC WIKI: index.md
+
+- Controllers:
+    - Controllers Introduction: Controllers.md
+    - FYSETC F6: F6_V1.3.md
+    - FYSETC S6: FYSETC_S6.md
+    - FYSETC AIO II: AIO_II.md
+    - FYSETC Cheetah: Cheetah_Board.md
+    - FYSETC Cheetah v2: Cheetah_Board_V20.md
+    - FYSETC E4: E4.md
+    - FYSETC BIG-DIPPER: BIG-DIPPER.md
+    - FYSETC SPIDER : Spider.md
+    - FYSETC SPIDER KING : FYSETC-SPIDER-KING.md
+
+- LCDs and Displays:
+    - LCDs and Displays Introduction: LCDs and Displays.md
+    - Mini12864 Panel: Mini12864_Panel.md
+    - Generic 12864 Panel: Generic_12864_Panel.md
+    - FYS Touch Lcd: FYS_Touch_Panel.md
+    - TFT81050: TFT81050.md
+        
+- Stepper Drivers:
+    - Stepper Drivers Introduction: Stepper Drivers.md
+    - S6128 V1.1: S6128_V1.1.md
+    - S6128 V1.1 中文版: S6128_V1.1中文版.md
+    - S109 V1.1: S109_V1.1.md
+    - S109 V1.1 中文版: S109_V1.1中文版.md 
+    - TMC2100: TMC2100.md
+    - TMC2100中文版: TMC2100中文版.md
+    - TMC2130: TMC2130.md
+    - TMC2130中文版: TMC2130中文版.md
+    - TMC2208: TMC2208.md
+    - TMC2208中文版: TMC2208中文版.md
+    - Silent2209: Silent2209.md
+    - S2210: S2210.md
+    - Silent5160: S5160_V1.2.md
+    - Silent5161: S5161_V1.1.md
+    - Silent2225: TMC2225.md
+    - Silent2226: TMC2226.md
+    - ST820 V1.0: ST820_V1.0.md
+    - LV8729 V1.0: LV8729_V1.0.md
+    - HV5160: HV5160.md
+    - QHV5160: QHV5160.md
+    - EXT2160: EXT2160_EN.md
+    - EXT2160中文版: EXT2160_CN.md
+
+- Modules:
+    - PT100_Stick Introduction: PT100_STICK.md
+    - SB CAN TH: SB CAN ToolHead.md
+    - SB CAN TH中文版: SB CAN ToolHead中文版.md
+    
+- Cables and Wires:
+    - Cables and Wires Introduction: Cables and Wires.md
+    
+- Mechanical parts:
+    - Mechanical parts Introduction: Mechanical parts.md
+    - CREALITY X-axis Belt Tensioner: CREALITY X-axis Belt Tensioner.md
+    - Black BMG Extruder: Black BMG Extruder.md
+    - CREALITY CR10 Y-axis Belt Tensioner: CREALITY  CR10 Y-axis Belt Tensioner.md
+    - Ender3 Y-axis Belt Tensioner: Ender3 Y-axis Belt Tensioner.md
+    - Ender3 belt double Z upgrade kit: Ender3 belt double Z upgrade kit.md
+    - Ender 3 3D printer Direct Drive Extruder Plate: Ender 3 3D printer Direct Drive Extruder Plate.md
+    - Ender 5 3D printer Direct Drive Extruder Plate: Ender 5 3D printer Direct Drive Extruder Plate.md
+    - Metal BMG Left  hand extruder: Metal BMG Left  hand extruder.md
+    - Metal BMG right hand extruder: Metal BMG right hand extruder.md
+    - Mk8 Grey Extruder: Mk8 Grey Extruder.md
+    - NanoDLP_Shield_MEGA_V2.1: NanoDLP_Shield_MEGA_V2.1.md
+    - Prusa mini BMG V1 Extruder: Prusa mini BMG V1 Extruder.md
+    - Prusa mini clone: Prusa-mini-clone.md
+    - Original Prusa MMU2S clone: Original-Prusa-MMU2S-clone.md
+    - Prusa mk3s bear upgrade kit: PRUSA-MK3S-Bear-Upgrade-kit.md
+    - Prusa-mk3s-clone: Prusa-mk3s-clone.md
+    - Annex-Engineering Sherpa extruder: Sherpa-extruder.md
+ 
+- Sensors:
+    - Sensors Introduction: Sensors.md
+    
+
+- Shield:
+    - Shield Introduction: Shield.md
+    - NanoDLP Shield V1.1: NanoDLP_Shield_V1.1.md
+    - NanoDLP Shield V1.1 中文版: NanoDLP_Shield_V1.1中文版.md 
+#    - NanoDLP Shield MEGA V2.1: NanoDLP Shield MEGA V2.1.md
+    
+
+- Wireless:
+    - Wireless Introduction: Wireless.md
+  
+
+- Tutorial:
+    - Tutorial Introduction: Tutorial.md
+    - How to Configure TMC2130 on FYSETC F6 Board: How_to_Configure_TMC2130_on_FYSETC-F6-Board.md
+    - How to Configure TMC2208 on FYSETC F6 Board: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
+    - How to Use Mini 12864 on SKR Board: Manual_for_Mini_panel_on_SKR.md
+    - Tutorial Introduction: Tutorial.md  
+    - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md    
+- Others:
+    - Others Introduction: Others.md
+    - FYS Boost LED Driver V1.0: FYS_Boost_LED_Driver_V1.0.md
+    - FYS Boost LED Driver V1.0中文版: FYS_Boost_LED_Driver_V1.0中文版.md
+    
+
+- About:
+    - About Introduction: About.md
+    - 404: 404.md
+
+# extra_css:
+  # - 'stylesheets/extra.css'
+
+
+# extra_javascript:
+  # - 'javascripts/extra.js'
+  # - 'https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.0/MathJax.js?config=TeX-MML-AM_CHTML'
+
+  
+# google_analytics
+google_analytics:
+    - 'UA-123694709-1'
+    - 'auto'   
+
+
+
