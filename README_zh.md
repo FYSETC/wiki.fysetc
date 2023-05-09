@@ -9,4 +9,4 @@
 
 也欢迎你为我们wiki投稿，包括但不限于产品使用教程，bug修复，更多应用场景。对于优质内容，必有酬谢。
 
-[English]()
+[English](https://github.com/FYSETC/wiki.fysetc/blob/main/README.md)
