@@ -5,7 +5,7 @@
 所以你不需要知道网站是什么结构，只要找到对应的markdown文件进行更改即可。
 
 - 如果你不懂markdown，请参考这里：https://www.markdownguide.org/getting-started/
-- 如果想知道更多markdown高级用法，请参考 Python Markdown Extensions 
+- 如果想知道更多markdown高级用法，请参考 [Python Markdown Extensions](https://facelessuser.github.io/pymdown-extensions/extensions/arithmatex/)
 
 也欢迎你为我们wiki投稿，包括但不限于产品使用教程，bug修复，更多应用场景。对于优质内容，必有酬谢。
 
