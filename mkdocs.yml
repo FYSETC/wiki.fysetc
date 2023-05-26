@@ -179,6 +179,7 @@ nav:
     - PT100_Stick Introduction: PT100_STICK.md
     - SB CAN TH: SB CAN ToolHead.md
     - SB CAN TH中文版: SB CAN ToolHead中文版.md
+    - UCAN: UCAN.md
     
 - Cables and Wires:
     - Cables and Wires Introduction: Cables and Wires.md
