@@ -21,23 +21,23 @@
 # Project information
 site_name: FYSETC WIKI
 site_url: http://wiki.fysetc.com
-site_author: Eli Wong
+site_author: FYSETC Team
 site_description: >-
   FYSETC product documentation 
 
 # Repository
-repo_name: All Products
-repo_url: https://github.com/fysetc/
-edit_uri: ""
+repo_name: FYSETC Products
+repo_url: https://github.com/FYSETC/
+edit_uri: "edit/main/docs"
 
 # Copyright
-copyright: Copyright &copy; 2014 - 2020 FYSETC Co,Ltd
+copyright: Copyright &copy; 2014 - 2023 FYSETC Co, Ltd
 
 # Configuration
 theme:
   locale: en
   name: material
-  #custom_dir: material5.1.5
+  #custom_dir: material/.overrides
 
   # 404 page
   static_templates:
@@ -52,10 +52,42 @@ theme:
   features: 
     #- tabs
     - instant
+    - header.autohide
+    - navigation.top
+    #- content.tabs.link
+    - content.code.copy
     #- toc.integrate
+    - announce.dismiss
+    - content.action.edit
+    - content.action.view
+    - content.code.annotate
+    - content.tooltips
+    #- navigation.expand
+    #- navigation.footer
+    #- navigation.instant
+    # - navigation.prune
+    #- navigation.sections
+    # - navigation.tabs
+    #- navigation.tabs.sticky
+    - navigation.tracking
+    - search.highlight
+    - search.share
+    - search.suggest
+    - toc.follow
+    # - toc.integrate
   palette:
-    primary: indigo
-    accent: indigo
+    - scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+         icon: material/brightness-7
+         name: Switch to dark mode
+    - scheme: slate
+      primary: deep indigo
+      accent: deep indigo
+      toggle:
+         icon: material/brightness-4
+         name: Switch to light mode
   font:
     text: Roboto
     code: Roboto Mono
@@ -66,6 +98,32 @@ theme:
 # Plugins
 plugins:
   - search
+  - i18n:
+      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      docs_structure: suffix
+      languages:
+        en:
+          name: English
+          build: true
+          site_name: "FYSETC WIKI"
+        zh:
+          name: 简体中文
+          build: true
+          site_name: "FYSETC产品文档"
+      nav_translations:
+        zh:
+          Home: 主页
+          Controllers: 控制板
+          Displays: 显示面板
+          Stepper Drivers: 步进电机驱动
+          Modules: 模块
+          Cables: 线束
+          Mechanicals: 机械部件
+          Sensors: 传感器
+          Wireless: 无线产品
+          Others: 其他
+          Guide: 教程
   - minify:
       minify_html: true
 
@@ -97,7 +155,7 @@ markdown_extensions:
   - markdown.extensions.meta
   - markdown.extensions.toc:
       permalink: true
-      #slugify: !!python/name:pymdownx.slugs.uslugify
+#      slugify: !!python/name:pymdownx.slugs.uslugify
   - pymdownx.arithmatex
   - pymdownx.betterem:
       smart_enable: all
@@ -121,6 +179,7 @@ markdown_extensions:
       check_paths: true
   - pymdownx.superfences
   - pymdownx.tabbed
+ #     alternate_style: true
   - pymdownx.tasklist:
       custom_checkbox: true
   - pymdownx.tilde
@@ -129,7 +188,7 @@ markdown_extensions:
 
 # Page tree
 nav:
-- FYSETC WIKI: index.md
+- Home: index.md
 
 - Controllers:
     - Controllers Introduction: Controllers.md
@@ -143,7 +202,7 @@ nav:
     - FYSETC SPIDER : Spider.md
     - FYSETC SPIDER KING : FYSETC-SPIDER-KING.md
 
-- LCDs and Displays:
+- Displays:
     - LCDs and Displays Introduction: LCDs and Displays.md
     - Mini12864 Panel: Mini12864_Panel.md
     - Generic 12864 Panel: Generic_12864_Panel.md
@@ -153,15 +212,10 @@ nav:
 - Stepper Drivers:
     - Stepper Drivers Introduction: Stepper Drivers.md
     - S6128 V1.1: S6128_V1.1.md
-    - S6128 V1.1 中文版: S6128_V1.1中文版.md
     - S109 V1.1: S109_V1.1.md
-    - S109 V1.1 中文版: S109_V1.1中文版.md 
     - TMC2100: TMC2100.md
-    - TMC2100中文版: TMC2100中文版.md
     - TMC2130: TMC2130.md
-    - TMC2130中文版: TMC2130中文版.md
     - TMC2208: TMC2208.md
-    - TMC2208中文版: TMC2208中文版.md
     - Silent2209: Silent2209.md
     - S2210: S2210.md
     - Silent5160: S5160_V1.2.md
@@ -172,19 +226,18 @@ nav:
     - LV8729 V1.0: LV8729_V1.0.md
     - HV5160: HV5160.md
     - QHV5160: QHV5160.md
-    - EXT2160: EXT2160_EN.md
-    - EXT2160中文版: EXT2160_CN.md
+    - EXT2160: EXT2160.md
 
 - Modules:
     - PT100_Stick Introduction: PT100_STICK.md
     - SB CAN TH: SB CAN ToolHead.md
-    - SB CAN TH中文版: SB CAN ToolHead中文版.md
     - UCAN: UCAN.md
+    - NanoDLP Shield V1.1: NanoDLP_Shield_V1.1.md
     
-- Cables and Wires:
+- Cables:
     - Cables and Wires Introduction: Cables and Wires.md
     
-- Mechanical parts:
+- Mechanicals:
     - Mechanical parts Introduction: Mechanical parts.md
     - CREALITY X-axis Belt Tensioner: CREALITY X-axis Belt Tensioner.md
     - Black BMG Extruder: Black BMG Extruder.md
@@ -206,35 +259,22 @@ nav:
  
 - Sensors:
     - Sensors Introduction: Sensors.md
-    
-
-- Shield:
-    - Shield Introduction: Shield.md
-    - NanoDLP Shield V1.1: NanoDLP_Shield_V1.1.md
-    - NanoDLP Shield V1.1 中文版: NanoDLP_Shield_V1.1中文版.md 
-#    - NanoDLP Shield MEGA V2.1: NanoDLP Shield MEGA V2.1.md
-    
 
 - Wireless:
-    - Wireless Introduction: Wireless.md
-  
-
-- Tutorial:
-    - Tutorial Introduction: Tutorial.md
+    - Wireless Introduction: Wireless.md 
+    
+- Others:
+    - Others Introduction: Others.md
+    - FYS Boost LED Driver V1.0: FYS_Boost_LED_Driver_V1.0.md
+    
+- Guide:
+    - Guide Introduction: Tutorial.md
     - How to Configure TMC2130 on FYSETC F6 Board: How_to_Configure_TMC2130_on_FYSETC-F6-Board.md
     - How to Configure TMC2208 on FYSETC F6 Board: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
     - How to Use Mini 12864 on SKR Board: Manual_for_Mini_panel_on_SKR.md
     - Tutorial Introduction: Tutorial.md  
-    - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md    
-- Others:
-    - Others Introduction: Others.md
-    - FYS Boost LED Driver V1.0: FYS_Boost_LED_Driver_V1.0.md
-    - FYS Boost LED Driver V1.0中文版: FYS_Boost_LED_Driver_V1.0中文版.md
+    - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md   
     
-
-- About:
-    - About Introduction: About.md
-    - 404: 404.md
 
 # extra_css:
   # - 'stylesheets/extra.css'
