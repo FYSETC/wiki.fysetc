@@ -124,6 +124,8 @@ plugins:
           Wireless: 无线产品
           Others: 其他
           Guide: 教程
+          Spider_Software_Guide: 蜘蛛控制板软件指南
+          Spider_Hardware_Guide: 蜘蛛控制板硬件指南
   - minify:
       minify_html: true
 
@@ -273,7 +275,9 @@ nav:
     - How to Configure TMC2208 on FYSETC F6 Board: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
     - How to Use Mini 12864 on SKR Board: Manual_for_Mini_panel_on_SKR.md
     - Tutorial Introduction: Tutorial.md  
-    - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md   
+    - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md  
+    - Spider_Hardware_Guide: Spider_Hardware_Guide.zh
+    - Spider_Software_Guide: Spider_Software_Guide.zh    
     
 
 # extra_css:
