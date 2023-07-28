@@ -38,7 +38,7 @@ SB CAN 工具板是一个高度集成的打印头控制板。基于STM32F072，�
 
 STLs 可以在国内 git 站点找到：[FYSETC/FYSETC-SB-TH-CAN - FYSETC-SB-TH-CAN - FYSETC Git](http://git.fysetc.com.cn/FYSETC/FYSETC-SB-TH-CAN)，需要把替换 SB 原装的三个打印件以及增加一个小安装件。配件是为VORON Stealthburner 头结构设计的单板解决方案，其安装如下图所示，5个步骤完成：
 
-![SB CAN ToolHead](assets\SB%20CAN%20ToolHead_Install.png)
+![SB CAN ToolHead](assets/SB%20CAN%20ToolHead_Install.png)
 
 1. 你的Stealthburner应该拥有两个安装孔，并已经嵌入了螺母；
 2. 打印一个隔离柱用于安装PCB；
@@ -84,14 +84,20 @@ STLs 可以在国内 git 站点找到：[FYSETC/FYSETC-SB-TH-CAN - FYSETC-SB-TH-
 
 板子设置了一个垂直于板面的Micro-USB接口，用于固件烧录和更新。使用时按照以下步骤操作：
 
+!Warning
+**不要对24V进行热插拔，会有一定概率损坏板子上的5A保险丝。可以将SB CAN ToolHead的24V插座插好，然后从电源处进行24V供电的通断！
+对于V1.3版本，插上USB线后，按复位键即可，不再需要对24V进行重新上电操作！**
+
 1. 给机器上电，等待树莓派（或者其他安装klipper的主机）完全启动；
 2. 断开SB CAN TH板的24V电源输入，等待5秒以上，确保完全断电；
 3. 将Micro-USB线的两端分别接在SB TH CAN板的Micro-USB口和树莓派的USB-A口；
-4. 连接SB CAN TH板的24V电源输入，确保5V电源指示灯亮起；
+4. 接通SB CAN TH板的24V电源输入，确保5V电源指示灯亮起；
 5. 检查树莓派是否识别到对应的端口；
 6. 执行编译和烧录命令：`dfu-util -R -a 0 -s 0x08000000:leave -D out/klipper.bin`
 7. 完成后拔下Micro-USB线，并拔下SB CAN TH板电源输入，等待5秒以上，重新插入，给板重新上电；
-8. 固件烧录/更新完成。 
+8. 固件烧录/更新完成。
+
+
 
 ### 3.3 Klipper 配置文件
 
