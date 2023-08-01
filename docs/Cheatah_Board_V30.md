@@ -180,15 +180,16 @@ If it goes well, the system will automatically jump to Dashboard, and you can se
    ![Image10.png](/images/Image10.png)
 
 
- 11. Power up the Cheetah V3
+11. Power up the Cheetah V3
 
- 12. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device, similar to:
+12. You can confirm that the flash was successful by running `ls /dev/serial/by-id`.  If the flash was successful, this should now show a klipper device, similar to:
 
      ![Image11.png](/images/Image11.png)
 
+!!!Note
+this test is not applicable if the firmware was compiled for UART, rather than USB)
 
-   (note: this test is not applicable if the firmware was compiled for UART, rather than USB)
 
-
-**Important:** If the Cheetah V3 is not powered with 12-24V, Klipper will be unable to communicate with the TMC drivers via UART and the Cheetah V3 will automatically shut down.
+!!!Important
+If the Cheetah V3 is not powered with 12-24V, Klipper will be unable to communicate with the TMC drivers via UART and the Cheetah V3 will automatically shut down.
 
