@@ -187,9 +187,9 @@ If it goes well, the system will automatically jump to Dashboard, and you can se
      ![Image11.png](/images/Image11.png)
 
 !!!Note
-this test is not applicable if the firmware was compiled for UART, rather than USB)
+   this test is not applicable if the firmware was compiled for UART, rather than USB)
 
 
 !!!Important
-If the Cheetah V3 is not powered with 12-24V, Klipper will be unable to communicate with the TMC drivers via UART and the Cheetah V3 will automatically shut down.
+   If the Cheetah V3 is not powered with 12-24V, Klipper will be unable to communicate with the TMC drivers via UART and the Cheetah V3 will automatically shut down.
 
