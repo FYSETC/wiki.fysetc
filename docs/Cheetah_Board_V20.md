@@ -321,7 +321,20 @@ If you compile Marlin yourself with platformio,you can follow the instructions b
 
 ## 6. FAQ
 
-To be done...
+1.How to config Ender 12864 on klipper?
+Refer to the pinout pic and klipper documents:
+```
+[display]
+lcd_type: st7920
+#   Set to "st7920" for st7920 displays.
+cs_pin: PB12
+sclk_pin: PB13
+sid_pin: PB15
+#   The pins connected to an st7920 type lcd. These parameters must be
+#   provided.
+encoder_pins: PC10,PC11
+click_pin: PB12
+```
 
 ## 7. Tech Support
 
