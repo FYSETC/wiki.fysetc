@@ -64,9 +64,13 @@ Before you install the board, you need printed parts [here](https://github.com/F
 
 ### 2.3 Wiring
 
+####  V1.1
+
 ![SB CAN ToolHead](assets/SB CAN ToolHead_Wiring.png)
 
 ![](images/SB-CAN-TH.Wiring.png) 
+
+####  V1.3
 
 ### 2.4 SCH DXF STEP
 
@@ -84,15 +88,22 @@ This is only Klipper firmware support. If you are Klipper beginner please check 
 
 ### 3.2 Firmware Upload
 
+!!! danger
+
+    Do not hot-swap 24V, as there is a certain probability of damaging the 5A fuse on the board. You can plug in the 24V socket of the SB CAN ToolHead, and then switch the 24V power supply on and off from the power supply!
+    For the V1.3 version, just plug in the USB cable and press the reset button. There is no need to re-power on the 24V!
+
+#### For V1.1 
+
 There is Micro-USB port on the board for firmware upload. Follow the sequence below.
 
-1. Power on your machine and wait for raspberrypi (Or other SBC) ready.
+1. Connect SB-CAN-TH Micro-USB to Raspberry Pi USB-A port with USB cable
 
-2. Power down SB-CAN-TH board for at least 5s
+2. Plug in SB-CAN-TH board 24v socket to the machine PSU
 
-3. Connect SB-CAN-TH Micro-USB to RaspberryPi USB-A port with USB cable
+3. Power on your raspberrypi (Or other SBC) and wait it boot ready.
 
-4. Plug in SB-CAN-TH board 24v socket to power on it( Get the power from machine PSU)
+4. Power on the 24v PSU for SB-CAN-TH board 
 
 5. Shoot `lsusb` command in Raspberry to check if it shows DFU port, if not go back to step 1
 
@@ -100,6 +111,19 @@ There is Micro-USB port on the board for firmware upload. Follow the sequence be
 
 7. Remove Micro-USB cable and SB-CAN-TH socket for 5s, then plug in SB-CAN-TH socket again.
 
+8. Finished
+
+#### For V1.3
+
+There is Micro-USB port on the board for firmware upload. and a reset button for mcu reset , Follow the sequence below.
+
+1. Connect SB-CAN-TH Micro-USB to Raspberry Pi USB-A port with USB cable
+2. Plug in SB-CAN-TH board 24v socket to the machine PSU
+3. Power on your raspberry pi (Or other SBC) and PSU ,  wait the pi boot ready.
+4. hold reset button for 2 seconds, then release it
+5. Shoot `lsusb` command in Raspberry to check if it shows DFU port, if not go back to step 1
+6. Shoot command `dfu-util -R -a 0 -s 0x08000000:leave -D out/klipper.bin`
+7. Remove Micro-USB cable and SB-CAN-TH socket for 5s, then plug in SB-CAN-TH socket again.
 8. Finished
 
 ### 3.3 Configuration
