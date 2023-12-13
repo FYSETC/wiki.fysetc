@@ -64,9 +64,22 @@ STLs 可以在国内 git 站点找到：[FYSETC/FYSETC-SB-TH-CAN - FYSETC-SB-TH-
 
 ### 2.3 接线
 
+如下图所示，您不仅收到一个 SB CAN Tollhead Board，还收到一根 2.5 米连接线和一些连接器以及一条 USB 电缆。
+
+![SB CAN ToolHead](assets/SB_CAN_TH_V13.jpg)
+
+####  V1.1
+
 ![SB CAN ToolHead](assets/SB CAN ToolHead_Wiring.png)
 
 ![](images/SB-CAN-TH.Wiring.png)
+####  V1.3
+
+![SB_CAN_ToolHead_V13_Wiring](assets/SB_CAN_ToolHead_V13_Wiring.png)
+
+!!! note
+
+    Klipper目前支持主板的USB to CAN Bridge模式。 您可以将主板用作 Raspberry Pi 上的 CAN 适配器，不再需要 UCAN。
 
 ### 2.4 SCH DXF STEP 文件
 
@@ -110,6 +123,13 @@ STLs 可以在国内 git 站点找到：[FYSETC/FYSETC-SB-TH-CAN - FYSETC-SB-TH-
 注意：V1.1版本存在几处丝印错误，框内为错误丝印，红色字体是正确的标识：
 
 ![image-20221117091211285](assets/image-20221117091211285.png)
+
+### 4.2 v1.3 更改说明
+1. 更改了最大可承载15A电流的连接器，和连接线（板载保险丝限制为8A）；
+2. 增加一个复位按键；
+3. 更改为6层 2OZ PCB板，增强散热；
+4. 增加120R端接电阻，可以通过JP3进行断开，默认连接；
+5. 更改加热棒连接器以承载更大电流，最大7A；
 
 ## 购买
 

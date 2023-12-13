@@ -1,4 +1,4 @@
-![SB CAN ToolHead](assets/SB_CAN_ToolHead_V11.jpg)
+![SB CAN ToolHead](assets/SB_CAN_TH_V13_TOP.jpg)
 
 ## 1. Introduction
 
@@ -64,6 +64,10 @@ Before you install the board, you need printed parts [here](https://github.com/F
 
 ### 2.3 Wiring
 
+As shown below, you receive not only a SB CAN Tollhead Board, but also a 2.5-meter connector and some connectors and a USB cable.
+
+![SB CAN ToolHead](assets/SB_CAN_TH_V13.jpg)
+
 ####  V1.1
 
 ![SB CAN ToolHead](assets/SB CAN ToolHead_Wiring.png)
@@ -71,6 +75,12 @@ Before you install the board, you need printed parts [here](https://github.com/F
 ![](images/SB-CAN-TH.Wiring.png) 
 
 ####  V1.3
+
+![SB_CAN_ToolHead_V13_Wiring](assets/SB_CAN_ToolHead_V13_Wiring.png)
+
+!!! note
+
+    Klipper currently supports the USB to CAN Bridge mode of the motherboard. You can use the motherboard as a CAN adapter on the Raspberry Pi, no longer requiring UCAN.
 
 ### 2.4 SCH DXF STEP
 
@@ -137,6 +147,15 @@ Obtain the Klipper configuration file [here](https://github.com/FYSETC/FYSETC_SB
 Note: v1.1 have some silk print errors below, the red letters are the right silk print.
 
 ![image-20221117091211285](assets/image-20221117091211285.png)
+
+### 4.2  what new in v1.3
+
+1.  Changed the connector and connecting wire that can carry a maximum current of 15A (the onboard fuse is limited to 8A);
+2.  Add a reset button;
+3.  Change to a 6-layer 2OZ PCB board to enhance heat dissipation;
+4.  Add a 120R termination resistor, which can be disconnected through JP3 and is connected by default;
+5.  Change the heating rod connector to carry larger current, up to 7A;
+
 
 ## Buy
 
