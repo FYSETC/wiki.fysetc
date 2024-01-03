@@ -94,14 +94,17 @@ https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/klipper
 
 ##  ReprapFirmware
 
+StrideMax's RRF firmware is developed and maintained by teamgloomy (jay_s_uk and Andy), and we sincerely thank them for their hard work and dedication.
 
+For RRF firmware usage， Please refer to
 
-For RRF firmware usage， Please refer to https://teamgloomy.github.io/stridemax_v2_general.html
-         For RRF firmware Download, See here: https://github.com/gloomyandy/RepRapFirmware/releases
+https://teamgloomy.github.io/stridemax_v2_general.html
+
+For RRF firmware Download, See here:
+
+https://github.com/gloomyandy/RepRapFirmware/releases
 
 # Source Files
-
-StrideMax's RRF firmware is developed and maintained by teamgloomy (jay_s_uk and Andy), and we sincerely thank them for their hard work and dedication.
 
 SCH&PCB：https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/SCH%26PCB
 
