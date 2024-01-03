@@ -5,15 +5,13 @@
 
 # Introduction
 
-StrideMax Daul FD 是一个拥有双TMC5160驱动、基于RP2040的控制板，可以运行RRF固件或者Klipper固件。每个5160驱动组拥有8颗高功率MOSFET, 并由散热片覆盖，还提供两个风扇位可供扩展，使得每路驱动电流可达10A，可以轻松驱动86mm步进电机。两颗TMC5160，拥有单独的12V供电，在高压工作状态下可极大的降低其功耗，减少发热。StrideMax 支持USB/CAN/CANFD多种通信接口，配合RRF和Klipper固件可实现灵活配置和使用，非常适合高速3D打印，高扭矩CNC的驱动需求。
-
-StrideMax Daul FD is a RP2040-based control board with dual TMC5160 drivers that can run RRF firmware or Klipper firmware. Each 5160 driver group has 8 high-power MOSFETs and is covered by a heat sink. It also provides two fan positions for expansion, so that the drive current of each channel can reach 10A, and it can easily drive an 86mm stepper motor. Two TMC5160s have a separate 12V power supply, which can greatly reduce power consumption and heat generation under high-voltage working conditions. StrideMax supports USB/CAN/CANFD multiple communication interfaces, and can be flexibly configured and used with RRF and Klipper firmware. It is very suitable for high-speed 3D printing and high-torque CNC driving needs.
+StrideMax Dual FD is a RP2040-based control board with dual TMC5160 drivers that can run RRF firmware or Klipper firmware. Each 5160 driver group has 8 high-power MOSFETs and is covered by a heat sink. It also provides two fan positions for expansion, so that the drive current of each channel can reach 10A, and it can easily drive an 86mm stepper motor. Two TMC5160s have a separate 12V power supply, which can greatly reduce power consumption and heat generation under high-voltage working conditions. StrideMax supports USB/CAN/CANFD multiple communication interfaces, and can be flexibly configured and used with RRF and Klipper firmware. It is very suitable for high-speed 3D printing and high-torque CNC driving needs.
 
 
 
 # Features
 
-- Daul TMC5160 up to 10A
+- Dual TMC5160 up to 10A
 - Raspberry Pi RP2040 MCU，Klipper & **RRF Firmware Support**
 - Extra small size: 80x90
 - 19-60V wide voltage support
@@ -26,6 +24,7 @@ StrideMax Daul FD is a RP2040-based control board with dual TMC5160 drivers that
 - 3 x temperature sensor
 - 2 x I/O
 - 1 x Neopixel RGB support
+
 # Application
 
 - High-speed 3D Printers
@@ -91,17 +90,17 @@ For the drive to work properly, the following prerequisites are required:
 We have made an example of the klipper configuration, which you can find at the following address. RRF firmware and configuration are also provided for reference.
 ## Klipper
 
-https://github.com/FYSETC/Stridemax_Daul_FD/tree/main/klipper
+https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/klipper
 
 ##  ReprapFirmware
 
-https://github.com/FYSETC/Stridemax_Daul_FD/tree/main/RRF
+https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/RRF
 
 # Source Files
 
-SCH&PCB：https://github.com/FYSETC/Stridemax_Daul_FD/tree/main/SCH%26PCB
+SCH&PCB：https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/SCH%26PCB
 
-STEP File：https://github.com/FYSETC/Stridemax_Daul_FD/blob/main/3D%262D/StrideMax%20Dual%20FD%20V2.0.step
+STEP File：https://github.com/FYSETC/Stridemax_Dual_FD/blob/main/3D%262D/StrideMax%20Dual%20FD%20V2.0.step
 
 # Where to Buy
 
