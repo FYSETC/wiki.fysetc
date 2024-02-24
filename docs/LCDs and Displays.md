@@ -15,7 +15,7 @@ Here is the list of the LCDs and displays you can find in the FYSETC WiKi. The l
 
 [Generic 12864 Panel](/Generic_12864_Panel/)
 
-[FYS Touch Lcd](FYS_Touch_Panel/)
+[FYS Touch Lcd](/FYS_Touch_Panel/)
 
 [TFT81050](/TFT81050/)
 
