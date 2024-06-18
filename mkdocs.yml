@@ -77,14 +77,14 @@ theme:
     # - toc.integrate
   palette:
     - scheme: default
-      primary: red
-      accent: red
+      primary: indigo
+      accent: indigo
       toggle:
          icon: material/brightness-7
          name: Switch to dark mode
     - scheme: slate
-      primary: red
-      accent: red
+      primary: deep indigo
+      accent: deep indigo
       toggle:
          icon: material/brightness-4
          name: Switch to light mode
@@ -92,7 +92,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: logo
+    logo: assets/favicon.ico
   favicon: assets/favicon.ico
 
 # Plugins
