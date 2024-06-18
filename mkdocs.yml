@@ -92,7 +92,7 @@ theme:
     text: Roboto
     code: Roboto Mono
   icon:
-    logo: assets/favicon.ico
+    logo: 
   favicon: assets/favicon.ico
 
 # Plugins
