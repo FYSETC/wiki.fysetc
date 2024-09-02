@@ -96,11 +96,12 @@ theme:
   favicon: assets/favicon.ico
 
 # Plugins
+#      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
+#      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
 plugins:
   - search
   - i18n:
-      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      default_language: "en"
       docs_structure: suffix
       languages:
         en:
