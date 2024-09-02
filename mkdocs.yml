@@ -138,13 +138,13 @@ extra:
       link: 'https://www.facebook.com/groups/197476557529090/'
     - icon: fontawesome/brands/google-plus
       link: 'https://plus.google.com/communities/102413556437521044568'
-#  alternate:
-#    - name: English
-#      link: /en/ 
-#      lang: en
-#    - name: 简体中文
-#      link: /cn/
-#      lang: zh
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: 简体中文
+      link: /cn/
+      lang: zh
 
 # Extensions
 markdown_extensions:
@@ -235,6 +235,7 @@ nav:
 - Modules:
     - PT100_Stick Introduction: PT100_STICK.md
     - SB CAN TH: SB CAN ToolHead.md
+    - SB Combo V2: SB_Combo_V2.md
     - UCAN: UCAN.md
     - M36 HUB v1: M36_HUB_V1.md
     - NanoDLP Shield V1.1: NanoDLP_Shield_V1.1.md
