@@ -101,7 +101,8 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: "en"
+      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
+      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
       docs_structure: suffix
       languages:
         en:
@@ -281,8 +282,8 @@ nav:
     - How to Use Mini 12864 on SKR Board: Manual_for_Mini_panel_on_SKR.md
     - Tutorial Introduction: Tutorial.md  
     - How to use BIQU‘s mini12864 on Spider: BIQU12864_On_Spider.md  
-    - Spider_Hardware_Guide: Spider_Hardware_Guide.zh
-    - Spider_Software_Guide: Spider_Software_Guide.zh    
+    - Spider_Hardware_Guide: Spider_Hardware_Guide.zh.md
+    - Spider_Software_Guide: Spider_Software_Guide.zh.md   
     
 
 # extra_css:
