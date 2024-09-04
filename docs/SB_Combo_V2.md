@@ -161,29 +161,35 @@ IO.0+1 and IO.2 can select the power supply voltage through the jumper cap. As s
 - 3.3V
 > [!Note]
 
-## 连接到树莓派
+## Communication
 
-### 通过USB
+### Connect to Pi
 
-### 通过CAN
+#### Via CAN
+
 ##### Via UCAN
+
 ##### Via MainBoard
 
 ##### Native CAN of CM68
 
-## 连接风扇
+#### Via USB
 
-2线/3线/4线
+## Connections
 
-## 连接温度传感器
+FAN风扇/3线/4线
+
+### 连接温度传感器
 
 热敏电阻
 
  PT1000 
 
-## 连接电机
+### 连接电机
 
-## 其他连接
+### 限位开关
+### 其他连接
+RGB
 
 接近开关 
 
@@ -191,11 +197,16 @@ Klicky
 
 TAP
 
-# 固件向导
+# FIrmware Guide
 
 ## 固件配置和编译
 
 ### Katapult Bootloader
+
+>cd katapult
+>make menuconfig
+>make flash FLASH_DEVICE=0483:df11
+
 ![SB_Combo_V2_katakulpt_menuconfig_8k_CAN](images/SB_Combo_V2/SB_Combo_V2_katakulpt_menuconfig_8k_CAN.png)
 ![SB_Combo_V2_katakulpt_menuconfig_8k_USB](images/SB_Combo_V2/SB_Combo_V2_katakulpt_menuconfig_8k_USB.png)
 
@@ -210,6 +221,10 @@ TAP
   ![SB_Combo_V2_menuconfig_nobootloader_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_USB.png)
 
 ## 固件上传
+
+make flash FLASH_DEVICE=0483:df11
+
+
 
 # FAQ
 
