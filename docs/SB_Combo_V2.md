@@ -1,5 +1,11 @@
 # SB Combo V2
 
+!!! danger
+
+    Lorem Do not use SB1.3 cable directly with V2, their positive and negative positions are reversed.
+    Using SB1.3 cable directly with V2 will 100% damage the V2 board.
+    We strongly recommend replacing with a new cable.
+    If you do not want to replace the cable, please connect the black of the original 1.3 cable to the + pole and the red to the - pole.
 
 
 ![产品主图](assets/SB_Combo_V2_top.png)
