@@ -2,11 +2,11 @@
 
 !!! danger
 
-    Do not use SB1.3 cable directly with V2, their positive and negative positions are reversed.
-    Using SB1.3 cable directly with V2 will 100% damage the V2 board.
-    We strongly recommend replacing with a new cable.
-    If you do not want to replace the cable, please connect the black of the original 1.3 cable to the + pole and the red to the - pole.
-    The CANH and CANL of V2 are also opposite to those of 1.3.
+    - Do not use SB1.3 cable directly with V2, their positive and negative positions are reversed.
+    - Using SB1.3 cable directly with V2 will 100% damage the V2 board.
+    - We strongly recommend replacing with a new cable.
+    - If you do not want to replace the cable, please connect the black of the original 1.3 cable to the + pole and the red to the - pole.
+    - The CANH and CANL of V2 are also opposite to those of 1.3.
 
 
 ![产品主图](assets/SB_Combo_V2_top.png)
