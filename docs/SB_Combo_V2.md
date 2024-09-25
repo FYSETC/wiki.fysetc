@@ -8,10 +8,7 @@
     - If you do not want to replace the cable, please connect the black of the original 1.3 cable to the + pole and the red to the - pole.
     - The CANH and CANL of V2 are also opposite to those of 1.3.
 
-
 ![产品主图](assets/SB_Combo_V2_top.png)
-
-
 
 # Introduction
 
@@ -60,7 +57,7 @@ Voron StealthBurner  Head
 # Operating limits
 
 | **Stepper drivers**           | Up to 2.0A peak current                     |
-| ----------------------------- | ------------------------------------------- |
+| ----------------------------------- | ------------------------------------------- |
 | **Mosfets Outputs**           | HE0 up to 5A , Fan up to 2.5A each          |
 | **Input power voltage**       | 11V to 24V for VIN up to 10A                |
 | **Inputs/Outputs**            | Signal 20ma maximum, RGB 2.5A total maximum |
@@ -75,6 +72,7 @@ Voron StealthBurner  Head
 ### On the SB_Combo Board
 
 IO.0 and IO.1 are located in the same connector and can be used as XY endstops, and IO.2 can be used as a probe. In addition, IO.0, IO.1, and IO.2 have level conversion (with pull-up resistors) and voltage selectors (5V or 24V), which can be compatible with a variety of sensors. The three IOs and RGB can be used as inputs or outputs, and can be configured according to your needs.
+
 ```
 IO.0: PA2
 IO.1: PA3 
@@ -108,6 +106,7 @@ CAN_TX: PB9
 24V_MOnitor: PA5
 TMC_Thermistor: PB1
 ```
+
 ### On the AUX Board
 
 ```
@@ -117,56 +116,56 @@ ext_IO.5: PB10
 ext_fan1: PB7
 RGB: PC14
 ```
+
 ## Description of Connections：
 
 ![SB_Combo_V2_connector_bottom](images/SB_Combo_V2/SB_Combo_V2_connector_bottom.png)
 
 ![SB_Combo_V2_connector_top](images/SB_Combo_V2/SB_Combo_V2_connector_top.png)
 
-
+| Connector               | Pin                                 | Default function                                                                           | Altermate      |
+| ----------------------- | ----------------------------------- | ------------------------------------------------------------------------------------------- | -------------- |
+| P1, Input               | USB (PA11,PA12)`CANBUS (PB8,PB9)` | Power and communication input, USB 2.0 and CANBUS are optional, selected by K2 DIP switch. |                |
+| Fan0                    | PB6                                 | Mosfet Output, Printting Fan, Default voltage = VIN.                                       |                |
+| Fan1                    | PB5                                 | Mosfet Output, Hotend Fan, Default voltage = VIN.                                          |                |
+| Fan2                    | PA4                                 | Mosfet Output, SB Combo Cooling Fan, Default voltage = VIN.                               |                |
+| IO.0+1                  | PA2, PA3                            | Digital Input, For X Y endstop, Micro switch or Hall                                       | Digital Output |
+| IO.2                    | PA0                                 | Digital Input, For Z probe, Proximity switch or Klicky, etc.                               | Digital Output |
+| IO.3, RGB               | PB11                                | Digital Output, For WS2812/SK6812 RGB                                                       | Digital Input  |
+| J2, USB1                |                                     | USB2.0                                                                                      |                |
+| J1, USB2                |                                     | USB2.0 or CANBUS 2.0, USB 2.0 and CANBUS are optional, selected by K4 DIP switch.           |                |
+| TE0                     | PA6                                 | ADC input, 4.7K pull-up, head temperature measure                                           |                |
+| HE0                     | PC15                                | Mosfet Output, Heating rod control, 5A Max                                                 |                |
+| P2, AUX Board Interface |                                     | For connecting AUX board                                                                    | Other Purposes |
+| MOTOR                   |                                     | For two-phase stepper motor,                                                                |                |
+| USB1, USB-C connector   |                                     | Connected to the CH334PHUB chip, up to 4 USB2.0 devices (MCU/USB1/USB2/USB3)                |                |
 
 ## LED indications：
 
 ![img](images/SB_Combo_V2/SB_Combo_V2_LED.png)
 
-| LED name | Indicate                                                     | Remark |
-| -------- | ------------------------------------------------------------ | ------ |
-| 3V3      | Lights up:  Power supply OK.<br/>Turns off : Power supply failure. 3.3V is obtained by converting 24V to 5V through DC-DC and then to 3.3V through LDO, so there may be a short circuit/open circuit in 24V/5V/3.3V.<br/> |        |
-| HUB      | Lights up:  The USB has at least one connection.<br/>Turns off: The USB has no connection. |        |
-| STATUS   | When using katakulpt<br/>- Blinking: Entering download mode;<br/>- Off/Always on: Not in download mode, the status is generally determined by config;<br/>- The LED is controlled by PC13 and lights up at a high level. For customized usage, please refer to julianschill/klipper-led_effect |        |
-| HEAT     | Lights up or flashes according to the heating PWM            |        |
+| LED name | Indicate                                                                                                                                                                                                                                                                               | Remark |
+| -------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------ |
+| 3V3      | Lights up:  Power supply OK.``Turns off : Power supply failure. 3.3V is obtained by converting 24V to 5V through DC-DC and then to 3.3V through LDO, so there may be a short circuit/open circuit in 24V/5V/3.3V.``                                                                    |        |
+| HUB      | Lights up:  The USB has at least one connection.``Turns off: The USB has no connection.                                                                                                                                                                                                |        |
+| STATUS   | When using katakulpt ``- Blinking: Entering download mode;``- Off/Always on: Not in download mode, the status is generally determined by config;``- The LED is controlled by PC13 and lights up at a high level. For customized usage, please refer to julianschill/klipper-led_effect |        |
+| HEAT     | Lights up or flashes according to the heating PWM                                                                                                                                                                                                                                      |        |
 
-| LED name | Indicate                                                     | Remark |
-| -------- | ------------------------------------------------------------ | ------ |
-| 3V3      | 亮：电源正常。 <br/>灭：电源故障。3.3V是由24V经过DC-DC转5V再经过LDO转3.3V得来的，所以可能24V/5V/3.3V出现了短路/断路之类的不良。 |        |
-| HUB      | 亮：USB至少有一个连接。<br/>灭：USB没有任何连接。            |        |
-| STATUS   | 在使用 katakulpt时<br>闪烁：进入下载模式；<br>灭/常亮：非下载模式，此时状态一般是由config所决定；<br>该LED由PC13控制，高电平点亮，自定义用法可参考[julianschill/klipper-led_effect](https://github.com/julianschill/klipper-led_effect) |        |
-| HEAT     | 根据加热的PWM亮灭或者闪烁                                    |        |
-
-## CAN / USB Switcher 
+## CAN / USB Switcher
 
 ![img](images/SB_Combo_V2/SB_Combo_V2_switcher.png)
-- 如图所示，绿色标记拨动开关负责输入CAN / USB切换，处于XT30连接器上；
-- 橙色标记拨动开关负责标记为USB2的连接器（MX1.25-4P）处 CAN / USB切换。
-- As shown in the figure, the green-marked toggle switch is responsible for the input CAN/USB switching, which is located on the XT30 connector; the orange-marked toggle - switch is responsible for the CAN/USB switching at the connector marked as USB2 (MX1.25-4P).
+
+- As shown in the figure, the green-marked toggle switch is responsible for the input CAN/USB switching, which is located on the XT30 connector; the orange-marked toggle
+- switch is responsible for the CAN/USB switching at the connector marked as USB2 (MX1.25-4P).
 
 ## Jumpers：![image-20240902163114843](images/SB_Combo_V2/SB_Combo_V2_jumpers.png)
-IO.0+1和IO.2可以通过跳线帽进行供电电压选择，如图所示，左侧两个Pin连接在一起为5V，右侧两个Pin连接在一起为24V。
 
-IO.0+1 and IO.2 can select the power supply voltage through the jumper cap. As shown in the figure, the two pins on the left are connected together for 5V, and the two pins on the right are connected together for 24V.
+IO.0+1 and IO.2 can select the power supply voltage through the jumper cap.
+As shown in the figure, the two pins on the left are connected together for 5V, and the two pins on the right are connected together for 24V.
 
-## Input/Output：
+!!! note
 
-描述各个预留IO的输入输出能力，ADC / PWM / SCL / SPI等通信
-
-## Power distribution：
-
-- VIN
-- 24V
-- 12V
-- 5V
-- 3.3V
-> [!Note]
+    - Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
 
 ## Communication
 
@@ -184,21 +183,23 @@ IO.0+1 and IO.2 can select the power supply voltage through the jumper cap. As s
 
 ## Connections
 
-FAN风扇/3线/4线
+Fans
 
-### 连接温度传感器
+Temperature Sensor
 
-热敏电阻
+Thermistor
 
- PT1000 
+ PT1000
 
-### 连接电机
+### Motor
 
-### 限位开关
-### 其他连接
+### Endstops
+
+### Others
+
 RGB
 
-接近开关 
+Proximity switches
 
 Klicky
 
@@ -206,13 +207,13 @@ TAP
 
 # FIrmware Guide
 
-## 固件配置和编译
+### Firmware configuration and compilation
 
 ### Katapult Bootloader
 
->cd katapult
->make menuconfig
->make flash FLASH_DEVICE=0483:df11
+> cd katapult
+> make menuconfig
+> make flash FLASH_DEVICE=0483:df11
 
 ![SB_Combo_V2_katakulpt_menuconfig_8k_CAN](images/SB_Combo_V2/SB_Combo_V2_katakulpt_menuconfig_8k_CAN.png)
 ![SB_Combo_V2_katakulpt_menuconfig_8k_USB](images/SB_Combo_V2/SB_Combo_V2_katakulpt_menuconfig_8k_USB.png)
@@ -227,25 +228,23 @@ TAP
 
   ![SB_Combo_V2_menuconfig_nobootloader_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_USB.png)
 
-## 固件上传
+## Firmware upload
 
 make flash FLASH_DEVICE=0483:df11
 
-
-
 # FAQ
 
-# 附件及其他
+# Attachments and others
 
-  - [尺寸：2D，3D ](https://github.com/FYSETC/SB_Combo_V2/blob/main/3D/SB_Combo_V2.step)
-  - 安装示例：支架（STL）
-  - 散热：推荐的通风方式
-  - 温度：MCU，驱动，电源
+- [尺寸：2D，3D ](https://github.com/FYSETC/SB_Combo_V2/blob/main/3D/SB_Combo_V2.step)
+- 安装示例：支架（STL）
+- 散热：推荐的通风方式
+- 温度：MCU，驱动，电源
 
-# 如何购买
+# How to buy
 
 淘宝，速卖通，亚马逊，官网
 
-# 技术支持通道
+# Technical Support Channel
 
 FB / Discord / Forum
