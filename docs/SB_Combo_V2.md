@@ -67,9 +67,9 @@ Voron StealthBurner  Head
 
 ## Pin Out
 
-![img](images/SB_Combo_V2/SB_Combo_V2_PIN.png)
-
 ### On the SB_Combo Board
+
+![img](images/SB_Combo_V2/SB_Combo_V2_PIN.png)
 
 IO.0 and IO.1 are located in the same connector and can be used as XY endstops, and IO.2 can be used as a probe. In addition, IO.0, IO.1, and IO.2 have level conversion (with pull-up resistors) and voltage selectors (5V or 24V), which can be compatible with a variety of sensors. The three IOs and RGB can be used as inputs or outputs, and can be configured according to your needs.
 
@@ -108,6 +108,8 @@ TMC_Thermistor: PB1
 ```
 
 ### On the AUX Board
+
+![SB_Combo_V2_AUX_PIN](images/SB_Combo_V2/SB_Combo_V2_AUX_PIN.png)
 
 ```
 ext_IO.6: PA7
@@ -165,15 +167,23 @@ As shown in the figure, the two pins on the left are connected together for 5V, 
 
 !!! note
 
-    - Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
+    Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by 	the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers 	can withstand 9-36V control voltage.
 
 ## Communication
 
 ### Connect to Pi
 
+SB combo V2 can be connected to Pi via USB or CANBUS. Select by K2, refer to CAN / USB Switcher.
+
 #### Via CAN
 
+Since the Raspberry Pi does not have a CANBUS interface, it is usually connected only after the CANBUS interface is expanded through an expansion chip. Commonly used ones include the MCP2518 SPI to CAN module (CanHat), USB to CAN module (eg: UCAN), Klipper USB to CAN Bridge Mode, and a Linux host computer with a native CAN interface (eg: CM68).
+
 ##### Via UCAN
+
+
+
+##### Via MCP2518 CanHat
 
 ##### Via MainBoard
 
@@ -189,7 +199,7 @@ Temperature Sensor
 
 Thermistor
 
- PT1000
+PT1000
 
 ### Motor
 
@@ -220,13 +230,13 @@ TAP
 
 ### Klipper
 
-  ![SB_Combo_V2_menuconfig_8k_CAN](images/SB_Combo_V2/SB_Combo_V2_menuconfig_8k_CAN.png)
+![SB_Combo_V2_menuconfig_8k_CAN](images/SB_Combo_V2/SB_Combo_V2_menuconfig_8k_CAN.png)
 
-  ![SB_Combo_V2_menuconfig_8k_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_8k_USB.png)
+![SB_Combo_V2_menuconfig_8k_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_8k_USB.png)
 
-  ![SB_Combo_V2_menuconfig_nobootloader_CAN](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_CAN.png)
+![SB_Combo_V2_menuconfig_nobootloader_CAN](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_CAN.png)
 
-  ![SB_Combo_V2_menuconfig_nobootloader_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_USB.png)
+![SB_Combo_V2_menuconfig_nobootloader_USB](images/SB_Combo_V2/SB_Combo_V2_menuconfig_nobootloader_USB.png)
 
 ## Firmware upload
 
