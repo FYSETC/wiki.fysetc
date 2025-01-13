@@ -101,9 +101,8 @@ theme:
 plugins:
   - search
   - i18n:
-      default_language: !ENV [DEFAULT_LANGUAGE, "en"]
-      default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
       reconfigure_material: true
+      fallback_to_default: true
       docs_structure: suffix
       languages:
         - locale: en
