@@ -103,31 +103,32 @@ plugins:
   - i18n:
       default_language: !ENV [DEFAULT_LANGUAGE, "en"]
       default_language_only: !ENV [DEFAULT_LANGUAGE_ONLY, false]
+      reconfigure_material: true
       docs_structure: suffix
       languages:
-        en:
+        - locale: en
           name: English
           build: true
-          site_name: "FYSETC WIKI"
-        zh:
+          default: true
+          site_name: FYSETC WIKI
+        - locale: zh
           name: 简体中文
-          build: true
-          site_name: "FYSETC产品文档"
-      nav_translations:
-        zh:
-          Home: 主页
-          Controllers: 控制板
-          Displays: 显示面板
-          Stepper Drivers: 步进电机驱动
-          Modules: 模块
-          Cables: 线束
-          Mechanicals: 机械部件
-          Sensors: 传感器
-          Wireless: 无线产品
-          Others: 其他
-          Guide: 教程
-          Spider_Software_Guide: 蜘蛛控制板软件指南
-          Spider_Hardware_Guide: 蜘蛛控制板硬件指南
+          build: true  
+          site_name: FYSETC产品文档
+          nav_translations:
+            Home: 主页
+            Controllers: 控制板
+            Displays: 显示面板
+            Stepper Drivers: 步进电机驱动
+            Modules: 模块
+            Cables: 线束
+            Mechanicals: 机械部件
+            Sensors: 传感器
+            Wireless: 无线产品
+            Others: 其他
+            Guide: 教程
+            Spider_Software_Guide: 蜘蛛控制板软件指南
+            Spider_Hardware_Guide: 蜘蛛控制板硬件指南
   - minify:
       minify_html: true
 
