@@ -5,7 +5,7 @@ markdown>=3.3.7
 pymdown-extensions>=10.0
 mkdocs-material-extensions>=1.1
 mkdocs-git-revision-date-localized-plugin>=0.7.3
-mkdocs==1.4.3
+mkdocs>=1.5.2
 mkdocs-material==9.2.3
 mkdocs-simple-hooks==0.1.3
 mkdocs-exclude==1.0.2
