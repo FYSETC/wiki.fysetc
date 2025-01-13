@@ -1,6 +1,6 @@
 # H36 Combo V1
 
-![img](images/H36_Combo_V1_top.png)
+![img](images/H36_combo_V1_top.png)
 
 # Introduction
 
