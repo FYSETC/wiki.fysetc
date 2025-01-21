@@ -152,10 +152,10 @@ XT30 and USB2/CAN both use USB to communicate
 
 ## Jumpers：
 
-![img](images/H36_Combo_V1_jumper.png)
-
 IO.0+1 , IO.2 , Fan0 , Fan1 can select the power supply voltage through the jumper cap.
 As shown in the figure, the two pins on the left are connected together for 24V, and the two pins on the right are connected together for 5V.
+
+![img](images/H36_Combo_V1_jumper.png)
 
 !!! note
 	Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
