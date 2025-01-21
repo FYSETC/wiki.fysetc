@@ -1,5 +1,3 @@
-# H36 Combo V1
-
 ![img](images/H36_combo_V1_top.png)
 
 # Introduction
@@ -29,21 +27,21 @@ Print Head with NEMA14/36mm Motor
 # Hardware specification
 
 
-| Function                | H36 Combo V1                                    | SB Combo V2                                                | SB TH CAN V1.3     |
-| ------------------------- | ------------------------------------------------------------ | -------------------- | ------------------------- |
-| Microcontroller         | STM32G0B1T3                                   | STM32F072CBT6                                              | STM32F072CBT6      |
-| Accelerometer           | ADXL345                                             | ADXL345                                                    | ADXL345            |
-| USB Port                | 2 + 1 (For MCU) , Powered by CH334P | 2 + 1 (For MCU) + 1(on aux board), Powered by CH334P | -                  |
-| CANBUS | 1 + 1 (For MCU) | 1 + 1 (For MCU) | - |
-| Fan                     | 4 (1x2Pin, 3x3Pin)                | 3+2 (on aux board)                                         | 2                  |
-| Heating output          | 1                                                         | 1                                                          | 1                  |
-| Temperature measurement | 1 (PH2.0 connector) + 1 (on board thermistor) | 1 (PH2.0 connector) + 1 (on board thermistor)              | 1(PH2.0 connector) |
-| Voltage monitoring      | 5V, 24V                                             | 5V, 24V                                                    | -                  |
-| Motor drive             | TMC2209                                             | TMC2209                                                    | TMC2209            |
-| Signal input and output | 5 (PH2.0) + 7 (pin header)                                | 3                                                          | 3                  |
-| RGB light strip control | default 2, up to 5                     | 1 + 1 (on aux board)                                       | 1                  |
-| Aux Board support       | No                                                      | Yes                                                        | No                 |
-| Onboard mounting nut    | No                                                      | Yes                                                        | No                 |
+| Function                | H36 Combo V1                                  | SB Combo V2                                          | SB TH CAN V1.3     |
+| ------------------------- | ----------------------------------------------- | ------------------------------------------------------ | -------------------- |
+| Microcontroller         | STM32G0B1T3                                   | STM32F072CBT6                                        | STM32F072CBT6      |
+| Accelerometer           | ADXL345                                       | ADXL345                                              | ADXL345            |
+| USB Port                | 2 + 1 (For MCU) , Powered by CH334P           | 2 + 1 (For MCU) + 1(on aux board), Powered by CH334P | -                  |
+| CANBUS                  | 1 + 1 (For MCU)                               | 1 + 1 (For MCU)                                      | -                  |
+| Fan                     | 4 (1x2Pin, 3x3Pin)                            | 3+2 (on aux board)                                   | 2                  |
+| Heating output          | 1                                             | 1                                                    | 1                  |
+| Temperature measurement | 1 (PH2.0 connector) + 1 (on board thermistor) | 1 (PH2.0 connector) + 1 (on board thermistor)        | 1(PH2.0 connector) |
+| Voltage monitoring      | 5V, 24V                                       | 5V, 24V                                              | -                  |
+| Motor drive             | TMC2209                                       | TMC2209                                              | TMC2209            |
+| Signal input and output | 5 (PH2.0) + 7 (pin header)                    | 3                                                    | 3                  |
+| RGB light strip control | default 2, up to 5                            | 1 + 1 (on aux board)                                 | 1                  |
+| Aux Board support       | No                                            | Yes                                                  | No                 |
+| Onboard mounting nut    | No                                            | Yes                                                  | No                 |
 
 # Operating limits
 
@@ -59,9 +57,7 @@ Print Head with NEMA14/36mm Motor
 
 ## Pin Out
 
-
-
-``` python
+```python
 IO.0: PA15 
 IO.1: PC7 
 IO.2: PA8
@@ -114,37 +110,37 @@ IO.0 and IO.1 are located in the same connector and can be used as XY endstops, 
 ![H36 connector](images/H36_combo_V1_connector.png)
 
 
-| Connector               | Pin                               | Default function                                                                           | Altermate      |
-| ------------------------- | ----------------------------------- | --------------------------------------------------------------------------------------------- | ---------------- |
-| Power Input            | USB (PA11,PA12)<br>CANBUS (PD0,PD1) | Power and communication input, USB 2.0 and CANBUS are optional, Determined by the level of PA2. |                |
-| Fan0                    | PA9                             | Mosfet Output, Printting Fan, Default voltage = VIN.                                       |                |
-| Fan1                    | PB15                            | Mosfet Output, Hotend Fan, Default voltage = VIN.                                          |                |
-| Fan2                    | PB13                            | Mosfet Output, SB Combo Cooling Fan, Default voltage = VIN.                               |                |
-| Fan3 | PA5 |  | |
-| IO.0+1                  | PA15, PB15                     | Digital Input, For X Y endstop, Micro switch or Hall  (Pad voltage selector)         | Digital Output |
-| IO.2                    | PA8                              | Digital Input, For Z probe, Proximity switch or Klicky, etc. (Pad voltage selector)       | Digital Output |
-| IO.3/RGB0           | PA10                           | 5V Digital Output, For WS2812/SK6812 RGB/Servo (Header voltage selector)                 | Digital Input  |
-| IO.4/RGB1 | PB1 | 5V Digital Output, For WS2812/SK6812 RGB/Servo (Header voltage selector) | Digital Input |
-| USB1                |                                   | USB2.0                                                                                      | J2 |
-| USB2/CAN            |                                   | USB2.0 or CANBUS 2.0, USB 2.0 and CANBUS are optional,Determined by the level of PA2. | J1 |
-| TE0                     | PA6                               | ADC input, 2.2K pull-up, head temperature measure                                         |                |
-| HE0                     | PA7                            | Mosfet Output, Heating rod control, 5A Max                                                 |                |
-| MOTOR                   |                                   | For two-phase stepper motor,                                                                |                |
-| USB1, USB-C connector   |                                   | Connected to the CH334PHUB chip, up to 4 USB2.0 devices (MCU/USB1/USB2/USB3)                |                |
+| Connector             | Pin                                 | Default function                                                                                | Altermate      |
+| ----------------------- | ------------------------------------- | -------------------------------------------------------------------------------------------------- | ---------------- |
+| Power Input           | USB (PA11,PA12)<br>CANBUS (PD0,PD1) | Power and communication input, USB 2.0 and CANBUS are optional, Determined by the level of PA2. |                |
+| Fan0                  | PA9                                 | Mosfet Output, Printting Fan, Default voltage = VIN.                                            |                |
+| Fan1                  | PB15                                | Mosfet Output, Hotend Fan, Default voltage = VIN.                                               |                |
+| Fan2                  | PB13                                | Mosfet Output, SB Combo Cooling Fan, Default voltage = VIN.                                    |                |
+| Fan3                  | PA5                                 |                                                                                                  |                |
+| IO.0+1                | PA15, PB15                          | Digital Input, For X Y endstop, Micro switch or Hall  (Pad voltage selector)                    | Digital Output |
+| IO.2                  | PA8                                 | Digital Input, For Z probe, Proximity switch or Klicky, etc. (Pad voltage selector)             | Digital Output |
+| IO.3/RGB0             | PA10                                | 5V Digital Output, For WS2812/SK6812 RGB/Servo (Header voltage selector)                         | Digital Input  |
+| IO.4/RGB1             | PB1                                 | 5V Digital Output, For WS2812/SK6812 RGB/Servo (Header voltage selector)                         | Digital Input  |
+| USB1                  |                                     | USB2.0                                                                                           | J2             |
+| USB2/CAN              |                                     | USB2.0 or CANBUS 2.0, USB 2.0 and CANBUS are optional,Determined by the level of PA2.            | J1             |
+| TE0                   | PA6                                 | ADC input, 2.2K pull-up, head temperature measure                                                |                |
+| HE0                   | PA7                                 | Mosfet Output, Heating rod control, 5A Max                                                      |                |
+| MOTOR                 |                                     | For two-phase stepper motor,                                                                     |                |
+| USB1, USB-C connector |                                     | Connected to the CH334PHUB chip, up to 4 USB2.0 devices (MCU/USB1/USB2/USB3)                     |                |
 
 ## LED indications：
 
 ![img](images/H36_combo_V1_led.png)
 
 
-| LED name | Indicate                                                                                                                                                                                                                                                                              | Remark |
-| ---------- | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
-| 3V3      | Lights up:  Power supply OK.<br>Turns off : Power supply failure. <br>3.3V is obtained by converting 24V to 5V through DC-DC and then to 3.3V through LDO, so there may be a short circuit/open circuit in 24V/5V/3.3V.                                                                  | Red |
-| HUB      | Lights up:  The USB has at least one connection. <br/>Turns off:  The USB has no connection.                                                                                                                                                                                        | Red |
-| STATUS   | When using katakulpt``- Blinking: Entering download mode;``<br/>Off/Always on: Not in download mode, the status is generally determined by config;<br/>The LED is controlled by PC13 and lights up at a high level. For customized usage, please refer to julianschill/klipper-led_effect | Red |
-| HEAT     | Lights up or flashes according to the heating PWM                                                                                                                                                                                                                                     | Red |
-| USB      | USB communication Indicate, use "PA2" at the config menu     | Red |
-| CAN | CAN communication Indicate, use "!PA2" at the config menu | Green |
+| LED name | Indicate                                                                                                                                                                                                                                                                                  | Remark |
+| ---------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | -------- |
+| 3V3      | Lights up:  Power supply OK.<br>Turns off : Power supply failure. <br>3.3V is obtained by converting 24V to 5V through DC-DC and then to 3.3V through LDO, so there may be a short circuit/open circuit in 24V/5V/3.3V.                                                                   | Red    |
+| HUB      | Lights up:  The USB has at least one connection.<br/>Turns off:  The USB has no connection.                                                                                                                                                                                               | Red    |
+| STATUS   | When using katakulpt``- Blinking: Entering download mode;``<br/>Off/Always on: Not in download mode, the status is generally determined by config;<br/>The LED is controlled by PC13 and lights up at a high level. For customized usage, please refer to julianschill/klipper-led_effect | Red    |
+| HEAT     | Lights up or flashes according to the heating PWM                                                                                                                                                                                                                                         | Red    |
+| USB      | USB communication Indicate, use "PA2" at the config menu                                                                                                                                                                                                                                  | Red    |
+| CAN      | CAN communication Indicate, use "!PA2" at the config menu                                                                                                                                                                                                                                 | Green  |
 
 ## USB / CAN selection
 
@@ -154,13 +150,16 @@ XT30 and USB2/CAN both use CAN to communicate
 XT30 and USB2/CAN both use USB to communicate
 ![img](images/H36_klipper_nobootloader_USB.png)
 
-## Jumpers：![H36_Combo_V1_jumper](images/H36_Combo_V1_jumper.png)
+## Jumpers：
+
+![img](images/H36_Combo_V1_jumper.png)
 
 IO.0+1 , IO.2 , Fan0 , Fan1 can select the power supply voltage through the jumper cap.
 As shown in the figure, the two pins on the left are connected together for 24V, and the two pins on the right are connected together for 5V.
 
 !!! note
-Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by 	the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
+	Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
+
 
 ## Communication
 
@@ -180,12 +179,12 @@ When using USB connection, you can use the adapter board we provide to directly 
 
 ![img](images/H36_combo_V1_conn_USB.png)
 
-
 # FIrmware Guide
 
 ## Firmware configuration and compilation
 
 ### With Katapult Bootloader
+
 If you need to use a bootloader, we recommend using katapult, the following is not configured for reference:
 For katapult use,refer to: https://github.com/Arksine/katapult
 
@@ -209,11 +208,12 @@ python3 flashtool.py -i can0 -f ~/klipper/out/klipper.bin -u <uuid>
 #when use USB communiction
 python3 flashtool.py -d <serial device> -b <baud_rate>
 ```
+
 ![H36_klipper_8kb_CAN](images/H36_klipper_8kb_CAN.png)
 
 ![H36_klipper_8kb_USB](images/H36_klipper_8kb_USB.png)
 
-### Klipper with nobootloader 
+### Klipper with nobootloader
 
 H36 uses the bootloader-free mode by default, and the configuration is as follows:
 
@@ -225,16 +225,12 @@ H36 uses the bootloader-free mode by default, and the configuration is as follow
 
 ![](images/H36_combo_V1_firmware.png)
 
-Before executing the following commands, you need to enter DFU mode before you can compile and burn the firmware. As shown in the figure above, 
+Before executing the following commands, you need to enter DFU mode before you can compile and burn the firmware. As shown in the figure above,
 
 - press and hold BOOT0,
-
-- then press the RESET button for one second, 
-
-- then release RESET, 
-
-- wait for 3 seconds, 
-
+- then press the RESET button for one second,
+- then release RESET,
+- wait for 3 seconds,
 - and release BOOT0.
 
 Use " lsusb" to check if a DFU device appears. If yes, upload firmware. If no, repeat the above steps.
@@ -242,6 +238,7 @@ Use " lsusb" to check if a DFU device appears. If yes, upload firmware. If no, r
 ```shell
 make flash FLASH_DEVICE=0483:df11
 ```
+
 under katapult  Klipper uploading, Please refer to:
 
 https://github.com/Arksine/katapult?tab=readme-ov-file#uploading-klipper
