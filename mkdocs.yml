@@ -54,6 +54,7 @@ theme:
     - instant
     - header.autohide
     - navigation.top
+    - navigation.path
     #- content.tabs.link
     - content.code.copy
     #- toc.integrate
@@ -65,16 +66,16 @@ theme:
     #- navigation.expand
     #- navigation.footer
     #- navigation.instant
-    # - navigation.prune
+    #- navigation.prune
     #- navigation.sections
-    # - navigation.tabs
+    #- navigation.tabs
     #- navigation.tabs.sticky
     - navigation.tracking
     - search.highlight
     - search.share
     - search.suggest
     - toc.follow
-    # - toc.integrate
+    #- toc.integrate
   palette:
     - scheme: default
       primary: indigo
