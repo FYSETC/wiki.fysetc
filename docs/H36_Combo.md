@@ -62,19 +62,21 @@ Print Head with NEMA14/36mm Motor
 
 
 ``` python
-IO.0: PA15
+IO.0: PA15 
 IO.1: PC7 
 IO.2: PA8
 IO.3/RGB0: PA10
 IO.4/RGB1: PB1
+# IO.0 - IO.5 with level conversion (pull-up), it can be used as 5V/24V level input and output!
+
 
 FAN0: PA9
-FAN0_TACH: PC6 
+FAN0_TACH: PC6 # Please make sure the feedback level does not exceed 5V!
 FAN1: PB15
-FAN1_TACH: PB14
+FAN1_TACH: PB14 # Please make sure the feedback level does not exceed 5V!
 FAN2: PB13
 FAN3: PA5
-FAN3_TACH: PB0
+FAN3_TACH: PB0 # Please make sure the feedback level does not exceed 5V!
 
 Heat: PA7
 Thermistor (2.2k pull up): PA6
@@ -152,14 +154,14 @@ XT30 and USB2/CAN both use CAN to communicate
 XT30 and USB2/CAN both use USB to communicate
 ![img](images/H36_klipper_nobootloader_USB.png)
 
-## Jumpers：![image-20240902163114843](images/H36_Combo_V1_jumper.png)
+## Jumpers：![H36_Combo_V1_jumper](images/H36_Combo_V1_jumper.png)
 
 IO.0+1 , IO.2 , Fan0 , Fan1 can select the power supply voltage through the jumper cap.
 As shown in the figure, the two pins on the left are connected together for 24V, and the two pins on the right are connected together for 5V.
 
 !!! note
+Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by 	the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers can withstand 9-36V control voltage.
 
-Please note that if these interfaces are used as outputs, the high-level voltage of the output is consistent with the voltage selected by 	the jumper. Please make sure that your peripherals can withstand the range. Generally speaking, only SSR in the accessories of 3D printers 	can withstand 9-36V control voltage.
 ## Communication
 
 ### Connect to Pi
