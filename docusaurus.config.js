@@ -9,7 +9,7 @@ module.exports = async function () {
     tagline: '产品文档 · 硬件资料 · 配置指南',
     favicon: 'images/favicon.ico',
     url: process.env.SITE_URL || 'http://localhost:3000',
-    baseUrl: process.env.SITE_BASE_URL || '/',
+    baseUrl: process.env.SITE_BASE_URL || '/wiki.fysetc/',
     organizationName: "FYSETC",
     projectName: "wiki.fysetc",
     trailingSlash: true,
