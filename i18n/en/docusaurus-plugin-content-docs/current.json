@@ -1,0 +1,345 @@
+{
+  "version.label": {
+    "message": "Next",
+    "description": "The label for version current"
+  },
+  "sidebar.wikiSidebar.doc.文档总览": {
+    "message": "Wiki overview"
+  },
+  "sidebar.wikiSidebar.doc.控制板概览": {
+    "message": "Controllers Introduction"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC F6": {
+    "message": "FYSETC F6"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC S6": {
+    "message": "FYSETC S6"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC AIO II": {
+    "message": "FYSETC AIO II"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC Cheetah": {
+    "message": "FYSETC Cheetah"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC Cheetah v2.0": {
+    "message": "FYSETC Cheetah v2.0"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC Cheetah v3.0": {
+    "message": "FYSETC Cheetah v3.0"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC E4": {
+    "message": "FYSETC E4"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC BIG-DIPPER": {
+    "message": "FYSETC BIG-DIPPER"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC SPIDER": {
+    "message": "FYSETC SPIDER"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC SPIDER KING": {
+    "message": "FYSETC SPIDER KING"
+  },
+  "sidebar.wikiSidebar.doc.FYSETC StrideMax Dual FD": {
+    "message": "FYSETC StrideMax Dual FD"
+  },
+  "sidebar.wikiSidebar.doc.显示面板概览": {
+    "message": "LCDs and Displays Introduction"
+  },
+  "sidebar.wikiSidebar.doc.Mini12864 面板": {
+    "message": "Mini12864 Panel"
+  },
+  "sidebar.wikiSidebar.doc.通用 12864 面板": {
+    "message": "Generic 12864 Panel"
+  },
+  "sidebar.wikiSidebar.doc.FYS 触摸显示屏": {
+    "message": "FYS Touch Lcd"
+  },
+  "sidebar.wikiSidebar.doc.TFT81050": {
+    "message": "TFT81050"
+  },
+  "sidebar.wikiSidebar.doc.步进电机驱动概览": {
+    "message": "Stepper Drivers Introduction"
+  },
+  "sidebar.wikiSidebar.doc.S6128 V1.1": {
+    "message": "S6128 V1.1"
+  },
+  "sidebar.wikiSidebar.doc.S109 V1.1": {
+    "message": "S109 V1.1"
+  },
+  "sidebar.wikiSidebar.doc.TMC2100": {
+    "message": "TMC2100"
+  },
+  "sidebar.wikiSidebar.doc.TMC2130": {
+    "message": "TMC2130"
+  },
+  "sidebar.wikiSidebar.doc.TMC2208": {
+    "message": "TMC2208"
+  },
+  "sidebar.wikiSidebar.doc.Silent2209": {
+    "message": "Silent2209"
+  },
+  "sidebar.wikiSidebar.doc.S2210": {
+    "message": "S2210"
+  },
+  "sidebar.wikiSidebar.doc.Silent5160": {
+    "message": "Silent5160"
+  },
+  "sidebar.wikiSidebar.doc.Silent5161": {
+    "message": "Silent5161"
+  },
+  "sidebar.wikiSidebar.doc.Silent2225": {
+    "message": "Silent2225"
+  },
+  "sidebar.wikiSidebar.doc.Silent2226": {
+    "message": "Silent2226"
+  },
+  "sidebar.wikiSidebar.doc.ST820 V1.0": {
+    "message": "ST820 V1.0"
+  },
+  "sidebar.wikiSidebar.doc.LV8729 V1.0": {
+    "message": "LV8729 V1.0"
+  },
+  "sidebar.wikiSidebar.doc.HV5160": {
+    "message": "HV5160"
+  },
+  "sidebar.wikiSidebar.doc.QHV5160": {
+    "message": "QHV5160"
+  },
+  "sidebar.wikiSidebar.doc.EXT2160": {
+    "message": "EXT2160"
+  },
+  "sidebar.wikiSidebar.doc.PT100 Stick 模块介绍": {
+    "message": "PT100_Stick Introduction"
+  },
+  "sidebar.wikiSidebar.doc.SB CAN TH": {
+    "message": "SB CAN TH"
+  },
+  "sidebar.wikiSidebar.doc.SB Combo V2": {
+    "message": "SB Combo V2"
+  },
+  "sidebar.wikiSidebar.doc.H36 Combo": {
+    "message": "H36 Combo"
+  },
+  "sidebar.wikiSidebar.doc.UCAN": {
+    "message": "UCAN"
+  },
+  "sidebar.wikiSidebar.doc.M36 HUB v1": {
+    "message": "M36 HUB v1"
+  },
+  "sidebar.wikiSidebar.doc.NanoDLP Shield V1.1": {
+    "message": "NanoDLP Shield V1.1"
+  },
+  "sidebar.wikiSidebar.doc.线束与连接概览": {
+    "message": "Cables and Wires Introduction"
+  },
+  "sidebar.wikiSidebar.doc.机械部件概览": {
+    "message": "Mechanical parts Introduction"
+  },
+  "sidebar.wikiSidebar.doc.CREALITY X 轴皮带张紧器": {
+    "message": "CREALITY X-axis Belt Tensioner"
+  },
+  "sidebar.wikiSidebar.doc.黑色 BMG 挤出机": {
+    "message": "Black BMG Extruder"
+  },
+  "sidebar.wikiSidebar.doc.CREALITY CR10 Y 轴皮带张紧器": {
+    "message": "CREALITY CR10 Y-axis Belt Tensioner"
+  },
+  "sidebar.wikiSidebar.doc.Ender3 Y 轴皮带张紧器": {
+    "message": "Ender3 Y-axis Belt Tensioner"
+  },
+  "sidebar.wikiSidebar.doc.Ender3 双 Z 轴皮带升级套件": {
+    "message": "Ender3 belt double Z upgrade kit"
+  },
+  "sidebar.wikiSidebar.doc.Ender 3 直驱挤出机安装板": {
+    "message": "Ender 3 3D printer Direct Drive Extruder Plate"
+  },
+  "sidebar.wikiSidebar.doc.Ender 5 直驱挤出机安装板": {
+    "message": "Ender 5 3D printer Direct Drive Extruder Plate"
+  },
+  "sidebar.wikiSidebar.doc.金属 BMG 左侧挤出机": {
+    "message": "Metal BMG Left  hand extruder"
+  },
+  "sidebar.wikiSidebar.doc.金属 BMG 右侧挤出机": {
+    "message": "Metal BMG right hand extruder"
+  },
+  "sidebar.wikiSidebar.doc.灰色 Mk8 挤出机": {
+    "message": "Mk8 Grey Extruder"
+  },
+  "sidebar.wikiSidebar.doc.NanoDLP_Shield_MEGA_V2.1": {
+    "message": "NanoDLP_Shield_MEGA_V2.1"
+  },
+  "sidebar.wikiSidebar.doc.Prusa mini BMG V1 挤出机": {
+    "message": "Prusa mini BMG V1 Extruder"
+  },
+  "sidebar.wikiSidebar.doc.Prusa mini 复刻版": {
+    "message": "Prusa mini clone"
+  },
+  "sidebar.wikiSidebar.doc.Original Prusa MMU2S 复刻版": {
+    "message": "Original Prusa MMU2S clone"
+  },
+  "sidebar.wikiSidebar.doc.Prusa MK3S Bear 升级套件": {
+    "message": "Prusa mk3s bear upgrade kit"
+  },
+  "sidebar.wikiSidebar.doc.Prusa MK3S 复刻版": {
+    "message": "Prusa-mk3s-clone"
+  },
+  "sidebar.wikiSidebar.doc.Annex-Engineering Sherpa 挤出机": {
+    "message": "Annex-Engineering Sherpa extruder"
+  },
+  "sidebar.wikiSidebar.doc.传感器概览": {
+    "message": "Sensors Introduction"
+  },
+  "sidebar.wikiSidebar.doc.无线产品概览": {
+    "message": "Wireless Introduction"
+  },
+  "sidebar.wikiSidebar.doc.其他产品概览": {
+    "message": "Others Introduction"
+  },
+  "sidebar.wikiSidebar.doc.FYS Boost LED Driver V1.0": {
+    "message": "FYS Boost LED Driver V1.0"
+  },
+  "sidebar.wikiSidebar.doc.教程总览": {
+    "message": "Guide Introduction"
+  },
+  "sidebar.wikiSidebar.doc.在 FYSETC F6 上配置 TMC2130": {
+    "message": "How to Configure TMC2130 on FYSETC F6 Board"
+  },
+  "sidebar.wikiSidebar.doc.在 FYSETC F6 上配置 TMC2208": {
+    "message": "How to Configure TMC2208 on FYSETC F6 Board"
+  },
+  "sidebar.wikiSidebar.doc.在 SKR 上使用 Mini12864": {
+    "message": "How to Use Mini 12864 on SKR Board"
+  },
+  "sidebar.wikiSidebar.doc.在 Spider 上使用 BIQU Mini12864": {
+    "message": "How to use BIQU‘s mini12864 on Spider"
+  },
+  "sidebar.wikiSidebar.doc.Spider 硬件指南": {
+    "message": "Spider hardware guide"
+  },
+  "sidebar.wikiSidebar.doc.Spider 软件指南": {
+    "message": "Spider software guide"
+  },
+  "sidebar.wikiSidebar.doc.旧 404 页面说明": {
+    "message": "Legacy 404 page information"
+  },
+  "sidebar.wikiSidebar.doc.关于 FYSETC": {
+    "message": "About FYSETC"
+  },
+  "sidebar.wikiSidebar.doc.S2240": {
+    "message": "S2240"
+  },
+  "sidebar.wikiSidebar.doc.扩展板资料": {
+    "message": "Shield references"
+  },
+  "sidebar.wikiSidebar.doc.Spider CAN 扩展板": {
+    "message": "Spider CAN Expander"
+  },
+  "sidebar.wikiSidebar.doc.CAN 配置指南": {
+    "message": "CAN Setup Guide"
+  },
+  "sidebar.wikiSidebar.doc.补充资料": {
+    "message": "Additional resources"
+  },
+  "sidebar.wikiSidebar.doc.3D 打印机套件": {
+    "message": "3D Printer Kits"
+  },
+  "sidebar.wikiSidebar.doc.快速开始": {
+    "message": "Getting started"
+  },
+  "sidebar.wikiSidebar.doc.第一篇双语文章：认识 FYSETC Wiki": {
+    "message": "First bilingual article: Exploring FYSETC Wiki"
+  },
+  "sidebar.wikiSidebar.category.3D 打印机套件": {
+    "message": "3D Printer Kits"
+  },
+  "sidebar.wikiSidebar.category.3D 打印机套件.link.generated-index.title": {
+    "message": "3D Printer Kits"
+  },
+  "sidebar.wikiSidebar.category.3D 打印机套件.link.generated-index.description": {
+    "message": "No articles in the official directory were matched to the local documentation."
+  },
+  "sidebar.wikiSidebar.category.控制板": {
+    "message": "Controllers"
+  },
+  "sidebar.wikiSidebar.category.控制板.link.generated-index.title": {
+    "message": "Controllers"
+  },
+  "sidebar.wikiSidebar.category.控制板.link.generated-index.description": {
+    "message": "Local documents in Controllers, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.步进电机驱动": {
+    "message": "Stepper Drivers"
+  },
+  "sidebar.wikiSidebar.category.步进电机驱动.link.generated-index.title": {
+    "message": "Stepper Drivers"
+  },
+  "sidebar.wikiSidebar.category.步进电机驱动.link.generated-index.description": {
+    "message": "Local documents in Stepper Drivers, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.模块": {
+    "message": "Modules"
+  },
+  "sidebar.wikiSidebar.category.模块.link.generated-index.title": {
+    "message": "Modules"
+  },
+  "sidebar.wikiSidebar.category.模块.link.generated-index.description": {
+    "message": "Local documents in Modules, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.传感器": {
+    "message": "Sensors"
+  },
+  "sidebar.wikiSidebar.category.传感器.link.generated-index.title": {
+    "message": "Sensors"
+  },
+  "sidebar.wikiSidebar.category.传感器.link.generated-index.description": {
+    "message": "Local documents in Sensors, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.无线产品": {
+    "message": "Wireless"
+  },
+  "sidebar.wikiSidebar.category.无线产品.link.generated-index.title": {
+    "message": "Wireless"
+  },
+  "sidebar.wikiSidebar.category.无线产品.link.generated-index.description": {
+    "message": "Local documents in Wireless, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.机械部件": {
+    "message": "Mechanical Parts"
+  },
+  "sidebar.wikiSidebar.category.机械部件.link.generated-index.title": {
+    "message": "Mechanical Parts"
+  },
+  "sidebar.wikiSidebar.category.机械部件.link.generated-index.description": {
+    "message": "Local documents in Mechanical Parts, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.升级套件": {
+    "message": "Upgrade Kits"
+  },
+  "sidebar.wikiSidebar.category.升级套件.link.generated-index.title": {
+    "message": "Upgrade Kits"
+  },
+  "sidebar.wikiSidebar.category.升级套件.link.generated-index.description": {
+    "message": "Local documents in Upgrade Kits, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.显示面板": {
+    "message": "Displays"
+  },
+  "sidebar.wikiSidebar.category.显示面板.link.generated-index.title": {
+    "message": "Displays"
+  },
+  "sidebar.wikiSidebar.category.显示面板.link.generated-index.description": {
+    "message": "Local documents in Displays, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.教程": {
+    "message": "Tutorial"
+  },
+  "sidebar.wikiSidebar.category.教程.link.generated-index.title": {
+    "message": "Tutorial"
+  },
+  "sidebar.wikiSidebar.category.教程.link.generated-index.description": {
+    "message": "Local documents in Tutorial, including official matches and manually added documentation."
+  },
+  "sidebar.wikiSidebar.category.快速开始": {
+    "message": "Getting started"
+  }
+}

@@ -1,0 +1,134 @@
+.dialog {
+  width: min(1120px, calc(100vw - 2rem));
+  max-width: calc(100vw - 2rem);
+  max-height: calc(100dvh - 2rem);
+  padding: 0;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.75rem;
+  background: var(--ifm-background-surface-color);
+  color: var(--ifm-font-color-base);
+  box-shadow: 0 1.5rem 5rem rgb(0 0 0 / 28%);
+}
+
+.dialog::backdrop {
+  background: rgb(8 17 24 / 76%);
+}
+
+.dialog[open] {
+  display: flex;
+  flex-direction: column;
+}
+
+.header {
+  display: flex;
+  flex-shrink: 0;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: 1rem;
+  padding: 1rem 1.25rem;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.heading {
+  min-width: 0;
+}
+
+.heading h2 {
+  margin: 0;
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+.caption {
+  margin: 0.2rem 0 0;
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.85rem;
+  overflow-wrap: anywhere;
+}
+
+.close {
+  display: inline-flex;
+  flex-shrink: 0;
+  align-items: center;
+  gap: 0.4rem;
+  min-height: 2.5rem;
+  padding: 0.35rem 0.75rem;
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 0.4rem;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font: inherit;
+  font-size: 0.85rem;
+  cursor: pointer;
+}
+
+.close span[aria-hidden] {
+  font-size: 1.5rem;
+  line-height: 1;
+}
+
+.close:hover {
+  border-color: var(--ifm-color-primary);
+  color: var(--ifm-color-primary);
+}
+
+.close:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: 2px;
+}
+
+.viewport {
+  flex: 1 1 auto;
+  max-height: calc(100dvh - 11rem);
+  min-height: 0;
+  overflow: auto;
+  overscroll-behavior: contain;
+  background: var(--ifm-background-color);
+}
+
+.viewport:focus-visible {
+  outline: 2px solid var(--ifm-color-primary);
+  outline-offset: -2px;
+}
+
+.image {
+  display: block;
+  width: auto;
+  max-width: none;
+  height: auto;
+  max-height: none;
+  margin: 0 auto;
+}
+
+.hint {
+  flex-shrink: 0;
+  margin: 0;
+  padding: 0.7rem 1.25rem;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+  color: var(--ifm-color-emphasis-700);
+  font-size: 0.8rem;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .dialog {
+    width: calc(100vw - 1rem);
+    max-width: calc(100vw - 1rem);
+    max-height: calc(100dvh - 1rem);
+    border-radius: 0.5rem;
+  }
+
+  .header {
+    gap: 0.6rem;
+    padding: 0.75rem;
+  }
+
+  .viewport {
+    max-height: calc(100dvh - 10rem);
+  }
+
+  .hint {
+    padding: 0.65rem 0.75rem;
+  }
+}

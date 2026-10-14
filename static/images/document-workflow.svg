@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="960" height="240" viewBox="0 0 960 240" role="img" aria-labelledby="title desc">
+  <title id="title">Documentation workflow</title>
+  <desc id="desc">Write Markdown, build with Docusaurus, and preview the bilingual website.</desc>
+  <rect width="960" height="240" rx="24" fill="#f1f5f9"/>
+  <g font-family="Arial, sans-serif" text-anchor="middle">
+    <g fill="#ffffff" stroke="#cbd5e1" stroke-width="2">
+      <rect x="40" y="55" width="230" height="130" rx="16"/>
+      <rect x="365" y="55" width="230" height="130" rx="16"/>
+      <rect x="690" y="55" width="230" height="130" rx="16"/>
+    </g>
+    <g fill="#1d4ed8" font-size="16" font-weight="700">
+      <text x="155" y="87">01</text><text x="480" y="87">02</text><text x="805" y="87">03</text>
+    </g>
+    <g fill="#0f172a" font-size="26" font-weight="700">
+      <text x="155" y="123">Write</text><text x="480" y="123">Build</text><text x="805" y="123">Preview</text>
+    </g>
+    <g fill="#475569" font-size="15">
+      <text x="155" y="157">Markdown</text><text x="480" y="157">Docusaurus</text><text x="805" y="157">Chinese / English</text>
+    </g>
+  </g>
+  <g stroke="#1d4ed8" stroke-width="4" fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M288 120h57m-12-12 12 12-12 12"/><path d="M613 120h57m-12-12 12 12-12 12"/>
+  </g>
+</svg>

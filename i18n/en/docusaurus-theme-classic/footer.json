@@ -1,0 +1,61 @@
+{
+  "link.title.文档": {
+    "message": "Docs",
+    "description": "The title of the footer links column with title=文档 in the footer"
+  },
+  "link.item.label.快速开始": {
+    "message": "Getting started",
+    "description": "The label of footer link with label=快速开始 linking to /docs/intro"
+  },
+  "copyright": {
+    "message": "FYSETC documentation and images · CC BY-SA 4.0 · Local test edition"
+  },
+  "link.title.产品文档": {
+    "message": "Product docs"
+  },
+  "link.title.学习与配置": {
+    "message": "Learning & setup"
+  },
+  "link.title.资源与支持": {
+    "message": "Resources & support"
+  },
+  "link.title.FYSETC": {
+    "message": "FYSETC"
+  },
+  "link.item.label.控制板": {
+    "message": "Controllers"
+  },
+  "link.item.label.步进驱动": {
+    "message": "Stepper drivers"
+  },
+  "link.item.label.显示面板": {
+    "message": "Displays"
+  },
+  "link.item.label.使用教程": {
+    "message": "Guides"
+  },
+  "link.item.label.Spider 硬件指南": {
+    "message": "Spider hardware guide"
+  },
+  "link.item.label.Spider 软件指南": {
+    "message": "Spider software guide"
+  },
+  "link.item.label.补充资料": {
+    "message": "Resources"
+  },
+  "link.item.label.文档反馈": {
+    "message": "Wiki feedback"
+  },
+  "link.item.label.文档源仓库": {
+    "message": "Source repository"
+  },
+  "link.item.label.官方网站": {
+    "message": "Official website"
+  },
+  "link.item.label.技术论坛": {
+    "message": "Support forum"
+  },
+  "link.item.label.文档总览": {
+    "message": "Wiki overview"
+  }
+}

@@ -1,0 +1,537 @@
+{
+  "source": "https://wiki.fysetc.com/",
+  "checkedOn": "2026-10-13",
+  "aliases": {
+    "LED_Driver_V1.0": "FYS_Boost_LED_Driver_V1.0"
+  },
+  "categories": [
+    {
+      "id": "printer-kits",
+      "en": "3D Printer Kits",
+      "zh": "3D 打印机套件",
+      "icon": "printer",
+      "intro": null,
+      "url": "https://wiki.fysetc.com/docs/kits",
+      "articles": [
+        {
+          "title": "Venture XL",
+          "url": "https://wiki.fysetc.com/docs/Venture_XL"
+        },
+        {
+          "title": "Changlog",
+          "url": "https://wiki.fysetc.com/docs/Update"
+        },
+        {
+          "title": "1. Introduction",
+          "url": "https://wiki.fysetc.com/docs/zqWuksfk"
+        },
+        {
+          "title": "1.1. Introduction",
+          "url": "https://wiki.fysetc.com/docs/venture-xl-introduction"
+        },
+        {
+          "title": "2. Assembly Guide",
+          "url": "https://wiki.fysetc.com/docs/Fvmesh3D"
+        },
+        {
+          "title": "2.1 Frame assembly",
+          "url": "https://wiki.fysetc.com/docs/2-Frame-assembly"
+        },
+        {
+          "title": "2.2 Z motor and tensioner assembly",
+          "url": "https://wiki.fysetc.com/docs/3-Xaxis-Xcarriage-assembly"
+        },
+        {
+          "title": "2.3 Gantry components",
+          "url": "https://wiki.fysetc.com/docs/2-3-Gantry-components"
+        },
+        {
+          "title": "2.4 Hot bed components",
+          "url": "https://wiki.fysetc.com/docs/2-4-Hot-bed-components"
+        },
+        {
+          "title": "2.5 Extrusion head assembly",
+          "url": "https://wiki.fysetc.com/docs/2-5-Extrusion-head-assembly"
+        },
+        {
+          "title": "2.6 Drag chain components",
+          "url": "https://wiki.fysetc.com/docs/2-6-Drag-chain-components"
+        },
+        {
+          "title": "2.7 Caster Assembly",
+          "url": "https://wiki.fysetc.com/docs/2-7-Caster-Assembly"
+        },
+        {
+          "title": "2.8 Electrical components",
+          "url": "https://wiki.fysetc.com/docs/2-8-Electrical-components"
+        },
+        {
+          "title": "2.9 Rack and sealing acrylic",
+          "url": "https://wiki.fysetc.com/docs/2-9-Rack-and-sealing-acrylic"
+        },
+        {
+          "title": "3. Electronics Guide",
+          "url": "https://wiki.fysetc.com/docs/Uc0MVnsz"
+        },
+        {
+          "title": "3.1 Power Connection",
+          "url": "https://wiki.fysetc.com/docs/3-1-Power-Connection"
+        },
+        {
+          "title": "3.2 Main Board",
+          "url": "https://wiki.fysetc.com/docs/3-2-Main-Board"
+        },
+        {
+          "title": "4. Firmware Guide",
+          "url": "https://wiki.fysetc.com/docs/TyhVfzfs"
+        },
+        {
+          "title": "How to update the CM68 img",
+          "url": "https://wiki.fysetc.com/docs/How-to-update-the-CM68-img"
+        },
+        {
+          "title": "How to update the Spider Pro",
+          "url": "https://wiki.fysetc.com/docs/How-to-update-the-Spider-Pro"
+        },
+        {
+          "title": "5. FAQ",
+          "url": "https://wiki.fysetc.com/docs/venture-xl-faq"
+        },
+        {
+          "title": "Software issues",
+          "url": "https://wiki.fysetc.com/docs/software_issues"
+        }
+      ]
+    },
+    {
+      "id": "controllers",
+      "en": "Controllers",
+      "zh": "控制板",
+      "icon": "board",
+      "intro": "Controllers",
+      "url": "https://wiki.fysetc.com/docs/Controllers",
+      "articles": [
+        {
+          "title": "CATALYST.K",
+          "url": "https://wiki.fysetc.com/docs/CATALYST-K"
+        },
+        {
+          "title": "CHAMELEON X5",
+          "url": "https://wiki.fysetc.com/docs/CHAMELEON-X5"
+        },
+        {
+          "title": "SPIDER_V1-3_F446",
+          "url": "https://wiki.fysetc.com/docs/Spider"
+        },
+        {
+          "title": "SPIDER_V3_H723",
+          "url": "https://wiki.fysetc.com/docs/SPIDERV3H7"
+        },
+        {
+          "title": "FYSETC-SPIDER-KING",
+          "url": "https://wiki.fysetc.com/docs/FYSETCSPIDERKING"
+        },
+        {
+          "title": "CHEETAH",
+          "url": "https://wiki.fysetc.com/docs/CheetahBoard"
+        },
+        {
+          "title": "CHEETAH_V2.0",
+          "url": "https://wiki.fysetc.com/docs/CheetahBoardV20"
+        },
+        {
+          "title": "CHEETAH_V3.0",
+          "url": "https://wiki.fysetc.com/docs/CheatahBoardV30"
+        },
+        {
+          "title": "E4",
+          "url": "https://wiki.fysetc.com/docs/E4"
+        },
+        {
+          "title": "FYSETC_S6",
+          "url": "https://wiki.fysetc.com/docs/FYSETCS6"
+        },
+        {
+          "title": "F6_V1.3",
+          "url": "https://wiki.fysetc.com/docs/F6V1-3"
+        },
+        {
+          "title": "BIG-DIPPER",
+          "url": "https://wiki.fysetc.com/docs/BIGDIPPER"
+        },
+        {
+          "title": "STRIDEMAX_DUAL_FD_V2",
+          "url": "https://wiki.fysetc.com/docs/StrideMaxDualFDV2"
+        },
+        {
+          "title": "AIO_II",
+          "url": "https://wiki.fysetc.com/docs/AIOII-h0sQ"
+        }
+      ]
+    },
+    {
+      "id": "drivers",
+      "en": "Stepper Drivers",
+      "zh": "步进电机驱动",
+      "icon": "driver",
+      "intro": "Stepper-Drivers",
+      "url": "https://wiki.fysetc.com/docs/drivers",
+      "articles": [
+        {
+          "title": "QHV5160",
+          "url": "https://wiki.fysetc.com/docs/QHV5160"
+        },
+        {
+          "title": "SILENT_2209",
+          "url": "https://wiki.fysetc.com/docs/Silent2209"
+        },
+        {
+          "title": "S2210",
+          "url": "https://wiki.fysetc.com/docs/S2210"
+        },
+        {
+          "title": "TMC2130",
+          "url": "https://wiki.fysetc.com/docs/TMC2130"
+        },
+        {
+          "title": "EXT2160",
+          "url": "https://wiki.fysetc.com/docs/EXT2160"
+        },
+        {
+          "title": "TMC2208",
+          "url": "https://wiki.fysetc.com/docs/TMC2208"
+        },
+        {
+          "title": "TMC2226",
+          "url": "https://wiki.fysetc.com/docs/TMC2226"
+        },
+        {
+          "title": "TMC2225",
+          "url": "https://wiki.fysetc.com/docs/TMC2225"
+        },
+        {
+          "title": "TMC2208.zh",
+          "url": "https://wiki.fysetc.com/docs/TMC2208-zh"
+        },
+        {
+          "title": "TMC2130.zh",
+          "url": "https://wiki.fysetc.com/docs/TMC2130-zh"
+        },
+        {
+          "title": "TMC2100",
+          "url": "https://wiki.fysetc.com/docs/TMC2100"
+        },
+        {
+          "title": "TMC2100.zh",
+          "url": "https://wiki.fysetc.com/docs/TMC2100-zh"
+        },
+        {
+          "title": "ST820_V1.0",
+          "url": "https://wiki.fysetc.com/docs/ST820V1"
+        },
+        {
+          "title": "S6128_V1.1.zh",
+          "url": "https://wiki.fysetc.com/docs/S6128V1-1-zh"
+        },
+        {
+          "title": "S6128_V1.1",
+          "url": "https://wiki.fysetc.com/docs/S6128V1-1"
+        },
+        {
+          "title": "S5161_V1.1",
+          "url": "https://wiki.fysetc.com/docs/S5161V1-1"
+        },
+        {
+          "title": "S5160_V1.2",
+          "url": "https://wiki.fysetc.com/docs/S5160V1-2"
+        },
+        {
+          "title": "S109_V1.1.zh",
+          "url": "https://wiki.fysetc.com/docs/S109V1-1-zh"
+        },
+        {
+          "title": "S109_V1.1",
+          "url": "https://wiki.fysetc.com/docs/S109V1-1"
+        },
+        {
+          "title": "LV8729_V1.0",
+          "url": "https://wiki.fysetc.com/docs/LV8729V1"
+        },
+        {
+          "title": "HV5160",
+          "url": "https://wiki.fysetc.com/docs/HV5160"
+        },
+        {
+          "title": "EXT2160.zh",
+          "url": "https://wiki.fysetc.com/docs/EXT2160-zh"
+        }
+      ]
+    },
+    {
+      "id": "modules",
+      "en": "Modules",
+      "zh": "模块",
+      "icon": "module",
+      "intro": null,
+      "url": "https://wiki.fysetc.com/docs/modules",
+      "articles": [
+        {
+          "title": "H36 Combo V2",
+          "url": "https://wiki.fysetc.com/docs/H36-Combo-V2"
+        },
+        {
+          "title": "Catalyst.K ToolHead",
+          "url": "https://wiki.fysetc.com/docs/Catalyst-K-ToolHead"
+        },
+        {
+          "title": "SB_Combo_V2",
+          "url": "https://wiki.fysetc.com/docs/SBComboV2"
+        },
+        {
+          "title": "H36 Combo",
+          "url": "https://wiki.fysetc.com/docs/H36-Combo"
+        },
+        {
+          "title": "Hexa Distro Fusion",
+          "url": "https://wiki.fysetc.com/docs/hexa_distro_fusion"
+        },
+        {
+          "title": "SB CAN ToolHead.zh",
+          "url": "https://wiki.fysetc.com/docs/SB-CAN-ToolHead-zh"
+        },
+        {
+          "title": "SB CAN ToolHead",
+          "url": "https://wiki.fysetc.com/docs/SB-CAN-ToolHead"
+        },
+        {
+          "title": "UCAN",
+          "url": "https://wiki.fysetc.com/docs/UCAN"
+        },
+        {
+          "title": "M36_HUB_V1",
+          "url": "https://wiki.fysetc.com/docs/M36HUBV1"
+        },
+        {
+          "title": "NanoDLP_Shield_V1.1.zh",
+          "url": "https://wiki.fysetc.com/docs/NanoDLPShieldV1-1-zh"
+        },
+        {
+          "title": "NanoDLP_Shield_V1.1",
+          "url": "https://wiki.fysetc.com/docs/NanoDLPShieldV1-1"
+        },
+        {
+          "title": "LED_Driver_V1.0.zh",
+          "url": "https://wiki.fysetc.com/docs/FYSBoostLEDDriverV1-zh"
+        },
+        {
+          "title": "LED_Driver_V1.0",
+          "url": "https://wiki.fysetc.com/docs/FYSBoostLEDDriverV1"
+        }
+      ]
+    },
+    {
+      "id": "sensors",
+      "en": "Sensors",
+      "zh": "传感器",
+      "icon": "sensor",
+      "intro": "Sensors",
+      "url": "https://wiki.fysetc.com/docs/sensors",
+      "articles": [
+        {
+          "title": "PT100_STICK",
+          "url": "https://wiki.fysetc.com/docs/PT100STICK"
+        }
+      ]
+    },
+    {
+      "id": "wireless",
+      "en": "Wireless",
+      "zh": "无线产品",
+      "icon": "wireless",
+      "intro": "Wireless",
+      "url": "https://wiki.fysetc.com/docs/wireless",
+      "articles": [
+        {
+          "title": "SD WiFi Pro",
+          "url": "https://wiki.fysetc.com/docs/SD-WiFi-Pro"
+        }
+      ]
+    },
+    {
+      "id": "mechanicals",
+      "en": "Mechanical Parts",
+      "zh": "机械部件",
+      "icon": "mechanical",
+      "intro": "Mechanical-parts",
+      "url": "https://wiki.fysetc.com/docs/mechanical",
+      "articles": [
+        {
+          "title": "Sherpa-extruder",
+          "url": "https://wiki.fysetc.com/docs/Sherpaextruder"
+        },
+        {
+          "title": "Mk8 Grey Extruder",
+          "url": "https://wiki.fysetc.com/docs/Mk8-Grey-Extruder"
+        },
+        {
+          "title": "Metal BMG right hand extruder",
+          "url": "https://wiki.fysetc.com/docs/Metal-BMG-right-hand-extruder"
+        },
+        {
+          "title": "Metal BMG Left hand extruder",
+          "url": "https://wiki.fysetc.com/docs/Metal-BMG-Left-hand-extruder"
+        },
+        {
+          "title": "Black BMG Extruder",
+          "url": "https://wiki.fysetc.com/docs/Black-BMG-Extruder"
+        }
+      ]
+    },
+    {
+      "id": "upgrade-kits",
+      "en": "Upgrade Kits",
+      "zh": "升级套件",
+      "icon": "upgrade",
+      "intro": null,
+      "url": "https://wiki.fysetc.com/docs/upgrade",
+      "articles": [
+        {
+          "title": "Prusa mini BMG V1 Extruder",
+          "url": "https://wiki.fysetc.com/docs/Prusa-mini-BMG-V1-Extruder"
+        },
+        {
+          "title": "PRUSA-MK3S-Bear-Upgrade-kit",
+          "url": "https://wiki.fysetc.com/docs/PRUSAMK3SBearUpgradekit"
+        },
+        {
+          "title": "Ender3 Y-axis Belt Tensioner",
+          "url": "https://wiki.fysetc.com/docs/Ender3-Yaxis-Belt-Tensioner"
+        },
+        {
+          "title": "Ender 5 3D printer Direct Drive Extruder Plate",
+          "url": "https://wiki.fysetc.com/docs/Ender-5-3D-printer-Direct-Drive-Extruder-Plate"
+        },
+        {
+          "title": "Ender3 belt double Z upgrade kit",
+          "url": "https://wiki.fysetc.com/docs/Ender3-belt-double-Z-upgrade-kit"
+        },
+        {
+          "title": "Ender 3 3D printer Direct Drive Extruder Plate",
+          "url": "https://wiki.fysetc.com/docs/Ender-3-3D-printer-Direct-Drive-Extruder-Plate"
+        },
+        {
+          "title": "CREALITY X-axis Belt Tensioner",
+          "url": "https://wiki.fysetc.com/docs/CREALITY-Xaxis-Belt-Tensioner"
+        },
+        {
+          "title": "CREALITY CR10 Y-axis Belt Tensioner",
+          "url": "https://wiki.fysetc.com/docs/CREALITY-CR10-Yaxis-Belt-Tensioner"
+        },
+        {
+          "title": "FLASHFORGE_AD5X Enclosure Kit",
+          "url": "https://wiki.fysetc.com/docs/FLASHFORGEAD5X-3D-Printer-Enclosure-Kit"
+        },
+        {
+          "title": "FYSETC-QuattroBox",
+          "url": "https://wiki.fysetc.com/docs/FYSETCQuattroBox"
+        },
+        {
+          "title": "Adventurer_AD5M_AD5M Pro_AD5X Light Board",
+          "url": "https://wiki.fysetc.com/docs/AdventurerAD5MAD5M-ProLight-Board-Bracket"
+        },
+        {
+          "title": "Adventurer AD5M_AD5M Pro_AD5X_Series Camera",
+          "url": "https://wiki.fysetc.com/docs/AdventurerAD5MAD5M-ProSeries-Universal-Camera"
+        },
+        {
+          "title": "X1/P1S Door Hinge Upgrade",
+          "url": "https://wiki.fysetc.com/docs/X1-P1S-door-hinge"
+        },
+        {
+          "title": "Creality K1 MAX 8mm Graphite Build Plate & Heated Bed",
+          "url": "https://wiki.fysetc.com/docs/Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed"
+        },
+        {
+          "title": "90° Heat Insert Adaptor",
+          "url": "https://wiki.fysetc.com/docs/90-Angle-Connector-for-Hot-Melt-Nut-Press-Head"
+        },
+        {
+          "title": "Sparkx i7 LED Upgrade",
+          "url": "https://wiki.fysetc.com/docs/Sparkxi7LedSystem"
+        },
+        {
+          "title": "PSF Feedback Sensor",
+          "url": "https://wiki.fysetc.com/docs/FC-Product-Manual"
+        }
+      ]
+    },
+    {
+      "id": "displays",
+      "en": "Displays",
+      "zh": "显示面板",
+      "icon": "screen",
+      "intro": "LCDs-and-Displays",
+      "url": "https://wiki.fysetc.com/docs/displays",
+      "articles": [
+        {
+          "title": "TFT81050",
+          "url": "https://wiki.fysetc.com/docs/TFT81050"
+        },
+        {
+          "title": "Mini12864_Panel",
+          "url": "https://wiki.fysetc.com/docs/Mini12864Panel"
+        },
+        {
+          "title": "Generic_12864_Panel",
+          "url": "https://wiki.fysetc.com/docs/Generic12864Panel"
+        },
+        {
+          "title": "FYS_Touch_Panel",
+          "url": "https://wiki.fysetc.com/docs/FYSTouchPanel"
+        },
+        {
+          "title": "Raspberry Pi 5\" DSI Touch Screen MIPI LCD V1.1",
+          "url": "https://wiki.fysetc.com/docs/Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1-1"
+        },
+        {
+          "title": "FYSETC Paneldue 5i/7i",
+          "url": "https://wiki.fysetc.com/docs/FYSETC-Paneldue-5i-7i"
+        }
+      ]
+    },
+    {
+      "id": "guides",
+      "en": "Tutorial",
+      "zh": "教程",
+      "icon": "book",
+      "intro": "Tutorial",
+      "url": "https://wiki.fysetc.com/docs/tutorial",
+      "articles": [
+        {
+          "title": "Spider_Software_Guide.zh",
+          "url": "https://wiki.fysetc.com/docs/SpiderSoftwareGuide-zh"
+        },
+        {
+          "title": "Spider_Hardware_Guide.zh",
+          "url": "https://wiki.fysetc.com/docs/SpiderHardwareGuide-zh"
+        },
+        {
+          "title": "Manual_for_Mini_panel_on_SKR",
+          "url": "https://wiki.fysetc.com/docs/ManualforMinipanelonSKR"
+        },
+        {
+          "title": "How_to_Configure_TMC2208_on_FYSETC-F6-Board",
+          "url": "https://wiki.fysetc.com/docs/HowtoConfigureTMC2208onFYSETCF6Board"
+        },
+        {
+          "title": "How_to_Configure_TMC2130_on_FYSETC-F6-Board",
+          "url": "https://wiki.fysetc.com/docs/HowtoConfigureTMC2130onFYSETCF6Board"
+        },
+        {
+          "title": "BIQU12864_On_Spider",
+          "url": "https://wiki.fysetc.com/docs/BIQU12864OnSpider"
+        }
+      ]
+    }
+  ]
+}
