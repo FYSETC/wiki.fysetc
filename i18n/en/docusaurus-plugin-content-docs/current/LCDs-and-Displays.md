@@ -17,13 +17,13 @@ This section includes LCDs and displays that created by FYSETC.
 
 Here is the list of the LCDs and displays you can find in the FYSETC WiKi. The list will be constantly updated.
 
-[Mini12864 Panel](/en/docs/Mini12864_Panel/)
+[Mini12864 Panel](/docs/Mini12864_Panel/)
 
-[Generic 12864 Panel](/en/docs/Generic_12864_Panel/)
+[Generic 12864 Panel](/docs/Generic_12864_Panel/)
 
-[FYS Touch Lcd](/en/docs/FYS_Touch_Panel/)
+[FYS Touch Lcd](/docs/FYS_Touch_Panel/)
 
-[TFT81050](/en/docs/TFT81050/)
+[TFT81050](/docs/TFT81050/)
 
 ## Tech Support
 

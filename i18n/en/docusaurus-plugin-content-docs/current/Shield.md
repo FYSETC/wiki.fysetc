@@ -17,7 +17,7 @@ This section includes extension boards that created by FYSETC.
 
 Here is the list of the extension boards you can find in the FYSETC WiKi. The list will be constantly updated.
 
-- [NanoDLP Shield V1.1](/en/docs/NanoDLP_Shield_V1.1/)
+- [NanoDLP Shield V1.1](/docs/NanoDLP_Shield_V1.1/)
 
 ## Tech Support
 

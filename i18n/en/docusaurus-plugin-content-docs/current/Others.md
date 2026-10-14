@@ -16,7 +16,7 @@ Other products not listed elsewhere are listed here:
 
 Here is the list of other products you can find in the FYSETC WiKi. The list will be constantly updated.
 
-- [FYS Boost LED Driver V1.0](/en/docs/FYS_Boost_LED_Driver_V1.0/)
+- [FYS Boost LED Driver V1.0](/docs/FYS_Boost_LED_Driver_V1.0/)
 
 ## Tech Support
 

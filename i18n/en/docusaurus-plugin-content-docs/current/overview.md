@@ -16,22 +16,22 @@ source_language: en
 
 <table>
     <tr>
-        <td><a href="/en/docs/Controllers/"><img src="/images/Controllers.png"/></a></td>
-        <td><a href="/en/docs/LCDs-and-Displays/"><img src="/images/LCD_and_Displays.png"/></a></td>
-        <td><a href="/en/docs/Stepper-Drivers/"><img src="/images/Stepper_Drivers.png"/></a></td>
+        <td><a href="/docs/Controllers/"><img src="/images/Controllers.png"/></a></td>
+        <td><a href="/docs/LCDs-and-Displays/"><img src="/images/LCD_and_Displays.png"/></a></td>
+        <td><a href="/docs/Stepper-Drivers/"><img src="/images/Stepper_Drivers.png"/></a></td>
     </tr>
     <tr>
-        <td><a href="/en/docs/Cables-and-Wires/"><img src="/images/Cables_and_wires.png"/></a></td>
-        <td><a href="/en/docs/Mechanical-parts/"><img src="/images/Mechanical_parts.png"/></a></td>
-        <td><a href="/en/docs/Sensors/"><img src="/images/Sensors.png"/></a></td>
+        <td><a href="/docs/Cables-and-Wires/"><img src="/images/Cables_and_wires.png"/></a></td>
+        <td><a href="/docs/Mechanical-parts/"><img src="/images/Mechanical_parts.png"/></a></td>
+        <td><a href="/docs/Sensors/"><img src="/images/Sensors.png"/></a></td>
     </tr>
     <tr>
-        <td><a href="/en/docs/Shield/"><img src="/images/Shield.png"/></a></td>
-        <td><a href="/en/docs/Wireless/"><img src="/images/Wireless.png"/></a></td>
-        <td><a href="/en/docs/Tutorial/"><img src="/images/Tutorial.png"/></a></td>
+        <td><a href="/docs/Shield/"><img src="/images/Shield.png"/></a></td>
+        <td><a href="/docs/Wireless/"><img src="/images/Wireless.png"/></a></td>
+        <td><a href="/docs/Tutorial/"><img src="/images/Tutorial.png"/></a></td>
     </tr>
     <tr>
-        <td><a href="/en/docs/Others/"><img src="/images/Others.png"/></a></td>
+        <td><a href="/docs/Others/"><img src="/images/Others.png"/></a></td>
     </tr>
 </table>
 

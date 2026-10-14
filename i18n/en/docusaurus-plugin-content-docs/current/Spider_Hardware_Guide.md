@@ -188,7 +188,7 @@ Voron2.4官方建议使用的是PL08N传感器来进行热床调平，由于PL08
 Voron2.4官方推荐是字符型的Mini12864显示屏，需要使用2根16pin的排线将Mini12864与蜘蛛相连接，排线和插座有防呆设计，直接将排线插头的凸起点对准插座的缺口插入即可。
 
 **注意：在连接排线的时候，Spider需要按照下图的提示，Exp1对exp1，Exp2对exp2，否则可能无法正常点亮显示屏，切记切记切记！！！**
-由于各个厂家的引脚定义不同，如需连接其他厂家的Mini2864，可以至[FYSETC-SPIDER说明文档](/en/docs/Spider/#32-wiring--fysetc-mini-12864-v21)查看相关信息。
+由于各个厂家的引脚定义不同，如需连接其他厂家的Mini2864，可以至[FYSETC-SPIDER说明文档](/docs/Spider/#32-wiring--fysetc-mini-12864-v21)查看相关信息。
 
 ![img](/images/wps19.jpg)
 

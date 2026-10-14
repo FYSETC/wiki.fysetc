@@ -122,7 +122,8 @@ export function syncNavigation(root) {
   for (const locale of ['zh-Hans', 'en']) {
     const english = locale === 'en';
     const dir = english ? englishDocsDir : defaultDocsDir;
-    const base = english ? '/en/docs/' : '/docs/';
+    // Docusaurus adds the site path and current locale to internal links.
+    const base = '/docs/';
     const links = legacy.map(doc => {
       const label = labels.get(doc.id) || doc.title || doc.id;
       const title = english ? translations['sidebar.wikiSidebar.doc.' + label]?.message || doc.id : label;

@@ -17,12 +17,12 @@ This section includes Stepper drivers that created by FYSETC.
 
 Here is the list of the Stepper drivers you can find in the FYSETC WiKi. The list will be constantly updated.
 
-- [S6128 V1.1](/en/docs/S6128_V1.1/)
-- [S109 V1.1](/en/docs/S109_V1.1/)
-- [TMC2100](/en/docs/TMC2100/)
-- [TMC2130](/en/docs/TMC2130/)
-- [TMC2208](/en/docs/TMC2208/)
-- [ST820 V1.0](/en/docs/ST820_V1.0/)
+- [S6128 V1.1](/docs/S6128_V1.1/)
+- [S109 V1.1](/docs/S109_V1.1/)
+- [TMC2100](/docs/TMC2100/)
+- [TMC2130](/docs/TMC2130/)
+- [TMC2208](/docs/TMC2208/)
+- [ST820 V1.0](/docs/ST820_V1.0/)
 
 ## Tech Support
 
