@@ -2,8 +2,8 @@
 id: additional-resources
 title: Additional resources
 slug: /category/resources
-site_generated: navigation-resource-index
 source_language: en
+site_generated: navigation-resource-index
 ---
 
 These documents exist locally but do not match the current official category directory. Their contents and original document URLs are retained.
