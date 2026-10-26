@@ -2,11 +2,11 @@
 id: additional-resources
 title: 补充资料
 slug: /category/resources
-site_generated: navigation-resource-index
 source_language: zh
+site_generated: navigation-resource-index
 ---
 
-以下文章在本地存在，但未匹配到官网当前的十类目录。保留原有内容和文档地址，供查阅旧版资料。
+以下文章在本地存在，但未匹配到官网当前的十类目录。保留原有内容和文档地址，供查阅旧版资料哈哈。
 
 - [About FYSETC](/docs/About/)
 - [Cables and Wires Introduction](/docs/Cables-and-Wires/)
