@@ -1,0 +1,114 @@
+{
+  "categories": [
+    {
+      "id": "printer-kits",
+      "zh": "3D 打印机套件",
+      "en": "3D Printer Kits",
+      "parent": "",
+      "order": 20,
+      "intro": "category-printer-kits",
+      "icon": "printer",
+      "path": "category/printer-kits"
+    },
+    {
+      "id": "controllers",
+      "zh": "控制板",
+      "en": "Controllers",
+      "parent": "",
+      "order": 30,
+      "intro": "",
+      "icon": "board",
+      "path": "category/controllers"
+    },
+    {
+      "id": "drivers",
+      "zh": "步进电机驱动",
+      "en": "Stepper Drivers",
+      "parent": "",
+      "order": 40,
+      "intro": "",
+      "icon": "driver",
+      "path": "category/drivers"
+    },
+    {
+      "id": "modules",
+      "zh": "模块",
+      "en": "Modules",
+      "parent": "",
+      "order": 50,
+      "intro": "",
+      "icon": "module",
+      "path": "category/modules"
+    },
+    {
+      "id": "sensors",
+      "zh": "传感器",
+      "en": "Sensors",
+      "parent": "",
+      "order": 60,
+      "intro": "",
+      "icon": "sensor",
+      "path": "category/sensors"
+    },
+    {
+      "id": "wireless",
+      "zh": "无线产品",
+      "en": "Wireless",
+      "parent": "",
+      "order": 70,
+      "intro": "",
+      "icon": "wireless",
+      "path": "category/wireless"
+    },
+    {
+      "id": "mechanicals",
+      "zh": "机械部件",
+      "en": "Mechanical Parts",
+      "parent": "",
+      "order": 80,
+      "intro": "",
+      "icon": "mechanical",
+      "path": "category/mechanicals"
+    },
+    {
+      "id": "upgrade-kits",
+      "zh": "升级套件",
+      "en": "Upgrade Kits",
+      "parent": "",
+      "order": 90,
+      "intro": "",
+      "icon": "upgrade",
+      "path": "category/upgrade-kits"
+    },
+    {
+      "id": "displays",
+      "zh": "显示面板",
+      "en": "Displays",
+      "parent": "",
+      "order": 100,
+      "intro": "",
+      "icon": "screen",
+      "path": "category/displays"
+    },
+    {
+      "id": "guides",
+      "zh": "教程",
+      "en": "Tutorial",
+      "parent": "",
+      "order": 110,
+      "intro": "",
+      "icon": "book",
+      "path": "category/guides"
+    },
+    {
+      "id": "getting-started",
+      "zh": "快速开始",
+      "en": "Getting started",
+      "parent": "",
+      "order": 120,
+      "intro": "intro",
+      "icon": "folder",
+      "path": "intro"
+    }
+  ]
+}

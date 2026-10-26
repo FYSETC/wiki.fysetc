@@ -3,11 +3,13 @@ import path from 'node:path';
 import {createRequire} from 'node:module';
 import {fileURLToPath} from 'node:url';
 import YAML from 'yaml';
+import {syncManagedNavigation} from './managed-navigation.mjs';
 
 const require = createRequire(import.meta.url);
 const normalize = value => String(value).replace(/\.md$/i, '').replace(/(?:\.zh|-zh)$/i, '').toLowerCase().replace(/[^\p{L}\p{N}]/gu, '');
 
 export function syncNavigation(root) {
+  if (fs.existsSync(path.join(root, 'navigation/tree.json'))) return syncManagedNavigation(root);
   const defaultDocsDir = path.join(root, 'i18n/zh-Hans/docusaurus-plugin-content-docs/current');
   const englishDocsDir = path.join(root, 'i18n/en/docusaurus-plugin-content-docs/current');
   const snapshotFile = path.join(root, 'navigation/official-categories.json');
@@ -151,5 +153,5 @@ export function syncNavigation(root) {
 if (process.argv[1] && path.resolve(process.argv[1]) === fileURLToPath(import.meta.url)) {
   const root = path.resolve(path.dirname(fileURLToPath(import.meta.url)), '..');
   const report = syncNavigation(root);
-  console.log(JSON.stringify({categories: report.categories.map(cat => ({name: cat.name, documents: cat.documents.length, skipped: cat.skipped.length})), matchedArticleDocuments: report.matchedArticleDocuments, retainedLegacyDocuments: report.retainedLegacyDocuments.length}, null, 2));
+  console.log(JSON.stringify(report.managed ? report : {categories: report.categories.map(cat => ({name: cat.name, documents: cat.documents.length, skipped: cat.skipped.length})), matchedArticleDocuments: report.matchedArticleDocuments, retainedLegacyDocuments: report.retainedLegacyDocuments.length}, null, 2));
 }

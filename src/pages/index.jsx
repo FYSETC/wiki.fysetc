@@ -3,7 +3,7 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
-import officialNavigation from '../../navigation/official-categories.json';
+import officialNavigation from '../../navigation/catalog.json';
 import styles from './index.module.css';
 
 const categories = officialNavigation.categories;
@@ -95,7 +95,7 @@ export default function Home() {
   const visibleProducts = products.filter(product => activeCategory === 'all' || product.category === activeCategory);
   const productCategories = categories.filter(category => products.some(product => product.category === category.id));
   const selectedCategory = categories.find(category => category.id === activeCategory);
-  const categoryLink = `${docsBase}category/${activeCategory}/`;
+  const categoryLink = `${docsBase}${selectedCategory?.path || 'overview'}/`;
 
   function handleTabKey(event, index) {
     let next;
@@ -122,7 +122,7 @@ export default function Home() {
         <div className={styles.container}>
           <section className={styles.categoriesSection} aria-labelledby="categories-title">
             <div className={styles.sectionHeading}><div><h2 id="categories-title">{text.categoriesTitle}</h2><p>{text.categoriesIntro}</p></div><Link className={styles.textLink} to={`${docsBase}overview`}>{text.allDocs}<Arrow /></Link></div>
-            <div className={styles.categoryGrid}>{categories.map(category => <Link key={category.id} className={styles.categoryCard} to={`${docsBase}category/${category.id}/`}><Icon kind={category.icon}/><span>{category[language]}</span><Arrow className={styles.categoryArrow}/></Link>)}</div>
+            <div className={styles.categoryGrid}>{categories.map(category => <Link key={category.id} className={styles.categoryCard} to={`${docsBase}${category.path}/`}><Icon kind={category.icon}/><span>{category[language]}</span><Arrow className={styles.categoryArrow}/></Link>)}</div>
           </section>
 
           <section className={styles.browserSection} aria-label={text.tabsLabel}>
@@ -133,11 +133,11 @@ export default function Home() {
             <div id="panel-products" className={styles.panel} role="tabpanel" aria-labelledby="tab-products" hidden={activeTab !== 'products'} tabIndex={0}>
               <div className={styles.panelIntro}><p>{text.catalogIntro}</p><span aria-live="polite">{visibleProducts.length} {text.resultCount}</span></div>
               <div className={styles.filterBar}><div className={styles.filterButtons} role="group" aria-label={text.filtersLabel}>{[{id: 'all', zh: text.allProducts, en: text.allProducts}, ...productCategories].map(category => <button key={category.id} className={activeCategory === category.id ? styles.activeFilter : ''} type="button" aria-pressed={activeCategory === category.id} onClick={() => setActiveCategory(category.id)}>{category[language]}</button>)}</div>{selectedCategory && <Link className={styles.textLink} to={categoryLink}>{text.currentCategory}<Arrow /></Link>}</div>
-              <div className={styles.productGrid}>{visibleProducts.map(product => <Link key={product.slug} className={styles.productCard} to={`${docsBase}${product.slug}`}><div className={styles.productImage}><img src={`${assetBase}${product.image}`} alt={`FYSETC ${product.title}`} loading="lazy" /></div><div className={styles.productBody}><span className={styles.productCategory}>{categories.find(category => category.id === product.category)[language]}</span><h3>{product.title}</h3><p>{product[language]}</p><Arrow className={styles.productArrow}/></div></Link>)}</div>
+              <div className={styles.productGrid}>{visibleProducts.map(product => <Link key={product.slug} className={styles.productCard} to={`${docsBase}${product.slug}`}><div className={styles.productImage}><img src={`${assetBase}${product.image}`} alt={`FYSETC ${product.title}`} loading="lazy" /></div><div className={styles.productBody}><span className={styles.productCategory}>{categories.find(category => category.id === product.category)?.[language] || product.category}</span><h3>{product.title}</h3><p>{product[language]}</p><Arrow className={styles.productArrow}/></div></Link>)}</div>
             </div>
 
             <div id="panel-guides" className={styles.panel} role="tabpanel" aria-labelledby="tab-guides" hidden={activeTab !== 'guides'} tabIndex={0}>
-              <div className={styles.panelIntro}><p>{text.guideIntro}</p><Link className={styles.textLink} to={`${docsBase}category/guides/`}>{text.guidesLink}<Arrow /></Link></div>
+              <div className={styles.panelIntro}><p>{text.guideIntro}</p><Link className={styles.textLink} to={`${docsBase}Tutorial/`}>{text.guidesLink}<Arrow /></Link></div>
               <div className={styles.guideGrid}>{guides.map(guide => <Link key={guide.slug} className={styles.guideCard} to={`${docsBase}${guide.slug}`}><span className={styles.guideIcon}><Icon kind={guide.icon}/></span><span className={styles.guideTag}>{isEnglish ? guide.enTag : guide.zhTag}</span><h3>{guide[language]}</h3><p>{isEnglish ? guide.enDescription : guide.zhDescription}</p><span className={styles.guideLink}>{text.readGuide}<Arrow /></span></Link>)}</div>
             </div>
           </section>

@@ -48,6 +48,9 @@ jobs:
       - name: Install dependencies
         run: npm ci --no-audit --no-fund
 
+      - name: Test navigation model
+        run: npm run test:navigation
+
       - name: Build static site
         env:
           SITE_URL: ${{ steps.pages.outputs.origin }}

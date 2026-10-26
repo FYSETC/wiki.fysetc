@@ -1,5 +1,5 @@
 const {themes} = require('prism-react-renderer');
-const officialNavigation = require('./navigation/official-categories.json');
+const officialNavigation = require('./navigation/catalog.json');
 
 module.exports = async function () {
   const {default: remarkMath} = await import('remark-math');
@@ -61,8 +61,8 @@ module.exports = async function () {
         items: [
           {label: '产品文档', position: 'left', items: officialNavigation.categories
             .filter(category => category.id !== 'guides')
-            .map(category => ({label: category.zh, to: `/docs/category/${category.id}/`}))},
-          {to: '/docs/category/guides/', label: '教程与配置', position: 'left'},
+            .map(category => ({label: category.zh, to: `/docs/${category.path}/`}))},
+          {to: '/docs/Tutorial/', label: '教程与配置', position: 'left'},
           {to: '/docs/category/resources/', label: '补充资料', position: 'left'},
           {label: '社区与支持', position: 'right', items: [
             {label: '文档反馈', href: 'https://github.com/FYSETC/wiki.fysetc/issues'},
@@ -77,8 +77,8 @@ module.exports = async function () {
       footer: {
         style: 'light',
         links: [
-          {title: '产品文档', items: [{label: '控制板', to: '/docs/category/controllers/'}, {label: '步进驱动', to: '/docs/category/drivers/'}, {label: '显示面板', to: '/docs/category/displays/'}]},
-          {title: '学习与配置', items: [{label: '使用教程', to: '/docs/category/guides/'}, {label: 'Spider 硬件指南', to: '/docs/Spider_Hardware_Guide/'}, {label: 'Spider 软件指南', to: '/docs/Spider_Software_Guide/'}]},
+          {title: '产品文档', items: [{label: '控制板', to: '/docs/Controllers/'}, {label: '步进驱动', to: '/docs/Stepper-Drivers/'}, {label: '显示面板', to: '/docs/LCDs-and-Displays/'}]},
+          {title: '学习与配置', items: [{label: '使用教程', to: '/docs/Tutorial/'}, {label: 'Spider 硬件指南', to: '/docs/Spider_Hardware_Guide/'}, {label: 'Spider 软件指南', to: '/docs/Spider_Software_Guide/'}]},
           {title: '资源与支持', items: [{label: '补充资料', to: '/docs/category/resources/'}, {label: '文档反馈', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: '文档源仓库', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
           {title: 'FYSETC', items: [{label: '官方网站', href: 'https://www.fysetc.com'}, {label: '技术论坛', href: 'http://forum.fysetc.com/'}, {label: '文档总览', to: '/docs/overview/'}]},
         ],
