@@ -1,0 +1,59 @@
+{
+  "link.title.Docs": {
+    "message": "文档"
+  },
+  "link.item.label.Getting started": {
+    "message": "快速开始"
+  },
+  "copyright": {
+    "message": "FYSETC 产品文档与图片 · CC BY-SA 4.0 · 本地测试站"
+  },
+  "link.title.Product docs": {
+    "message": "产品文档"
+  },
+  "link.title.Learning & setup": {
+    "message": "学习与配置"
+  },
+  "link.title.Resources & support": {
+    "message": "资源与支持"
+  },
+  "link.title.FYSETC": {
+    "message": "FYSETC"
+  },
+  "link.item.label.Controllers": {
+    "message": "控制板"
+  },
+  "link.item.label.Stepper drivers": {
+    "message": "步进驱动"
+  },
+  "link.item.label.Displays": {
+    "message": "显示面板"
+  },
+  "link.item.label.Guides": {
+    "message": "使用教程"
+  },
+  "link.item.label.Spider hardware guide": {
+    "message": "Spider 硬件指南"
+  },
+  "link.item.label.Spider software guide": {
+    "message": "Spider 软件指南"
+  },
+  "link.item.label.Resources": {
+    "message": "补充资料"
+  },
+  "link.item.label.Wiki feedback": {
+    "message": "文档反馈"
+  },
+  "link.item.label.Source repository": {
+    "message": "文档源仓库"
+  },
+  "link.item.label.Official website": {
+    "message": "官方网站"
+  },
+  "link.item.label.Support forum": {
+    "message": "技术论坛"
+  },
+  "link.item.label.Wiki overview": {
+    "message": "文档总览"
+  }
+}

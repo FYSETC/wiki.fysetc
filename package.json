@@ -13,9 +13,12 @@
     "write-translations": "docusaurus write-translations",
     "write-heading-ids": "docusaurus write-heading-ids",
     "start:en": "docusaurus start --locale en",
+    "start:zh": "docusaurus start --locale zh-Hans",
     "prestart": "node scripts/sync-navigation.mjs",
     "prestart:en": "node scripts/sync-navigation.mjs",
+    "prestart:zh": "node scripts/sync-navigation.mjs",
     "prebuild": "node scripts/sync-navigation.mjs",
+    "postbuild": "node scripts/legacy-english-redirects.mjs",
     "nav:sync": "node scripts/sync-navigation.mjs",
     "test:navigation": "node --test scripts/folder-navigation.test.mjs"
   },

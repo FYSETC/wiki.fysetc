@@ -2,59 +2,67 @@
   "logo.alt": {
     "message": "FYSETC"
   },
-  "item.label.文档": {
-    "message": "Docs",
-    "description": "Navbar item with label 文档"
+  "item.label.Docs": {
+    "message": "Docs"
   },
-  "item.label.产品文档": {
+  "item.label.Product docs": {
     "message": "Product docs"
   },
-  "item.label.控制板": {
+  "item.label.Controllers": {
     "message": "Controllers"
   },
-  "item.label.显示面板": {
+  "item.label.Displays": {
     "message": "Displays"
   },
-  "item.label.步进电机驱动": {
+  "item.label.Stepper Drivers": {
     "message": "Stepper Drivers"
   },
-  "item.label.机械部件": {
+  "item.label.Mechanical Parts": {
     "message": "Mechanical Parts"
   },
-  "item.label.传感器": {
+  "item.label.Sensors": {
     "message": "Sensors"
   },
-  "item.label.无线产品": {
+  "item.label.Wireless": {
     "message": "Wireless"
   },
-  "item.label.教程与配置": {
+  "item.label.Guides & setup": {
     "message": "Guides & setup"
   },
-  "item.label.补充资料": {
+  "item.label.Resources": {
     "message": "Resources"
   },
-  "item.label.社区与支持": {
+  "item.label.Community & support": {
     "message": "Community & support"
   },
-  "item.label.文档反馈": {
+  "item.label.Wiki feedback": {
     "message": "Wiki feedback"
   },
-  "item.label.FYSETC 官方网站": {
+  "item.label.FYSETC website": {
     "message": "FYSETC website"
   },
-  "item.label.技术论坛": {
+  "item.label.Support forum": {
     "message": "Support forum"
   },
   "item.label.GitHub": {
     "message": "GitHub"
   },
-  "item.label.3D 打印机套件": {
+  "item.label.3D Printer Kits": {
     "message": "3D Printer Kits"
   },
-  "item.label.模块": {
+  "item.label.Modules": {
     "message": "Modules"
   },
-  "item.label.升级套件": {
+  "item.label.Upgrade Kits": {
     "message": "Upgrade Kits"
+  },
+  "item.label.Tutorial": {
+    "message": "Tutorial"
+  },
+  "item.label.Getting started": {
+    "message": "Getting started"
+  },
+  "item.label.Additional resources": {
+    "message": "Additional resources"
   }
 }

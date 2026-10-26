@@ -1,61 +1,59 @@
 {
-  "link.title.文档": {
-    "message": "Docs",
-    "description": "The title of the footer links column with title=文档 in the footer"
+  "link.title.Docs": {
+    "message": "Docs"
   },
-  "link.item.label.快速开始": {
-    "message": "Getting started",
-    "description": "The label of footer link with label=快速开始 linking to /docs/intro"
+  "link.item.label.Getting started": {
+    "message": "Getting started"
   },
   "copyright": {
     "message": "FYSETC documentation and images · CC BY-SA 4.0 · Local test edition"
   },
-  "link.title.产品文档": {
+  "link.title.Product docs": {
     "message": "Product docs"
   },
-  "link.title.学习与配置": {
+  "link.title.Learning & setup": {
     "message": "Learning & setup"
   },
-  "link.title.资源与支持": {
+  "link.title.Resources & support": {
     "message": "Resources & support"
   },
   "link.title.FYSETC": {
     "message": "FYSETC"
   },
-  "link.item.label.控制板": {
+  "link.item.label.Controllers": {
     "message": "Controllers"
   },
-  "link.item.label.步进驱动": {
+  "link.item.label.Stepper drivers": {
     "message": "Stepper drivers"
   },
-  "link.item.label.显示面板": {
+  "link.item.label.Displays": {
     "message": "Displays"
   },
-  "link.item.label.使用教程": {
+  "link.item.label.Guides": {
     "message": "Guides"
   },
-  "link.item.label.Spider 硬件指南": {
+  "link.item.label.Spider hardware guide": {
     "message": "Spider hardware guide"
   },
-  "link.item.label.Spider 软件指南": {
+  "link.item.label.Spider software guide": {
     "message": "Spider software guide"
   },
-  "link.item.label.补充资料": {
+  "link.item.label.Resources": {
     "message": "Resources"
   },
-  "link.item.label.文档反馈": {
+  "link.item.label.Wiki feedback": {
     "message": "Wiki feedback"
   },
-  "link.item.label.文档源仓库": {
+  "link.item.label.Source repository": {
     "message": "Source repository"
   },
-  "link.item.label.官方网站": {
+  "link.item.label.Official website": {
     "message": "Official website"
   },
-  "link.item.label.技术论坛": {
+  "link.item.label.Support forum": {
     "message": "Support forum"
   },
-  "link.item.label.文档总览": {
+  "link.item.label.Wiki overview": {
     "message": "Wiki overview"
   }
 }

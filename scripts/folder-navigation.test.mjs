@@ -17,7 +17,8 @@ test('filesystem moves change folder membership while absolute article URLs rema
   }
   let result = readFolderNavigation(root);
   assert.equal(result.catalog.categories[0].path, 'category/controllers');
-  assert.equal(result.translations['sidebar.wikiSidebar.category.controllers'].message, 'Controllers');
+  assert.equal(result.translations['sidebar.wikiSidebar.category.controllers'].message, '控制板');
+  assert.equal(result.catalog.categories[0].en, 'Controllers');
   for (const dir of [zh, en]) {
     fs.mkdirSync(path.join(dir, 'hardware/new-subfolder'), {recursive: true});
     fs.renameSync(path.join(dir, 'controllers/Spider.md'), path.join(dir, 'hardware/new-subfolder/Spider.md'));
@@ -27,4 +28,7 @@ test('filesystem moves change folder membership while absolute article URLs rema
   assert.equal(result.catalog.categories[0].path, 'Spider');
   assert.equal(result.documents[0].source, 'hardware/new-subfolder/Spider.md');
   assert.equal(result.documents[0].slug, '/Spider');
+  // English is the canonical document source even before a translation exists.
+  fs.writeFileSync(path.join(en, 'hardware/new-subfolder/English-only.md'), '---\nid: English-only\nslug: /English-only\n---\nEnglish\n');
+  assert.ok(readFolderNavigation(root).documents.some(doc => doc.id === 'English-only'));
 });

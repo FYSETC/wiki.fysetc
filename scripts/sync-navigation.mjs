@@ -9,10 +9,10 @@ function readCategory(folder) {
   return files.length ? YAML.parse(fs.readFileSync(path.join(folder, files[0]), 'utf8')) || {} : {};
 }
 
-// Folders define the sidebar. Only homepage links and English labels are derived here.
+// English folders define the sidebar. Derive homepage links and Chinese labels.
 export function readFolderNavigation(root) {
-  const docsRoot = path.join(root, 'i18n/zh-Hans/docusaurus-plugin-content-docs/current');
-  const englishRoot = path.join(root, 'i18n/en/docusaurus-plugin-content-docs/current');
+  const docsRoot = path.join(root, 'i18n/en/docusaurus-plugin-content-docs/current');
+  const chineseRoot = path.join(root, 'i18n/zh-Hans/docusaurus-plugin-content-docs/current');
   const documents = [];
   const directories = [];
   function visit(folder, relative = '') {
@@ -35,15 +35,15 @@ export function readFolderNavigation(root) {
     const articles = documents.filter(doc => doc.folder === directory || doc.folder.startsWith(directory + '/'));
     if (!articles.length) continue;
     const metadata = readCategory(path.join(docsRoot, directory));
-    const enFolder = path.join(englishRoot, directory);
-    const english = fs.existsSync(enFolder) ? readCategory(enFolder) : {};
+    const zhFolder = path.join(chineseRoot, directory);
+    const chinese = fs.existsSync(zhFolder) ? readCategory(zhFolder) : {};
     const label = metadata.label || path.posix.basename(directory);
     const key = 'sidebar.wikiSidebar.category.' + (metadata.key || label);
-    const englishLabel = english.label || label;
-    translations[key] = {message: englishLabel};
+    const chineseLabel = chinese.label || label;
+    translations[key] = {message: chineseLabel};
     if (metadata.link?.type === 'generated-index') {
-      translations[key + '.link.generated-index.title'] = {message: english.link?.title || englishLabel};
-      if (metadata.link.description) translations[key + '.link.generated-index.description'] = {message: english.link?.description || metadata.link.description};
+      translations[key + '.link.generated-index.title'] = {message: chinese.link?.title || chineseLabel};
+      if (metadata.link.description) translations[key + '.link.generated-index.description'] = {message: chinese.link?.description || metadata.link.description};
     }
     let target;
     if (metadata.link?.type === 'doc') {
@@ -52,7 +52,7 @@ export function readFolderNavigation(root) {
       target = linked.slug;
     } else if (metadata.link?.type === 'generated-index') target = metadata.link.slug || '/category/' + directory;
     else target = articles.find(doc => /^(index|readme)$/i.test(doc.id))?.slug || articles[0].slug;
-    if (!directory.includes('/')) categories.push({id: directory, zh: label, en: englishLabel,
+    if (!directory.includes('/')) categories.push({id: directory, zh: chineseLabel, en: label,
       icon: metadata.customProps?.icon || 'folder', position: metadata.position ?? 100,
       path: String(target).replace(/^\//, '').replace(/\/$/, '')});
   }
@@ -62,7 +62,7 @@ export function readFolderNavigation(root) {
 
 export function syncNavigation(root) {
   const result = readFolderNavigation(root);
-  const file = path.join(root, 'i18n/en/docusaurus-plugin-content-docs/current.json');
+  const file = path.join(root, 'i18n/zh-Hans/docusaurus-plugin-content-docs/current.json');
   const translations = fs.existsSync(file) ? JSON.parse(fs.readFileSync(file, 'utf8')) : {};
   for (const key of Object.keys(translations)) if (key.startsWith('sidebar.wikiSidebar.category.')) delete translations[key];
   Object.assign(translations, result.translations);

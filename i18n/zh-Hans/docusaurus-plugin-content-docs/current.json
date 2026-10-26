@@ -1,0 +1,65 @@
+{
+  "sidebar.wikiSidebar.category.controllers": {
+    "message": "控制板"
+  },
+  "sidebar.wikiSidebar.category.controllers.link.generated-index.title": {
+    "message": "控制板"
+  },
+  "sidebar.wikiSidebar.category.displays": {
+    "message": "显示面板"
+  },
+  "sidebar.wikiSidebar.category.displays.link.generated-index.title": {
+    "message": "显示面板"
+  },
+  "sidebar.wikiSidebar.category.drivers": {
+    "message": "步进电机驱动"
+  },
+  "sidebar.wikiSidebar.category.drivers.link.generated-index.title": {
+    "message": "步进电机驱动"
+  },
+  "sidebar.wikiSidebar.category.getting-started": {
+    "message": "快速开始"
+  },
+  "sidebar.wikiSidebar.category.guides": {
+    "message": "教程"
+  },
+  "sidebar.wikiSidebar.category.guides.link.generated-index.title": {
+    "message": "教程"
+  },
+  "sidebar.wikiSidebar.category.mechanicals": {
+    "message": "机械部件"
+  },
+  "sidebar.wikiSidebar.category.mechanicals.link.generated-index.title": {
+    "message": "机械部件"
+  },
+  "sidebar.wikiSidebar.category.modules": {
+    "message": "模块"
+  },
+  "sidebar.wikiSidebar.category.modules.link.generated-index.title": {
+    "message": "模块"
+  },
+  "sidebar.wikiSidebar.category.printer-kits": {
+    "message": "3D 打印机套件"
+  },
+  "sidebar.wikiSidebar.category.resources": {
+    "message": "补充资料"
+  },
+  "sidebar.wikiSidebar.category.sensors": {
+    "message": "传感器"
+  },
+  "sidebar.wikiSidebar.category.sensors.link.generated-index.title": {
+    "message": "传感器"
+  },
+  "sidebar.wikiSidebar.category.upgrade-kits": {
+    "message": "升级套件"
+  },
+  "sidebar.wikiSidebar.category.upgrade-kits.link.generated-index.title": {
+    "message": "升级套件"
+  },
+  "sidebar.wikiSidebar.category.wireless": {
+    "message": "无线产品"
+  },
+  "sidebar.wikiSidebar.category.wireless.link.generated-index.title": {
+    "message": "无线产品"
+  }
+}

@@ -6,7 +6,7 @@ module.exports = async function () {
   const {default: rehypeKatex} = await import('rehype-katex');
   return {
     title: 'FYSETC Wiki',
-    tagline: '产品文档 · 硬件资料 · 配置指南',
+    tagline: 'Product documentation · Hardware references · Configuration guides',
     favicon: 'images/favicon.ico',
     url: process.env.SITE_URL || 'http://localhost:3000',
     baseUrl: process.env.SITE_BASE_URL || '/wiki.fysetc/',
@@ -20,8 +20,8 @@ module.exports = async function () {
       hooks: {onBrokenMarkdownLinks: 'throw', onBrokenMarkdownImages: 'throw'},
     },
     i18n: {
-      defaultLocale: 'zh-Hans',
-      locales: ['zh-Hans', 'en'],
+      defaultLocale: 'en',
+      locales: ['en', 'zh-Hans'],
       localeConfigs: {
         'zh-Hans': {label: '简体中文', htmlLang: 'zh-Hans'},
         en: {label: 'English', htmlLang: 'en'},
@@ -29,7 +29,7 @@ module.exports = async function () {
     },
     presets: [['classic', {
       docs: {
-        path: './i18n/zh-Hans/docusaurus-plugin-content-docs/current',
+        path: './i18n/en/docusaurus-plugin-content-docs/current',
         routeBasePath: 'docs',
         sidebarPath: require.resolve('./sidebars.js'),
         editLocalizedFiles: true,
@@ -59,15 +59,15 @@ module.exports = async function () {
         title: '',
         logo: {alt: 'FYSETC', src: 'images/fysetc-navbar-white.svg'},
         items: [
-          {label: '产品文档', position: 'left', items: officialNavigation.categories
+          {label: 'Product docs', position: 'left', items: officialNavigation.categories
             .filter(category => !['guides', 'getting-started', 'resources'].includes(category.id))
-            .map(category => ({label: category.zh, to: `/docs/${category.path}/`}))},
-          {to: '/docs/Tutorial/', label: '教程与配置', position: 'left'},
-          {to: '/docs/category/resources/', label: '补充资料', position: 'left'},
-          {label: '社区与支持', position: 'right', items: [
-            {label: '文档反馈', href: 'https://github.com/FYSETC/wiki.fysetc/issues'},
-            {label: 'FYSETC 官方网站', href: 'https://www.fysetc.com'},
-            {label: '技术论坛', href: 'http://forum.fysetc.com/'},
+            .map(category => ({label: category.en, to: `/docs/${category.path}/`}))},
+          {to: '/docs/Tutorial/', label: 'Guides & setup', position: 'left'},
+          {to: '/docs/category/resources/', label: 'Resources', position: 'left'},
+          {label: 'Community & support', position: 'right', items: [
+            {label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'},
+            {label: 'FYSETC website', href: 'https://www.fysetc.com'},
+            {label: 'Support forum', href: 'http://forum.fysetc.com/'},
           ]},
           {type: 'localeDropdown', position: 'right'},
           {href: 'https://github.com/FYSETC/wiki.fysetc', label: 'GitHub', position: 'right', className: 'wiki-navbar-source-link'},
@@ -77,12 +77,12 @@ module.exports = async function () {
       footer: {
         style: 'light',
         links: [
-          {title: '产品文档', items: [{label: '控制板', to: '/docs/Controllers/'}, {label: '步进驱动', to: '/docs/Stepper-Drivers/'}, {label: '显示面板', to: '/docs/LCDs-and-Displays/'}]},
-          {title: '学习与配置', items: [{label: '使用教程', to: '/docs/Tutorial/'}, {label: 'Spider 硬件指南', to: '/docs/Spider_Hardware_Guide/'}, {label: 'Spider 软件指南', to: '/docs/Spider_Software_Guide/'}]},
-          {title: '资源与支持', items: [{label: '补充资料', to: '/docs/category/resources/'}, {label: '文档反馈', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: '文档源仓库', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
-          {title: 'FYSETC', items: [{label: '官方网站', href: 'https://www.fysetc.com'}, {label: '技术论坛', href: 'http://forum.fysetc.com/'}, {label: '文档总览', to: '/docs/overview/'}]},
+          {title: 'Product docs', items: [{label: 'Controllers', to: '/docs/Controllers/'}, {label: 'Stepper drivers', to: '/docs/Stepper-Drivers/'}, {label: 'Displays', to: '/docs/LCDs-and-Displays/'}]},
+          {title: 'Learning & setup', items: [{label: 'Guides', to: '/docs/Tutorial/'}, {label: 'Spider hardware guide', to: '/docs/Spider_Hardware_Guide/'}, {label: 'Spider software guide', to: '/docs/Spider_Software_Guide/'}]},
+          {title: 'Resources & support', items: [{label: 'Resources', to: '/docs/category/resources/'}, {label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: 'Source repository', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
+          {title: 'FYSETC', items: [{label: 'Official website', href: 'https://www.fysetc.com'}, {label: 'Support forum', href: 'http://forum.fysetc.com/'}, {label: 'Wiki overview', to: '/docs/overview/'}]},
         ],
-        copyright: 'FYSETC 产品文档与图片 · CC BY-SA 4.0 · 本地测试站',
+        copyright: 'FYSETC documentation and images · CC BY-SA 4.0 · Local test edition',
       },
       prism: {theme: themes.github, darkTheme: themes.dracula, additionalLanguages: ['bash', 'ini', 'diff', 'json', 'python', 'c', 'cpp']},
     },

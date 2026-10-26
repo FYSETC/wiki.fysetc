@@ -86,7 +86,7 @@ export default function Home() {
   const {i18n} = useDocusaurusContext();
   const isEnglish = i18n.currentLocale === 'en';
   const language = isEnglish ? 'en' : 'zh';
-  const text = copy[i18n.currentLocale] || copy['zh-Hans'];
+  const text = copy[i18n.currentLocale] || copy.en;
   const docsBase = useBaseUrl('/docs/');
   const assetBase = useBaseUrl('/');
   const [activeTab, setActiveTab] = useState('products');

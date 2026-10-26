@@ -1,0 +1,68 @@
+{
+  "logo.alt": {
+    "message": "FYSETC"
+  },
+  "item.label.Docs": {
+    "message": "文档"
+  },
+  "item.label.Product docs": {
+    "message": "产品文档"
+  },
+  "item.label.Controllers": {
+    "message": "控制板"
+  },
+  "item.label.Displays": {
+    "message": "显示面板"
+  },
+  "item.label.Stepper Drivers": {
+    "message": "步进电机驱动"
+  },
+  "item.label.Mechanical Parts": {
+    "message": "机械部件"
+  },
+  "item.label.Sensors": {
+    "message": "传感器"
+  },
+  "item.label.Wireless": {
+    "message": "无线产品"
+  },
+  "item.label.Guides & setup": {
+    "message": "教程与配置"
+  },
+  "item.label.Resources": {
+    "message": "补充资料"
+  },
+  "item.label.Community & support": {
+    "message": "社区与支持"
+  },
+  "item.label.Wiki feedback": {
+    "message": "文档反馈"
+  },
+  "item.label.FYSETC website": {
+    "message": "FYSETC 官方网站"
+  },
+  "item.label.Support forum": {
+    "message": "技术论坛"
+  },
+  "item.label.GitHub": {
+    "message": "GitHub"
+  },
+  "item.label.3D Printer Kits": {
+    "message": "3D 打印机套件"
+  },
+  "item.label.Modules": {
+    "message": "模块"
+  },
+  "item.label.Upgrade Kits": {
+    "message": "升级套件"
+  },
+  "item.label.Tutorial": {
+    "message": "教程"
+  },
+  "item.label.Getting started": {
+    "message": "快速开始"
+  },
+  "item.label.Additional resources": {
+    "message": "补充资料"
+  }
+}
