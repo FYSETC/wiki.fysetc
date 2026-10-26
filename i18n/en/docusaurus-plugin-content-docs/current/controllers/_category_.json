@@ -1,0 +1,14 @@
+{
+  "label": "Controllers",
+  "key": "controllers",
+  "position": 30,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Controllers",
+    "slug": "/category/controllers"
+  },
+  "customProps": {
+    "icon": "board"
+  }
+}

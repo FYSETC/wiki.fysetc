@@ -1,0 +1,14 @@
+{
+  "label": "Stepper Drivers",
+  "key": "drivers",
+  "position": 40,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Stepper Drivers",
+    "slug": "/category/drivers"
+  },
+  "customProps": {
+    "icon": "driver"
+  }
+}

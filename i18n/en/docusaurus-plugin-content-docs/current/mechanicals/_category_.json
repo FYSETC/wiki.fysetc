@@ -1,0 +1,14 @@
+{
+  "label": "Mechanical Parts",
+  "key": "mechanicals",
+  "position": 80,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Mechanical Parts",
+    "slug": "/category/mechanicals"
+  },
+  "customProps": {
+    "icon": "mechanical"
+  }
+}

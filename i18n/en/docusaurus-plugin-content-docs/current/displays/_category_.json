@@ -1,0 +1,14 @@
+{
+  "label": "Displays",
+  "key": "displays",
+  "position": 100,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Displays",
+    "slug": "/category/displays"
+  },
+  "customProps": {
+    "icon": "screen"
+  }
+}

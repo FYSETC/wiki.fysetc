@@ -1,0 +1,14 @@
+{
+  "label": "Modules",
+  "key": "modules",
+  "position": 50,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Modules",
+    "slug": "/category/modules"
+  },
+  "customProps": {
+    "icon": "module"
+  }
+}

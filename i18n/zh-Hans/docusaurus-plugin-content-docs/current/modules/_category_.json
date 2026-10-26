@@ -1,0 +1,14 @@
+{
+  "label": "模块",
+  "key": "modules",
+  "position": 50,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "模块",
+    "slug": "/category/modules"
+  },
+  "customProps": {
+    "icon": "module"
+  }
+}

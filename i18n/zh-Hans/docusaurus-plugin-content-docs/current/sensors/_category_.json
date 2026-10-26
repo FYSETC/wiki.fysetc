@@ -1,0 +1,14 @@
+{
+  "label": "传感器",
+  "key": "sensors",
+  "position": 60,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "传感器",
+    "slug": "/category/sensors"
+  },
+  "customProps": {
+    "icon": "sensor"
+  }
+}

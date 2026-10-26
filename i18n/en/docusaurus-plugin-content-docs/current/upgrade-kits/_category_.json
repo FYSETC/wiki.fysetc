@@ -1,0 +1,14 @@
+{
+  "label": "Upgrade Kits",
+  "key": "upgrade-kits",
+  "position": 90,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Upgrade Kits",
+    "slug": "/category/upgrade-kits"
+  },
+  "customProps": {
+    "icon": "upgrade"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "label": "升级套件",
+  "key": "upgrade-kits",
+  "position": 90,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "升级套件",
+    "slug": "/category/upgrade-kits"
+  },
+  "customProps": {
+    "icon": "upgrade"
+  }
+}

@@ -58,9 +58,9 @@ npm.cmd run serve -- --host 127.0.0.1 --port 3000 --no-open
 - `static/images/`：中英文共用的文档图片。
 - `src/`：首页、组件和样式。
 - `docusaurus.config.js`：网站和语言配置。
-- `sidebars.js`：启动或构建前自动更新的分类导航。
+- `sidebars.js`：根据文档的真实文件目录自动生成导航。
 
-启动与构建前会自动更新侧边栏。分类参考 navigation/official-categories.json；新文章可在 frontmatter 中使用 wiki_category 指定分类，未指定分类的文章会出现在“补充资料”。图片可用 `/images/文件名.png` 引用。
+文章按真实文件夹分类，中英文保持相同相对路径；文章顺序使用 sidebar_position，分类名称和顺序使用各目录的 _category_.json。已有文章保留绝对 slug，移动文件不改页面地址。启动与构建前只派生首页分类入口和英文分类标签，不再使用 tree.json 或 wiki_category 管理文章归属。详细规则见 [文件目录与导航](navigation/README.md)。图片可用 `/images/文件名.png` 引用。
 
 原 `docs/` 保留迁移时的文件，不参与当前站点构建。当前中文和英文文章分别从各自的 i18n 目录读取。
 

@@ -249,73 +249,67 @@
   "sidebar.wikiSidebar.doc.第一篇双语文章：认识 FYSETC Wiki": {
     "message": "First bilingual article: Exploring FYSETC Wiki"
   },
-  "sidebar.wikiSidebar.category.3D 打印机套件": {
-    "message": "3D Printer Kits"
-  },
-  "sidebar.wikiSidebar.category.3D 打印机套件.link.generated-index.title": {
-    "message": "3D Printer Kits"
-  },
-  "sidebar.wikiSidebar.category.控制板": {
+  "sidebar.wikiSidebar.category.controllers": {
     "message": "Controllers"
   },
-  "sidebar.wikiSidebar.category.控制板.link.generated-index.title": {
+  "sidebar.wikiSidebar.category.controllers.link.generated-index.title": {
     "message": "Controllers"
   },
-  "sidebar.wikiSidebar.category.步进电机驱动": {
-    "message": "Stepper Drivers"
-  },
-  "sidebar.wikiSidebar.category.步进电机驱动.link.generated-index.title": {
-    "message": "Stepper Drivers"
-  },
-  "sidebar.wikiSidebar.category.模块": {
-    "message": "Modules"
-  },
-  "sidebar.wikiSidebar.category.模块.link.generated-index.title": {
-    "message": "Modules"
-  },
-  "sidebar.wikiSidebar.category.传感器": {
-    "message": "Sensors"
-  },
-  "sidebar.wikiSidebar.category.传感器.link.generated-index.title": {
-    "message": "Sensors"
-  },
-  "sidebar.wikiSidebar.category.无线产品": {
-    "message": "Wireless"
-  },
-  "sidebar.wikiSidebar.category.无线产品.link.generated-index.title": {
-    "message": "Wireless"
-  },
-  "sidebar.wikiSidebar.category.机械部件": {
-    "message": "Mechanical Parts"
-  },
-  "sidebar.wikiSidebar.category.机械部件.link.generated-index.title": {
-    "message": "Mechanical Parts"
-  },
-  "sidebar.wikiSidebar.category.升级套件": {
-    "message": "Upgrade Kits"
-  },
-  "sidebar.wikiSidebar.category.升级套件.link.generated-index.title": {
-    "message": "Upgrade Kits"
-  },
-  "sidebar.wikiSidebar.category.显示面板": {
+  "sidebar.wikiSidebar.category.displays": {
     "message": "Displays"
   },
-  "sidebar.wikiSidebar.category.显示面板.link.generated-index.title": {
+  "sidebar.wikiSidebar.category.displays.link.generated-index.title": {
     "message": "Displays"
   },
-  "sidebar.wikiSidebar.category.教程": {
-    "message": "Tutorial"
+  "sidebar.wikiSidebar.category.drivers": {
+    "message": "Stepper Drivers"
   },
-  "sidebar.wikiSidebar.category.教程.link.generated-index.title": {
-    "message": "Tutorial"
+  "sidebar.wikiSidebar.category.drivers.link.generated-index.title": {
+    "message": "Stepper Drivers"
   },
-  "sidebar.wikiSidebar.category.快速开始": {
+  "sidebar.wikiSidebar.category.getting-started": {
     "message": "Getting started"
   },
-  "sidebar.wikiSidebar.category.快速开始.link.generated-index.title": {
-    "message": "Getting started"
+  "sidebar.wikiSidebar.category.guides": {
+    "message": "Tutorial"
   },
-  "sidebar.wikiSidebar.category.未归档文档": {
-    "message": "Unfiled documents"
+  "sidebar.wikiSidebar.category.guides.link.generated-index.title": {
+    "message": "Tutorial"
+  },
+  "sidebar.wikiSidebar.category.mechanicals": {
+    "message": "Mechanical Parts"
+  },
+  "sidebar.wikiSidebar.category.mechanicals.link.generated-index.title": {
+    "message": "Mechanical Parts"
+  },
+  "sidebar.wikiSidebar.category.modules": {
+    "message": "Modules"
+  },
+  "sidebar.wikiSidebar.category.modules.link.generated-index.title": {
+    "message": "Modules"
+  },
+  "sidebar.wikiSidebar.category.printer-kits": {
+    "message": "3D Printer Kits"
+  },
+  "sidebar.wikiSidebar.category.resources": {
+    "message": "Additional resources"
+  },
+  "sidebar.wikiSidebar.category.sensors": {
+    "message": "Sensors"
+  },
+  "sidebar.wikiSidebar.category.sensors.link.generated-index.title": {
+    "message": "Sensors"
+  },
+  "sidebar.wikiSidebar.category.upgrade-kits": {
+    "message": "Upgrade Kits"
+  },
+  "sidebar.wikiSidebar.category.upgrade-kits.link.generated-index.title": {
+    "message": "Upgrade Kits"
+  },
+  "sidebar.wikiSidebar.category.wireless": {
+    "message": "Wireless"
+  },
+  "sidebar.wikiSidebar.category.wireless.link.generated-index.title": {
+    "message": "Wireless"
   }
 }

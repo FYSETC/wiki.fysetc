@@ -1,0 +1,14 @@
+{
+  "label": "显示面板",
+  "key": "displays",
+  "position": 100,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "显示面板",
+    "slug": "/category/displays"
+  },
+  "customProps": {
+    "icon": "screen"
+  }
+}

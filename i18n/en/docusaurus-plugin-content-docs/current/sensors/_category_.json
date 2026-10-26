@@ -1,0 +1,14 @@
+{
+  "label": "Sensors",
+  "key": "sensors",
+  "position": 60,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Sensors",
+    "slug": "/category/sensors"
+  },
+  "customProps": {
+    "icon": "sensor"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "label": "3D Printer Kits",
+  "key": "printer-kits",
+  "position": 20,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "category-printer-kits"
+  },
+  "customProps": {
+    "icon": "printer"
+  }
+}

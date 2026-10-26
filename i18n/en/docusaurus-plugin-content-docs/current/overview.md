@@ -1,4 +1,5 @@
 ---
+sidebar_position: 10
 id: overview
 title: FYSETC Wiki
 description: Browse FYSETC product documentation, wiring references, setup

@@ -1,0 +1,14 @@
+{
+  "label": "Tutorial",
+  "key": "guides",
+  "position": 110,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Tutorial",
+    "slug": "/category/guides"
+  },
+  "customProps": {
+    "icon": "book"
+  }
+}

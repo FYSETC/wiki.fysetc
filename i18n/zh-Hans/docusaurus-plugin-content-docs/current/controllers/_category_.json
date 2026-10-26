@@ -1,0 +1,14 @@
+{
+  "label": "控制板",
+  "key": "controllers",
+  "position": 30,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "控制板",
+    "slug": "/category/controllers"
+  },
+  "customProps": {
+    "icon": "board"
+  }
+}

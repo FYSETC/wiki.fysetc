@@ -1,0 +1,14 @@
+{
+  "label": "机械部件",
+  "key": "mechanicals",
+  "position": 80,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "机械部件",
+    "slug": "/category/mechanicals"
+  },
+  "customProps": {
+    "icon": "mechanical"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "label": "补充资料",
+  "key": "resources",
+  "position": 130,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "additional-resources"
+  },
+  "customProps": {
+    "icon": "folder"
+  }
+}

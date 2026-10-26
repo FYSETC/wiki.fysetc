@@ -17,7 +17,7 @@
     "prestart:en": "node scripts/sync-navigation.mjs",
     "prebuild": "node scripts/sync-navigation.mjs",
     "nav:sync": "node scripts/sync-navigation.mjs",
-    "test:navigation": "node --test scripts/managed-navigation.test.mjs"
+    "test:navigation": "node --test scripts/folder-navigation.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",

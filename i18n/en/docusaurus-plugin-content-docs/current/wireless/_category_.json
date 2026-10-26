@@ -1,0 +1,14 @@
+{
+  "label": "Wireless",
+  "key": "wireless",
+  "position": 70,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "Wireless",
+    "slug": "/category/wireless"
+  },
+  "customProps": {
+    "icon": "wireless"
+  }
+}

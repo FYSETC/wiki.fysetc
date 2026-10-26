@@ -60,7 +60,7 @@ module.exports = async function () {
         logo: {alt: 'FYSETC', src: 'images/fysetc-navbar-white.svg'},
         items: [
           {label: '产品文档', position: 'left', items: officialNavigation.categories
-            .filter(category => category.id !== 'guides')
+            .filter(category => !['guides', 'getting-started', 'resources'].includes(category.id))
             .map(category => ({label: category.zh, to: `/docs/${category.path}/`}))},
           {to: '/docs/Tutorial/', label: '教程与配置', position: 'left'},
           {to: '/docs/category/resources/', label: '补充资料', position: 'left'},

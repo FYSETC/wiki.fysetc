@@ -1,0 +1,14 @@
+{
+  "label": "无线产品",
+  "key": "wireless",
+  "position": 70,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "无线产品",
+    "slug": "/category/wireless"
+  },
+  "customProps": {
+    "icon": "wireless"
+  }
+}

@@ -1,0 +1,14 @@
+{
+  "label": "步进电机驱动",
+  "key": "drivers",
+  "position": 40,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "步进电机驱动",
+    "slug": "/category/drivers"
+  },
+  "customProps": {
+    "icon": "driver"
+  }
+}

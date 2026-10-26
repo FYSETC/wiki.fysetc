@@ -1,0 +1,13 @@
+{
+  "label": "Getting started",
+  "key": "getting-started",
+  "position": 120,
+  "collapsed": true,
+  "link": {
+    "type": "doc",
+    "id": "intro"
+  },
+  "customProps": {
+    "icon": "folder"
+  }
+}

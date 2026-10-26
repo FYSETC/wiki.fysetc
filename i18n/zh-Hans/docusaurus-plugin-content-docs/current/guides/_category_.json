@@ -1,0 +1,14 @@
+{
+  "label": "教程",
+  "key": "guides",
+  "position": 110,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "教程",
+    "slug": "/category/guides"
+  },
+  "customProps": {
+    "icon": "book"
+  }
+}
