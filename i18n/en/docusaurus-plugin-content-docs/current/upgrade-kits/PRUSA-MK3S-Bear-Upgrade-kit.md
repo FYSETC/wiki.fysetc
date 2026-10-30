@@ -1,9 +1,9 @@
 ---
-sidebar_position: 20
 id: PRUSA-MK3S-Bear-Upgrade-kit
 title: Prusa mk3s bear upgrade kit
-description: 1.Prusa-MK3S-Bear-Upgrade-v2.0 STL file update 2020.7.31
 slug: /PRUSA-MK3S-Bear-Upgrade-kit
+sidebar_position: 20
+description: 1.Prusa-MK3S-Bear-Upgrade-v2.0 STL file update 2020.7.31
 source_file: PRUSA-MK3S-Bear-Upgrade-kit.md
 source_language: en
 ---

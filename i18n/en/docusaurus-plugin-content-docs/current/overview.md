@@ -2,8 +2,7 @@
 sidebar_position: 10
 id: overview
 title: FYSETC Wiki
-description: Browse FYSETC product documentation, wiring references, setup
-  guides, and additional resources.
+description: Browse FYSETC product documentation, wiring references, and setup guides.
 slug: /overview
 source_file: index.md
 source_language: en
@@ -22,17 +21,13 @@ source_language: en
         <td><a href="/docs/Stepper-Drivers/"><img src="/images/Stepper_Drivers.png"/></a></td>
     </tr>
     <tr>
-        <td><a href="/docs/Cables-and-Wires/"><img src="/images/Cables_and_wires.png"/></a></td>
         <td><a href="/docs/Mechanical-parts/"><img src="/images/Mechanical_parts.png"/></a></td>
         <td><a href="/docs/Sensors/"><img src="/images/Sensors.png"/></a></td>
     </tr>
     <tr>
-        <td><a href="/docs/Shield/"><img src="/images/Shield.png"/></a></td>
+        <td><a href="/docs/category/modules/"><img src="/images/Shield.png"/></a></td>
         <td><a href="/docs/Wireless/"><img src="/images/Wireless.png"/></a></td>
         <td><a href="/docs/Tutorial/"><img src="/images/Tutorial.png"/></a></td>
-    </tr>
-    <tr>
-        <td><a href="/docs/Others/"><img src="/images/Others.png"/></a></td>
     </tr>
 </table>
 

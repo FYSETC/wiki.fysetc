@@ -3,6 +3,7 @@ const officialNavigation = require('./navigation/catalog.json');
 
 module.exports = async function () {
   const {default: remarkMath} = await import('remark-math');
+  const {default: remarkBreaks} = await import('remark-breaks');
   const {default: rehypeKatex} = await import('rehype-katex');
   return {
     title: 'FYSETC Wiki',
@@ -32,10 +33,11 @@ module.exports = async function () {
         path: './i18n/en/docusaurus-plugin-content-docs/current',
         routeBasePath: 'docs',
         sidebarPath: require.resolve('./sidebars.js'),
+        numberPrefixParser: false,
         editLocalizedFiles: true,
         editUrl: ({locale, docPath}) =>
           `https://github.com/FYSETC/wiki.fysetc/edit/new-doc/i18n/${locale}/docusaurus-plugin-content-docs/current/${docPath}`,
-        remarkPlugins: [remarkMath],
+        remarkPlugins: [remarkMath, remarkBreaks],
         rehypePlugins: [rehypeKatex, require('./scripts/rehype-legacy.cjs')],
       },
       blog: false,
@@ -60,10 +62,9 @@ module.exports = async function () {
         logo: {alt: 'FYSETC', src: 'images/fysetc-navbar-white.svg'},
         items: [
           {label: 'Product docs', position: 'left', items: officialNavigation.categories
-            .filter(category => !['guides', 'getting-started', 'resources'].includes(category.id))
+            .filter(category => category.id !== 'guides')
             .map(category => ({label: category.en, to: `/docs/${category.path}/`}))},
           {to: '/docs/Tutorial/', label: 'Guides & setup', position: 'left'},
-          {to: '/docs/category/resources/', label: 'Resources', position: 'left'},
           {label: 'Community & support', position: 'right', items: [
             {label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'},
             {label: 'FYSETC website', href: 'https://www.fysetc.com'},
@@ -79,7 +80,7 @@ module.exports = async function () {
         links: [
           {title: 'Product docs', items: [{label: 'Controllers', to: '/docs/Controllers/'}, {label: 'Stepper drivers', to: '/docs/Stepper-Drivers/'}, {label: 'Displays', to: '/docs/LCDs-and-Displays/'}]},
           {title: 'Learning & setup', items: [{label: 'Guides', to: '/docs/Tutorial/'}, {label: 'Spider hardware guide', to: '/docs/Spider_Hardware_Guide/'}, {label: 'Spider software guide', to: '/docs/Spider_Software_Guide/'}]},
-          {title: 'Resources & support', items: [{label: 'Resources', to: '/docs/category/resources/'}, {label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: 'Source repository', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
+          {title: 'Support', items: [{label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: 'Source repository', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
           {title: 'FYSETC', items: [{label: 'Official website', href: 'https://www.fysetc.com'}, {label: 'Support forum', href: 'http://forum.fysetc.com/'}, {label: 'Wiki overview', to: '/docs/overview/'}]},
         ],
         copyright: 'FYSETC documentation and images · CC BY-SA 4.0 · Local test edition',

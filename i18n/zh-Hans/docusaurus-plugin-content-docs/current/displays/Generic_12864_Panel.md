@@ -1,42 +1,39 @@
 ---
-sidebar_position: 40
 id: Generic_12864_Panel
-title: Generic 12864 Panel
-description: This is a opensouce, cheap, with RGB indicator, common to marlin's
-  display, supports offline printing, resolution is 12864, display area is
-  3.2'', SD card holder can be side or vertical, Dimensional…
+title: Generic_12864_Panel
 slug: /Generic_12864_Panel
+sidebar_position: 30
+description: 这是一款开源、廉价的显示器，带有RGB指示灯，兼容Marlin固件，支持离线打印，分辨率为12864，显示区域为3.2英寸，SD卡座可侧装或竖装，尺寸…
 source_file: Generic_12864_Panel.md
 source_language: en
 ---
 
-## 1. Product Introduction
+## 1. 产品介绍
 
 
 ![Mini12864](/images/Generic_12864_TOP.png)
 
-This is a opensouce, cheap, with RGB indicator, common to marlin's display, supports offline printing, resolution is 12864, display area is 3.2'', SD card holder can be side or vertical, Dimensional compatible with REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER, Software compatible with MINIPANEL in marlin firmware.
+这是一款开源、廉价、带 RGB 指示灯、兼容 Marlin 的显示屏，支持离线打印，分辨率为 12864，显示区域为 3.2 英寸，SD 卡座可侧置或垂直安装，尺寸兼容 REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER，软件兼容 Marlin 固件中的 MINIPANEL。
 
-Available in a single backlight color version, also available in RGB backlight (NEOPIXEL_LED)version.Choose according to your preferences！
+提供单背光颜色版本，也提供 RGB 背光（NEOPIXEL_LED）版本。根据您的喜好选择！
 
-## 2. Features
+## 2. 特性
 
-- 3.2" inch high contrast Graphic LCD,Dimensional compatible with REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
-- Black-gray/black-green/white-black/white-blue/green-black, 5 display styles
-- SPI communication to host micro-controller
-- Support Vertical or side SD slot with card detect,with a optional  SD module
-- Software configurable contrast setting
-- 3D printable case and mount STL file 
-- Configurable RGB backlight, WS2811 single line control.
-- Black background or transparent backgroun.
-- The extra EXP3 is 1284P or a motherboard that requires a single display function.
+- 3.2 英寸高对比度图形 LCD，尺寸兼容 REPRAP_DISCOUNT_FULL_GRAPHIC_SMART_CONTROLLER
+- 黑灰/黑绿/白黑/白蓝/绿黑，5 种显示样式
+- 通过 SPI 与主机微控制器通信
+- 支持垂直或侧置 SD 插槽并带卡检测，配有可选 SD 模块
+- 软件可配置对比度设置
+- 可 3D 打印的外壳和安装 STL 文件
+- 可配置 RGB 背光，WS2811 单线控制。
+- 黑色背景或透明背景。
+- 额外的 EXP3 适用于 1284P 或需要单显示屏功能的主板。
 
-## 3. Application
+## 3. 应用
 
-3D printer，CNC machines ，Other micro controller projects
+3D 打印机、CNC 机床、其他微控制器项目
 
-## 4. Typical  Wiring
-> This image was not supplied in the original documentation.
+## 4. 典型接线
 
 ![](/images/Mini12864-EXP1.svg)
 
@@ -44,13 +41,13 @@ Available in a single backlight color version, also available in RGB backlight (
 
 
 
-## 5. Firmware config
+## 5. 固件配置
 
-The back light control pin is at EXP1_04.
+背光控制引脚位于 EXP1_04。
 
 ### 5.1 Marlin
 
-Only need to enable the following define
+只需启用以下定义
 
 ```
 #define FYSETC_GENERIC_12864_1_1 // Larger display with basic ON/OFF backlight.
@@ -58,28 +55,28 @@ Only need to enable the following define
 
 ### 5.2 Klipper
 
--TBD-
+-待定-
 
-## 6. Optional Hardware module:
+## 6. 可选硬件模块：
 
-The SD card of mini12864 can be  set on the side or in the front,  which requires a module to implement. As shown below:
+mini12864 的 SD 卡可设置在侧面或正面，这需要一个模块来实现。如下图所示：
 
 ![mini12864_SD1](/images/EXT_SD_V11.png)
 
-## 7. Attention
+## 7. 注意事项
 
--TBD-
+-待定-
 
-## 8. FAQ
+## 8. 常见问题
 
--TBD-
+-待定-
 
-## 9. Attachments
-### 9.1 Schematic
-You can find the schematics for the three versions on [github](https://github.com/FYSETC/Generic-12864-panel).
-### 9.2 Dimensions
-**For detailed dimensions please check dwg/step file on [github](https://github.com/FYSETC/Generic-12864-panel).**
-## Shop
+## 9. 附件
+### 9.1 原理图
+您可以在 [github](https://github.com/FYSETC/Generic-12864-panel) 上找到三个版本的原理图。
+### 9.2 尺寸
+**有关详细尺寸，请查看 [github](https://github.com/FYSETC/Generic-12864-panel) 上的 dwg/step 文件。**
+## 商店
 - [Gineric 12864_LCD](https://www.aliexpress.com/item/33029483516.html)
-## Tech Support
-Please submit any technical issue into our [forum](http://forum.fysetc.com/) or [facebook](https://www.facebook.com/groups/197476557529090/).
+## 技术支持
+请将任何技术问题提交到我们的 [论坛](http://forum.fysetc.com/) 或 [facebook](https://www.facebook.com/groups/197476557529090/)。

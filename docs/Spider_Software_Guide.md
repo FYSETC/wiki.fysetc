@@ -70,19 +70,30 @@ Fluidd镜像下载如下图
 
 注意：此操作会删除TF卡上所有的数据，请做好数据备份
 
-![img](/images/wps28.jpg)具体操作见下图：
+![img](/images/wps28.jpg)
+
+具体操作见下图：
 
 2、烧录镜像
 
-![img](/images/wps29.jpg)![img](/images/wps30.jpg)
+![img](/images/wps29.jpg)
+
+![img](/images/wps30.jpg)
+
 按下图顺序进行操作：
 
 
-![img](/images/wps31.jpg)![img](/images/wps32.jpg)
+![img](/images/wps31.jpg)
 
-![img](/images/wps33.jpg)![img](/images/wps34.jpg) 
+![img](/images/wps32.jpg)
 
-![img](/images/wps35.jpg)![img](/images/wps36.jpg)
+![img](/images/wps33.jpg)
+
+![img](/images/wps34.jpg) 
+
+![img](/images/wps35.jpg)
+
+![img](/images/wps36.jpg)
 
 ## 2.3 设置树莓派连入无线网络
 
@@ -291,7 +302,9 @@ Spider蜘蛛主板采用USB电缆与树莓派链接，可以采用如下配置�
 
 在shell中输入 ls /dev/serial/by-id/*
 
-![img](/images/wps66.jpg)如果主板的固件烧录正确，将会有如下显示
+![img](/images/wps66.jpg)
+
+如果主板的固件烧录正确，将会有如下显示
 
 其中蓝色字符部分 /dev/serial/by-id/usb-Klipper_stm32f446xx_0C001C00115053424E363620-if00即为主板的ID，将其复制保存到文本文件中备用。
 
@@ -305,7 +318,9 @@ github: [FYSETC-SPIDER/printer.cfg at main · FYSETC/FYSETC-SPIDER (github.com)]
 
 gitee: [firmware/Klipper/printer.cfg · FYSETC/FYSETC-SPIDER - 码云 - 开源中国 (gitee.com)](https://gitee.com/fysetc/FYSETC-SPIDER/blob/main/firmware/Klipper/printer.cfg)
 
-![img](/images/wps67.jpg)在“配置”选项卡里找到“+”，点击添加文件（如下图）
+![img](/images/wps67.jpg)
+
+在“配置”选项卡里找到“+”，点击添加文件（如下图）
 
 
 输入文件名“printer.cfg”，点击保存。
@@ -422,10 +437,12 @@ STEPPER_BUZZ STEPPER=stepper_z3 #测试 Z3 轴电机，该轴龙门架应先升�
 ...
 
 电机的位置如图：
+
 ![img](/images/wps80.png)
 
 
 ### 2.11.3 XY归位检查
+
 ![img](/images/wps81.png)
 
 

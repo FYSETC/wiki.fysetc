@@ -1,9 +1,9 @@
 ---
-sidebar_position: 50
 id: M36_HUB_V1
 title: M36 HUB v1
-description: "M36 HUB v1: original FYSETC documentation and related references."
 slug: /M36_HUB_V1
+sidebar_position: 80
+description: 'M36 HUB v1: original FYSETC documentation and related references.'
 source_file: M36_HUB_V1.md
 source_language: en
 ---
@@ -12,15 +12,12 @@ source_language: en
 
 ## 1. Introduction
 
-M36集线板是专门为使用36圆形步进电机（Nema14）而设计的，可以用在mini Stealthburner 或者其他使用36电机的打印头上。该板可以配合多种主板使用，尤其是我们的catalyst和BullAnt。配合专用连接线材也可适配任何其他使用klipper的系统。
-
-M36分为两个版本，主要是电机驱动芯片不一样，普通版本为TMC2209，与Catalyst主板配合使用；Lite版本为GC6609，与BullAnt主板配合使用。
 
 The M36 hub board is specially designed for use with 36 circular stepper motors (Nema14) and can be used on mini Stealthburner or other print heads using 36 motors. This board can be used with a variety of motherboards, especially our catalyst and BullAnt. With special connection cables, it can also be adapted to any other system using klipper.
 
 M36 is divided into two versions, mainly because of the difference in motor driver chips. The normal version is TMC2209, used with Catalyst motherboard; the Lite version is GC6609, used with BullAnt motherboard.
 
-### 1.1 Feature
+### 1.1 Features
 
 - Based on STM32F072
 - USB interface or CAN（need addon board）
@@ -41,8 +38,6 @@ M36 is divided into two versions, mainly because of the difference in motor driv
 
 ### 2.1 Install
 
-5. 
-
 ### 2.2 Connectors
 
 | Connector name | Type                     | Details                                                      |
@@ -58,8 +53,8 @@ M36 is divided into two versions, mainly because of the difference in motor driv
 | FAN0           | PH2.0-2P                 | Enable: PB11, (4pin fan = enable, 2pin/3pin fan = PWM control pin)<br/>TACH: PB12, <br/>PWM: PB10, (only for 4pin fan)<br/>0.5A MAX PWM，for fan control (default VIN，5V selectable) |
 | FAN1           | PH2.0-4P                 | Enable: PB4, (4pin fan = enable, 2pin/3pin fan = PWM control pin)<br/>TACH: PB3, <br/>PWM: PA15, (only for 4pin fan)<br/>0.5A MAX PWM，for fan control (default VIN，5V selectable) |
 | FAN2           | PH2.0-4P                 | Enable: PB9, (4pin fan = enable, 2pin/3pin fan = PWM control pin)<br/>TACH: PA10, <br/>PWM: PB8, (only for 4pin fan)<br/>0.5A MAX PWM，for fan control (default VIN，5V selectable) |
-| RGB1           | SH1.0-3P                 | PB13，1A MAX sigal line RGB port, 5V，for NeoPixel, WS2812   |
-| RGB2           | SH1.0-3P                 | PB0, 1A MAX sigal line RGB port, 5V，for NeoPixel, WS2812<br/>安装R39=0-100R，可以将RGB1和RGB2串联起来，仅用PB13控制。<br/>Install R39=0-100R, you can connect RGB1 and RGB2 in series and only use PB13 to control them. |
+| RGB1           | SH1.0-4P                 | PB13，1A MAX sigal line RGB port, 5V，for NeoPixel, WS2812   |
+| RGB2           | SH1.0-4P                 | PB0, 1A MAX sigal line RGB port, 5V，for NeoPixel, WS2812<br/>Install R39=0-100R, you can connect RGB1 and RGB2 in series and only use PB13 to control them. |
 
 
 
@@ -99,21 +94,13 @@ This is only Klipper firmware support. If you are Klipper beginner please check 
 
 5. "make menuconfig" configure the firmware, as shown below:
 
-  ![M36_menuconfig](/images/M36_menuconfig.png)
+![M36_menuconfig](/images/m36-hub-v1--m36-menuconfig.png)
 
 6. "make flash FLASH_DEVICE=0483:df11" to compile and upload;
 
 7. When you see the word "successfully", it means the programming is successful.
 
-### 3.3
 
-1. 打开机器电源，等待CM68完全启动，大致需要30-90s。
-2. 按住M6上的BT0按钮不松开，按住RST按键2秒以上松开，等待3S，松开BT0按钮；
-3. 在SSH界面输入 ‘lsusb‘ 你应该能看到 DFU 设备出现；
-4. ‘cd klipper ’进入klipper目录
-5. ‘make menuconfig’ 进行固件配置，如下图：
-6. make flash FLASH_DEVICE=0483:df11 进行编译并烧录；
-7. 当看到successfully字样的时候表示烧录成功。
 
 ### 3.2 Config
 
@@ -121,21 +108,28 @@ This is only Klipper firmware support. If you are Klipper beginner please check 
 
 On Catalyst and Bull Ant motherboards, the USB path is used by default for connection, and an ID is no longer required. In theory, it can be used after updating the firmware and restarting.
 
-我们将Klipper的配置文件放在github中，需要通过“ls /dev/serial/by-id”获取DEVICE ID，然后替换配置文件中的id。
 
-在催化剂和公牛蚁主板上，默认使用USB路径来进行连接，不再需要ID。理论上，更新完固件，重启之后既可使用。
+### 3.3
 
+1. Power on the machine and wait for CM68 to fully boot up. This takes approximately 30–90 seconds.
+2. Hold down the BT0 button on the M6, press and hold the RST button for more than 2 seconds then release it. Wait 3 seconds, then release the BT0 button.
+3. Enter `lsusb` in the SSH interface. You should see the DFU device listed.
+4. Run `cd klipper` to enter the klipper directory.
+5. Run `make menuconfig` to configure the firmware, as shown in the figure below.
+6. Run `make flash FLASH_DEVICE=0483:df11` to compile and flash the firmware.
+7. The appearance of the word "successfully" indicates that flashing is completed.
 
+## Attachments
 
-
+[GitHub](https://github.com/FYSETC/M36_HUB_V1)
 
 ## Buy
 
 [Taobao](https://item.taobao.com/item.htm?spm=a1z10.3-c.w4002-23828897339.22.229c1613tHAtLW&id=690431280049)
 
-[Aliexpress](https://www.aliexpress.com/item/1005004880078163.html)
+[Aliexpress](https://www.aliexpress.com/item/1005006533669096.html)
 
-[Official website](https://www.fysetc.com/products/fysetc-sb-can-tool-board-based-on-stm32f072-support-klipper-with-tmc2209-axl345-acceleration-sensor-for-3d-printer-parts?variant=42187842519215)
+[Official website](https://www.fysetc.com/products/fysetc-m36-hub-board-use-with-36-circular-stepper-motors-nema14-used-on-mini-stealthburner-or-other-print-heads-using-36-motors-for-catalyst-bullantmotherboard?_pos=2&_sid=b4b14f4e2&_ss=r)
 
 ## Contacts
 

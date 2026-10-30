@@ -1,0 +1,37 @@
+{
+  "updatedArticles": 9,
+  "renamedArticles": 6,
+  "addedArticles": 4,
+  "checkedLocaleFiles": 26,
+  "articlesPerLocale": [
+    131,
+    131
+  ],
+  "localArticleImageReferences": 408,
+  "downloadedImageFiles": 58,
+  "renderedPages": null,
+  "renderedImageReferences": null,
+  "preexistingMissingArticles": [
+    {
+      "source": "3D Printer Kits/Venture XL/1. Introduction/1.1. Introduction.md",
+      "target": "printer-kits/Venture-XL/1.-Introduction/1.1.-Introduction.md",
+      "slug": "/1.1.-Introduction"
+    },
+    {
+      "source": "3D Printer Kits/Venture XL/2. Assembly Guide/2. Assembly Guide.md",
+      "target": "printer-kits/Venture-XL/2.-Assembly-Guide/2.-Assembly-Guide.md",
+      "slug": "/2.-Assembly-Guide"
+    },
+    {
+      "source": "3D Printer Kits/Venture XL/3. Electronics Guide/3.3 Head Tool Board.md",
+      "target": "printer-kits/Venture-XL/3.-Electronics-Guide/3.3-Head-Tool-Board.md",
+      "slug": "/3.3-Head-Tool-Board"
+    },
+    {
+      "source": "3D Printer Kits/Venture XL/5. FAQ/5. FAQ.md",
+      "target": "printer-kits/Venture-XL/5.-FAQ/5.-FAQ.md",
+      "slug": "/5.-FAQ"
+    }
+  ],
+  "errors": []
+}

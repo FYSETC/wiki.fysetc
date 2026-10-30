@@ -1,0 +1,14 @@
+{
+  "label": "FAQ",
+  "key": "faq",
+  "position": 116,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "FAQ",
+    "slug": "/category/faq"
+  },
+  "customProps": {
+    "icon": "book"
+  }
+}

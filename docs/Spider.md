@@ -511,9 +511,13 @@ This method works in linux, that means should work in raspberry pi.
 
 1. First power off the board
 
-2. Set jumper on 5V pin and DC5V ![](/images/5vJumper.png)
+2. Set jumper on 5V pin and DC5V
 
-3. Place jumper on BT0 to 3.3V pin ![](/images/boot.png)
+   ![](/images/5vJumper.png)
+
+3. Place jumper on BT0 to 3.3V pin
+
+   ![](/images/boot.png)
 
 4. Connect USB cable to the board and your computer 
 
@@ -569,8 +573,14 @@ Open the STM32CubeProgrammer software.
 ##### Step 2. Enter DFU mode
 
 1. First power off the board
-2. Set jumper on 5V pin and DC5V ![](/images/5vJumper.png)
-3. Place jumper on BT0 to 3.3V pin ![](/images/boot.png)
+2. Set jumper on 5V pin and DC5V
+
+   ![](/images/5vJumper.png)
+
+3. Place jumper on BT0 to 3.3V pin
+
+   ![](/images/boot.png)
+
 4. Connect USB cable to the board and your computer 
 5. Power up the board with 24v 
 
@@ -600,9 +610,13 @@ If you compile Marlin yourself with platformio,you can follow the instructions b
 
 - First power off the board
 
-- Set jumper on 5v pin and DC5V ![](/images/5vJumper.png)
+- Set jumper on 5v pin and DC5V
 
-- Place jumper on BT0 to 3.3V pin ![](/images/boot.png)
+  ![](/images/5vJumper.png)
+
+- Place jumper on BT0 to 3.3V pin
+
+  ![](/images/boot.png)
 
 - Connect USB cable to the board and your computer 
 

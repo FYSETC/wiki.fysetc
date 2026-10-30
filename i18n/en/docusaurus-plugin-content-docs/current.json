@@ -267,9 +267,6 @@
   "sidebar.wikiSidebar.category.drivers.link.generated-index.title": {
     "message": "Stepper Drivers"
   },
-  "sidebar.wikiSidebar.category.getting-started": {
-    "message": "Getting started"
-  },
   "sidebar.wikiSidebar.category.guides": {
     "message": "Tutorial"
   },
@@ -290,9 +287,6 @@
   },
   "sidebar.wikiSidebar.category.printer-kits": {
     "message": "3D Printer Kits"
-  },
-  "sidebar.wikiSidebar.category.resources": {
-    "message": "Additional resources"
   },
   "sidebar.wikiSidebar.category.sensors": {
     "message": "Sensors"

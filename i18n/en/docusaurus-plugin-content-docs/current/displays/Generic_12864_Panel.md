@@ -1,11 +1,9 @@
 ---
-sidebar_position: 40
 id: Generic_12864_Panel
-title: Generic 12864 Panel
-description: This is a opensouce, cheap, with RGB indicator, common to marlin's
-  display, supports offline printing, resolution is 12864, display area is
-  3.2'', SD card holder can be side or vertical, Dimensional…
+title: Generic_12864_Panel
 slug: /Generic_12864_Panel
+sidebar_position: 30
+description: This is a opensouce, cheap, with RGB indicator, common to marlin's display, supports offline printing, resolution is 12864, display area is 3.2'', SD card holder can be side or vertical, Dimensional…
 source_file: Generic_12864_Panel.md
 source_language: en
 ---
@@ -36,7 +34,6 @@ Available in a single backlight color version, also available in RGB backlight (
 3D printer，CNC machines ，Other micro controller projects
 
 ## 4. Typical  Wiring
-> This image was not supplied in the original documentation.
 
 ![](/images/Mini12864-EXP1.svg)
 

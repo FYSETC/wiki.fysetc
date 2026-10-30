@@ -1,11 +1,9 @@
 ---
-sidebar_position: 30
 id: SB-CAN-ToolHead
-title: SB CAN TH
-description: The SB CAN Tool Board is a highly integrated printhead control
-  board. Based on STM32F072, running Klipper firmware. Onboard TMC2209 stepper
-  motor driver, AXL345 acceleration sensor, and other…
+title: SB CAN ToolHead
 slug: /SB-CAN-ToolHead
+sidebar_position: 60
+description: The SB CAN Tool Board is a highly integrated printhead control board. Based on STM32F072, running Klipper firmware. Onboard TMC2209 stepper motor driver, AXL345 acceleration sensor, and other…
 source_file: SB CAN ToolHead.md
 source_language: en
 ---
@@ -191,8 +189,8 @@ Note: v1.1 have some silk print errors below, the red letters are the right silk
 
 QQ：1041794121
 
-Facebook小组：https://www.facebook.com/groups/197476557529090
+Facebook：https://www.facebook.com/groups/197476557529090
 
-Discord频道：https://discord.gg/Fb6FdND4
+Discord：https://discord.gg/Fb6FdND4
 
-邮箱：support@fysetc.com
+E-Mail：support@fysetc.com

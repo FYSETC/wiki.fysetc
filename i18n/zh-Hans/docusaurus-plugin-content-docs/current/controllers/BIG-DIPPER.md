@@ -1,409 +1,424 @@
 ---
-sidebar_position: 100
 id: BIG-DIPPER
-title: FYSETC BIG-DIPPER
-description: BIG-DIPPER is a combination of Duet3 mini5+ and Mini 2+. It's based
-  on ATSAME54P20A and pin assignments are exactly the same as those of mini5+,
-  so the mini5+ firmware can be used directly.
+title: BIG-DIPPER
 slug: /BIG-DIPPER
+sidebar_position: 120
+description: BIG-DIPPER 是 Duet3 mini5+ 和 Mini 2+ 的组合。它基于 ATSAME54P20A，引脚分配与 mini5+ 完全相同，因此可以直接使用 mini5+ 固件。
 source_file: BIG-DIPPER.md
 source_language: en
 ---
 
-## Introduction
+## 简介
 
 ![BIG-DIPPER-TOP](/images/BIG-DIPPER-TOP.jpg)
 
-BIG-DIPPER is a combination of Duet3 mini5+ and Mini 2+. It's based on [ATSAME54P20A](https://www.microchip.com/wwwproducts/en/ATSAME54P20A) and pin assignments are exactly the same as those of mini5+, so the mini5+ firmware can be used directly. 
+BIG-DIPPER 是 Duet3 mini5+ 与 Mini 2+ 的结合体。它基于 [ATSAME54P20A](https://www.microchip.com/wwwproducts/en/ATSAME54P20A)，引脚分配与 mini5+ 完全相同，因此可以直接使用 mini5+ 的固件。
 
-Compare to mini5+, the power supply and IO protection have been upgraded to a certain extent to make them safer. And you can switch between the WIFI version and the Ethernet version by replacing the module. WIFI version module supports external antennas.
+与 mini5+ 相比，电源和 IO 保护在一定程度上进行了升级，使其更加安全。并且您可以通过更换模块在 WIFI 版本和以太网版本之间切换。WIFI 版本模块支持外置天线。
 
-Based on the good ecology of the RRF firmware and on-board 7-axis (7xTMC2209), the board can be easily configured in a variety of 3D printer models, such as VORON series, multi-Z-axis models, double-X models etc.
+得益于 RRF 固件良好的生态以及板载 7 轴（7xTMC2209），该板可以轻松配置用于各种 3D 打印机机型，例如 VORON 系列、多 Z 轴机型、双 X 机型等。
 
-- Compatible RepRapFirmware versions: RRF 3.2 and later
+- 兼容的 RepRapFirmware 版本：RRF 3.2 及更高版本
 
-For firmware update instructions, see [Installing and updating firmware](https://docs.duet3d.com/User_manual/RepRapFirmware/Updating_firmware).
-If running from an SBC, see [SBC setup for Duet 3](https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup).
+有关固件更新说明，请参阅 [安装和更新固件](https://docs.duet3d.com/User_manual/RepRapFirmware/Updating_firmware)。
+如果从 SBC 运行，请参阅 [Duet 3 的 SBC 设置](https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup)。
 
-Warnings
+警告
 
-- **Never connect or disconnect anything to your Duet when there is power applied to it!** Exception: you may connect or disconnect the USB cable with power applied, but see the important notes on using a USB connection.
+- **在 Big Dipper 通电时，切勿连接或断开任何东西！** 例外：您可以在通电状态下连接或断开 USB 线缆，但请参阅有关使用 USB 连接的重要说明。
 
-- **Take great care to connect the + and - leads from the power supply the right way round to the VIN terminal block!**
+- **务必将电源的正极和负极引线正确连接到 VIN 接线端子！**
 
-- **Do not exceed 25V VIN input voltage!**
+- **请勿超过 25V VIN 输入电压！**
 
-- **When the stepper motors are connected to the Duet, do not move any parts by hand that make the motors rotate rapidly!** For example, if you need to move the print head by hand, or the carriages of a delta printer by hand, do it s-l-o-w-l-y. Likewise, if you need to rotate the extruder gear by hand, do it slowly. Rapid rotation of the stepper drivers will generate enough voltage to power them up in an uncontrolled fashion, and could generate enough to exceed their rated voltage.
+- **当步进电机连接到 Big Dipper 时，请勿用手移动任何会使电机快速旋转的部件！** 例如，如果您需要用手移动打印头，或用手移动 delta 打印机的滑车，请缓慢进行。同样，如果您需要用手旋转挤出机齿轮，请缓慢进行。步进驱动器的快速旋转会产生足够的电压，以不受控制的方式为其供电，并可能产生超过其额定电压的电压。
 
-- **Do not insert an SD extender cable into the built-in SD card socket!** These cables frequently damage the contacts inside the SD card socket. Even when they don't, they do not work well at the high SD card transfer speeds used by the Duet.
+- **请勿将 SD 延长线插入内置 SD 卡插槽！** 这些线缆经常损坏 SD 卡插槽内的触点。即使没有损坏，它们在 Duet 使用的高 SD 卡传输速度下也无法良好工作。
 
-- **When mounting the Duet, if you use metal screws then make sure that they don't touch any of the electronic components or solder pads on the Duet!** Use the Nylon washers supplied with your Duet under the screw heads.
+- **安装 Big Dipper 时，如果使用金属螺丝，请确保它们不会接触到 Big Dipper 上的任何电子元件或焊盘！** 请在螺丝头下方使用随 Big Dipper 提供的尼龙垫圈。
 
-- **Be very careful if you use a multimeter to measure voltages on the board, especially on the fan connectors!** The probes may slip and short against each other or to other components. If you short the two pins of a fan connector together, you **will** damage your Duet.
+- **如果您使用万用表测量板上的电压，尤其是风扇连接器上的电压，请务必非常小心！** 探针可能会滑动并相互短路或与其他元件短路。如果您将风扇连接器的两个引脚短接，您**将会**损坏您的 Big Dipper。
 
-- **Do not rely solely on the Duet electronics and firmware to guard against excessive temperatures in your 3D printer!** Despite the advanced protection features in Duet firmware, electronics and firmware can fail in unexpected ways. 
+- **不要仅仅依赖 Big Dipper 电子设备和固件来防止 3D 打印机温度过高！** 尽管 Duet 固件具有先进的保护功能，但电子设备和固件可能会以意想不到的方式失效。
 
-- **If you use a USB connection to the Duet, take care to mitigate the effect of ground loops!** 
+- **如果您使用 USB 连接到 Duet，请注意减轻接地环路的影响！** 
   
-  ### Package contents
+  ### 包装内容
 
 ![BIG-DIPPER-INCLUDE](/images/BIG-DIPPER-INCLUDE.jpg)
 
-1 x Big Dipper (WiFi or Ethernet)
+1 x Big Dipper（WiFi 或以太网）
 
-7 x Heat Sink
+7 x 散热片
 
-1 x Single Board Computer (SBC) ribbon cable
+1 x 单板计算机 (SBC) 排线
 
-1 x External antenna with Extension cord (WiFi version only)
+1 x 带延长线的外置天线（仅 WiFi 版本）
 
-### Stand alone mode vs SBC mode
+### 独立模式与 SBC 模式
 
-The Big-Dipper is basically the same as the Duet3 Mini 5+.It is either be directly connected to a network, or to connect to a Single Board Computer (SBC) like a Raspberry Pi.
+Big-Dipper 基本上与 Duet3 Mini 5+ 相同。它可以直接连接到网络，也可以连接到单板计算机 (SBC)，例如树莓派。
 
-All standard printer functions, different kinematics, the network UI (DuetWebControl) (link not supplied in source) etc work in stand alone mode.
+所有标准打印机功能、不同的运动学、网络 UI (DuetWebControl) 等在独立模式下均可工作。
 
-SBC mode allows part of the functionality to be handled by the SBC. For example an HDMI or Pi touch screen can be used as the UI, The Pi can act as the network server and plugins for Duet Software Framework on the Pi allow for adding custom features for more advanced control and monitoring.
+SBC 模式允许部分功能由 SBC 处理。例如，HDMI 或 Pi 触摸屏可用作 UI，Pi 可作为网络服务器，Pi 上的 Duet Software Framework 插件允许添加自定义功能，以实现更高级的控制和监控。
 
-## Features
+## 特性
 
-1. Compact size: 148.5 x 87mm
+1. 紧凑尺寸：148.5 x 87mm
 
-2. Base on SAME54P20(ARM Cortex M4 @120Mhz)， fully compatible with Duet3 Mini5+
+2. 基于 SAME54P20（ARM Cortex M4 @120Mhz），完全兼容 Duet3 Mini5+
 
-3. Onboard 7 TMC2209 stepper motor drivers
+3. 板载 7 个 TMC2209 步进电机驱动器
 
-4. Input and output IO full TVS protection
+4. 输入和输出 IO 全面 TVS 保护
 
-5. 28V maximum input, 12V@2A DC-DC (12V fan power supply), 5V@8A DC-DC (power supply for Raspberry Pi  and the system), two 3.3V@0.6A LDO (power supply for MCU and 3.3V peripherals respectively)
+5. 最大输入 28V，12V@2A DC-DC（12V 风扇电源），5V@8A DC-DC（为树莓派和系统供电），两个 3.3V@0.6A LDO（分别为 MCU 和 3.3V 外设供电）
 
-6. Two car fuses for hot bed input and main power input
+6. 两个汽车保险丝，分别用于热床输入和主电源输入
 
-7. Using XH2.54 connector, each interface function is exactly the same as mini5+
+7. 使用 XH2.54 连接器，每个接口功能与 mini5+ 完全相同
 
-8. 7x PWM power MOSFET output（ 1 for heatbed, 2 for hot end, 4 for fans ）
+8. 7x PWM 功率 MOSFET 输出（1 个用于热床，2 个用于热端，4 个用于风扇）
 
-9. RepRap Discount Smart Controller compatible sockets ，EXP1 and EXP2。Support monochrome displays such as 2004 ，12864。
+9. 兼容 RepRap Discount Smart Controller 的插座，EXP1 和 EXP2。支持 2004、12864 等单色显示屏。
 
-10. UART1-Raspberry Pi pin header (including 5V@5A power supply)
+10. UART1-树莓派排针（包括 5V@5A 电源）
 
-11. Onboard TF card slot
+11. 板载 TF 卡槽
 
-12. Type-C USB socket
+12. Type-C USB 插座
 
-13. 3 Thermistor/PT1000 inputs and support for 2 PT100 or thermocouple inputs via the optional daughterboards.
+13. 3 个热敏电阻/PT1000 输入，并通过可选子板支持 2 个 PT100 或热电偶输入。
 
-14. Both Wifi and Ethernet versions
+14. 提供 Wifi 和以太网两个版本
 
-15. CAN bus that supports the next generation of Duet3D expansion boards, smart tools and 
-      custom addons.
+15. CAN 总线，支持下一代 Duet3D 扩展板、智能工具和自定义附加组件。
 
-16. Set up your printer and update the firmware through the web interface.
+16. 通过 Web 界面设置打印机并更新固件。
 
-17. All common 3D printer geometries are supported
+17. 支持所有常见的 3D 打印机几何结构
 
-18. Support for a wide range of Z probes including DC42’s IR Z probe and the Duet3D Smart Effector for delta printers.
+18. 支持多种 Z 探针，包括 DC42 的红外 Z 探针和用于 delta 打印机的 Duet3D Smart Effector。
 
-### Hardware Specification
+### 硬件规格
 
-| HARDWARE SPECIFICATION       |                                                                                                                                                                                                                                             |                                                               |
+| 硬件规格       |                                                                                                                                                                                                                                             |                                                               |
 |:---------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------- |
-|                              | **Big Dipper WiFi**                                                                                                                                                                                                                         | **Big Dipper Ethernet**                                       |
-| **Processor**                | [ATSAME54P20A](https://www.microchip.com/wwwproducts/en/ATSAME54P20A)                                                                                                                                                                       |                                                               |
-| **Processor features**       | 120MHz ARM Cortex M4F, 1Mb flash, 256Kb RAM, hardware floating point (single precision), DMA, 4Kb cache                                                                                                                                     |                                                               |
-| **Networking/Comms**         | 2.4GHz WiFi; USB port; serial port; CAN-FD bus                                                                                                                                                                                              | 10BaseT/100BaseTX Ethernet; USB port; serial port; CAN-FD bus |
-| **On-board stepper drivers** | 5 x [TMC2209](https://www.trinamic.com/products/integrated-circuits/details/tmc2209-la/)                                                                                                                                                    |                                                               |
-| **Stepper driver features**  | Up to 2.0A peak current, microstep interpolation from any setting to x256, stall detection, stealthChop2                                                                                                                                    |                                                               |
-| **High current outputs**     | 1 x 15A, 2 x 5A each                                                                                                                                                                                                                        |                                                               |
-| **Thermistor/PT1000 inputs** | 3 x inputs, optimised for 100K thermistors and PT1000 sensors                                                                                                                                                                               |                                                               |
-| **Medium current outputs**   | 4 x PWM-controlled outputs, of which 2 support tacho input. Voltage selectable between VIN and 12V in 2 banks                                                                                                                               |                                                               |
-| **Inputs/Outputs**           | 5 x on-board I/O connectors plus 2 x input-only connectors for endstop, filament monitor, Z probe, hobby servo or PanelDue connection. Inputs are 30V-tolerant. Also one output with 5V signal level for hobby servo, laser control or VFD. |                                                               |
-| **Power monitoring**         | VIN voltage monitoring allows for state save on power failure.                                                                                                                                                                              |                                                               |
-| **SD card interface**        | On-board high speed SD card socket.                                                                                                                                                                                                         |                                                               |
+|                              | **Big Dipper WiFi**                                                                                                                                                                                                                         | **Big Dipper 以太网**                                       |
+| **处理器**                | [ATSAME54P20A](https://www.microchip.com/wwwproducts/en/ATSAME54P20A)                                                                                                                                                                       |                                                               |
+| **处理器特性**       | 120MHz ARM Cortex M4F，1Mb 闪存，256Kb RAM，硬件浮点（单精度），DMA，4Kb 缓存                                                                                                                                     |                                                               |
+| **网络/通信**         | 2.4GHz WiFi；USB 端口；串口；CAN-FD 总线                                                                                                                                                                                              | 10BaseT/100BaseTX 以太网；USB 端口；串口；CAN-FD 总线 |
+| **板载步进驱动器** | 7 x [TMC2209](https://www.trinamic.com/products/integrated-circuits/details/tmc2209-la/)                                                                                                                                                    |                                                               |
+| **步进驱动器特性**  | 峰值电流高达 2.0A，任意设置到 x256 的微步插值，堵转检测，stealthChop2                                                                                                                                    |                                                               |
+| **大电流输出**     | 1 x 15A，2 x 各 5A                                                                                                                                                                                                                        |                                                               |
+| **热敏电阻/PT1000 输入** | 3 x 输入，针对 100K 热敏电阻和 PT1000 传感器优化                                                                                                                                                                               |                                                               |
+| **中等电流输出**   | 4 x PWM 控制输出，其中 2 个支持转速计输入。电压可在 2 个组中选择 VIN 和 12V                                                                                                                               |                                                               |
+| **输入/输出**           | 5 x 板载 I/O 连接器，加上 2 x 仅输入连接器，用于限位开关、耗材监测器、Z 探针、舵机或 PanelDue 连接。输入可耐受 30V。还有一个 5V 信号电平输出，用于舵机、激光控制或 VFD。 |                                                               |
+| **电源监控**         | VIN 电压监控允许在断电时保存状态。                                                                                                                                                                              |                                                               |
+| **SD 卡接口**        | 板载高速 SD 卡插槽。                                                                                                                                                                                                         |                                                               |
 
-| EXPANSION                                                                  |                                                                                                             |
+| 扩展                                                                  |                                                                                                             |
 |:-------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
-| **Support for attached Raspberry Pi or other Single Board Computer (SBC)** | Yes                                                                                                         |
-| **External stepper driver support**                                        | Multiple expansion via the CAN-FD bus.                                                                      |
-| **Stepper driver expansion**                                               | Further expansion via CAN-FD bus                                                                            |
-| **PT100 and thermocouple daughterboard support**                           | Supports 1 x daughterboard (2 channels) on board. More via CAN-FD-connected expansion boards.               |
-| **LCD support**                                                            | PanelDue colour touch screen, mini 12864 mono graphics display using ST7567 controller (3.3V signal levels) |
-| **LED strip support**                                                      | RGB Neopixel (max. 60 LEDs, external 5V power required)                                                     |
-| **Other expansion**                                                        | Via I/O ports and CAN-FD bus                                                                                |
+| **支持连接的树莓派或其他单板计算机 (SBC)** | 是                                                                                                         |
+| **外部步进驱动器支持**                                        | 通过 CAN-FD 总线进行多重扩展。                                                                      |
+|                                               |                                                                             |
+| **PT100 和热电偶子板支持**                           | 板上支持 1 x 子板（2 通道）。更多通过 CAN-FD 连接的扩展板。               |
+| **LCD 支持**                                                            | PanelDue 彩色触摸屏，使用 ST7567 控制器的 mini 12864 单色图形显示屏（3.3V 信号电平） |
+| **LED 灯带支持**                                                      | RGB Neopixel（最多 60 个 LED，需要外部 5V 电源）                                                     |
+| **其他扩展**                                                        | 通过 I/O 端口和 CAN-FD 总线                                                                                |
 
-## Physical properties
+## 物理特性
 
-### Dimensions
+### 尺寸
 
 ![image-20220902134845584](/images/image-20220902134845584.png)
 
-### Mounting
+### 安装
 
-The form factor of the Big Dipper is the same as the Duet 2 WiFi/Ethernet and can be mounted in much the same way, though the driver connectors are flipped sides compared to the Duet 2 WiFi/Ethernet.
+Big Dipper 的外形与 Duet 2 WiFi/以太网相同，安装方式也大致相同，不过与 Duet 2 WiFi/以太网相比，驱动器连接器位于相反的一侧。
 
-### Cooling
+### 散热
 
-In many applications passive cooling will be sufficient, especially if the board is mounted vertically in a well ventilated position. If active cooling is needed then a fan blowing across the back of the board along the line of the stepper drivers is recommended.
+在许多应用中，被动散热就足够了，特别是如果板子垂直安装在通风良好的位置。如果需要主动散热，建议使用风扇沿步进驱动器方向吹过板子背面。
 
-The stepper drivers' heatsinks are connected to the PCB and the majority of the heat is dissipated via the PCB so heatsinks on the stepper driver chips are largely ineffective.
+步进驱动器的散热片连接到 PCB，大部分热量通过 PCB 散发，因此步进驱动器芯片上的散热片基本上无效。
 
-### MCU Temp
+### MCU 温度
 
-Unfortunately the SAME54P20A chip used in the Big Dipper does not have a functioning temperature sensor. In theory it does have an on-chip temperature sensor, but the errata document for the chip says it doesn't work. However, it has been enabled in RRF 3.3 as an experiment, and does appear to give useful readings on the samples tested.
+不幸的是，Big Dipper 中使用的 SAME54P20A 芯片没有可用的温度传感器。理论上它确实有一个片上温度传感器，但该芯片的勘误文档说明它无法工作。不过，它已在 RRF 3.3 中作为实验启用，并且在测试的样品上似乎确实能提供有用的读数。
 
-### Stepper Driver Temp
+### 步进驱动器温度
 
-Due to this you would be unable to monitor the MCU temp in order to control fans. The driver sensors do work for fan control, but only return flags of warning and overtemp,
+因此，您将无法监控 MCU 温度以控制风扇。驱动器传感器确实可用于风扇控制，但只返回警告和过温标志，
 
-### 3D Model
+### 3D 模型
 
-The STEP files for boards are available [on Github here](https://github.com/Duet3D/Duet3-Mini5plus/tree/main/v1.01).
+板的 STEP 文件可在 [Github 此处](https://github.com/Duet3D/Duet3-Mini5plus/tree/main/v1.01) 获取。
 
-## Physical connections
+## 物理连接
 
-### Wiring diagram
+### 接线图
 
-![Big-Dipper Wiring](/images/Big-Dipper%20Wiring.png)
+![Big-Dipper Wiring](/images/big-dipper--wiring-diagram.png)
 
-### Description of Connections
 
-| Big Dipper Connectors                  |                                                  |                                                                                                                                                                                                                                                                                                                                               |
+### 连接说明
+
+| Big Dipper 连接器                  |                                                  |                                                                                                                                                                                                                                                                                                                                               |
 |:-------------------------------------- | ------------------------------------------------ | --------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| **1 x 4-way barrier strip**            | POWER IN, GND, VIN                               | Two pins for main VIN and GND                                                                                                                                                                                                                                                                                                                 |
-| **1 x 4-way barrier strip**            | OUT_0, V_OUT_0_OUT, OUT_0_NEG                    | Two pins for positive and negative OUT_0 terminals. OUT_0 is intended to drive a bed heater or other high current resistive load. If you connect an inductive load to this output, you must use a suitably rated external flyback diode. The ground side of OUT_0 is switched by the mosfet and the positive side is protected by a 15A fuse. |
-| **2 x 2-pin JST VH connectors**        | OUT_1, OUT_2                                     | Intended for extruder heaters or similar medium/high current resistive loads. Flyback diodes are built-in to these outputs. Maximum recommended current 6A each.                                                                                                                                                                              |
-| **2 x 4-pin KK connectors**            | OUT_3, OUT_4                                     | Intended for PWM-controllable fans or other medium/low current loads. Flyback diodes are built-in to these outputs. The connector fits a standard PC-type 4-pin PWM fan. Alternatively, a 2-pin fan may be connected between the V_OULC1+ pin (+ve) and the OUT_n_NEG pin (-ve).                                                              |
-|                                        |                                                  | **Note:** OUT_3 and OUT_4 are protected by a flyback diode to V_FUSED. This does not provide protection if driving these outputs from a higher voltage than V_FUSED                                                                                                                                                                           |
-| **1 x 3-pin Jumper**                   | OUT_3&4 Select V                                 | The positive supply to the above connectors is the centre pin of the 3-pin jumper block. A jumper in the "left" position will power them from the fused VIN supply (max 2A each ). A jumper in the "right" position will power them from the onboard 12V regulator (subject to overall 12V supply current *see note 1 below*).                |
-| **2 x 2-pin KK connectors**            | OUT_5, OUT_6                                     | these are intended for PWM-controllable fans or other medium/low current loads. Flyback diodes are built-in to these outputs. **Note** out_6 PWM pin is shared with LASER/VFD                                                                                                                                                                 |
-|                                        |                                                  | **Note:** OUT_5 and OUT_6 are protected by a flyback diode to V_FUSED. This does not provide protection if driving these outputs from a higher voltage than V_FUSED                                                                                                                                                                           |
-| **1 x 3-pin Jumper**                   | OUT_5&6 Select V                                 | The positive supply to the above connectors is the centre pin of the 3-pin jumper block. A jumper in the "left" position will power them from the fused VIN supply (max 2A each ). A jumper in the "right" position will power them from the onboard 12V regulator (subject to overall 12V supply current *see note 1 below*).                |
-| **5 x 4-pin KK connectors**            | DRIVER_0, DRIVER_1, DRIVER_2, DRIVER_3, DRIVER_4 | Stepper motor connections, See "Connecting Stepper Motors" section below.                                                                                                                                                                                                                                                                     |
-| **1 x 16-pin socket strip**            | EXTERNAL DRIVERS                                 | Step, Direction, Enable, Diag and UART connections for DRIVER_5 and DRIVER_6, along with fused VIN, ground, 3.3V and 5V. Designed for a Mini 2+ expansion board to plug directly in. Step, direction and enable can also be used with other external drivers (3.3V signal level).                                                             |
-| **1 x 2x5 IDC connector**              | PanelDue_SD                                      | Connects the [PanelDue](https://docs.duet3d.com/Duet3D_hardware/Accessories/PanelDue) UART and shared SPI bus for external SD card. Powered from 5V supply (*see note 2*). **Note** shared with io0.in and io0.out pins on the IO_0 header.                                                                                                   |
-| **1 x 3-pin KK connectors**            | LASER/VFD                                        | 5V buffered output shared with out6, along with 5V and ground supply (*see note 2 below*). Provides a 5V PWM signal to drive hobby servos, and PWM->analog controls for VFDs or Lasers. **Note** out6 PWM pin is shared with OUT_6                                                                                                            |
-| **1 x 2-pin KK connectors**            | 12V                                              | Always on 12V supply (*see note 1 below*)                                                                                                                                                                                                                                                                                                     |
-| **Network**                            | **Ethernet**                                     | 1 x RJ45 100BaseT Port. *non MDIX* connect to an Ethernet switch, hub or MDIX enabled laptop port. If connecting to a non MDIX enabled port use a crossover cable. Orange LED on Ethernet port indicates Ethernet enabled, green LED indicates network activity                                                                               |
-|                                        | **Wifi**                                         | U.FL/IPEX push on connector for external antenna. *Note this connector is delicate, take care when plugging and unplugging*. "LED ESP": green LED indicates Wifi connection status                                                                                                                                                            |
-| **Reset**                              |                                                  | Single push to reset the board. Double push to put the board into UF2 bootloader upload mode. See [User manual: Updating firmware - Big Dipper via USB](https://docs.duet3d.com/User_manual/RepRapFirmware/Updating_firmware#duet-3-mini-5-wifiethernet)                                                                                      |
-| **1 x JST ZH 6-pin connectors**        | SWD                                              | Connection for an SWD programming device such as an Atmel-ICE                                                                                                                                                                                                                                                                                 |
-| **1 x 2-pin KK connectors**            | CAN                                              | CAN-FD Bus connection for Duet 3 CAN-FD expansion boards.                                                                                                                                                                                                                                                                                     |
-| **5 x 5-pin KK connectors**            | IO_0, IO_1, IO_2, IO_3, IO_4                     | These are for endstop switches, Z probes, filament monitors and other low-voltage I/O functions. Each connector provides both 3.3V and 5V power. The inputs will tolerate up to 30V with 10K series resistors (but see below for bypass option). The outputs are 3.3V signals levels with 470R series resistors. IO_1,2,3 are PWM capable.    |
-| **2 x 2-pin Jumpers 10K->470R bypass** | IO2.in, IO3.in                                   | v1.01 and later only. Jumpers to allow the 10K resistors on IO2.in and IO3.in to be bypassed with 470R resistors. This is required to use IO2 or IO3 for I2C.                                                                                                                                                                                 |
-| **2 x 3-pin KK connectors**            | IO_5, IO_6                                       | Input only IO connections that will tolerate up to 30V with 10K series resistors. Perfect for simple endstop switches.                                                                                                                                                                                                                        |
-| **3 x 2-pin KK connectors**            | TEMP_0, TEMP_1, TEMP_2                           | Connections for thermistor or PT1000 sensors.                                                                                                                                                                                                                                                                                                 |
-| **1 x 2x13 IDC connector**             | SBC                                              | Connections to a Single Board Computer (SBC) such as a Raspberry Pi.                                                                                                                                                                                                                                                                          |
-| **1 x 2x5 IDC connector**              | TEMPDB                                           | For connecting a [PT100](https://docs.duet3d.com/Duet3D_hardware/Accessories/PT100_Temperature_Daughterboard) or [thermocouple](https://docs.duet3d.com/Duet3D_hardware/Accessories/Thermocouple_Daughterboard) interface board. **Note** boards cannot be stacked so only 1 board at a time is supported.                                    |
-| **1 x 3-pin Jumper**                   | 5V_SELECT                                        | Source of optional External 5V input, see note 2 below                                                                                                                                                                                                                                                                                        |
-| **1 x 2-pin Jumper**                   | Int_5V_Disable                                   | Connect a jumper across this to disable the internal 5V regulator, see note 2 below                                                                                                                                                                                                                                                           |
-| **2 x 2x5 IDCs**                       | 12864_EXP1, 12864_EXP2                           | Headers for connecting a 12864 display using a ST7567 controller, see "Connecting a 12864 display" below.                                                                                                                                                                                                                                     |
-| **1 x 3-pin KK connector**             | NP_LED                                           | This is to connect and power NeoPixel LED strips (DotStar LED strips are not supported) . Connect the DO pin to Neopixel DI. External 5V must be supplied to the "EXT 5V" header to power the NeoPixel array, they cannot be powered from the onboard regulator.                                                                              |
-| **1 x 3-pin KK connector**             | EXT 5V                                           | Input for External 5V supply, see Note 2 below. There is a buffered 5V "pson" pin which can be used to switch an external supply, note it is shared with io4.out                                                                                                                                                                              |
+| **1 x 10 位螺丝端子**            | 电源输入：GND、VIN                               | 两个引脚用于主 VIN 和 GND                                                                                                                                                                                                                                                                                                                 |
+|             | OUT_0：V_OUT_0_OUT、OUT_0_NEG OUT_0_IN：V_OUT_0_IN、OUT_0_NEG_IN                   | 两个引脚用于 OUT_0 的正极和负极端子（BED OUT）。OUT_0 用于驱动热床加热器或其他大电流阻性负载。如果您将感性负载连接到此输出，则必须使用额定值合适的续流二极管。OUT_0 的接地侧由 MOSFET 开关控制，正极侧由 15A 保险丝保护。OUT_0 电压输入（BED IN）正极侧由 20A 保险丝保护  |
+|         | OUT_1、OUT_2                                     | 用于挤出机加热器或类似的中/大电流阻性负载。这些输出内置续流二极管。建议最大电流各 6A。                                                                                                                                                                              |
+| **2 x 4 针 JST XH 连接器**            | OUT_3、OUT_4                                     | 用于 PWM 可控风扇或其他中/低电流负载。这些输出内置续流二极管。该连接器适合标准 PC 型 4 针 PWM 风扇。或者，可以将 2 针风扇连接在 V_OULC1+ 引脚（正极）和 OUT_n_NEG 引脚（负极）之间。                                                              |
+|                                        |                                                  | **注意：** OUT_3 和 OUT_4 通过续流二极管保护到 V_FUSED。如果从高于 V_FUSED 的电压驱动这些输出，则无法提供保护                                                                                                                                                                           |
+| **1 x 6 针跳线**                   | OUT_3&4 选择电压                                 | 上述连接器的正电源由此跳线选择。跳线在 "24v" 位置将从熔断的 VIN 电源为其供电（每个最大 2A）。跳线在 "12v" 位置将从板载 12V 稳压器为其供电（受整体 12V 电源电流限制 *见下方注释 1*）。跳线在 "5v" 位置将从板载 5V 稳压器为其供电                |
+| **2 x 2 针 JST XH 连接器**            | OUT_5、OUT_6                                     | 这些用于 PWM 可控风扇或其他中/低电流负载。这些输出内置续流二极管。**注意** out_6 PWM 引脚与 LASER/VFD 共用                                                                                                                                                                 |
+|                                        |                                                  | **注意：** OUT_5 和 OUT_6 通过续流二极管保护到 V_FUSED。如果从高于 V_FUSED 的电压驱动这些输出，则无法提供保护                                                                                                                                                                           |
+| **1 x 6 针跳线**                   | OUT_5&6 选择电压                                 | 上述连接器的正电源由此跳线选择。跳线在 "24v" 位置将从熔断的 VIN 电源为其供电（每个最大 2A）。跳线在 "12v" 位置将从板载 12V 稳压器为其供电（受整体 12V 电源电流限制 *见下方注释 1*）。跳线在 "5v" 位置将从板载 5V 稳压器为其供电                |
+| **7 x 4 针 JST XH 连接器**            | DRIVER_0、DRIVER_1、DRIVER_2、DRIVER_3、DRIVER_4、DRIVER_5、DRIVER_6 | 步进电机连接，请参阅下方 "连接步进电机" 部分。                                                                                                                                                                                                                                                                     |
+|             |                                  |                                                              |
+| **1 x 2x5 IDC 连接器**              | PanelDue_SD                                      | 连接 [PanelDue](https://docs.duet3d.com/Duet3D_hardware/Accessories/PanelDue) UART 和用于外部 SD 卡的共享 SPI 总线。由 5V 电源供电（*见注释 2*）。**注意** 与 IO_0 排针上的 io0.in 和 io0.out 引脚共用。                                                                                                   |
+| **1 x 3 针 JST XH 连接器**            | LASER/VFD                                        | 与 out6 共用的 5V 缓冲输出，以及 5V 和接地电源（*见下方注释 2*）。提供 5V PWM 信号以驱动舵机，以及用于 VFD 或激光器的 PWM->模拟控制。**注意** out6 PWM 引脚与 OUT_6 共用                                                                                                            |
+|**1 x 2x4 针插座排**       | 24V                                              | 常开 24V 电源 4 x 24V 和 4 x GND（*见下方注释 1*）                                                                                                                                                                                                                                                                                                     |
+| **网络**                            | **以太网**                                     | 1 x RJ45 100BaseT 端口。*非 MDIX* 连接到以太网交换机、集线器或启用 MDIX 的笔记本电脑端口。如果连接到未启用 MDIX 的端口，请使用交叉线缆。以太网端口上的橙色 LED 表示以太网已启用，绿色 LED 表示网络活动                                                                               |
+|                                        | **Wifi**                                         | 用于外置天线的 U.FL/IPEX 按压式连接器。*注意此连接器很脆弱，插拔时请小心*。"LED ESP"：绿色 LED 表示 Wifi 连接状态                                                                                                                                                            |
+| **复位**                              |                                                  | 按一次复位板子。按两次使板子进入 UF2 引导加载程序上传模式。请参阅 [用户手册：更新固件 - 通过 USB 更新 Big Dipper](https://docs.duet3d.com/User_manual/RepRapFirmware/Updating_firmware#duet-3-mini-5-wifiethernet)                                                                                      |
+|   **USB-C**      |USB    |用于更新固件或串行通信                                                                                                                                                                                                                                                                                   |
+| **1 x 2 针 JST XH 连接器**            | CAN                                              | 用于 Duet 3 CAN-FD 扩展板的 CAN-FD 总线连接。                                                                                                                                                                                                                                                                                     |
+| **5 x 5 针 JST XH 连接器**            | IO_0、IO_1、IO_2、IO_3、IO_4                     | 这些用于限位开关、Z 探针、耗材监测器和其他低压 I/O 功能。每个连接器提供 3.3V 和 5V 电源。输入通过 10K 串联电阻可耐受高达 30V（但请参阅下方关于旁路的选项）。输出为 3.3V 信号电平，带 470R 串联电阻。IO_1、2、3 支持 PWM。    |
+|**1 x 1x6 针插座排**  |SWD                                    | 用于 SWD 编程设备（如 Atmel-ICE）的连接                                                                                                                                                                                 |
+| **2 x 3 针 JST XH 连接器**            | IO_5、IO_6                                       | 仅输入 IO 连接，通过 10K 串联电阻可耐受高达 30V。非常适合简单的限位开关。                                                                                                                                                                                                                        |
+| **3 x 2 针 JST XH 连接器**            | TEMP_0、TEMP_1、TEMP_2                           | 用于热敏电阻或 PT1000 传感器的连接。                                                                                                                                                                                                                                                                                                 |
+| **1 x 2x13 IDC 连接器**             | SBC                                              | 连接到单板计算机 (SBC)，例如树莓派。                                                                                                                                                                                                                                                                          |
+| **1 x 2x5 针插座排**              | TEMPDB                                           | 用于连接 [PT100](https://docs.duet3d.com/Duet3D_hardware/Accessories/PT100_Temperature_Daughterboard) 或 [热电偶](https://docs.duet3d.com/Duet3D_hardware/Accessories/Thermocouple_Daughterboard) 接口板。**注意** 板子不能堆叠，因此一次仅支持 1 块板。                                    |
+| **1 x 3 针跳线**                   | 5V_SELECT                                        | 可选外部 5V 输入的来源，请参阅下方注释 2                                                                                                                                                                                                                                                                                        |
+| **1 x 2 针跳线**                   | Int_5V_Disable                                   | 在此处连接跳线以禁用内部 5V 稳压器，请参阅下方注释 2                                                                                                                                                                                                                                                           |
+| **2 x 2x5 IDC**                       | 12864_EXP1、12864_EXP2                           | 用于连接使用 ST7567 控制器的 12864 显示屏的排针，请参阅下方 "连接 12864 显示屏"。                                                                                                                                                                                                                                     |
+| **1 x 3 针 JST XH 连接器**             | NP_LED                                           | 用于连接和供电 NeoPixel LED 灯带（不支持 DotStar LED 灯带）。将 DO 引脚连接到 Neopixel DI。必须向 "EXT 5V" 排针提供外部 5V 以为 NeoPixel 阵列供电，它们不能由板载稳压器供电。                                                                              |
+| **1 x 3 针 JST XH 连接器**             | EXT 5V                                           | 外部 5V 电源输入，请参阅下方注释 2。有一个缓冲的 5V "pson" 引脚，可用于切换外部电源，注意它与 io4.out 共用                                                                                                                                                                              |
 
-**Notes**
+**注释**
 
-1. Total 12V load should not exceed 800mA
-2. 5V can be powered from multiple inputs (USB, External 5V input, SBC) as well as the internal 5V regulator. Total 5V load should not exceed 800mA when powered from the internal 5V regulator. see the "Power distribution, 5V" section below for more information
+1. 12V 总负载不应超过 800mA
+2. 5V 可由多个输入（USB、外部 5V 输入、SBC）以及内部 5V 稳压器供电。当由内部 5V 稳压器供电时，5V 总负载不应超过 800mA。更多信息请参阅下方 "电源分配，5V" 部分
 
-### LED indications
+### LED 指示
 
 ![image-20221020094336139](/images/image-20221020094336139.png)
 
-LEDs are provided to indicate the following:
+提供 LED 以指示以下内容：
 
-| Label       | Color | Function                                                     |
+| 标签       | 颜色 | 功能                                                     |
 | :---------- | :---- | :----------------------------------------------------------- |
-| **ACT**     | Red   | Indicates activity on the CAN-FD bus                         |
-| **STATUS**  | Red   | See description below                                        |
-| **V_FUSED** | Red   | Indicates fused VIN supply present                           |
-| **12V+**    | Red   | Indicates indicates on-board 12V regulator operating         |
-| **5V+**     | Red   | Indicates indicates 5V supply present                        |
-| **3.3V+**   | Red   | Indicates on-board 3.3V regulator operating                  |
-| **ESP**     | Red   | WiFi version only. Indicates WiFi activity; flashing for searching/connecting, on for connected. |
-| **OUT_0**   | Red   | Next to the OUT 0 connector, indicates when on               |
-| **OUT_1**   | Red   | Next to the OUT 1 connector, indicates when on               |
-| **OUT_2**   | Red   | Next to the OUT 2 connector, indicates when on               |
+| **ACT**     | 红色   | 指示 CAN-FD 总线上的活动                         |
+| **STATUS**  | 红色   | 见下方描述                                        |
+| **V_FUSED** | 红色   | 指示存在熔断的 VIN 电源                           |
+| **12V+**    | 红色   | 指示板载 12V 稳压器工作         |
+| **5V+**     | 红色   | 指示存在 5V 电源                        |
+| **3.3V+**   | 红色   | 指示板载 3.3V 稳压器工作                  |
+| **ESP**     | 红色   | 仅 WiFi 版本。指示 WiFi 活动；闪烁表示搜索/连接中，常亮表示已连接。 |
+| **OUT_0**   | 红色   | 位于 OUT 0 连接器旁边，开启时指示               |
+| **OUT_1**   | 红色   | 位于 OUT 1 连接器旁边，开启时指示               |
+| **OUT_2**   | 红色   | 位于 OUT 2 连接器旁边，开启时指示               |
 
-The red LED next to the TYPE-C USB is "STATUS".  It indicates the state of the board, as follows.
+TYPE-C USB 旁边的红色 LED 是 "STATUS"。它指示板子的状态，如下所示。
 
-| LED                                                             | Meaning                                     |
+| LED                                                             | 含义                                     |
 |:--------------------------------------------------------------- |:------------------------------------------- |
-| Flashing steadily, about half a second off and half a second on | Normal operation, RepRapFirmware is running |
-| Flashing three times, then off for a while                      | Firmware CRC check failed                   |
-| Fading from bright to dim and then back again                   | USB bootloader activated                    |
+| 稳定闪烁，约半秒灭半秒亮 | 正常运行，RepRapFirmware 正在运行 |
+| 闪烁三次，然后熄灭一段时间                      | 固件 CRC 校验失败                   |
+| 从亮到暗渐变然后再次变亮                   | USB 引导加载程序已激活                    |
 
-### Pin names
+### 引脚名称
 
-For more information on pin names, see [Pin Names](https://docs.duet3d.com/User_manual/RepRapFirmware/Migration_RRF2_to_RRF3#pin-names).
+有关引脚名称的更多信息，请参阅 [引脚名称](https://docs.duet3d.com/User_manual/RepRapFirmware/Migration_RRF2_to_RRF3#pin-names)。
 
-RepRapFirmware 3 uses pin names for user-accessible pins, rather than pin numbers, to communicate with individual pins on the PCB. In RRF 3 no user-accessible pins are defined at startup by default. Pins can be defined for use by a number of gcode commands, eg M574, M558, M950.
+RepRapFirmware 3 使用引脚名称（而非引脚编号）来与 PCB 上的各个引脚通信，用于用户可访问的引脚。在 RRF 3 中，默认情况下启动时未定义任何用户可访问的引脚。可以为多个 gcode 命令定义引脚，例如 M574、M558、M950。
 
-The Duet 3 series uses the pin name format "expansion-board-address.pin-name" to identify pins on expansion board, where *expansion-board-address* is the numeric CAN address of the board. A pin name that does not start with a sequence of decimal digits followed by a period, or that starts with "0." refers to a pin on the Big Dipper.
+Duet 3 系列使用引脚名称格式 "expansion-board-address.pin-name" 来标识扩展板上的引脚，其中 *expansion-board-address* 是板子的数字 CAN 地址。不以一系列十进制数字后跟句点开头的引脚名称，或以 "0." 开头的引脚名称，指的是 Big Dipper 上的引脚。
 
-| Pin location           | RRF3 Pin name    | Notes                                                                                                           |
+| 引脚位置           | RRF3 引脚名称    | 备注                                                                                                           |
 |:---------------------- |:---------------- |:--------------------------------------------------------------------------------------------------------------- |
-| **Heater outputs**     |                  |                                                                                                                 |
-| OUT_0                  | out0             | High current output, bed heater                                                                                 |
-| OUT_1                  | out1             | Medium current outputs, hot ends                                                                                |
-| OUT_2                  | out2             | Medium current outputs, hot ends                                                                                |
-| **Outputs (4-pin)**    |                  |                                                                                                                 |
-| OUT_3                  | out3             | 4-wire fans with tacho                                                                                          |
+| **加热器输出**     |                  |                                                                                                                 |
+| OUT_0 (BED OUT)                 | out0             | 大电流输出，热床加热器                                                                                 |
+| OUT_1 (E0 OUT)                 | out1             | 中等电流输出，热端                                                                                |
+| OUT_2 (E1 OUT)                 | out2             | 中等电流输出，热端                                                                                |
+| **输出（4 针）**    |                  |                                                                                                                 |
+| OUT_3                  | out3             | 带转速计的 4 线风扇                                                                                          |
 | out3.tach              |                  |                                                                                                                 |
-| OUT_4                  | out4             | 4-wire fans with tacho                                                                                          |
+| OUT_4                  | out4             | 带转速计的 4 线风扇                                                                                          |
 | out4.tach              |                  |                                                                                                                 |
-| **Outputs (2-pin)**    |                  |                                                                                                                 |
+| **输出（2 针）**    |                  |                                                                                                                 |
 | OUT_5                  | out5             |                                                                                                                 |
-| OUT_6                  | out6, laser, vfd | Pin shared with OUT 6 and LASER/VFD connectors                                                                  |
-| **Temperature inputs** |                  |                                                                                                                 |
+| OUT_6                  | out6, laser, vfd | 引脚与 OUT 6 和 LASER/VFD 连接器共用                                                                  |
+| **温度输入** |                  |                                                                                                                 |
 | TEMP_0                 | temp0            |                                                                                                                 |
 | TEMP_1                 | temp1            |                                                                                                                 |
 | TEMP_2                 | temp2            |                                                                                                                 |
-| **Inputs/Output**      |                  |                                                                                                                 |
-| IO_0                   | io0.in           | PanelDue, endstops, Z probes, filament monitors etc. Shares io0.out and io0.in pins with PanelDue_SD connector. |
-|                        | io0.out          | PanelDue, endstops, Z probes, filament monitors etc. Shares io0.out and io0.in pins with PanelDue_SD connector. |
-| IO_1                   | io1.in           | endstops, Z probes, filament monitors etc                                                                       |
-|                        | io1.out          | endstops, Z probes, filament monitors etc                                                                       |
-| IO_2                   | io2.in           | endstops, Z probes, filament monitors etc                                                                       |
-|                        | io2.out          | endstops, Z probes, filament monitors etc                                                                       |
-| IO_3                   | io3.in           | endstops, Z probes, filament monitors etc                                                                       |
-|                        | io3.out          | endstops, Z probes, filament monitors etc                                                                       |
-| IO_4                   | io4.in           | endstops, Z probes, filament monitors etc                                                                       |
-|                        | io4.out, pson    | endstops, Z probes, filament monitors etc                                                                       |
-| IO_5                   | io5.in           | Input only                                                                                                      |
-| IO_6                   | io6.in           | Input only                                                                                                      |
+| **输入/输出**      |                  |                                                                                                                 |
+| IO_0                   | io0.in           | PanelDue、限位开关、Z 探针、耗材监测器等。与 PanelDue_SD 连接器共用 io0.out 和 io0.in 引脚。 |
+|                        | io0.out          | PanelDue、限位开关、Z 探针、耗材监测器等。与 PanelDue_SD 连接器共用 io0.out 和 io0.in 引脚。 |
+| IO_1                   | io1.in           | 限位开关、Z 探针、耗材监测器等                                                                       |
+|                        | io1.out          | 限位开关、Z 探针、耗材监测器等                                                                       |
+| IO_2                   | io2.in           | 限位开关、Z 探针、耗材监测器等                                                                       |
+|                        | io2.out          | 限位开关、Z 探针、耗材监测器等                                                                       |
+| IO_3                   | io3.in           | 限位开关、Z 探针、耗材监测器等                                                                       |
+|                        | io3.out          | 限位开关、Z 探针、耗材监测器等                                                                       |
+| IO_4                   | io4.in           | 限位开关、Z 探针、耗材监测器等                                                                       |
+|                        | io4.out, pson    | 限位开关、Z 探针、耗材监测器等                                                                       |
+| IO_5                   | io5.in           | 仅输入                                                                                                      |
+| IO_6                   | io6.in           | 仅输入                                                                                                      |
 | **SPI CS**             |                  |                                                                                                                 |
-| TEMPDB                 | spi.cs0          | Thermocouple or PT100 daughterboard                                                                             |
+| TEMPDB                 | spi.cs0          | 热电偶或 PT100 子板                                                                             |
 |                        | spi.cs1          |                                                                                                                 |
 |                        | spi.cs2          |                                                                                                                 |
 |                        | spi.cs3          |                                                                                                                 |
-| **Miscellaneous**      |                  |                                                                                                                 |
-| LASER/VFD              | laser, vfd, out6 | Pin shared with OUT 6 and LASER/VFD connectors                                                                  |
-| EXT 5V                 | pson, io4.out    | For controlling an external PSU or SSR, shared with io4.out                                                     |
+| **其他**      |                  |                                                                                                                 |
+| LASER/VFD              | laser, vfd, out6 | 引脚与 OUT 6 和 LASER/VFD 连接器共用                                                                  |
+| EXT 5V                 | pson, io4.out    | 用于控制外部 PSU 或 SSR，与 io4.out 共用                                                     |
+| LED                 | led    | RGB Neopixel                                                     |
 
-### Input/Output
+### 输入/输出
 
-#### OUT headers
+#### OUT 排针
 
-OUT_0 to OUT_6 are all PWM-capable. OUT_6 is shared with LASER/VFD. See tables above for notes on voltage selection and current limits.
+OUT_0 到 OUT_6 均支持 PWM。OUT_6 与 LASER/VFD 共用。有关电压选择和电流限制的说明，请参阅上表。
 
-#### IO headers
+#### IO 排针
 
-There are 7 IO headers on board. IO_0 to IO_4 have pins for input, output, 3.3V, 5V and Gnd supplied. IO_5 and IO_6 have an input, 3.3V and Gnd supplied. This enables support for a wide range of endstops, probes, filament monitors and future low bandwidth devices. RepRapFirmware 3 can be configured to map these ports to the appropriate functions as required.
+板上有 7 个 IO 排针。IO_0 到 IO_4 具有输入、输出、3.3V、5V 和 Gnd 引脚。IO_5 和 IO_6 具有输入、3.3V 和 Gnd。这支持多种限位开关、探针、耗材监测器和未来的低带宽设备。RepRapFirmware 3 可以配置为根据需要将这些端口映射到适当的功能。
 
-![duet_3_mb6hc_input_output.jpg](https://docs.duet3d.com/duet_boards/duet_3_mb6hc/duet_3_mb6hc_input_output.jpg)
+![duet_3_mb6hc_input_output.jpg](/images/duet_3_mb6hc_input_output.jpg)
 
-Except as noted in the table below, an IO_x_IN pin can always be used to provide a digital input (e.g. for endstop inputs or filament monitors), and an IO_x_OUT pin can always be used to provide a digital output.
+除下表注明的例外情况外，IO_x_IN 引脚始终可用于提供数字输入（例如用于限位开关输入或耗材监测器），IO_x_OUT 引脚始终可用于提供数字输出。
 
-IO output pins can be used as inputs, but are only 3.3V tolerant. IO input pins can be used as outputs, but have 10K protection resistors in series with them, so you would need to bypass these to use them as outputs. On board revision v1.01 and later only, jumpers allow the 10K resistors on IO2.in and IO3.in to be bypassed with 470R resistors. This is required to use IO2 or IO3 for I2C.
+IO 输出引脚可用作输入，但仅耐受 3.3V。IO 输入引脚可用作输出，但串联有 10K 保护电阻，因此需要旁路这些电阻才能将其用作输出。仅在板版本 v1.01 及更高版本上，跳线允许用 470R 电阻旁路 IO2.in 和 IO3.in 上的 10K 电阻。这是将 IO2 或 IO3 用于 I2C 所必需的。
 
-The individual IO_x connectors have the following capabilities:
+各个 IO_x 连接器具有以下功能：
 
-| IO # | UART? | Analog in? | PWM out? | Notes                                                                                                                             |
+| IO # | UART？ | 模拟输入？ | PWM 输出？ | 备注                                                                                                                             |
 |:---- |:----- |:---------- |:-------- |:--------------------------------------------------------------------------------------------------------------------------------- |
-| 0    | yes   | no         | no       | AUX0 port, can be used to connect a PanelDue. Configure using M575 P1. Shares io0.out and io0.in pins with PanelDue_SD connector. |
-| 1    | yes   | no         | yes      | AUX1 port. Configure using M575 P2.                                                                                               |
-| 2    | yes   | no         | yes      | The standard firmware does not support this UART                                                                                  |
-| 3    | no    | yes        | yes      | Shared with backlight control on 12864 displays having Neopixel backlights                                                        |
-| 4    | no    | no         | no       | IO4_OUT is shared with PSON output                                                                                                |
-| 5    | no    | no         | n/a      | 3-pin connector, input only                                                                                                       |
-| 6    | no    | no         | n/a      | 3-pin connector, input only                                                                                                       |
+| 0    | 是   | 否         | 否       | AUX0 端口，可用于连接 PanelDue。使用 M575 P1 配置。与 PanelDue_SD 连接器共用 io0.out 和 io0.in 引脚。 |
+| 1    | 是   | 否         | 是      | AUX1 端口。使用 M575 P2 配置。                                                                                               |
+| 2    | 是   | 否         | 是      | 标准固件不支持此 UART                                                                                  |
+| 3    | 否    | 是        | 是      | 与具有 Neopixel 背光的 12864 显示屏的背光控制共用                                                        |
+| 4    | 否    | 否         | 否       | IO4_OUT 与 PSON 输出共用                                                                                                |
+| 5    | 否    | 否         | 不适用      | 3 针连接器，仅输入                                                                                                       |
+| 6    | 否    | 否         | 不适用      | 3 针连接器，仅输入                                                                                                       |
 
-### Power distribution
+### 电源分配
 
-#### VIN (Input voltage from PSU)
+#### VIN（来自 PSU 的输入电压）
 
-Supply 12V-24V input power (11-25V absolute minimum/maximum) between the GND and VIN terminals.
+在 GND 和 VIN 端子之间提供 12V-24V 输入电源（绝对最小/最大 11-25V）。
 
-VIN is split via two fuses:
+VIN 通过两个保险丝分配：
 
-V_FUSED: 10A : All on board power demands, other than OUT0 (Normally used for heated bed
+V_FUSED：20A：除 OUT0（通常用于加热床）外的所有板载电源需求
 
-OUT0_FUSE: 15A: Directly to the V_OUT0 terminal
+OUT0_FUSE：15A：直接到 V_OUT0 端子
 
-VFUSED is distributed across the board as follows:
+VFUSED 在板上的分配如下：
 
-- 12V Regulator
-- 5V regulator
-- Stepper drivers (including external driver header)
-- OUT 1 and OUT 2 headers
-- V_OUTLC1 and V_OUTLC2 selection jumpers
+- 12V 稳压器
+- 5V 稳压器
+- 步进驱动器（包括外部驱动器排针）
+- OUT 1 和 OUT 2 排针
+- V_OUTLC1 和 V_OUTLC2 选择跳线
 
 #### 12V
 
-**12V_EXT**: 1500mA limit, Supplied to:
+**12V_EXT**：1500mA 限制，提供给：
 
-- V_OUTLC1/2 for OUT_3 thru OUT_6.
-- 12V header (useful for supplying 12V to a VFD controlled from the adjacent 5V PWM header)
+- V_OUTLC1/2 用于 OUT_3 到 OUT_6。
+- 12V 排针（可用于为从相邻 5V PWM 排针控制的 VFD 提供 12V）
 
 #### 5V
 
-**5V**: Split up to 5V_EXT, 5V_INT. Those points can also be supplied by VBUS (i.e. USB) and from the 5V_SELECT jumper that selects between 5V_EXT_INPUT and 5V_SBC. (see 5V power options below for more details).
+**5V**：分为 5V_EXT、5V_INT。这些点也可由 VBUS（即 USB）和 5V_SELECT 跳线提供，该跳线在 5V_EXT_INPUT 和 5V_SBC 之间选择。（更多详细信息请参阅下方 5V 电源选项）。
 
-- 5V_EXT feeds
+- 5V_EXT 供给
   
-  - IO headers
-  - 12864 display and PanelDue
-  - LASER/VFD header
+  - IO 排针
+  - 12864 显示屏和 PanelDue
+  - LASER/VFD 排针
 
-- 5V_INT feeds
+- 5V_INT 供给
 
-- Internal and External 3.3V regulators
+- 内部和外部 3.3V 稳压器
   
-  - External Driver header
+  - 外部驱动器排针
 
-- Internal 5V logic
+- 内部 5V 逻辑
 
-5V input can come from one of these sources:
+5V 输入可来自以下来源之一：
 
-- **Onboard 5V regulator:** Once 3.3V and other onboard demands are met approximately 700mA remains for use on the 5V_EXT rail.
-- **USB:** Can supply both 5V_INT and 5V_EXT. limits based on USB specification.
-- **5V_EXT_INPUT**: With the 5V_SELECT jumper set to this position, 5V is passed through to both 5V_EXT and 5V_INT from the EXT_5V header. When using EXT_5V, add jumper to Int_5V_Disable, to disable the onboard 5V regulator. The EXT_5V header also has a pin for controlling an external power supply (note signal shared with io4.out). This allows for the board to be powered from 5V, with an external supply for VIN turned on and off as required.
-- **5V_SBC:** In some, limited, cases it may be desirable to power the board from the 5V output of a SBC connected to the SBC header. Note that the total power of the Duet+ peripherals must be factored into the SBC power budget. Also note that powering the SBC from the duet is not supported.
+- **板载 5V 稳压器：** 一旦满足 3.3V 和其他板载需求，大约剩余 700mA 可用于 5V_EXT 电源轨。
+- **USB：** 可同时提供 5V_INT 和 5V_EXT。限制基于 USB 规范。
+- **5V_EXT_INPUT**：将 5V_SELECT 跳线设置到此位置时，5V 从 EXT_5V 排针传递到 5V_EXT 和 5V_INT。使用 EXT_5V 时，在 Int_5V_Disable 上添加跳线，以禁用板载 5V 稳压器。EXT_5V 排针还有一个用于控制外部电源的引脚（注意信号与 io4.out 共用）。这允许板子由 5V 供电，并根据需要打开和关闭 VIN 的外部电源。
+- **5V_SBC：** 在某些有限的情况下，可能希望从连接到 SBC 排针的 SBC 的 5V 输出为板子供电。请注意，Duet+ 外设的总功率必须计入 SBC 电源预算。另请注意，不支持从 duet 为 SBC 供电。
 
 #### 3.3V
 
-**3.3V**: Internal 3.3V supply for onboard logic, Temperature Daughterboards and external drivers
+**3.3V**：用于板载逻辑、温度子板和外部驱动器的内部 3.3V 电源
 
 - 3.3V_EXT
-  - IO Headers
-  - External SD cards
+  - IO 排针
+  - 外部 SD 卡
 
-### Connecting Displays
+### 连接显示屏
 
-#### Connecting a 12864 display
+#### 连接 12864 显示屏
 
-The signal levels are mostly 3.3V. This means that LCD modules using a ST7920 display powered from 5V (e.g. the RepRapDiscount display) will **not** work reliably. Use a display with a ST7567 controller instead. The display we test with is the Fysetc Mini 12864 display version 2.1. You can connect this directly to the EXP1 and EXP2 connectors using the straight-through ribbon cables normally supplied with this display. Enable the display using these commands in config.g:
+信号电平大多为 3.3V。这意味着使用由 5V 供电的 ST7920 显示屏的 LCD 模块（例如 RepRapDiscount 显示屏）将**无法**可靠工作。请改用带有 ST7567 控制器的显示屏。我们测试的显示屏是 Fysetc Mini 12864 显示屏 2.1 版。您可以使用通常随此显示屏提供的直通排线将其直接连接到 EXP1 和 EXP2 连接器。在 config.g 中使用以下命令启用显示屏：
 
 ```none
 M918 P2                     ; enable ST7567-based 12864 display
 M150 X2 R255 U255 B255 S3   ; set all 3 LEDs to white
 ```
 
-Copy
+复制
 
-You can adjust the M150 command to change the backlight colours. Please note, interrupts are disabled for a short time while the backlight colours are changed, and printing will be paused during this time; therefore you should not change the backlight colours during a print.
+您可以调整 M150 命令以更改背光颜色。请注意，在更改背光颜色时会短暂禁用中断，打印将在此期间暂停；因此，您不应在打印期间更改背光颜色。
 
-#### Connecting a PanelDue
+#### 连接 PanelDue
 
-A [PanelDue](https://docs.duet3d.com/Duet3D_hardware/Accessories/PanelDue) can be connected to IO_0 using a 4-wire cable. See [Connecting a PanelDue](https://docs.duet3d.com/User_manual/Connecting_hardware/Display_PanelDue#option-1-4-way-cable)
+可以使用 4 线电缆将 [PanelDue](https://docs.duet3d.com/Duet3D_hardware/Accessories/PanelDue) 连接到 IO_0。请参阅 [连接 PanelDue](https://docs.duet3d.com/User_manual/Connecting_hardware/Display_PanelDue#option-1-4-way-cable)
 
-Alternatively, it can be connected using a ribbon cable plugged into the socket labelled PanelDue_SD, which enables access to the PanelDue SD card socket. However, there are some caveats:
+或者，可以使用插入标有 PanelDue_SD 的插座的排线连接，这样可以访问 PanelDue SD 卡插槽。但是，有一些注意事项：
 
-- The PanelDue connector shares the io0.out and io0.in pins, so IO_0 cannot be used at the same time.
-- Duet 3 boards support the card detect signal. Newer versions of the PanelDue 5i and 7i (v1.01 and later of the 5i and v2.01 and later of the 7i) provide this signal, but older versions will need to be modified. See [Connecting a PanelDue](https://docs.duet3d.com/User_manual/Connecting_hardware/Display_PanelDue#card-detect-signal)
+- PanelDue 连接器共用 io0.out 和 io0.in 引脚，因此不能同时使用 IO_0。
+- Duet 3 板支持卡检测信号。较新版本的 PanelDue 5i 和 7i（5i 的 v1.01 及更高版本和 7i 的 v2.01 及更高版本）提供此信号，但旧版本需要修改。请参阅 [连接 PanelDue](https://docs.duet3d.com/User_manual/Connecting_hardware/Display_PanelDue#card-detect-signal)
 
-### Connecting a Raspberry Pi
+### 连接树莓派
 
-The Duet 3 Mini+ cannot power the Pi. You must power the Pi separately. The Raspberry Pi is sensitive to the input voltage, and many smartphone chargers or other USB power supplies cannot supply sufficient voltage. Therefore, we strongly recommend that you use the official Raspberry Pi PSU, or another PSU specifically designed to power a Raspberry Pi. If the red LED on the Pi is not continuously illuminated, the power supply is insufficient.
+Big Dipper 无法为 Pi 供电。您必须单独为 Pi 供电。树莓派对输入电压敏感，许多智能手机充电器或其他 USB 电源无法提供足够的电压。因此，我们强烈建议您使用官方树莓派 PSU，或其他专为树莓派供电设计的 PSU。如果 Pi 上的红色 LED 未持续亮起，则电源不足。
 
-In other respects, SBC connection to the Duet and configuration is the same for the Duet 3 Mini as for the Duet 3 Mainboard 6HC. See [SBC Setup for Duet 3](https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup).
+在其他方面，Big Dipper 的 SBC 连接和配置与 Duet 3 Mini 和 Duet 3 Mainboard 6HC 相同。请参阅 [Duet 3 的 SBC 设置](https://docs.duet3d.com/User_manual/Machine_configuration/SBC_setup)。
 
-When using an attached Raspberry Pi or other SBC, the WiFi or Ethernet interface on the Duet 3 Mini+ is disabled.
+当使用连接的树莓派或其他 SBC 时，Big Dipper 上的 WiFi 或以太网接口将被禁用。
 
-### Connecting Stepper Motors
+### 连接步进电机
 
-See [Connecting stepper motors](https://docs.duet3d.com/User_manual/Connecting_hardware/Motors_connecting).
+请参阅 [连接步进电机](https://docs.duet3d.com/User_manual/Connecting_hardware/Motors_connecting)。
 
-### Connecting Fans
+### 连接风扇
 
-See [Connecting and configuring fans](https://docs.duet3d.com/User_manual/Connecting_hardware/Fans_connecting).
+请参阅 [连接和配置风扇](https://docs.duet3d.com/User_manual/Connecting_hardware/Fans_connecting)。
+
+
+## 附件
+
+- [原理图文件](https://github.com/FYSETC/FYSETC-BIG_DIPPER/blob/main/Hardware/BIG-DIPPER%20V1.1%20SCH.pdf)
+- [引脚定义文件](https://github.com/FYSETC/FYSETC-BIG_DIPPER/raw/main/images/Big-Dipper%20Wiring%20Fixed.png)
+
+有关包括配置信息在内的更多文档，请查看 https://github.com/FYSETC/FYSETC-BIG_DIPPER
+
+##  支持
+
+[Fysetc Discord 服务器](https://discord.gg/CtENXn9N)
+
+##  商店
+
+[Fysetc 官方商店](https://www.fysetc.com/)

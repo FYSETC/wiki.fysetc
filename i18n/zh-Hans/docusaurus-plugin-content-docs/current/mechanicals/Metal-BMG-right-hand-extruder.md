@@ -1,63 +1,61 @@
 ---
-sidebar_position: 40
 id: Metal-BMG-right-hand-extruder
-title: Metal BMG right hand extruder
-description: Product name：Metal BMG right hand extruder
+title: 金属BMG右手挤出机
 slug: /Metal-BMG-right-hand-extruder
+sidebar_position: 30
+description: 产品名称：金属BMG右手挤出机
 source_file: Metal BMG right hand extruder.md
 source_language: en
 ---
 
-# Metal BMG right hand extruder
+# 金属 BMG 右手挤出机
 
-## Product Introduction
+## 产品介绍
 
-![Metal BMG right hand extruder](/images/Metal%20BMG%20right%20hand%20extruder.jpg)
+![金属 BMG 右手挤出机](/images/Metal%20BMG%20right%20hand%20extruder.jpg)
 
-Product name：Metal BMG right hand extruder
+产品名称：金属 BMG 右手挤出机
 
-Material：Aluminum alloy
+材质：铝合金
 
-Weight:189.2
+重量：189.2
 
-## Applicable machine：
-CR10 、Ender3 and other 3D printers .
+## 适用机型：
+CR10 、Ender3 及其他 3D 打印机。
 
-## Features
+## 特点
 
-- Provide greater torque for the extruder
-- Improve the surface quality of printed matter
-- Metal material, strong and stable, long service life
-- Easy to install and easy to remove.
+- 为挤出机提供更大的扭矩
+- 改善打印件表面质量
+- 金属材质，坚固稳定，使用寿命长
+- 安装简便，拆卸方便。
 
-## Assembly steps
+## 组装步骤
 
-You can watch  the assembly video（待上传）.
+您可以观看组装视频（待上传）。
 
-## Attention
+## 注意事项
 
-Refer to the assembly tutorial to avoid installation errors.
+请参考组装教程，避免安装错误。
 
-## FAQ
+## 常见问题
 
-1. Q: How to install to my 3D printer? A: You can watch  the assembly video（待上传）.
-2. Q：Does the installation require additional printed fixtures?  A：Yes, some models need to be used.
-
-## Attachments
+1. 问：如何安装到我的 3D 打印机上？ 答：您可以观看组装视频（待上传）。
+2. 问：安装是否需要额外的打印固定件？ 答：是的，部分型号需要使用。
 
 
 
-## Shop
 
-------
+## 商店
 
-- [Aliexpress](https://www.aliexpress.com/item/33051147571.html?spm=2114.12010615.8148356.1.63c875fd4i1KEX).
-- [Amazon](https://www.amazon.de/Drucker-BCZAMD-Extruder-Filament-Schwarz%C2%A1%C2%AD/dp/B07Y9PRL4P/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=bczamd&qid=1597805241&sr=8-5).
 
-## Tech Support
+- [速卖通](https://www.aliexpress.com/item/33051147571.html?spm=2114.12010615.8148356.1.63c875fd4i1KEX)。
+- [亚马逊](https://www.amazon.de/Drucker-BCZAMD-Extruder-Filament-Schwarz%C2%A1%C2%AD/dp/B07Y9PRL4P/ref=sr_1_5?__mk_de_DE=%C3%85M%C3%85%C5%BD%C3%95%C3%91&dchild=1&keywords=bczamd&qid=1597805241&sr=8-5)。
 
-facebook group：https://www.facebook.com/groups/197476557529090/
+## 技术支持
 
-Tech Support Email： hunter@fysetc.com 
+Facebook 群组：https://www.facebook.com/groups/197476557529090/
 
-Forum：https://forum.fysetc.com/
+技术支持邮箱： hunter@fysetc.com 
+
+论坛：https://forum.fysetc.com/

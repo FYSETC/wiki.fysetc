@@ -1,9 +1,9 @@
 ---
-sidebar_position: 80
 id: CREALITY-CR10-Y-axis-Belt-Tensioner
 title: CREALITY CR10 Y-axis Belt Tensioner
-description: Product name：CREALITY CR10 Y-axis Belt Tensioner
 slug: /CREALITY-CR10-Y-axis-Belt-Tensioner
+sidebar_position: 80
+description: Product name：CREALITY CR10 Y-axis Belt Tensioner
 source_file: CREALITY  CR10 Y-axis Belt Tensioner.md
 source_language: en
 ---
@@ -42,13 +42,9 @@ Refer to the assembly tutorial to avoid installation errors.
 1. Q: How to install to my 3D printer? A: You can watch  [the assembly video](https://www.youtube.com/watch?v=myOjXVWlytE).
 2. Q：Does the installation require additional printed fixtures?  A：Not needed
 
-## Attachments
-
-
 
 ## Shop
 
-------
 
 -  [Aliexpress](https://www.aliexpress.com/item/4000212125304.html?spm=2114.12010612.8148356.5.3dc84918xQGBXX).
 -  [Amazon](https://www.amazon.com/BCZAMD-Adjustable-Synchronous-Straighten-Tensioner/dp/B07Y9BQRF4/ref=sr_1_7?dchild=1&keywords=fysetc&language=zh_CN&qid=1595578450&sr=8-7#detail-bullets).

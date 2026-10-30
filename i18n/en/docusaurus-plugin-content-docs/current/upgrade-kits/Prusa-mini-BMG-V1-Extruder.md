@@ -1,9 +1,9 @@
 ---
-sidebar_position: 10
 id: Prusa-mini-BMG-V1-Extruder
 title: Prusa mini BMG V1 Extruder
-description: Product name：Prusa mini BMG V1 Extruder
 slug: /Prusa-mini-BMG-V1-Extruder
+sidebar_position: 10
+description: Product name：Prusa mini BMG V1 Extruder
 source_file: Prusa mini BMG V1 Extruder.md
 source_language: en
 ---
@@ -48,7 +48,6 @@ Refer to the assembly tutorial to avoid installation errors.
 
 ## Shop
 
-------
 
 - [Aliexpress](https://www.aliexpress.com/item/4001228208084.html?spm=a2g0o.productlist.0.0.1c0d1b49JAIEOj&algo_pvid=eb4b0bb4-bb25-4e64-b54a-9fc58c0223d2&algo_expid=eb4b0bb4-bb25-4e64-b54a-9fc58c0223d2-3&btsid=0b86d81615974519783001110e8ace&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603__).
 

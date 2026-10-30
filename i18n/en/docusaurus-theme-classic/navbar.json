@@ -29,9 +29,6 @@
   "item.label.Guides & setup": {
     "message": "Guides & setup"
   },
-  "item.label.Resources": {
-    "message": "Resources"
-  },
   "item.label.Community & support": {
     "message": "Community & support"
   },
@@ -58,11 +55,5 @@
   },
   "item.label.Tutorial": {
     "message": "Tutorial"
-  },
-  "item.label.Getting started": {
-    "message": "Getting started"
-  },
-  "item.label.Additional resources": {
-    "message": "Additional resources"
   }
 }

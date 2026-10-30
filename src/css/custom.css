@@ -128,6 +128,7 @@ button, input, select, textarea { font-family: var(--ifm-font-family-base); }
 .wiki-doc-content img[data-zoomable='true'] { cursor: zoom-in; }
 .wiki-doc-content img[data-zoomable='true']:focus-visible { outline: 3px solid var(--wiki-brand); outline-offset: 5px; }
 .theme-doc-markdown table { display: block; max-width: 100%; overflow-x: auto; font-size: 14px; line-height: 1.65; border-radius: 6px; }
+.theme-doc-markdown table img { width: 240px; max-width: none; height: auto; }
 .theme-doc-markdown th { background: var(--wiki-surface); text-align: left; font-weight: 650; }
 .theme-doc-markdown td, .theme-doc-markdown th { padding: 10px 13px; border-color: var(--wiki-border); }
 .theme-doc-markdown pre { font-size: 14px; line-height: 1.65; max-width: 100%; }

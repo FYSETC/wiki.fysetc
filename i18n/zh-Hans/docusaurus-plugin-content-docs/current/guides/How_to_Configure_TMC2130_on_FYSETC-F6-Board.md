@@ -1,52 +1,50 @@
 ---
-sidebar_position: 60
 id: How_to_Configure_TMC2130_on_FYSETC-F6-Board
-title: How to Configure TMC2130 on FYSETC F6 Board
-description: If you want to use 2130 as your stepper driver, enable it as below
-  shows in configuration_adv.h
+title: 如何在FYSETC-F6板上配置TMC2208
 slug: /How_to_Configure_TMC2130_on_FYSETC-F6-Board
+sidebar_position: 50
+description: 如果您想将2130用作步进电机驱动器，请按照configuration_adv.h中所示启用它
 source_file: How_to_Configure_TMC2130_on_FYSETC-F6-Board.md
 source_language: en
 ---
 
-# Configure TMC2130
+# 配置 TMC2130
 
-## Step1
----
+## 步骤1
 
-If you want to use 2130 as your stepper driver, enable it as below shows in configuration_adv.h
+
+如果您想使用 2130 作为步进驱动器，请在 configuration_adv.h 中按如下所示启用它
 
 ![con-2130-1](/images/con-2130-1.png)
 
-## Step2
----
+## 步骤2
 
-And then choose the axis that you use the TMC2130 stepper motor
 
-For example, if you only have TMC2130 in x axis, then enable
+然后选择您使用 TMC2130 步进电机的轴
+
+例如，如果您只在 x 轴上使用 TMC2130，则启用
 
 ```cpp
 #define X_IS_TMC2130
 ```
 
-If you have y, then
+如果您有 y 轴，则
 
 ```cpp
 #define X_IS_TMC2130
 #define Y_IS_TMC2130
 ```
 
-and so on.
+以此类推。
 
 ![con-2130-2](/images/con-2130-2.png)
 
-## Step3
----
-If you want to monitor the TMC2130, uncomment MONITOR_DRIVER_STATUS define
+## 步骤3
+
+如果您想监控 TMC2130，请取消注释 MONITOR_DRIVER_STATUS 定义
 
 ![con-2130-3](/images/con-2130-3.png)
 
-## Tech Support
+## 技术支持
 
----
-Please submit any technical issue into our [forum](http://forum.fysetc.com/)
+请将任何技术问题提交到我们的[论坛](http://forum.fysetc.com/)

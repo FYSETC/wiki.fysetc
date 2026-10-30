@@ -1,19 +1,14 @@
 ---
-sidebar_position: 120
 id: AIO_II
-title: FYSETC AIO II
-description: Sorry, this page is being writed, and there is still some content
-  waiting to be conpleted. Please be patient!
+title: AIO II
 slug: /AIO_II
+sidebar_position: 140
 source_file: AIO_II.md
 source_language: en
 ---
 
-***Sorry, this page is being writed, and there is still some content waiting to be conpleted. Please be patient!*** 
-
 ## Product Introduction
 
-------
 
 ![Cheetah_top](/images/AIO_II_TOP.png)
 
@@ -21,7 +16,6 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 
 ## Features
 
-------
 
 - Compact size: 105mm x 50mm
 - fully integrated all in one solution:
@@ -31,7 +25,7 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 - UNIVERSAL POWER:
   - can be used with 7V-35V for motors / heated bed
   - integrated high precision power regulators (DC/DC):  5V 1A Max and 3.3V  600mA Max LDO
-- **Onboard SD card socket **
+- **Onboard SD card socket**
 - **Onboard RGB mini12864 LCD** 
 - Onboard RGB control
 - **Support firmware upload via USB or SD**
@@ -41,7 +35,6 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 
 ## Application
 
-------
 
 - 3D printer 
 - CNC Machines
@@ -49,7 +42,6 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 
 ## Hardware Reasources
 
-------
 
 | Board Name           | AIO II                                |
 | -------------------- | ------------------------------------- |
@@ -73,7 +65,6 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 
 ## Pin Definition
 
-------
 
 ##### Connector define：
 
@@ -84,8 +75,6 @@ This is an All In One (So we call it AIO) solution with 32-bit MCU and 256-micro
 ![AIO_3.2_820_steps](/images/AIO_3.2_820_steps.png)
 
 ## Firmware Guide
-
-------
 
 #### Download Vscode + platformio
 
@@ -202,7 +191,6 @@ And then go the the firmware.hex file location directory and do the follow comma
 
 ## Attachments
 
-------
 
 - [Schematic files](https://github.com/FYSETC-AIO_II/)
 - [PCB files](https://github.com/FYSETC/FYSETC-AIO_II/)
@@ -210,13 +198,11 @@ And then go the the firmware.hex file location directory and do the follow comma
 
 ## Where to Buy
 
-------
 
 - [FYSETC AIO II V3.1](https://www.aliexpress.com/item/32888370577.html)
 
 ## Tech Support
 
--------
 
 For some reason,, we have to access Facebook via VPN...so our engineers can't reply to your question on Facebook in time, if possible, please ask questions in the forum.
 **Please submit any technical issue into our [forum](http://forum.fysetc.com/)** .

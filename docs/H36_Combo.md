@@ -154,9 +154,11 @@ IO.0 and IO.1 are located in the same connector and can be used as XY endstops, 
 ## USB / CAN selection
 
 XT30 and USB2/CAN both use CAN to communicate
+
 ![img](/images/H36_klipper_nobootloader_CAN.png)
 
 XT30 and USB2/CAN both use USB to communicate
+
 ![img](/images/H36_klipper_nobootloader_USB.png)
 
 ## Jumpers：

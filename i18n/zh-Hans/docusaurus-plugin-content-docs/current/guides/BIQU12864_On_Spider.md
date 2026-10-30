@@ -1,17 +1,15 @@
 ---
-sidebar_position: 70
 id: BIQU12864_On_Spider
-title: How to use BIQU‘s mini12864 on Spider
-description: BIQU's 12864 screen has a capacitor and a 10K pull-down resistor on
-  the reset pin, which will cause the RST pin of the Spider board (with a 100K
-  pull-up and a 0.1uF capacitor to ground) to always be…
+title: Spider 上的 BIQU12864
 slug: /BIQU12864_On_Spider
+sidebar_position: 60
+description: BIQU 的 12864 屏幕在复位引脚上有一个电容和一个 10K 下拉电阻，这会导致 Spider 主板的 RST 引脚（带有 100K 上拉电阻和一个接地的 0.1uF 电容）始终处于…
 source_file: BIQU12864_On_Spider.md
 source_language: en
 ---
 
-# How to use BIQU‘s mini12864 on Spider
+# 如何在 Spider 上使用 BIQU 的 mini12864
 
-BIQU's 12864 screen has a capacitor and a 10K pull-down resistor on the reset pin, which will cause the RST pin of the Spider board (with a 100K pull-up and a 0.1uF capacitor to ground) to always be at a low level. This will prevent the system from starting up. The connector's direction is also rotated opposite to ours, so it needs to be rotated 180 degrees the other way. After rotating the connector as pictured, remove R1 and C6 from the screen, at which point the screen should now work.
+BIQU 的 12864 屏幕在复位引脚上有一个电容和一个 10K 下拉电阻，这会导致 Spider 主板的 RST 引脚（带有 100K 上拉电阻和一个 0.1uF 接地电容）始终处于低电平。这将阻止系统启动。连接器的方向也与我们的相反，因此需要向另一方向旋转 180 度。如图所示旋转连接器后，从屏幕上移除 R1 和 C6，此时屏幕应该可以正常工作。
 
 ![BIQU12864](/images/BIQU12864.png)

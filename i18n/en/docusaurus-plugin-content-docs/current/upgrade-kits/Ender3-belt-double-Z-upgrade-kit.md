@@ -1,9 +1,9 @@
 ---
-sidebar_position: 50
 id: Ender3-belt-double-Z-upgrade-kit
 title: Ender3 belt double Z upgrade kit
-description: Product name：Ender3 belt double Z upgrade kit
 slug: /Ender3-belt-double-Z-upgrade-kit
+sidebar_position: 50
+description: Product name：Ender3 belt double Z upgrade kit
 source_file: Ender3 belt double Z upgrade kit.md
 source_language: en
 ---
@@ -48,7 +48,6 @@ Refer to the assembly tutorial to avoid installation errors.
 
 ## Shop
 
-------
 
 -  [Aliexpress](https://www.aliexpress.com/item/32991973834.html?gps-id=8041884&scm=1007.14677.110221.0&scm_id=1007.14677.110221.0&scm-url=1007.14677.110221.0&pvid=598fd7bb-b229-4030-b63d-1d6232a493c6&spm=a2g0o.store_home.promoteRecommendProducts_6534532.2).
 -  [Amazon](https://www.amazon.com/BCZAMD-Upgrade-Tension-Pulley-Printer/dp/B086C8LS8N/ref=sr_1_17_sspa?dchild=1&keywords=bczamd&qid=1598695674&sr=8-17-spons&psc=1&spLa=ZW5jcnlwdGVkUXVhbGlmaWVyPUE1NVJDM1JDOExIMDEmZW5jcnlwdGVkSWQ9QTA3MzcyOTNOUUpZSFg3RVNFMkkmZW5jcnlwdGVkQWRJZD1BMDgyNjE3NzJKSkRLMVdRU01VREsmd2lkZ2V0TmFtZT1zcF9tdGYmYWN0aW9uPWNsaWNrUmVkaXJlY3QmZG9Ob3RMb2dDbGljaz10cnVl).

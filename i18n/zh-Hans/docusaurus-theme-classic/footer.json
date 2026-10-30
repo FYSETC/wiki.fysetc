@@ -2,9 +2,6 @@
   "link.title.Docs": {
     "message": "文档"
   },
-  "link.item.label.Getting started": {
-    "message": "快速开始"
-  },
   "copyright": {
     "message": "FYSETC 产品文档与图片 · CC BY-SA 4.0 · 本地测试站"
   },
@@ -13,9 +10,6 @@
   },
   "link.title.Learning & setup": {
     "message": "学习与配置"
-  },
-  "link.title.Resources & support": {
-    "message": "资源与支持"
   },
   "link.title.FYSETC": {
     "message": "FYSETC"
@@ -38,9 +32,6 @@
   "link.item.label.Spider software guide": {
     "message": "Spider 软件指南"
   },
-  "link.item.label.Resources": {
-    "message": "补充资料"
-  },
   "link.item.label.Wiki feedback": {
     "message": "文档反馈"
   },
@@ -55,5 +46,8 @@
   },
   "link.item.label.Wiki overview": {
     "message": "文档总览"
+  },
+  "link.title.Support": {
+    "message": "支持"
   }
 }

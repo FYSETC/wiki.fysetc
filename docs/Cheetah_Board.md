@@ -71,7 +71,9 @@ Designed for a single-head 3D printer, many interfaces are reserved for more fea
 
 ## Connectors and jumpers define(V1.1)
 ---
+
 ![Cheetah_connectors](/images/Cheetah_connector.png)
+
 ![Cheetah_jumpers](/images/Cheetah_jumpers.png)
 
 ## Connectors and jumpers define(V1.2)

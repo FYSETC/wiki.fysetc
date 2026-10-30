@@ -1,69 +1,66 @@
 ---
-sidebar_position: 40
 id: UCAN
 title: UCAN
-description: UCAN is an open source USB-to-CAN interface board, based on the
-  STM32F072 chip and candleLight open source firmware. It supports linux,
-  windows, and mac. Of course, you can also develop your own…
 slug: /UCAN
+sidebar_position: 70
+description: UCAN 是一款开源的 USB 转 CAN 接口板，基于 STM32F072 芯片和 candleLight 开源固件。它支持 Linux、Windows 和 Mac。当然，你也可以开发自己的……
 source_file: UCAN.md
 source_language: en
 ---
 
 ![image-20230526150542989](/images/UCAN-TOP.png)
 
-# 1. Introduction
+# 1. 简介
 
-UCAN is an open source USB-to-CAN interface board, based on the STM32F072 chip and candleLight open source firmware. It supports linux, windows, and mac. Of course, you can also develop your own firmware to use on it, as it is completely open source.
+UCAN 是一款开源的 USB 转 CAN 接口板，基于 STM32F072 芯片和 candleLight 开源固件。它支持 Linux、Windows 和 Mac。当然，由于它完全开源，你也可以开发自己的固件在其上使用。
 
 
 
-# 2. Features
+# 2. 特性
 
-- Supports CAN2.0A and B, with baud rates up to 1M
+- 支持 CAN2.0A 和 B，波特率高达 1M
 
-- Compatible with candleLight V1 hardware
+- 兼容 candleLight V1 硬件
 
-- Featrues a native socketcan support with candleLight firmware
+- 配合 candleLight 固件原生支持 socketcan
 
-- 3-pin screw terminal: CANH, CANL,  GND
+- 3 针螺钉端子：CANH、CANL、GND
 
-- Headers to enter bootloader for firmware updates and SWD interface
+- 用于进入 bootloader 进行固件升级的排针和 SWD 接口
 
-- Headers to CAN interface before transceiver
+- 收发器之前的 CAN 接口排针
 
-- Headers to enable/disable termination，On-board termination resistors（2 x 59R） are used by default
+- 用于启用/禁用终端电阻的排针，默认使用板载终端电阻（2 x 59R）
 
   
 
-# 3.hardware
+# 3. 硬件
 
-UCAN is based on the STM32F072CBT6, so PA11/PA12 is connected to USB-C, and PA8/PA9 is connected to CAN interface. Please refer to the circuit diagram for more information.
+UCAN 基于 STM32F072CBT6，因此 PA11/PA12 连接到 USB-C，PA8/PA9 连接到 CAN 接口。更多信息请参阅电路图。
 
-## 3.1 About Terminating Resistors
+## 3.1 关于终端电阻
 
-Currently there are two ways to terminate the resistor. The default termination is composed of two 59R resistors (R1/R2), as shown in the red position in the figure below. The alternate location consists of a 120R resistor and a two-pin jumper, shown in magenta. There is no performance difference, but the default is the 2 59R resistors. For more info please check the [Schematic Diagram](https://github.com/FYSETC/UCAN/blob/main/Hardware/UCAN%20V1.0%20SCH.pdf).
+目前有两种端接电阻的方式。默认端接由两个 59R 电阻（R1/R2）组成，如下图红色位置所示。备用位置由一个 120R 电阻和一个两针跳线组成，如洋红色所示。两者没有性能差异，但默认使用 2 个 59R 电阻。更多信息请查看[原理图](https://github.com/FYSETC/UCAN/blob/main/Hardware/UCAN%20V1.0%20SCH.pdf)。
 
-我们提供了两种端接电阻的方式，默认是由两颗59R电阻（R1/R2）组成，如图红色位置。备用位置是由120R电阻和一个两pin跳线组成，如图洋红色所示。一般地使用这并没有区别，默认板载即可。
 
 ![image-20230526154004328](/images/UCAN-Terminating.png)
 
-# 4. Firmware
+# 4. 固件
 
-UCAN has the firmware flashed when it leaves the factory, so there is no need to flash it again in most cases. If the CAN device appears on the computer when plugged in via USB, it means that it is working properly.
+UCAN 出厂时已烧录固件，因此在大多数情况下无需再次烧录。如果通过 USB 插入后电脑上出现 CAN 设备，则说明其工作正常。
 
-If you want to flash the firmware again, follow the steps below:
+如果你想再次烧录固件，请按照以下步骤操作：
 
-1. Prepare tweezers or wire and a USB-C data cable that can communicate.
-2. open https://canable.io/updater/canable1.html
-3. Use tweezers or wires to short-circuit BOOT0 and 3.3V until the USB cable is plugged in and the board is powered. At this time, the board will enter DFU mode, and the webpage will be able to detect the device.
+1. 准备镊子或导线，以及一根可通信的 USB-C 数据线。
+2. 打开 https://canable.io/updater/canable1.html
+3. 用镊子或导线短接 BOOT0 和 3.3V，直到插入 USB 线且板子通电。此时板子将进入 DFU 模式，网页将能够检测到设备。
 
    ![image-20230526170710854](/images/UCAN-enter-boot-mode.png)
 
-4. Click the “Connect and Upload” button to flash the firmware
+4. 点击“Connect and Upload”按钮烧录固件
 
-# 5. Related documents:
+# 5. 相关文档：
 
-All files (Include Schematic Diagram and 3D Step file.) are all on github at:
+所有文件（包括原理图和 3D Step 文件）都在 github 上：
 
 https://github.com/FYSETC/UCAN/tree/main

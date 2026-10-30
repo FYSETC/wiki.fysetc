@@ -34,17 +34,29 @@ Ender-3、 Ender-3 pro、CR-10、 CR-10S、CR10 pro、CR10 V2、Ender-5 3D Print
 You can watch  [the assembly video](https://www.youtube.com/watch?v=Ch7mA2F4kJE).Or follow the steps to install.
 
 steps 1：Check if the material is correct according to the picture.
+
 ![ED3X01](/images/ED3X01.jpg)
+
 steps 2：Install M4X25 screws.
+
 ![ED3X02](/images/ED3X02.jpg)
+
 steps 3：Install pulley.
+
 ![ED3X03](/images/ED3X03.jpg)
+
 ![ED3X04](/images/ED3X04.jpg)
+
 steps 4：Install the front and rear side panels.
+
 ![ED3X05](/images/ED3X05.jpg)
+
 steps 5：Install the thumb nut.
+
 ![ED3X06](/images/ED3X06.jpg)
+
 steps 6：Install the boat nut.
+
 ![ED3X07](/images/ED3X07.jpg)
 
 ## Attention

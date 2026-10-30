@@ -1,24 +1,22 @@
 ---
-sidebar_position: 70
 id: FYS_Boost_LED_Driver_V1.0
-title: FYS Boost LED Driver V1.0
-description: FYS Boost LED Driver is an economical and easy to use driver with a
-  maximum output of 60V/5A (requires you to replace the Rs resistor). By
-  default, a 900mA ± 5% current output is available for 30W…
+title: LED Driver V1.0
 slug: /FYS_Boost_LED_Driver_V1.0
+sidebar_position: 100
+description: FYS Boost LED Driver is an economical and easy to use driver with a maximum output of 60V/5A (requires you to replace the Rs resistor). By default, a 900mA ± 5% current output is available for 30W…
 source_file: FYS_Boost_LED_Driver_V1.0.md
 source_language: en
 ---
 
 ## Product Introduction
----
+
 
 ![30w-LED-driver](/images/30w-LED-driver.jpg)
 
 FYS Boost LED Driver is an economical and easy to use driver with a maximum output of 60V/5A (requires you to replace the Rs resistor). By default, a 900mA ± 5% current output is available for 30W LEDs (10 parallel 3 series) modules.
 
 ## Features
----
+
 
 - Wide 5V to 32V Input Voltage Range
 - Maximum Boost Output Up to 60V
@@ -30,19 +28,19 @@ FYS Boost LED Driver is an economical and easy to use driver with a maximum outp
 - Built in Current Limit Function
 
 ## Applications
----
+
 
 - LED Lighting 
 - Boost constant current driver
 - TFT LED Backlighting
 
 ## Typical Application Circuit
----
+
 
 ![LED DRIVER 接线图](/images/LED-DRIVER%E6%8E%A5%E7%BA%BF%E5%9B%BE.png)
 
 ## Attention
----
+
 
 - The board will be fever during use (about 60 °C at 900 mA), which is normal and need not be worried;
 - Do not connect the positive and negative poles of the board input and output, otherwise it will damage the board;
@@ -52,7 +50,7 @@ FYS Boost LED Driver is an economical and easy to use driver with a maximum outp
 - <font color="red">The company is not responsible for any damage or loss caused by the private modification of the board.</font>
 
 ## FAQ
----
+
 
 
 :::tip[How to change to a larger current output manually?]
@@ -66,7 +64,7 @@ If you want to change to other current outputs:
 
 
 ## Attachments
----
+
 
 ###  Schematic
 
@@ -77,10 +75,9 @@ If you want to change to other current outputs:
 ![LED-driver-dimensions](/images/LED-driver-dimensions.png)
 
 ## Shop
----
+
 - [FYS Boost LED Driver V1.0](https://www.aliexpress.com/store/product/DLP-Boost-LED-drive-board-60V-5A-30W-Constant-Current-Driver-for-LED-Lighting-TFT-Backlighting/3480083_32905681524.html)
 
 ## Tech Support
 
----
 Please submit any technical issue into our [forum](http://forum.fysetc.com/)

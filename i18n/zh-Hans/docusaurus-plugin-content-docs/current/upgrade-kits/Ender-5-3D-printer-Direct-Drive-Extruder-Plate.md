@@ -1,62 +1,61 @@
 ---
-sidebar_position: 40
 id: Ender-5-3D-printer-Direct-Drive-Extruder-Plate
-title: Ender 5 3D printer Direct Drive Extruder Plate
-description: Product name：Ender 5 3D printer Direct Drive Extruder Plate
+title: Ender 5 3D打印机直驱挤出机板
 slug: /Ender-5-3D-printer-Direct-Drive-Extruder-Plate
+sidebar_position: 40
+description: 产品名称：Ender 5 3D打印机直驱挤出机板
 source_file: Ender 5 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---
 
-# Ender 5 3D printer Direct Drive Extruder Plate
+# Ender 5 3D打印机直驱挤出机板
 
-## Product Introduction
+## 产品介绍
 
-![Ender 5 3D printer Direct Drive Extruder Plate](/images/Ender%205%203D%20printer%20Direct%20Drive%20Extruder%20Plate.jpg)
+![Ender 5 3D打印机直驱挤出机板](/images/Ender%205%203D%20printer%20Direct%20Drive%20Extruder%20Plate.jpg)
 
-Product name：Ender 5 3D printer Direct Drive Extruder Plate
+产品名称：Ender 5 3D打印机直驱挤出机板
 
-Material：Aluminum alloy
+材质：铝合金
 
-Weight:83.5g
+重量：83.5g
 
-## Applicable machine：
-Ender5.
+## 适用机型：
+Ender5。
 
-## Features
+## 特点
 
-- Provide installation and fixing method for short-range extruder
-- Metal material, strong and stable, long service life
-- Easy to install and easy to remove.
+- 为短距离挤出机提供安装和固定方式
+- 金属材质，坚固稳定，使用寿命长
+- 易于安装，易于拆卸。
 
-## Assembly steps
+## 组装步骤
 
-You can watch  [the assembly video](https://www.youtube.com/watch?v=2MWDhDHxQvE&t=285s).Or follow the steps to install.
+您可以观看[组装视频](https://www.youtube.com/watch?v=2MWDhDHxQvE&t=285s)。或按照步骤进行安装。
 
-## Attention
+## 注意
 
-Refer to the assembly tutorial to avoid installation errors.
+请参考组装教程，以避免安装错误。
 
-## FAQ
+## 常见问题
 
-1. Q: How to install to my 3D printer? A: You can watch  [the assembly video](https://www.youtube.com/watch?v=2MWDhDHxQvE&t=285s).
-2. Q：Does the installation require additional printed fixtures?  A：Not needed
+1. 问：如何安装到我的3D打印机上？答：您可以观看[组装视频](https://www.youtube.com/watch?v=2MWDhDHxQvE&t=285s)。
+2. 问：安装是否需要额外的打印固定件？答：不需要
 
-## Attachments
+## 附件
 
 
 
-## Shop
+## 商店
 
-------
 
--  [Aliexpress](https://es.aliexpress.com/item/4000959198767.html?spm=a2g0o.productlist.0.0.437e3823GImpCL&algo_pvid=04b7f19d-3a47-45d1-8edf-d8b9670b3867&algo_expid=04b7f19d-3a47-45d1-8edf-d8b9670b3867-5&btsid=0b86d80215998140004337372e8dff&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_).
--  [Amazon](https://www.amazon.com/BCZAMD-Accessories-Aluminum-Compatible-Extruder/dp/B088BKHVYJ/ref=sr_1_51?dchild=1&keywords=bczamd&qid=1599813822&sr=8-51).
+-  [速卖通](https://es.aliexpress.com/item/4000959198767.html?spm=a2g0o.productlist.0.0.437e3823GImpCL&algo_pvid=04b7f19d-3a47-45d1-8edf-d8b9670b3867&algo_expid=04b7f19d-3a47-45d1-8edf-d8b9670b3867-5&btsid=0b86d80215998140004337372e8dff&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_)。
+-  [亚马逊](https://www.amazon.com/BCZAMD-Accessories-Aluminum-Compatible-Extruder/dp/B088BKHVYJ/ref=sr_1_51?dchild=1&keywords=bczamd&qid=1599813822&sr=8-51)。
 
-## Tech Support
+## 技术支持
 
-facebook group：https://www.facebook.com/groups/197476557529090/
+Facebook群组：https://www.facebook.com/groups/197476557529090/
 
-Tech Support Email： hunter@fysetc.com 
+技术支持邮箱： hunter@fysetc.com 
 
-Forum：https://forum.fysetc.com/
+论坛：https://forum.fysetc.com/

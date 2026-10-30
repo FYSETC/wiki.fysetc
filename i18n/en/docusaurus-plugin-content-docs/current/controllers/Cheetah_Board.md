@@ -1,25 +1,20 @@
 ---
-sidebar_position: 40
 id: Cheetah_Board
-title: FYSETC Cheetah
-description: Designed for a single-head 3D printer, many interfaces are reserved
-  for more features. Such as AC detection, filament detection, leveling with
-  BL-touch or other sensors.
+title: CHEETAH
 slug: /Cheetah_Board
+sidebar_position: 60
+description: Designed for a single-head 3D printer, many interfaces are reserved for more features. Such as AC detection, filament detection, leveling with BL-touch or other sensors.
 source_file: Cheetah_Board.md
 source_language: en
 ---
 
 ## Product Introduction
 
----
-
 ![](/images/Cheetah_V1.2b_real.png)
 
 Designed for a single-head 3D printer, many interfaces are reserved for more features. Such as AC detection, filament detection, leveling with BL-touch or other sensors.
 
 ## Features
----
 
 - Compact size: 101.5mm x 72mm，Compatible with the Creatlity ender 3 motherboard size
 
@@ -43,14 +38,12 @@ Designed for a single-head 3D printer, many interfaces are reserved for more fea
   - Gold ENIG finishing
 
 ## Application
----
 
 - 3D printer 
 - CNC Device
 - Other similar machines
 
 ## Hardware Reasources
----
 
 | Board Name           | Cheetah                                              |
 | -------------------- | ------------------------------------------------ |
@@ -73,8 +66,9 @@ Designed for a single-head 3D printer, many interfaces are reserved for more fea
 | Output| BED OUT：10A Max ；Heater Out：5A Max            |
 
 ## Connectors and jumpers define(V1.1)
----
+
 ![Cheetah_connectors](/images/Cheetah_connector.png)
+
 ![Cheetah_jumpers](/images/Cheetah_jumpers.png)
 
 ## Connectors and jumpers define(V1.2)
@@ -87,7 +81,6 @@ Designed for a single-head 3D printer, many interfaces are reserved for more fea
 
 ## Firmware 
 
----
 
 The FYSETC CHEETAH firmware is pre-config for ENDER3 machine, if you want to change the firmware or compile the code yourself , follow the steps.
 
@@ -202,7 +195,7 @@ And then go the the firmware.hex file location directory and do the follow comma
 
 
 ## Version：
-----------------
+
 V1.1：
 
 1. Initial version
@@ -223,8 +216,6 @@ V1.2b：
 2. Update MOSFET drive circuit
 
 ## FAQ：
-
---------------------
 
 #### 1.Why use USB-TO-UART chip for USB？
 
@@ -278,7 +269,6 @@ For new firmware,the default config is not for cheetah board anymore as we have 
 
 ## Tech Support
 
----
 Please submit any technical issue into our [forum](http://forum.fysetc.com/) 
 
 

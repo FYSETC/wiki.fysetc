@@ -1,17 +1,15 @@
 ---
-sidebar_position: 30
 id: Silent2209
-title: Silent2209
-description: The TMC2209 is an ultra-silent motor driver IC for two phase
-  stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as
-  well as to the TMC2208. TRINAMICs sophisticated…
+title: SILENT_2209
 slug: /Silent2209
+sidebar_position: 20
+description: The TMC2209 is an ultra-silent motor driver IC for two phase stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as well as to the TMC2208. TRINAMICs sophisticated…
 source_file: Silent2209.md
 source_language: en
 ---
 
 ## Product Introduction
----
+
 
 ![Silent2209](/images/2209v3.0.png)
 
@@ -22,7 +20,7 @@ source_language: en
 The TMC2209 is an ultra-silent motor driver IC for two phase stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as well as to the TMC2208. TRINAMICs sophisticated StealthChop2 chopper ensures noiseless operation,maximum efficiency and best motor torque. Its fast current regulation and optional combination with SpreadCycle allow highly dynamic motion while adding. StallGuard for sensorless homing. The integrated power MOSFETs handle motor currents up to 2A RMS with protection and diagnostic features for robust and reliable operation. A simple to use UART interface opens up tuning and control options. Store application tuning to OTP memory.Industries’ most advanced STEP/DIR stepper motor driver family upgrades designs to noiseless and most precise operation for cost-effective and highly competitive solutions.Step/Dir Drivers for Two-Phase Bipolar Stepper Motors up to 2.8A peak –StealthChop™ for Quiet Movement – UART Interface Option –Sensorless Stall Detection StallGuard4. 
 
 ## Features
----
+
 
 - 2-phase stepper motors up to 2.8A coil current (peak), 2A RMS 
 - STEP/DIR Interface with 8, 16, 32 or 64 microstep pin setting
@@ -60,12 +58,17 @@ stallGuard                              | yes
 dcStep                                    | yes 
 
 ## Pin Functions
----
+
 ### V3.0
+
 ![2209引脚图V3.0](/images/2209%E5%BC%95%E8%84%9A%E5%9B%BEV3.0.jpg)
+
 ### V3.1
-![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)![image-20230508160723032]
+
+![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)
+
 ### V4.0
+
 ![TMC2209_V40_引脚图](/images/image-20230508160723032.png)
 
 Pin|Function
@@ -96,7 +99,7 @@ INDEX	|Configurable index output. Provides index pulse.
 VREF|	Analog Reference Voltage
 
 ## Interface Resources
----
+
 ###  Wiring Diagram
 
 ![2209接线图](/images/TMC2209_wiring.png)
@@ -146,7 +149,6 @@ VIO	| VIO | 1⁄16 | 1⁄256 | stealthChop2
 
 ## Setting Method
 
-----
 
 ### V2.1 Hardware Connection
 
@@ -163,6 +165,7 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 
 
 ### V3.0 Hardware Connection
+
 ![2209串口接线V30](/images/2209%E4%B8%B2%E5%8F%A3%E6%8E%A5%E7%BA%BFV30.jpg)
 
 
@@ -177,6 +180,7 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 
 
 ### V3.1 Hardware Connection
+
 ![2209V3.1原理图](/images/2209V3.1%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 
 1. add CLK pin ，not connect in default，tie to GND via 0R
@@ -192,14 +196,10 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 ![image-20230508161953018](/images/image-20230508161953018.png)
 
 
----
-
 ## Shop	
 
----
 - [TMC2209](https://www.aliexpress.com/item/33025556705.html)
 
 ## Tech Support
 
----
 Please submit any technical issue into our [forum](http://forum.fysetc.com/)

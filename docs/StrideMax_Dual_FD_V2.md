@@ -109,6 +109,7 @@ Flow × phase resistance).
 ## Pin and jumper config
 
 ![img](/images/image-20231222183712370.png)
+
 # Firmware Configuration
 We have made an example of the klipper configuration, which you can find at the following address. RRF firmware and configuration are also provided for reference.
 ## Klipper

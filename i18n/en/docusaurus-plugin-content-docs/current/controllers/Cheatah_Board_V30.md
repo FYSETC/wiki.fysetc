@@ -1,11 +1,9 @@
 ---
-sidebar_position: 60
 id: Cheatah_Board_V30
-title: FYSETC Cheetah v3.0
-description: The redesigned Cheetah uses a 180Mhz master controller to provide
-  higher speed control. At the same time, in order to improve the ease of use,
-  some commonly used interfaces are added, such as…
+title: Cheetah v3.0
 slug: /Cheatah_Board_V30
+sidebar_position: 80
+description: The redesigned Cheetah uses a 180Mhz master controller to provide higher speed control. At the same time, in order to improve the ease of use, some commonly used interfaces are added, such as…
 source_file: Cheatah_Board_V30.md
 source_language: en
 ---
@@ -90,8 +88,11 @@ Use SSH software to connect to your Raspberry Pi and enter the following command
 lsusb
 ```
 You should see the device as shown below:
+
 ![Image01.png](/images/Image01.png)
+
 If not, please go back and check the power supply and wiring of the motherboard to ensure that each power indicator light is on.
+
 ![Image02.png](/images/Image02.png)
 
 
@@ -100,14 +101,17 @@ Enter the following command to get the board ID:
 ls /dev/serial/by-id
 ```
 Copy the ID with Crtl+C
+
 ![Image03.png](/images/Image03.png)
 
 Use the browser to enter the IP address of the Raspberry Pi to enter the mainsail interface
 Click on MACHINE
 Click printer.cfg in the list to enter the editing interface
+
 ![Image04.png](/images/Image04.png)
 
 Replace the ID in the [mcu] section
+
 ![Image05.png](/images/Image05.png)
 
 Click SAVE & RESTART
@@ -218,3 +222,7 @@ this test is not applicable if the firmware was compiled for UART, rather than U
 If the Cheetah V3 is not powered with 12-24V, Klipper will be unable to communicate with the TMC drivers via UART and the Cheetah V3 will automatically shut down.
 
 :::
+
+## 4. Tech Support
+
+Please submit any technical issue into our Discord - https://discord.gg/S9nZUCnDgm

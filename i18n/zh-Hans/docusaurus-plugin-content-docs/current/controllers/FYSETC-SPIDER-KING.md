@@ -1,60 +1,60 @@
 ---
-sidebar_position: 30
 id: FYSETC-SPIDER-KING
 title: FYSETC SPIDER KING
-description: 10 axis industrial grade 3D printer motherboard
 slug: /FYSETC-SPIDER-KING
+sidebar_position: 50
+description: 10轴工业级3D打印机主板
 source_file: FYSETC-SPIDER-KING.md
 source_language: en
 ---
 
 # FYSETC-SPIDER-KING
 
-## 1. Product introduction
+## 1. 产品介绍
 
-10 axis industrial grade 3D printer motherboard
+10 轴工业级 3D 打印机主板
 
 ![](/images/SpiderKing.jpg)
 
-### 1.1 Advantage
+### 1.1 优势
 
-1. Replaceable control core:
-   It has a replaceable control core(Named 'King' core).You can freely choose between 4xRP2040(King-R) / STM32F446(King-446) / STM32F407(King-407) / STM32H7XX(King-H7xx), and even you can make your own control core(We will open source the interface).
+1. 可更换控制核心：
+   它具有可更换的控制核心（称为“King”核心）。您可以在 4xRP2040(King-R) / STM32F446(King-446) / STM32F407(King-407) / STM32H7XX(King-H7xx) 之间自由选择，甚至可以制作自己的控制核心（我们将开源接口）。
 
-2. Intelligent identification of stepper driver type:
-   With an additional MCU, Spider-King can identify the driver type and switch the SPI/UART channel automatically.
-   This feature save you time on searching doc of how to set the jumppers, keep you away from borning setting jumppers. No longer has problems with stepper driver setting. (If you want to use this feature, you need our new stepper driver)
+2. 智能识别步进驱动类型：
+   借助额外的 MCU，Spider-King 可以识别驱动类型并自动切换 SPI/UART 通道。
+   此功能可节省您查找如何设置跳线文档的时间，让您远离枯燥的跳线设置。不再有步进驱动设置的问题。（如果您想使用此功能，您需要我们的新型步进驱动。）
 
-3. Multiple firmware support:
-   It supports multiple firmwares.You can choose to use Klipper / Marlin 2.0 / Reprap Firmware / GRBL and other firmware according to your preferences and needs.
+3. 多固件支持：
+   它支持多种固件。您可以根据自己的偏好和需求选择使用 Klipper / Marlin 2.0 / Reprap Firmware / GRBL 和其他固件。
 
-4. Industrial-grade standard design, 5000V full IO isolation:
-   It provides a more secure hardware base: equiped with onboard high-power isolated power supply, and the control core is isolated from all high-voltage peripherals, including stepper motor drive, MOSFET output, high-voltage input signal, CAN bus, etc.
+4. 工业级标准设计，5000V 全 IO 隔离：
+   它提供更安全的硬件基础：配备板载大功率隔离电源，控制核心与所有高压外设隔离，包括步进电机驱动、MOSFET 输出、高压输入信号、CAN 总线等。
 
-5. 10 way stepper motor drive support:
-   Onboard 10 way stepping motor drive socket, 6x 3A max (maximum 35V), 4x 6A max (maximum 55V). Any socket supports SPI / UART / standalone mode.It has a new 6A drive design. It can drive 57 or even 86 step motors without external drive;
+5. 支持 10 路步进电机驱动：
+   板载 10 路步进电机驱动插座，6x 最大 3A（最大 35V），4x 最大 6A（最大 55V）。任何插座都支持 SPI / UART / 独立模式。它具有全新的 6A 驱动设计。无需外部驱动即可驱动 57 甚至 86 步进电机；
 
-6. A variety of communication interfaces support:
-   It supports onboard 5000V isolated CAN interface, supports wireless WI-FI interface, supports ESP32 high-speed communication module, supports multiple connection to Raspberry Pi, including UART, SPI and USB.
+6. 支持多种通信接口：
+   它支持板载 5000V 隔离 CAN 接口，支持无线 WI-FI 接口，支持 ESP32 高速通信模块，支持多种连接树莓派的方式，包括 UART、SPI 和 USB。
 
-7. Centralized heat dissipation of heat-generating components:
-   We centralized most heating components like 5V power supply, stepper driver in the middle area of the board, this area can be covered with the 12CM fan for cooling. You don't need to rack your brains to design the air duct, you can get better and more stable output performance.
+7. 发热元件集中散热：
+   我们将 5V 电源、步进驱动等大多数发热元件集中在板子中间区域，该区域可覆盖 12CM 风扇进行散热。您无需绞尽脑汁设计风道，即可获得更好、更稳定的输出性能。
 
-8. Compatible with RRF firmware standard socket design:
-   The socket layout is set according to Duet wiring and layout, which is more convenient to use the RRF. And more, we adds two DUET type fan ports which have feedback signal.
+8. 兼容 RRF 固件标准插座设计：
+   插座布局按照 Duet 接线和布局设置，使用 RRF 更加方便。此外，我们还增加了两个带反馈信号的 DUET 型风扇端口。
 
-9. All Solid Capacitors: Power Section：
-   It can provide more stable power supply and higher efficiency.
+9. 全固态电容：电源部分：
+   它可以提供更稳定的电源和更高的效率。
 
-10. Compact Design:
-    It has a very small size of 177mm*108mm, realizes multiple MOSFET outputs, and supports up to 10 stepper drivers.
+10. 紧凑设计：
+    它具有 177mm*108mm 的非常小的尺寸，实现多个 MOSFET 输出，并支持多达 10 个步进驱动。
 
-## 2. Hardware Guide
+## 2. 硬件指南
 
-### 2.1 Pin definition
+### 2.1 引脚定义
 
 <table>
-   <tr><td>Features</td><td>Spider Pin</td><td>STM32 Pin</td><td>Pin No.</td><td>Comment</td></tr>
+   <tr><td>功能</td><td>Spider 引脚</td><td>STM32 引脚</td><td>引脚编号</td><td>备注</td></tr>
    <tr><td rowspan="4">X-MOTOR(1)</td><td>X-Step</td><td>PG7</td><td>92</td><td></td></tr>
    <tr><td>X-DIR</td><td>PG6</td><td>91</td><td></td></tr>
    <tr><td>X-EN</td><td>PE11</td><td>64</td><td></td></tr>
@@ -95,10 +95,10 @@ source_language: en
    <tr><td>E4-DIR</td><td>PG0</td><td>56</td><td></td></tr>
    <tr><td>E4-EN</td><td>PG5</td><td>90</td><td></td></tr>
    <tr><td>E4-CS/PDN</td><td>PG11</td><td>126</td><td></td></tr>
-   <tr><td rowspan="3">TMC Driver SPI (SOFT)</td><td>MOSI</td><td>PE14</td><td>67</td><td></td></tr>
+   <tr><td rowspan="3">TMC 驱动 SPI (SOFT)</td><td>MOSI</td><td>PE14</td><td>67</td><td></td></tr>
    <tr><td>MISO</td><td>PE13</td><td>66</td><td></td></tr>
    <tr><td>SCK</td><td>PE12</td><td>65</td><td></td></tr>
-   <tr><td rowspan="7">End-stops</td><td>X-MIN</td><td>PC5</td><td>45</td><td></td></tr>
+   <tr><td rowspan="7">限位开关</td><td>X-MIN</td><td>PC5</td><td>45</td><td></td></tr>
    <tr><td>X-MAX</td><td>PB5</td><td>135</td><td></td></tr>
    <tr><td>Y-MIN</td><td>PC4</td><td>44</td><td></td></tr>
    <tr><td>Y-MAX</td><td>PF13</td><td>53</td><td></td></tr>
@@ -112,26 +112,26 @@ source_language: en
    <tr><td>DIAG-5</td><td>PF12</td><td>50</td><td></td></tr>
    <tr><td>DIAG-6</td><td>PA14/SWCLK</td><td>109</td><td></td></tr>
    <tr><td>DIAG-7</td><td>PA13/SWDIO</td><td>105</td><td></td></tr>
-<tr><td rowspan="9">FAN/RGB<tr><td rowspan="2">FAN0</td><td>PWM-(PE8)</td><td>59</td></tr></td></tr>
+<tr><td rowspan="9">风扇/RGB<tr><td rowspan="2">FAN0</td><td>PWM-(PE8)</td><td>59</td></tr></td></tr>
    <tr><td>TACHO-(PB1)</td><td>47</td><td></td></tr>
    <tr><td rowspan="2">FAN1</td><td>PWM-(PE9)</td><td>60</td></tr></td></tr>
    <tr><td>TACHO-(PB7)</td><td>137</td><td></td></tr>
    <tr><td>FAN2</td><td>PD15</td><td>86</td><td></td></tr>
    <tr><td>FAN3</td><td>PD12</td><td>81</td><td></td></tr>
    <tr><td>FAN4</td><td>PD14</td><td>85</td><td></td></tr>
-   <tr><td>5V-LED(WS2812)</td><td>PD3</td><td>117</td><td>Share with Debug Led</td></tr>
-   <tr><td rowspan="6">Heating</td><td>E0-Heater</td><td>PB4</td><td>134</td><td></td></tr>
+   <tr><td>5V-LED(WS2812)</td><td>PD3</td><td>117</td><td>与调试 LED 共用</td></tr>
+   <tr><td rowspan="6">加热</td><td>E0-Heater</td><td>PB4</td><td>134</td><td></td></tr>
    <tr><td>E1-Heater</td><td>PB0</td><td>46</td><td></td></tr>
    <tr><td>E2-Heater</td><td>PD13</td><td>82</td><td></td></tr>
    <tr><td>E3-Heater</td><td>PC8</td><td>98</td><td></td></tr>
    <tr><td>E4-Heater</td><td>PA15</td><td>110</td><td></td></tr>
    <tr><td>Heated-Bed</td><td>PE10</td><td>63</td><td></td></tr>
-   <tr><td rowspan="6">Temperature</td><td>TE0（THERM0）</td><td>PC1</td><td>27</td><td>A 4.7kOhm 0.1% temperature sensor pull up resistor is used,PT1000 can be connected directly. For PT100, an amplifier board must be used.</td></tr>
-   <tr><td>TE1（THERM1）</td><td>PF9</td><td>21</td><td>Same as TE0.</td></tr>
-   <tr><td>TE2（THERM2）</td><td>PC3</td><td>29</td><td>Same as TE0.</td></tr>
-   <tr><td>TE3（THERM3）</td><td>PC2</td><td>28</td><td>Same as TE0.</td></tr>
-   <tr><td>TE4（THERM4）</td><td>PC0</td><td>26</td><td>Same as TE0.</td></tr>
-   <tr><td>TB（THERM5）</td><td>PF10</td><td>22</td><td>Same as TE0.</td></tr>
+   <tr><td rowspan="6">温度</td><td>TE0（THERM0）</td><td>PC1</td><td>27</td><td>使用 4.7kOhm 0.1% 温度传感器上拉电阻，可直接连接 PT1000。对于 PT100，必须使用放大板。</td></tr>
+   <tr><td>TE1（THERM1）</td><td>PF9</td><td>21</td><td>与 TE0 相同。</td></tr>
+   <tr><td>TE2（THERM2）</td><td>PC3</td><td>29</td><td>与 TE0 相同。</td></tr>
+   <tr><td>TE3（THERM3）</td><td>PC2</td><td>28</td><td>与 TE0 相同。</td></tr>
+   <tr><td>TE4（THERM4）</td><td>PC0</td><td>26</td><td>与 TE0 相同。</td></tr>
+   <tr><td>TB（THERM5）</td><td>PF10</td><td>22</td><td>与 TE0 相同。</td></tr>
    <tr><td rowspan="2">CAN</td><td>TX</td><td>PB9/SDA1/CAN_TX</td><td>140</td><td></td></tr>
    <tr><td>RX</td><td>PB8/SCL1/CAN_RX</td><td>139</td><td></td></tr>
    <tr><td rowspan="8">EXP1</td><td>LCD_D7</td><td>PE7</td><td>58</td><td></td></tr>
@@ -157,133 +157,133 @@ source_language: en
    <tr><td>CS</td><td>PA4/CS1</td><td>40</td><td></td></tr>
    <tr><td>TX</td><td>PA2/TX2</td><td>36</td><td></td></tr>
    <tr><td>RX</td><td>PA3/RX2</td><td>37</td><td></td></tr>
-   <tr><td rowspan="2">EEPROM(4K) I2C Pin-Out</td><td>SCL</td><td>PF1/SCL2</td><td>11</td><td>Connect to 24LC32(4K EEPROM)</td></tr>
-   <tr><td>SDA</td><td>PF0/SDA2</td><td>10</td><td>Connect to 24LC32(4K EEPROM)</td></tr>
-   <tr><td rowspan="7">Raspberry Pi</td><td>TX</td><td>PA10/RX1</td><td>102</td><td></td></tr>
+   <tr><td rowspan="2">EEPROM(4K) I2C 引脚</td><td>SCL</td><td>PF1/SCL2</td><td>11</td><td>连接到 24LC32(4K EEPROM)</td></tr>
+   <tr><td>SDA</td><td>PF0/SDA2</td><td>10</td><td>连接到 24LC32(4K EEPROM)</td></tr>
+   <tr><td rowspan="7">树莓派</td><td>TX</td><td>PA10/RX1</td><td>102</td><td></td></tr>
    <tr><td>RX</td><td>PA9/TX1</td><td>101</td><td></td></tr>
    <tr><td>MOSI</td><td>PB15</td><td>76</td><td></td></tr>
    <tr><td>MISO</td><td>PB14</td><td>75</td><td></td></tr>
    <tr><td>SCK</td><td>PB13</td><td>74</td><td></td></tr>
    <tr><td>CS</td><td>PB12</td><td>73</td><td></td></tr>
    <tr><td>DATA_RDY</td><td>PB11</td><td>70</td><td></td></tr>
-   <tr><td rowspan="2">SWD Debug</td><td>SWDIO</td><td>PA13</td><td>105</td><td>only used for debugging now and can be used for other purposes.</td></tr>
-   <tr><td>SWCLK</td><td>PA14</td><td>109</td><td>only used for debugging now and can be used for other purposes.</td></tr>
+   <tr><td rowspan="2">SWD 调试</td><td>SWDIO</td><td>PA13</td><td>105</td><td>目前仅用于调试，可用于其他用途。</td></tr>
+   <tr><td>SWCLK</td><td>PA14</td><td>109</td><td>目前仅用于调试，可用于其他用途。</td></tr>
 </table>
 
-### 2.2 Pinout diagram
+### 2.2 引脚图
 
 ![](/images/SpiderKing_V1.0_Pinout.jpg)
 
-If the pic is not clear enough, please check the .pdf and .svg file on our [github](https://github.com/FYSETC/FYSETC-SPIDER-KING/blob/main/Spider_King_V1.0_Pinout.pdf) or  [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/Spider_King_V1.0_Pinout.pdf).
+如果图片不够清晰，请查看我们 [github](https://github.com/FYSETC/FYSETC-SPIDER-KING/blob/main/Spider_King_V1.0_Pinout.pdf) 或 [国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/Spider_King_V1.0_Pinout.pdf) 上的 .pdf 和 .svg 文件。
 
-### 2.3 Endstop voltage selection
+### 2.3 限位开关电压选择
 
 ![](/images/EndstopVol.jpg)
 
-### 2.4 Stepper drivers guide
+### 2.4 步进驱动指南
 
 ![](/images/StepperDriver-SPI-UART.jpg)
 
-Check the clear picture on our [GitHub](https://github.com/FYSETC/FYSETC-SPIDER-KING/blob/main/images/StepperDriver-SPI-UART.jpg) or [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/images/StepperDriver-SPI-UART.jpg).
+在我们的 [GitHub](https://github.com/FYSETC/FYSETC-SPIDER-KING/blob/main/images/StepperDriver-SPI-UART.jpg) 或 [国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/images/StepperDriver-SPI-UART.jpg) 上查看清晰图片。
 
-#### 2.4.1 Big5160 install
+#### 2.4.1 Big5160 安装
 
 ![](/images/SpiderKing_Big5160.jpg)
 
-## 3. OS Guide
+## 3. 操作系统指南
 
 ### 3.1 SAMFi-OS
 
-Check details on [github](https://github.com/FYSETC/FYSETC-SAMFi-OS) or [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SAMFi-OS).
+在 [github](https://github.com/FYSETC/FYSETC-SAMFi-OS) 或 [国内](http://git.ecoaas.com/FYSETC/FYSETC-SAMFi-OS) 上查看详情。
 
 ### 3.2 MainsailOS
 
-Check details [here](https://docs.mainsail.xyz/setup/mainsail-os).
+在[此处](https://docs.mainsail.xyz/setup/mainsail-os)查看详情。
 
 ### 3.3 Fluidd
 
-Check details [here](https://docs.fluidd.xyz/).
+在[此处](https://docs.fluidd.xyz/)查看详情。
 
 ### 3.4 OctoPi
 
-Check details [here](https://octoprint.org/download/).
+在[此处](https://octoprint.org/download/)查看详情。
 
-## 4. Firmware Guide
+## 4. 固件指南
 
-Spider-King support Marlin firmware, Klipper firmware and RRF firmware. Choose one you need.
+Spider-King 支持 Marlin 固件、Klipper 固件和 RRF 固件。选择您需要的一种。
 
 ### 4.1 Marlin
 
-#### 4.1.1 Download Vscode + platformio
+#### 4.1.1 下载 Vscode + platformio
 
-To compile the firmware , you need to install Visual Studio Code and the platformio pulg-in. More Marlin firmware details, please visit Marlin firmware official website [here](https://marlinfw.org/).
+要编译固件，您需要安装 Visual Studio Code 和 platformio 插件。更多 Marlin 固件详情，请访问 Marlin 固件官方网站[此处](https://marlinfw.org/)。
 
-#### 4.1.2 Download firmware
+#### 4.1.2 下载固件
 
-The Marlin firmware is in the `firmware/Marlin` folder in git repository [GitHub](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Marlin) or [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Marlin), you can also get the firmware from latest [Marlin bugfix-2.1.x branch](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.1.x). 
+Marlin 固件位于 git 仓库 [GitHub](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Marlin) 或 [国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Marlin) 的 `firmware/Marlin` 文件夹中，您也可以从最新的 [Marlin bugfix-2.1.x 分支](https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.1.x) 获取固件。
 
-Step 1: you need to enable following define in `configuration.h` file.
+步骤 1：您需要在 `configuration.h` 文件中启用以下定义。
 
 ```
 #define MOTHERBOARD BOARD_FYSETC_SPIDER_KING407
 #define SERIAL_PORT -1
 ```
 
-Step 2: then we need to change `platformio.ini` file
+步骤 2：然后我们需要修改 `platformio.ini` 文件
 
 `default_envs = FYSETC_SPIDER_KING407`
 
-#### 4.1.3 Compile the firmware
+#### 4.1.3 编译固件
 
-Open Vscode and open platformio main page and click the "Open Project" button , and direct to the folder where you put your firmware.
+打开 Vscode 并打开 platformio 主页，点击“Open Project”按钮，然后指向您放置固件的文件夹。
 
-If everything goes fine , at the bottom you can see several buttons
+如果一切顺利，在底部您可以看到几个按钮
 
-The check mark button is for compiling , click it to compile. You can find built `firmware.bin` at `.pio\build\FYSETC_SPIDER_KING407 folder.`
+对勾按钮用于编译，点击它进行编译。您可以在 `.pio\build\FYSETC_SPIDER_KING407 folder.` 找到构建的 `firmware.bin`
 
-#### 4.1.4 Upload firmware
+#### 4.1.4 上传固件
 
-Follow Firmware Update guide [here](#44-firmware-upload).
+遵循[此处](#44-firmware-upload)的固件更新指南。
 
 ### 4.2 Klipper
 
-We put Klipper related files like `printer.cfg` in `firmware/Klipper` folder in github repo.
+我们将 Klipper 相关文件（如 `printer.cfg`）放在 github 仓库的 `firmware/Klipper` 文件夹中。
 
-If you want to use Klipper. You need to follow the Klipper [installation guide](https://www.klipper3d.org/Installation.html) to install [Klipper](https://github.com/KevinOConnor/klipper) first. When we try to compile it, we need to call `make menuconfig` to choose compile options, please select options for Spider King as below describe.
+如果您想使用 Klipper。您需要先遵循 Klipper [安装指南](https://www.klipper3d.org/Installation.html) 安装 [Klipper](https://github.com/KevinOConnor/klipper)。当我们尝试编译它时，我们需要调用 `make menuconfig` 来选择编译选项，请按照以下描述为 Spider King 选择选项。
 
 #### 4.2.1 menuconfig
 
-Please choose these options for Spider King, you need to decide which to choose according to your board and wiring on some options.
+请为 Spider King 选择这些选项，某些选项您需要根据您的板子和接线来决定选择哪个。
 
-- ##### Enable `extra low-level configuration options`
+- ##### 启用 `extra low-level configuration options`
 
-- ##### Micro-controller Architecture
+- ##### 微控制器架构
 
-Select `STMicroelectronics STM32`
+选择 `STMicroelectronics STM32`
 
-- ##### Processor model
+- ##### 处理器型号
 
-Select `STM32F407`
+选择 `STM32F407`
 
-- ##### Clock reference
+- ##### 时钟参考
 
-Select `8 MHz crystal`
+选择 `8 MHz crystal`
 
-- ##### Bootloader offset
+- ##### Bootloader 偏移
 
-Choose `32kiB bootloader`. 
+选择 `32kiB bootloader`。
 
-*Note: If your bootloader crashed, you need to follow the `5.Bootloader Guide`  character to flash the spider king bootloader.*
+*注意：如果您的 bootloader 崩溃了，您需要遵循 `5.Bootloader Guide` 章节来烧录 spider king bootloader。*
 
-- ##### Communication interface
+- ##### 通信接口
 
-You have two choices here, if you use USB cable to connect RaspeberryPI and Spider King, you need to follow `1. USB (on PA11/PA12)` below. If you use serial to connect RaspberryPI and Spider King, then check `2. Serial (on USART1 PA10/PA9)`.
+您在这里有两个选择，如果您使用 USB 线连接树莓派和 Spider King，您需要遵循下面的 `1. USB (on PA11/PA12)`。如果您使用串口连接树莓派和 Spider King，则勾选 `2. Serial (on USART1 PA10/PA9)`。
 
 - ###### 1. USB (on PA11/PA12)
 
-If you want to connect Spider King to RaspberryPI with USB cable. You need to select `USB (on PA11/PA12)`
+如果您想用 USB 线将 Spider King 连接到树莓派。您需要选择 `USB (on PA11/PA12)`
 
-And in `printer.cfg` file, you need to set the `serial` as below. We provide an example cfg file `printer.cfg` for VORON 2 machine [here](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Klipper) or [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/printer.cfg).
+并且在 `printer.cfg` 文件中，您需要如下设置 `serial`。我们为 VORON 2 机器提供了一个示例 cfg 文件 `printer.cfg`，在[此处](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Klipper)或[国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/printer.cfg)。
 
 ```
 Obtain definition by "ls -l /dev/serial/by-id/" then unplug to verify
@@ -293,75 +293,75 @@ serial: /dev/serial/by-id/usb-Klipper_stm32f446xx_230032000851363131363530-if00
 
 - ###### 2. Serial (on USART1 PA10/PA9)
 
-If you want to connect Spider King UART1(RX1:PA10, TX1:PA9) port to RPI uart0(TX:GPIO14,RX:GPIO15) port, you need to select `Serial (on USART1 PA10/PA9)`
+如果您想将 Spider King UART1(RX1:PA10, TX1:PA9) 端口连接到 RPI uart0(TX:GPIO14,RX:GPIO15) 端口，您需要选择 `Serial (on USART1 PA10/PA9)`
 
-In `printer.cfg` file, you need to uncomment the following line as our example `printer.cfg` file here ([github](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Klipper) [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/printer.cfg)) do, if your cfg file don't have this line, please add it.
+在 `printer.cfg` 文件中，您需要取消注释以下行，正如我们的示例 `printer.cfg` 文件（[github](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/firmware/Klipper) [国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/printer.cfg)）所做的那样，如果您的 cfg 文件没有这一行，请添加它。
 
 ```
 serial: /dev/ttyAMA0
 ```
 
-Besides this make option, you still need to follow the instructions in `Connect RPI uart.md` file, you can find the file [github](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/Connect%20RPI%20uart.md) [国内](http://git.t.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/Connect%20RPI%20uart.md).
+除了这个 make 选项，您还需要遵循 `Connect RPI uart.md` 文件中的说明，您可以在 [github](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/Connect%20RPI%20uart.md) [国内](http://git.ecoaas.com/FYSETC/FYSETC-SPIDER-KING/blob/main/firmware/Klipper/Connect%20RPI%20uart.md) 找到该文件。
 
-#### 4.2.2 Compile firmware
+#### 4.2.2 编译固件
 
 ```
 make
 ```
 
-#### 4.2.3 Upload firmware
+#### 4.2.3 上传固件
 
-Follow Firmware Update guide [here](#44-firmware-upload).
+遵循[此处](#44-firmware-upload)的固件更新指南。
 
 ### 4.3 RRF
 
-Spider King is originally supported by teamgloomy‘s RRF firmware from version 3.4.2rc2 [Releases · gloomyandy/RepRapFirmware · GitHub](https://github.com/gloomyandy/RepRapFirmware/releases). Check the document [here](https://teamgloomy.github.io/fysetc_spider_king_407_general.html).
+Spider King 从 3.4.2rc2 版本起由 teamgloomy 的 RRF 固件原生支持 [Releases · gloomyandy/RepRapFirmware · GitHub](https://github.com/gloomyandy/RepRapFirmware/releases)。在[此处](https://teamgloomy.github.io/fysetc_spider_king_407_general.html)查看文档。
 
-### 4.4 Firmware Upload
+### 4.4 固件上传
 
-We provide several methods to upload the firmware including SDCARD, dfu-util, DFU and platformio.
+我们提供了几种上传固件的方法，包括 SDCARD、dfu-util、DFU 和 platformio。
 
-#### 4.4.1 Upload the firmware(SDCARD)
+#### 4.4.1 上传固件(SDCARD)
 
-Uploading firmware using SD card is our default way to update the firmware as Spider King already has stock bootloader. 
+使用 SD 卡上传固件是我们更新固件的默认方式，因为 Spider King 已经带有出厂 bootloader。
 
-Steps: 
+步骤：
 
-1. Copy your compiled firmware file `firmware.bin`(If you use klipper firmware, you need to rename `klipper.bin` to `firmware.bin`) file to the SD card
+1. 将您编译的固件文件 `firmware.bin`（如果您使用 klipper 固件，需要将 `klipper.bin` 重命名为 `firmware.bin`）复制到 SD 卡
 
-2. Insert it to the SD card slot which is at the right side of the board
+2. 将其插入板子右侧的 SD 卡槽
 
-3. Then power on the board. 
+3. 然后给板子上电。
 
-4. You may need to wait for about 30s to finish uploading.
+4. 您可能需要等待约 30 秒完成上传。
 
-**Note: If you once upload the firmware to Spider King flash address `0x08000000`, then the stock bootloader will be gone, you need to upload the bootloader yourself, please follow the `5.Bootloader Guide` chacter to upload the bootloader.**
+**注意：如果您曾经将固件上传到 Spider King 闪存地址 `0x08000000`，那么出厂 bootloader 将消失，您需要自己上传 bootloader，请遵循 `5.Bootloader Guide` 章节上传 bootloader。**
 
-#### 4.4.2 Upload the firmware(dfu-util)
+#### 4.4.2 上传固件(dfu-util)
 
-This method works in linux, that means should work in raspberry pi.
+此方法适用于 linux，这意味着应该可以在树莓派上运行。
 
-##### Step 1. Enter DFU mode first
+##### 步骤 1. 首先进入 DFU 模式
 
-1. First power off the board
+1. 首先给板子断电
 
-2. Make sure no jumper on 5V and U5V-EN(On KING core board)
+2. 确保 5V 和 U5V-EN 上没有跳线（在 KING 核心板上）
 
-3. Place jumper on BT0 to 3V3 pin (On KING core board)
+3. 将跳线放在 BT0 到 3V3 引脚上（在 KING 核心板上）
 
-4. Connect USB cable to the KING core board and your computer (If you use raspberry pi to upload firmware, connect USB cable to your raspberry pi)
+4. 将 USB 线连接到 KING 核心板和您的电脑（如果您使用树莓派上传固件，将 USB 线连接到您的树莓派）
 
-5. Power on the board with 24v PSU
+5. 使用 24v 电源给板子上电
    
-   Now the board is in DFU mode. If not, click the reset button. Also you can power on the board with USB 5v, but you need to set jumper on 5V and U5V-EN on KING core board ,check the silkscreen lable on the KING core board, and remember to remove it after you finish uploading.
+   现在板子处于 DFU 模式。如果不是，请点击复位按钮。您也可以使用 USB 5v 给板子上电，但您需要在 KING 核心板上设置 5V 和 U5V-EN 的跳线，查看 KING 核心板上的丝印标签，并记得在上传完成后移除它。
    
-   ***REMEMBER to remove BT0 jumper if you finish uploading firmware or it will enter DFU mode again.***
+   ***完成固件上传后请记住移除 BT0 跳线，否则它将再次进入 DFU 模式。***
 
-##### Step 2. Install dfu-util
+##### 步骤 2. 安装 dfu-util
 
-Make sure dfu-util is installed, shoot `dfu-util --version` command to check.
+确保已安装 dfu-util，执行 `dfu-util --version` 命令进行检查。
 
-Sample output:
+示例输出：
 
 ```
 dfu-util 0.9
@@ -372,80 +372,80 @@ This program is Free Software and has ABSOLUTELY NO WARRANTY
 Please report bugs to http://sourceforge.net/p/dfu-util/tickets/
 ```
 
-If not , you should install it first, use the package manager of your distribution to get the latest version, like
+如果没有，您应该先安装它，使用您发行版的包管理器获取最新版本，例如
 
 ```
 sudo apt-get install dfu-util
 ```
 
-##### Step 3. Use command to upload firmware
+##### 步骤 3. 使用命令上传固件
 
-Then use the command below to upload the firmware. You should replace `firmware.bin` below with your built firmware bin(or hex) file location like `out/klipper.bin`. 
+然后使用下面的命令上传固件。您应该将下面的 `firmware.bin` 替换为您构建的固件 bin（或 hex）文件位置，如 `out/klipper.bin`。
 
 ```
 dfu-util -R -a 0 -s 0x08008000:leave -D firmware.bin
 ```
 
-#### 4.4.3 Upload the firmware(DFU)
+#### 4.4.3 上传固件(DFU)
 
-This method only works in WINDOWS OS.
+此方法仅适用于 WINDOWS 操作系统。
 
-##### Step 1. Download stm32cubeprogrammer
+##### 步骤 1. 下载 stm32cubeprogrammer
 
-You can download it from ST website [STM32CubeProg](https://www.st.com/zh/development-tools/stm32cubeprog.html). Then install and open the STM32CubeProgrammer software.
+您可以从 ST 网站 [STM32CubeProg](https://www.st.com/zh/development-tools/stm32cubeprog.html) 下载它。然后安装并打开 STM32CubeProgrammer 软件。
 
 ![](/images/S6_1574332767079.png)
 
-##### Step 2. Enter DFU mode
+##### 步骤 2. 进入 DFU 模式
 
-- First power off the board
+- 首先给板子断电
 
-- Make sure no jumper on 5V and U5V-EN(On KING core board)
+- 确保 5V 和 U5V-EN 上没有跳线（在 KING 核心板上）
 
-- Place jumper on BT0 to 3V3 pin (On KING core board)
+- 将跳线放在 BT0 到 3V3 引脚上（在 KING 核心板上）
 
-- Connect USB cable to the KING core board and your computer (If you use raspberry pi to upload firmware, connect USB cable to your raspberry pi)
+- 将 USB 线连接到 KING 核心板和您的电脑（如果您使用树莓派上传固件，将 USB 线连接到您的树莓派）
 
-- Power on the board with 24v PSU
+- 使用 24v 电源给板子上电
   
-  Now the board is in DFU mode. If not, click the reset button. Also you can power on the board with USB 5v, but you need to set jumper on 5V and U5V-EN on KING core board, check the silkscreen lable on the KING core board, and remember to remove it after you finish uploading.
+  现在板子处于 DFU 模式。如果不是，请点击复位按钮。您也可以使用 USB 5v 给板子上电，但您需要在 KING 核心板上设置 5V 和 U5V-EN 的跳线，查看 KING 核心板上的丝印标签，并记得在上传完成后移除它。
   
-  ***REMEMBER to remove BT0 jumper if you finish uploading firmware or it will enter DFU mode again.***
+  ***完成固件上传后请记住移除 BT0 跳线，否则它将再次进入 DFU 模式。***
 
-##### Step 3. Upload the firmware
+##### 步骤 3. 上传固件
 
-Now you can connect and flash the Spider board with stm32cubeprogrammer with the following operation.
+现在您可以使用 stm32cubeprogrammer 通过以下操作连接并烧录 Spider 板。
 
-Do as the red number shows in the screen shot.
+按照屏幕截图中红色数字所示操作。
 
-1. Click the button to find the DFU port.
-2. Connect the DFU
-3. Choose the "firmware.bin" file. (or .hex file).
-4. Fill in the 'Start address' `0x08008000`.
-5. Start Programming
+1. 点击按钮查找 DFU 端口。
+2. 连接 DFU
+3. 选择“firmware.bin”文件。（或 .hex 文件）。
+4. 填写“起始地址” `0x08008000`。
+5. 开始编程
 
-#### 4.4.4 Upload the firmware(platformio)
+#### 4.4.4 上传固件(platformio)
 
-If you compile Marlin yourself with platformio,you can follow the instructions below to upload the firmware.
+如果您使用 platformio 自己编译 Marlin，您可以遵循以下说明上传固件。
 
-##### Step 1. Enter DFU mode first
+##### 步骤 1. 首先进入 DFU 模式
 
-- First power off the board
+- 首先给板子断电
 
-- Make sure no jumper on 5V and U5V-EN(On KING core board)
+- 确保 5V 和 U5V-EN 上没有跳线（在 KING 核心板上）
 
-- Place jumper on BT0 to 3V3 pin (On KING core board)
+- 将跳线放在 BT0 到 3V3 引脚上（在 KING 核心板上）
 
-- Connect USB cable to the KING core board and your computer (If you use raspberry pi to upload firmware, connect USB cable to your raspberry pi)
+- 将 USB 线连接到 KING 核心板和您的电脑（如果您使用树莓派上传固件，将 USB 线连接到您的树莓派）
 
-- Power on the board with 24v PSU
+- 使用 24v 电源给板子上电
   
-  Now the board is in DFU mode. If not, click the reset button. Also you can power on the board with USB 5v, but you need to set jumper on 5V and U5V-EN on KING core board, check the silkscreen lable on the KING core board, and remember to remove it after you finish uploading.
+  现在板子处于 DFU 模式。如果不是，请点击复位按钮。您也可以使用 USB 5v 给板子上电，但您需要在 KING 核心板上设置 5V 和 U5V-EN 的跳线，查看 KING 核心板上的丝印标签，并记得在上传完成后移除它。
   
-  ***REMEMBER to remove BT0 jumper if you finish uploading firmware or it will enter DFU mode again.***
+  ***完成固件上传后请记住移除 BT0 跳线，否则它将再次进入 DFU 模式。***
 
-##### Step 2. Click the upload button to upload firmware
+##### 步骤 2. 点击上传按钮上传固件
 
-## 5. STLs
+## 5. STL 文件
 
-We have upload some STLs for some 3D printers, like Voron: [holder](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/STLs).
+我们上传了一些用于某些 3D 打印机的 STL 文件，例如 Voron：[支架](https://github.com/FYSETC/FYSETC-SPIDER-KING/tree/main/STLs)。

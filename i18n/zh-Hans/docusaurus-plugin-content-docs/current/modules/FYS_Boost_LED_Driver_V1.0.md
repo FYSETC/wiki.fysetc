@@ -1,86 +1,83 @@
 ---
-sidebar_position: 70
 id: FYS_Boost_LED_Driver_V1.0
-title: FYS Boost LED Driver V1.0
-description: FYS Boost LED Driver is an economical and easy to use driver with a
-  maximum output of 60V/5A (requires you to replace the Rs resistor). By
-  default, a 900mA ± 5% current output is available for 30W…
+title: LED Driver V1.0
 slug: /FYS_Boost_LED_Driver_V1.0
+sidebar_position: 100
+description: FYS Boost LED驱动器是一款经济实惠且易于使用的驱动器，最大输出为60V/5A（需要您更换Rs电阻）。默认情况下，可提供900mA ± 5%的电流输出，适用于30W…
 source_file: FYS_Boost_LED_Driver_V1.0.md
 source_language: en
 ---
 
-## Product Introduction
----
+## 产品介绍
+
 
 ![30w-LED-driver](/images/30w-LED-driver.jpg)
 
-FYS Boost LED Driver is an economical and easy to use driver with a maximum output of 60V/5A (requires you to replace the Rs resistor). By default, a 900mA ± 5% current output is available for 30W LEDs (10 parallel 3 series) modules.
+FYS 升压 LED 驱动器是一款经济且易于使用的驱动器，最大输出为 60V/5A（需要您更换 Rs 电阻）。默认情况下，可为 30W LED（10 并 3 串）模块提供 900mA ± 5% 的电流输出。
 
-## Features
----
+## 特点
 
-- Wide 5V to 32V Input Voltage Range
-- Maximum Boost Output Up to 60V
-- 0.22V FB adjustable LED drive current
-- Max. 5A Switching Current Capability
-- Up to 93% efficiency
-- Excellent line and load regulation
-- Thermal Shutdown Function
-- Built in Current Limit Function
 
-## Applications
----
+- 宽 5V 至 32V 输入电压范围
+- 最大升压输出高达 60V
+- 0.22V FB 可调 LED 驱动电流
+- 最大 5A 开关电流能力
+- 效率高达 93%
+- 出色的线性调整率和负载调整率
+- 热关断功能
+- 内置限流功能
 
-- LED Lighting 
-- Boost constant current driver
-- TFT LED Backlighting
+## 应用
 
-## Typical Application Circuit
----
+
+- LED 照明
+- 升压恒流驱动器
+- TFT LED 背光
+
+## 典型应用电路
+
 
 ![LED DRIVER 接线图](/images/LED-DRIVER%E6%8E%A5%E7%BA%BF%E5%9B%BE.png)
 
-## Attention
----
-
-- The board will be fever during use (about 60 °C at 900 mA), which is normal and need not be worried;
-- Do not connect the positive and negative poles of the board input and output, otherwise it will damage the board;
-- If a higher current is required, please follow the part of FAQ. Larger currents will cause the board to heat up, requiring good heat dissipation conditions, such as sticking heatsinks and adding fans.
-- The power of the drive is greater than the power required by the LED, and the LED will flash brightly;
-- The power of the drive is less than the power required by the LED, and the LED will flash dimly or not;
-- <font color="red">The company is not responsible for any damage or loss caused by the private modification of the board.</font>
-
-## FAQ
----
+## 注意事项
 
 
-:::tip[How to change to a larger current output manually?]
+- 使用过程中板子会发热（900 mA 时约 60 °C），这是正常现象，无需担心；
+- 请勿将板子输入和输出的正负极连接，否则会损坏板子；
+- 如果需要更大的电流，请按照 FAQ 部分操作。更大的电流会导致板子发热，需要良好的散热条件，例如粘贴散热片并添加风扇。
+- 驱动器功率大于 LED 所需功率，LED 会闪亮；
+- 驱动器功率小于 LED 所需功率，LED 会闪暗或不闪；
+- <font color="red">对于因私自改装板子而造成的任何损坏或损失，本公司概不负责。</font>
 
-If you want to change to other current outputs:
-1. you need to have the soldering tool and the corresponding soldering skills; 
-2. you need 1 or 2 1206 resistors, the resistance can be based on Iout = 0.22/Rs; 
-3. you only need Remove the two resistors labeled Rs on the board and replace them with the resistors you need for the current output.
+## 常见问题
+
+
+
+:::tip[如何手动更改为更大的电流输出？]
+
+如果您想更改为其他电流输出：
+1. 您需要具备焊接工具和相应的焊接技能；
+2. 您需要 1 或 2 个 1206 电阻，电阻值可根据 Iout = 0.22/Rs 计算；
+3. 您只需移除板子上标有 Rs 的两个电阻，并替换为您所需电流输出对应的电阻。
 
 :::
 
 
-## Attachments
----
+## 附件
 
-###  Schematic
+
+###  原理图
 
 ![LED-driver-schematic](/images/LED-driver-schematic.png)
 
-### Dimensions
+### 尺寸
 
 ![LED-driver-dimensions](/images/LED-driver-dimensions.png)
 
-## Shop
----
+## 商店
+
 - [FYS Boost LED Driver V1.0](https://www.aliexpress.com/store/product/DLP-Boost-LED-drive-board-60V-5A-30W-Constant-Current-Driver-for-LED-Lighting-TFT-Backlighting/3480083_32905681524.html)
 
-## Tech Support
+## 技术支持
 
----
-Please submit any technical issue into our [forum](http://forum.fysetc.com/)
+请将任何技术问题提交到我们的[论坛](http://forum.fysetc.com/)

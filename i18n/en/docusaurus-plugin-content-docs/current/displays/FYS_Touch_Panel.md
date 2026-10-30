@@ -1,10 +1,9 @@
 ---
-sidebar_position: 50
 id: FYS_Touch_Panel
-title: FYS Touch Lcd
-description: "At the moment this firmware only works with F6/S6 board , please
-  use the board firmware below:"
+title: FYS_Touch_Panel
 slug: /FYS_Touch_Panel
+sidebar_position: 40
+description: 'At the moment this firmware only works with F6/S6 board , please use the board firmware below:'
 source_file: FYS_Touch_Panel.md
 source_language: en
 ---

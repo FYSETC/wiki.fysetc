@@ -18,3 +18,9 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# Local migration diagnostics
+/migration/build.log
+/migration/helplook-plan.json
+/migration/helplook-update-backup-*/
+/migration/helplook-content-audit-backup-*/

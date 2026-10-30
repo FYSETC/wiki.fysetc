@@ -1,0 +1,883 @@
+{
+  "date": "2026-10-29",
+  "sourceRoot": "C:\\Users\\kg\\Desktop\\helplook-new-version\\docs",
+  "updatedArticles": 9,
+  "renamedArticles": 6,
+  "addedArticles": 4,
+  "localeFiles": 26,
+  "newImageFiles": 58,
+  "downloadedImages": [
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/MNT9Vlou/6aa913d179be6.png",
+      "target": "static/images/catalyst-k--aff06274762df7b3.png",
+      "sha256": "aff06274762df7b34df1c0de920dd54c38b50d4cc476f553280db55110c3f32a",
+      "bytes": 353731,
+      "reused": false,
+      "articles": [
+        "Controllers/CATALYST.K.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69c2cc1eba4.png",
+      "target": "static/images/chameleon-x5--705cb31b072faba0.png",
+      "sha256": "705cb31b072faba0cd60b5c53617a3efc4f6773b6d7b77295cc257479a9d8d93",
+      "bytes": 18667,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69c2e7dc744.png",
+      "target": "static/images/chameleon-x5--4759c5114f17a3e8.png",
+      "sha256": "4759c5114f17a3e88f9235c1724b2304ea79496299bb208911093453735e8ec4",
+      "bytes": 19017,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69c3f75c476.png",
+      "target": "static/images/chameleon-x5--aa6ccc5217a50ca4.png",
+      "sha256": "aa6ccc5217a50ca4efec9e8a5b21e475961022b6df19c46ffb7e20346760e74c",
+      "bytes": 14887,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69c9473b3ea.png",
+      "target": "static/images/chameleon-x5--378246dd3bfc2f01.png",
+      "sha256": "378246dd3bfc2f01f41e26e06ae7c5e6037f22851e5e5dbf2789c115137e46e2",
+      "bytes": 15140,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69ca59a0581.png",
+      "target": "static/images/chameleon-x5--72b458ca70474c66.png",
+      "sha256": "72b458ca70474c66a2e9f4c686812cff4ee50b014d0ea1399b1db259b2f90d5d",
+      "bytes": 13618,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/vwHKrP9T/6a69ca645873b.png",
+      "target": "static/images/chameleon-x5--2327e61cb12e0efa.png",
+      "sha256": "2327e61cb12e0efa583574361bded42aa4753e9d5d39d0922e52dd23e46c978c",
+      "bytes": 13870,
+      "reused": false,
+      "articles": [
+        "Controllers/CHAMELEON X5.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba4aaeb4699.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--de2ba7e7e293204c.png",
+      "sha256": "de2ba7e7e293204cf8d2013ce6d40b7c0283d387a8cbf345f2dda110c9073793",
+      "bytes": 56844,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba25fe0ce06.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--533f3543b2fb8eba.png",
+      "sha256": "533f3543b2fb8eba80b6592c72acc83c2ac09f662dd9a2296ced0683eefc07f5",
+      "bytes": 43027,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba38679466c.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--c9daa3d74fb64849.png",
+      "sha256": "c9daa3d74fb6484974e5608edca763e9299f9efed758500878c24c57c47087e9",
+      "bytes": 24377,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba39aebc5df.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--0502209f693a6b49.png",
+      "sha256": "0502209f693a6b49bf54fa6250d9ab1202611bb9a3f00ef3e7e9efe4e6f1f8a7",
+      "bytes": 29132,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba3a238a95d.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--e61e77695a26d3de.png",
+      "sha256": "e61e77695a26d3de7785ce952ee2efd2a433d9fa551c8edd07e5dfae1ecc7dbf",
+      "bytes": 21470,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba39eff0dbe.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--7460f4ea2ce3ae70.png",
+      "sha256": "7460f4ea2ce3ae70e60c5ae5362200b2aa750ea5e414cd460be846feccef7681",
+      "bytes": 26119,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba3b2841230.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--07f386d34fdd6146.png",
+      "sha256": "07f386d34fdd614602fbf4550c2590efd3b03d668585e58afc906419745bf413",
+      "bytes": 28957,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba3b3b8ce14.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--783aabe319273baf.png",
+      "sha256": "783aabe319273bafda9600e7365ef219c4490ab41cba93deae6e36607334c2f2",
+      "bytes": 28955,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba3b5178838.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--4f7372a799b62abe.png",
+      "sha256": "4f7372a799b62abe8606b76796f697fac367a38976c6f53e867edb54da384419",
+      "bytes": 29002,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/dZfH4WpC/6aba43cb258b7.png",
+      "target": "static/images/adventurer-ad5m-ad5m-pro-ad5x-series-camera--e995c1545f8b5752.png",
+      "sha256": "e995c1545f8b57525f8215fd723b58dbb5c407f648e49de0ae5cc4aa21599cc4",
+      "bytes": 616342,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a851b459c611.png",
+      "target": "static/images/psf-feedback-sensor--df6ecb8a9651fa25.png",
+      "sha256": "df6ecb8a9651fa2511b7fa56068d9a0120b89a7e5f1a0cc15fbb871c5744f9dc",
+      "bytes": 283531,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86aa2a8827d.png",
+      "target": "static/images/psf-feedback-sensor--b53c6633c779b87e.png",
+      "sha256": "b53c6633c779b87eeef6e261e914cc310578e513bf0cf2f6e2bab566ad760ecf",
+      "bytes": 171486,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86aa9564705.png",
+      "target": "static/images/psf-feedback-sensor--74ee72523a9d29eb.png",
+      "sha256": "74ee72523a9d29eb4cde7e2d712a359f2ea99e4325a2294fe2fa056c461ee1b4",
+      "bytes": 298593,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86abc532244.png",
+      "target": "static/images/psf-feedback-sensor--9004933c78aeab4d.png",
+      "sha256": "9004933c78aeab4d0c4ca9e3cef3484e4204b0ed48f7a1b6c18fff693b2bc76c",
+      "bytes": 100438,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86ac4eb6d3e.png",
+      "target": "static/images/psf-feedback-sensor--97011986c13315f2.png",
+      "sha256": "97011986c13315f27237336f43396b7adfe6e555dbe30a4d06d3ccd2a3e41f0d",
+      "bytes": 94751,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86ac8817332.png",
+      "target": "static/images/psf-feedback-sensor--4ef93c7bb7a0dc24.png",
+      "sha256": "4ef93c7bb7a0dc248464b0e890d8b092c389f2372e11ed761590aa60d60afa34",
+      "bytes": 292938,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a86acfaa0ccb.png",
+      "target": "static/images/psf-feedback-sensor--f6bb0c739af8ca27.png",
+      "sha256": "f6bb0c739af8ca27a9c4a8c04a61f6888829daa959c3788782a8b949a06dcb75",
+      "bytes": 185121,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a8c1da985242.png",
+      "target": "static/images/psf-feedback-sensor--1d7db30fd9dd3133.png",
+      "sha256": "1d7db30fd9dd3133ec5cfd9a618118970c04f93279a61892476c0cccd0aaa4e8",
+      "bytes": 113962,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a8c09f7e0f8f.png",
+      "target": "static/images/psf-feedback-sensor--ba792b999e36019a.png",
+      "sha256": "ba792b999e36019a6b90214a9c0878a0869f02eade5e8e414754fcad8ae3bcc5",
+      "bytes": 166845,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a8c0ab1bb624.png",
+      "target": "static/images/psf-feedback-sensor--6728ea159c9f85bf.png",
+      "sha256": "6728ea159c9f85bf8ac6438d5e5be468810e3d7278d7f329bdeeced4e393b473",
+      "bytes": 43656,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/XqLvsdNH/6a911f5e68216.png",
+      "target": "static/images/psf-feedback-sensor--c2d4645a4511e377.png",
+      "sha256": "c2d4645a4511e3778ba264a2d635b51f20d8853215cc0f12a4e9b59836c7505f",
+      "bytes": 9560,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/PSF Feedback Sensor.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/pz1Ocln9/6a9e8d440e5da.png",
+      "target": "static/images/sparkx-i7-led-upgrade--113ed647f1d6fac6.png",
+      "sha256": "113ed647f1d6fac6f6fda5fb576e7c38110882266e2565a8bb8e1ae0870632df",
+      "bytes": 558132,
+      "reused": false,
+      "articles": [
+        "Upgrade Kits/Sparkx i7 LED Upgrade.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f40f91f30.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--3beeef61bdcf5b12.png",
+      "sha256": "3beeef61bdcf5b121f1d67022a5ebc0a2e2e283815e8db1b310c784efed51129",
+      "bytes": 782693,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ac6ef3b4b76a.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--d3f7dad33f1c3444.png",
+      "sha256": "d3f7dad33f1c3444e3b8aa6cbc52ddd6eaf3d4db2e913f8f254391bd38c744e7",
+      "bytes": 518110,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f44540f9e.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--14db0bcef1099092.png",
+      "sha256": "14db0bcef10990924569eaef2e90edf96b7e99b3f34795059b85693963134341",
+      "bytes": 697590,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ab4bcb667218.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--96dd48e5f0ef340f.png",
+      "sha256": "96dd48e5f0ef340fd8f507ea331b576670e6fc8ffdf33043726bb194d665d3d4",
+      "bytes": 527004,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f4a5ef92b.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--58583579afcb3ae7.png",
+      "sha256": "58583579afcb3ae74cd3050d377528fb9b61bfd1c4a3d467a1a105d8208c4900",
+      "bytes": 491257,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f4c00936a.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--22f3d548d0183cbd.png",
+      "sha256": "22f3d548d0183cbdd493617a645543238eec91694224bbfee86c3bf291507ed0",
+      "bytes": 521442,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f4d53818b.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--4289c06141669bbf.png",
+      "sha256": "4289c06141669bbf3f3eb9ada66a5d7fbe5f96ad3f4b5688f8a950efa1688382",
+      "bytes": 484409,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ab22c4303e9b.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--f9885f268acc8c51.png",
+      "sha256": "f9885f268acc8c515617d47555d0a03fad5adb843b50047a2aaa099602d6f720",
+      "bytes": 13027,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ab22c79383c9.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--ab68fd73b488bab9.png",
+      "sha256": "ab68fd73b488bab9a0992cd5b65e9becd01b712bca8e26b51ab8b263a6cd63f0",
+      "bytes": 14994,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ac8c5dd175a2.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--800987a88e53cd51.png",
+      "sha256": "800987a88e53cd51bad611c2ee5412bf1f33f1fa51aa1e3d39a3d9ac9a1758d6",
+      "bytes": 12612,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/JRDhzc53/6ad5f57db8909.png",
+      "target": "static/images/catalyst-k-mainboard-v1-1--a9b8cd512d18e522.png",
+      "sha256": "a9b8cd512d18e522888894b73173fe35c3f76140b0a185b59d2e6805d0ef3e3a",
+      "bytes": 701074,
+      "reused": false,
+      "articles": [
+        "Controllers/Catalyst.K_Mainboard_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ab2341ebe3fe.png",
+      "target": "static/images/catalyst-k-tool-v1-1--803f2ce5b1ab11fa.png",
+      "sha256": "803f2ce5b1ab11fa0c86125a5196560a1b3fc1f83061c20f4485e76a9f989977",
+      "bytes": 339251,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ac74ddf0e907.png",
+      "target": "static/images/catalyst-k-tool-v1-1--e606dac9ba590367.png",
+      "sha256": "e606dac9ba59036784ffa5e80f9908a727e3a1c988cd0aa7cc77d2648a8bfc67",
+      "bytes": 703830,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ac74baa471a8.png",
+      "target": "static/images/catalyst-k-tool-v1-1--6048811cd7c8357a.png",
+      "sha256": "6048811cd7c8357a78185f4ea7427ed270689552c3778e1a5b9b9ae3ad2bd551",
+      "bytes": 590895,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ab37e42b5b69.png",
+      "target": "static/images/catalyst-k-tool-v1-1--f10fbfcde9e6f53c.png",
+      "sha256": "f10fbfcde9e6f53cb8d2619748d871bb9ef337141d23cb627aa44441c85fc762",
+      "bytes": 310122,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ac7501c00663.png",
+      "target": "static/images/catalyst-k-tool-v1-1--4b28c1b4d01b042d.png",
+      "sha256": "4b28c1b4d01b042d3a31d8ef9635bb2f1f1921e8248502a84f009cb7d9ff3a8b",
+      "bytes": 456133,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ac75054863fe.png",
+      "target": "static/images/catalyst-k-tool-v1-1--e8c5fb35d6670941.png",
+      "sha256": "e8c5fb35d66709418fbc70d4f5f20d55cdf344949f8d28defbc74e3bca303a61",
+      "bytes": 444945,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ac7506fcfd50.png",
+      "target": "static/images/catalyst-k-tool-v1-1--3f0c2d05b526996e.png",
+      "sha256": "3f0c2d05b526996eebf754d7f1143837e08c3bfaac509a73c0b10a1e3052b532",
+      "bytes": 478867,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ab23a01a16f7.png",
+      "target": "static/images/catalyst-k-tool-v1-1--83a37c24471975cc.png",
+      "sha256": "83a37c24471975cc790ea33b0942b9170357c13ed1b9fe2e5a388e8991da21cc",
+      "bytes": 12797,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ab23a1b9a5f6.png",
+      "target": "static/images/catalyst-k-tool-v1-1--8ad8e74202a7b7bc.png",
+      "sha256": "8ad8e74202a7b7bc0838ef404c29d0a78feb2ee78fa38b29eca0015b799a48ce",
+      "bytes": 18445,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ab23a3ab5074.png",
+      "target": "static/images/catalyst-k-tool-v1-1--ca5653f73b96566c.png",
+      "sha256": "ca5653f73b96566c371aba4f6dbb548c559cb84685d9c22b365a5c7f3f044f72",
+      "bytes": 14772,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/kpMZz8lV/6ad5f36ee205a.png",
+      "target": "static/images/catalyst-k-tool-v1-1--2a4f15d4c2267a5b.png",
+      "sha256": "2a4f15d4c2267a5b61470bfc3550dd4f1150e254946be40f594d7696fa30ef00",
+      "bytes": 483965,
+      "reused": false,
+      "articles": [
+        "Modules/Catalyst.K_Tool_V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/xd4iHYGl/6a8c42ec38743.png",
+      "target": "static/images/fysetc-paneldue-5i7i--afcfa44c9916a738.png",
+      "sha256": "afcfa44c9916a738e1e12e951940ca294f187289621d1d28db51db8f566be2dd",
+      "bytes": 329296,
+      "reused": false,
+      "articles": [
+        "Displays/FYSETC Paneldue 5i7i.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/xd4iHYGl/6a8c4495865ee.png",
+      "target": "static/images/fysetc-paneldue-5i7i--dab1d930aa47362f.png",
+      "sha256": "dab1d930aa47362f85e7371df91339f055ab5ecf423ddb204fd9c78e294fbd5f",
+      "bytes": 247669,
+      "reused": false,
+      "articles": [
+        "Displays/FYSETC Paneldue 5i7i.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/APwoi6uM/6a7331dc15efb.png",
+      "target": "static/images/raspberry-pi-5-dsi-touch-screen-mipi-lcd-v1-1--d53764db9a47bfec.png",
+      "sha256": "d53764db9a47bfec343b938d85bbdb9e02aabcffcea08bc6773cadc1945c29ca",
+      "bytes": 223400,
+      "reused": false,
+      "articles": [
+        "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/APwoi6uM/6a7c48d5bb47b.jpeg",
+      "target": "static/images/raspberry-pi-5-dsi-touch-screen-mipi-lcd-v1-1--32f8b9887faf5586.jpg",
+      "sha256": "32f8b9887faf5586112fa2844ce7a137e9b0ef97f06b99b82704a6a42f1ecf42",
+      "bytes": 1207549,
+      "reused": false,
+      "articles": [
+        "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/APwoi6uM/6a7c48f566c5c.jpeg",
+      "target": "static/images/raspberry-pi-5-dsi-touch-screen-mipi-lcd-v1-1--b4399a2e1c7b6024.jpg",
+      "sha256": "b4399a2e1c7b60242dc820c64b83e98f7351cd0d8fe4db39f80febd8bd86636b",
+      "bytes": 1052877,
+      "reused": false,
+      "articles": [
+        "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/APwoi6uM/6a7c4909b3075.jpeg",
+      "target": "static/images/raspberry-pi-5-dsi-touch-screen-mipi-lcd-v1-1--24b39a80f4fb9909.jpg",
+      "sha256": "24b39a80f4fb9909ebe3956a514cfac7035107324ff17cbca5cc70765f16aa85",
+      "bytes": 955707,
+      "reused": false,
+      "articles": [
+        "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md"
+      ]
+    },
+    {
+      "url": "https://resource.helplook.net/docker_production/r1hy6v/article/APwoi6uM/6a7c491a08da8.jpeg",
+      "target": "static/images/raspberry-pi-5-dsi-touch-screen-mipi-lcd-v1-1--2fc5ea5e5db15db0.jpg",
+      "sha256": "2fc5ea5e5db15db085fd6230ec1ccf94dd596ca2e00e0656648abc1bfdde07bc",
+      "bytes": 905594,
+      "reused": false,
+      "articles": [
+        "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md"
+      ]
+    }
+  ],
+  "articles": [
+    {
+      "source": "Controllers/CATALYST.K.md",
+      "previousSource": "Controllers/CATALYST.K.md",
+      "target": "controllers/CATALYST.K.md",
+      "slug": "/CATALYST.K",
+      "id": "CATALYST.K",
+      "mode": "image"
+    },
+    {
+      "source": "Controllers/CHAMELEON X5.md",
+      "previousSource": "Controllers/CHAMELEON X5.md",
+      "target": "controllers/CHAMELEON-X5.md",
+      "slug": "/CHAMELEON-X5",
+      "id": "CHAMELEON-X5",
+      "mode": "firmware"
+    },
+    {
+      "source": "Controllers/SPIDER_V1-3_F446.md",
+      "previousSource": "Controllers/SPIDER.md",
+      "target": "controllers/SPIDER_V1-3_F446.md",
+      "slug": "/Spider",
+      "id": "Spider",
+      "mode": "pins"
+    },
+    {
+      "source": "Controllers/SPIDER_V3_H723.md",
+      "previousSource": "Controllers/SPIDER_V3_H7.md",
+      "target": "controllers/SPIDER_V3_H723.md",
+      "slug": "/SPIDER_V3_H7",
+      "id": "SPIDER_V3_H7",
+      "mode": "pins"
+    },
+    {
+      "source": "Modules/H36 Combo V2.md",
+      "previousSource": "Modules/H36 Combo V2.md",
+      "target": "modules/H36-Combo-V2.md",
+      "slug": "/H36-Combo-V2",
+      "id": "H36-Combo-V2",
+      "mode": "discord"
+    },
+    {
+      "source": "Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md",
+      "previousSource": "Upgrade Kits/Adventurer AD5M Series Camera.md",
+      "target": "upgrade-kits/Adventurer-AD5M_AD5M-Pro_AD5X_Series-Camera.md",
+      "slug": "/Adventurer-AD5M-Series-Camera",
+      "id": "Adventurer-AD5M-Series-Camera",
+      "mode": "replace"
+    },
+    {
+      "source": "Upgrade Kits/PSF Feedback Sensor.md",
+      "previousSource": "Upgrade Kits/FC Product Manual.md",
+      "target": "upgrade-kits/PSF-Feedback-Sensor.md",
+      "slug": "/FC-Product-Manual",
+      "id": "FC-Product-Manual",
+      "mode": "replace"
+    },
+    {
+      "source": "Upgrade Kits/Sparkx i7 LED Upgrade.md",
+      "previousSource": "Upgrade Kits/Sparkx_i7_Led_System.md",
+      "target": "upgrade-kits/Sparkx-i7-LED-Upgrade.md",
+      "slug": "/Sparkx_i7_Led_System",
+      "id": "Sparkx_i7_Led_System",
+      "mode": "replace"
+    },
+    {
+      "source": "Upgrade Kits/X1P1S Door Hinge Upgrade.md",
+      "previousSource": "Upgrade Kits/X1P1S  door hinge.md",
+      "target": "upgrade-kits/X1P1S-Door-Hinge-Upgrade.md",
+      "slug": "/X1P1S-door-hinge",
+      "id": "X1P1S-door-hinge",
+      "mode": "replace"
+    },
+    {
+      "source": "Controllers/Catalyst.K_Mainboard_V1.1.md",
+      "previousSource": null,
+      "target": "controllers/Catalyst.K_Mainboard_V1.1.md",
+      "slug": "/Catalyst-K-Mainboard-V1-1",
+      "id": "Catalyst.K_Mainboard_V1.1",
+      "mode": "new"
+    },
+    {
+      "source": "Modules/Catalyst.K_Tool_V1.1.md",
+      "previousSource": null,
+      "target": "modules/Catalyst.K_Tool_V1.1.md",
+      "slug": "/Catalyst-K-Tool-V1-1",
+      "id": "Catalyst.K_Tool_V1.1",
+      "mode": "new"
+    },
+    {
+      "source": "Displays/FYSETC Paneldue 5i7i.md",
+      "previousSource": null,
+      "target": "displays/FYSETC-Paneldue-5i7i.md",
+      "slug": "/FYSETC-Paneldue-5i7i",
+      "id": "FYSETC-Paneldue-5i7i",
+      "mode": "new"
+    },
+    {
+      "source": "Displays/Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md",
+      "previousSource": null,
+      "target": "displays/Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1.md",
+      "slug": "/Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1-1",
+      "id": "Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1",
+      "mode": "new"
+    }
+  ],
+  "incompleteSourceReferences": [
+    {
+      "article": "Upgrade Kits/Sparkx i7 LED Upgrade.md",
+      "type": "image",
+      "url": "h"
+    },
+    {
+      "article": "Upgrade Kits/Sparkx i7 LED Upgrade.md",
+      "type": "link",
+      "label": "the assembly video (Coming Soon)",
+      "url": "h"
+    },
+    {
+      "article": "Upgrade Kits/Sparkx i7 LED Upgrade.md",
+      "type": "link",
+      "label": "the assembly video (Coming Soon)",
+      "url": ""
+    }
+  ],
+  "backupRoot": "migration/helplook-update-backup-2026-10-29",
+  "files": [
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "beforeSha256": "9daa31b2bf998a439c0aa070b87737fd5813a3a259aaddd3a79b91d52acf78df",
+      "afterSha256": "2d4f6bacc50f571832478e86be4b3ef78c9538101a6561469eac1f9905cfe863"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "beforeSha256": "9daa31b2bf998a439c0aa070b87737fd5813a3a259aaddd3a79b91d52acf78df",
+      "afterSha256": "2d4f6bacc50f571832478e86be4b3ef78c9538101a6561469eac1f9905cfe863"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "beforeSha256": "eab91277f9ffa89facad0fabf86f9508614d0929e1f1a0ced2ef9930bcdb74e3",
+      "afterSha256": "f4bf14d7a5bf303711b5f81c369d89e8816a65652d186fe4297af684f7e5195e"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "beforeSha256": "eab91277f9ffa89facad0fabf86f9508614d0929e1f1a0ced2ef9930bcdb74e3",
+      "afterSha256": "f4bf14d7a5bf303711b5f81c369d89e8816a65652d186fe4297af684f7e5195e"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/SPIDER_V1-3_F446.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Spider.md",
+      "beforeSha256": "7a129f42394da39322ad62cc77012459976eafcf4185ce61a66dde566200245d",
+      "afterSha256": "d8e6a5993833163f1e6195b4833e31fbc840774380453177b21def0514567a03"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/SPIDER_V1-3_F446.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Spider.md",
+      "beforeSha256": "05adaaa4ae3fb45922c09416cab7ddf83827d1f1462dc1bdeb5db61fd81e0649",
+      "afterSha256": "d8e6a5993833163f1e6195b4833e31fbc840774380453177b21def0514567a03"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H723.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H7.md",
+      "beforeSha256": "16f0fbf1e44b71ddb26bb2e5cc4ec3fa0c586f84b107df07add882ad9b7b4779",
+      "afterSha256": "8e77cc52dd7209f57ac1a1646e6507c4cd632bc159b476108f49f8ad22cd78cf"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H723.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H7.md",
+      "beforeSha256": "71a175f2ae5c180a06e1ea7125881c68aa521a4b0364c1cff3e1dfc1a9182d60",
+      "afterSha256": "8e77cc52dd7209f57ac1a1646e6507c4cd632bc159b476108f49f8ad22cd78cf"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "beforeSha256": "edd3f223ba8302dddf75a26c84e4e55860d8b69d39aa4b5e25090da403882e54",
+      "afterSha256": "fa1305d2860c39983b22571e5ce8b34dbb3cd7c6c30c1ff7ac90c62c00d1ff49"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "beforeSha256": "edd3f223ba8302dddf75a26c84e4e55860d8b69d39aa4b5e25090da403882e54",
+      "afterSha256": "fa1305d2860c39983b22571e5ce8b34dbb3cd7c6c30c1ff7ac90c62c00d1ff49"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M_AD5M-Pro_AD5X_Series-Camera.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M-Series-Camera.md",
+      "beforeSha256": "fa435131fe1d120325d0d6c19d8e982cee413316440a8d25d52f7d5b45eae0c4",
+      "afterSha256": "b0277bfa70be91a612713540b79f94767d8df7a049baa43418107e0e50afb8d3"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M_AD5M-Pro_AD5X_Series-Camera.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M-Series-Camera.md",
+      "beforeSha256": "fa435131fe1d120325d0d6c19d8e982cee413316440a8d25d52f7d5b45eae0c4",
+      "afterSha256": "b0277bfa70be91a612713540b79f94767d8df7a049baa43418107e0e50afb8d3"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/PSF-Feedback-Sensor.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/FC-Product-Manual.md",
+      "beforeSha256": "19ec64809925d03710953781618ff3c6fd69d89fb981ba352c468e252c67112e",
+      "afterSha256": "06b3e5b5a2cc56e580a0d150c130e32268251f7d8d86b3cc607c088454db35ce"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/PSF-Feedback-Sensor.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/FC-Product-Manual.md",
+      "beforeSha256": "19ec64809925d03710953781618ff3c6fd69d89fb981ba352c468e252c67112e",
+      "afterSha256": "06b3e5b5a2cc56e580a0d150c130e32268251f7d8d86b3cc607c088454db35ce"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx-i7-LED-Upgrade.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx_i7_Led_System.md",
+      "beforeSha256": "58f828184256d81c7df05323d8bcce5d87f34decbaa10a2de112680ebb0f5704",
+      "afterSha256": "ce0bca244fadffa6b728ac5770a292a51fead665eb6ad67078dc9d06d03fc4d8"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx-i7-LED-Upgrade.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx_i7_Led_System.md",
+      "beforeSha256": "58f828184256d81c7df05323d8bcce5d87f34decbaa10a2de112680ebb0f5704",
+      "afterSha256": "ce0bca244fadffa6b728ac5770a292a51fead665eb6ad67078dc9d06d03fc4d8"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-Door-Hinge-Upgrade.md",
+      "previousFile": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-door-hinge.md",
+      "beforeSha256": "f0bc2f4faa21d239283f61fe32823fee78df52bd5d01d145f46a4b8143ad0515",
+      "afterSha256": "ba4feac46ebd3cc2187c093e177a1d6c970417b64a9b7ee406541c9fed9ee53f"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-Door-Hinge-Upgrade.md",
+      "previousFile": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-door-hinge.md",
+      "beforeSha256": "f0bc2f4faa21d239283f61fe32823fee78df52bd5d01d145f46a4b8143ad0515",
+      "afterSha256": "ba4feac46ebd3cc2187c093e177a1d6c970417b64a9b7ee406541c9fed9ee53f"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Catalyst.K_Mainboard_V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "e18bbcd1918062114a0193b9ff8bf0d8b9e060ea9e886e342b1c608b49dfb63b"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Catalyst.K_Mainboard_V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "e18bbcd1918062114a0193b9ff8bf0d8b9e060ea9e886e342b1c608b49dfb63b"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/Catalyst.K_Tool_V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "7e20f348a61d7ef41854b16a6a3e3c9d39375d29789976aeb154c85333660408"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/Catalyst.K_Tool_V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "7e20f348a61d7ef41854b16a6a3e3c9d39375d29789976aeb154c85333660408"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/displays/FYSETC-Paneldue-5i7i.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "e0658e6f402d160784b148e25441cdf7847127022c6829f444d16543189e20eb"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/displays/FYSETC-Paneldue-5i7i.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "e0658e6f402d160784b148e25441cdf7847127022c6829f444d16543189e20eb"
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/displays/Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "a65cd1c11dc5406cc4401931b89ad62fed763af8fe1df5c401e7022a15fde9f5"
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/displays/Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1.md",
+      "previousFile": null,
+      "beforeSha256": null,
+      "afterSha256": "a65cd1c11dc5406cc4401931b89ad62fed763af8fe1df5c401e7022a15fde9f5"
+    }
+  ],
+  "renderingAdaptations": [
+    "Keep existing document IDs and slugs while renaming six article files in both locales.",
+    "Preserve customized Spider article body; only update the four EXP1/EXP2 rows.",
+    "Normalize HelpLook callouts, local image paths, image paragraph spacing and the camera iframe allowfullscreen attribute.",
+    "Use mailto: for the two added display articles support email links.",
+    "Use hyphenated URLs for new article names containing periods or underscores, for static-preview compatibility; existing article URLs stay unchanged.",
+    "Escape angle-bracket configuration placeholders outside fenced code so UUID, serial device and ADC GPIO remain visible on rendered pages."
+  ]
+}

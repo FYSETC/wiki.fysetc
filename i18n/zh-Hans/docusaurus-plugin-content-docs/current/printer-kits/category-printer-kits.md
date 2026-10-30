@@ -3,8 +3,14 @@ sidebar_position: 10
 id: category-printer-kits
 title: 3D 打印机套件
 slug: /category/printer-kits
-site_generated: navigation-empty-category
+site_generated: navigation-category-index
 source_language: zh
 ---
 
-官网本分类中的文章暂未在本地资料中匹配到。暂保留分类入口，后续可补充对应文档。
+FYSETC 打印机套件的装配、电路、固件和配置资料。
+
+- [Venture XL](/docs/Venture-XL/)
+- [Voron V2.4 Kit](/docs/Voron-V2.4-Kit/)
+- [Prusa Mini Clone](/docs/Prusa-mini-clone/)
+- [Prusa MK3s Clone](/docs/Prusa-mk3s-clone/)
+- [Prusa MMU2S Clone](/docs/Original-Prusa-MMU2S-clone/)

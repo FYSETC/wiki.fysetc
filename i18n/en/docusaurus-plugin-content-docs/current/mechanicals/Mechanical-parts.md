@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 60
 title: Mechanical parts Introduction
 nointro: null
 id: Mechanical-parts

@@ -1,9 +1,9 @@
 ---
-sidebar_position: 50
 id: Metal-BMG-Left-hand-extruder
 title: Metal BMG Left  hand extruder
-description: Product name：Metal BMG Left hand extruder
 slug: /Metal-BMG-Left-hand-extruder
+sidebar_position: 40
+description: Product name：Metal BMG Left hand extruder
 source_file: Metal BMG Left  hand extruder.md
 source_language: en
 ---
@@ -43,13 +43,12 @@ Refer to the assembly tutorial to avoid installation errors.
 1. Q: How to install to my 3D printer? A: You can watch  the assembly video（待上传）.
 2. Q：Does the installation require additional printed fixtures?  A：Yes, some models need to be used.
 
-## Attachments
 
 
 
 ## Shop
 
-------
+
 
 - [Aliexpress](https://www.aliexpress.com/item/33051147571.html?spm=2114.12010615.8148356.1.63c875fd4i1KEX).
 

@@ -1,144 +1,155 @@
 ---
-sidebar_position: 20
 id: Spider_Software_Guide
-title: Spider software guide
-description: "Spider software guide: original FYSETC documentation and related references."
+title: Spider Software Guide
 slug: /Spider_Software_Guide
-source_file: Spider_Software_Guide.zh.md
-source_language: zh
+sidebar_position: 10
+description: 'Spider software guide: original FYSETC documentation and related references.'
+source_file: Spider_Software_Guide.md
+source_language: en
 ---
 
-# 2、软件篇
+# 2. Software
 
-## 2.1 Klipper简介
+## 2.1 Introduction to Klipper
 
-介绍完硬件了，下面来介绍一下软件。接触过3D打印机的朋友对固件一词应该不陌生，很多人都自己编译过marlin固件。但是Voron2.4官方推荐使用的固件是一款基于树莓派的3D打印机固件--klipper。
+Having covered the hardware, let's now introduce the software. Those who have worked with 3D printers should be familiar with the term "firmware"; many people have compiled the Marlin firmware themselves. However, the firmware officially recommended for the Voron 2.4 is a Raspberry Pi-based 3D printer firmware—Klipper.
 
-有关Klipper的相关知识，可以访问klipper的官方网站(http://www.klipper3d.org/)
+For knowledge about Klipper, you can visit the official Klipper website (http://www.klipper3d.org/)
 
 ![img](/images/wps25.jpg)
 
-目前Klipper的可视化操作界面主要有以下3种:
+Currently, Klipper's visual operation interfaces mainly include the following 3:
 
-Octoprint 官方主页： https://octoprint.org/
+Octoprint Official homepage: https://octoprint.org/
 
-Mainsail 官方主页： https://docs.mainsail.xyz/
+Mainsail Official homepage: https://docs.mainsail.xyz/
 
-Fluidd 官方主页： https://docs.fluidd.xyz/
+Fluidd Official homepage: https://docs.fluidd.xyz/
 
-它们之间的关系可以见下图：
+The relationship between them can be seen in the figure below:
 
 ![img](/images/wps26.jpg) 
 
-本文主要以目前较为活跃的轻量级系统--Fluidd来介绍Klipper的安装及使用。以上所说的Fluidd、klipper等等一系列软件并不是直接在打印机主板上用的，而是需要安装在树莓派里的，这就需要有一定linux操作知识。如果一点也不懂的也没关系，跟着我给的步骤一步步操作，相信你也能自己把系统安装好。
+This article mainly introduces the installation and use of Klipper based on the currently more active lightweight system—Fluidd. The series of software mentioned above, such as Fluidd and Klipper, are not used directly on the printer's mainboard; they need to be installed on the Raspberry Pi, which requires some knowledge of Linux operations. If you don't know anything about it, that's fine too—just follow the steps I provide one by one, and I believe you can install the system yourself.
 
 
-## 2.2 安装Fluidd系统镜像
+## 2.2 Installing the Fluidd System Image
 
-Fluidd官网提供了树莓派系统的专用镜像--FluiddPI，这个镜像已经预安装了Fluidd、Klipper、Moonraker及一些必须的系统依赖。使用这个镜像可以省略不少麻烦，当然如果有一定操作能力的网友也可以参照Fluidd官网说明，在其他linux系统里去手动安装Fluidd，这里我就不再展开介绍。
+The Fluidd official website provides a dedicated image for the Raspberry Pi system—FluiddPI. This image has pre-installed Fluidd, Klipper, Moonraker, and some necessary system dependencies. Using this image can save a lot of trouble. Of course, if you have some operational ability, you can also refer to the Fluidd official website instructions to manually install Fluidd in other Linux systems; I won't elaborate on that here.
 
-### 2.2.1 硬件准备：
+### 2.2.1 Hardware Preparation:
 
-- 树莓派3B、3B+或者4B
+- Raspberry Pi 3B, 3B+, or 4B
 
-- 一张不小于16G的TF存储卡
+- A TF memory card of no less than 16G
 
-- 一个TF读卡器
+- A TF card reader
 
-- 一台安装有windows操作系统的PC。
+- A PC with a Windows operating system installed.
 
-### 2.2.2 软件准备：
+### 2.2.2 Software Preparation:
 
-- SDformatter v4.0及以上版本
+- SDformatter v4.0 or above
 
-- balenaEtcher v1.5及以上版本 下载地址：https://www.balena.io/etcher/
+- balenaEtcher v1.5 or above Download address: https://www.balena.io/etcher/
 
-- Notepad++ 最新版本 下载地址：https://notepad-plus.en.softonic.com/
+- Notepad++ latest version Download address: https://notepad-plus.en.softonic.com/
 
-- Xshell6Portable 下载地址：https://www.netsarang.com/zh/free-for-home-school/
+- Xshell6Portable Download address: https://www.netsarang.com/zh/free-for-home-school/
 
-- WinSCP 最新版本 下载地址：https://winscp.net/eng/docs/lang:chs
+- WinSCP latest version Download address: https://winscp.net/eng/docs/lang:chs
 
-- FluiddPI最新镜像 下载地址： https://docs.fluidd.xyz/installation/fluiddpi
+- FluiddPI latest image Download address: https://docs.fluidd.xyz/installation/fluiddpi
 
-Fluidd镜像下载如下图
+Fluidd image download as shown below
 
 ![img](/images/wps27.png) 
 
-### 2.2.3 烧录镜像：
+### 2.2.3 Flashing the Image:
 
-1、将TF卡插入读卡器，将读卡器插入电脑USB接口，使用SDformatter对TF卡进行格式化。
+1. Insert the TF card into the card reader, insert the card reader into the computer's USB port, and use SDformatter to format the TF card.
 
-注意：此操作会删除TF卡上所有的数据，请做好数据备份
+Note: This operation will delete all data on the TF card, please back up your data
 
-![img](/images/wps28.jpg)具体操作见下图：
+![img](/images/wps28.jpg)
 
-2、烧录镜像
+See the figure below for specific operations:
 
-![img](/images/wps29.jpg)![img](/images/wps30.jpg)
-按下图顺序进行操作：
+2. Flash the image
+
+![img](/images/wps29.jpg)
+
+![img](/images/wps30.jpg)
+
+Follow the order shown in the figures below:
 
 
-![img](/images/wps31.jpg)![img](/images/wps32.jpg)
+![img](/images/wps31.jpg)
 
-![img](/images/wps33.jpg)![img](/images/wps34.jpg) 
+![img](/images/wps32.jpg)
 
-![img](/images/wps35.jpg)![img](/images/wps36.jpg)
+![img](/images/wps33.jpg)
 
-## 2.3 设置树莓派连入无线网络
+![img](/images/wps34.jpg) 
+
+![img](/images/wps35.jpg]
+
+![img](/images/wps36.jpg)
+
+## 2.3 Setting Up the Raspberry Pi to Connect to a Wireless Network
 
 ![img](/images/wps37.jpg)
 
-1、安全弹出读卡器，并重新插入读卡器。系统将识别到一个256M大小的分区，打开该分区找到“fluiddpi-wpa-supplicant.txt“。使用Notepad++打开该文件找到下列字段。
+1. Safely eject the card reader, then reinsert it. The system will recognize a 256M partition; open that partition and find "fluiddpi-wpa-supplicant.txt". Use Notepad++ to open the file and find the following fields.
 
 ![img](/images/wps38.jpg)
 
-2、使用Notepad++打开该文件找到下列字段。
+2. Use Notepad++ to open the file and find the following fields.
 
 ![img](/images/wps39.jpg)
 
-3、删除相关设置的注释符“#”，设置路由器热点名称及连接密码，保存退出。
+3. Delete the comment character "#" for the relevant settings, set the router hotspot name and connection password, save and exit.
 
-4、将TF卡插入树莓派接通电源，树莓派将自动启动。启动期间，绿色的指示灯将无规律闪烁。约1分钟左右，启动完成。
+4. Insert the TF card into the Raspberry Pi and connect the power; the Raspberry Pi will start automatically. During startup, the green indicator light will flash irregularly. After about 1 minute, startup is complete.
 
 ![img](/images/wps40.jpg)
 
-5、打开路由器管理界面，查看新连入网络的设备，并记录IP地址。
+5. Open the router management interface, check the newly connected device, and record the IP address.
 
-## 2.4 第一次打开Fluidd的Web界面
+## 2.4 Opening the Fluidd Web Interface for the First Time
 
 ![img](/images/wps41.png)
 
-在浏览器地址栏输入上述IP地址，可以打开Fluidd的Web页面。第一次打开，由于还没有正确的配置klipper，状态栏会有报错信息，当我们正确配置了klipper后，这些报错信息将会消失。
+Enter the above IP address in the browser address bar to open the Fluidd web page. The first time you open it, since Klipper has not yet been correctly configured, there will be error messages in the status bar; once we correctly configure Klipper, these error messages will disappear.
 
 
-## 2.5 编译主板的Klipper固件
+## 2.5 Compiling the Klipper Firmware for the Mainboard
 
-前面我们介绍了上位机程序的安装方法，现在我们要利用klipper来生成一个主板的固件，主板刷入了这个固件之后，才能接受klipper的指令，控制相应的电机、热床，反馈传感器信息等。
+We previously introduced how to install the host computer program; now we need to use Klipper to generate firmware for the mainboard. Only after the mainboard is flashed with this firmware can it accept Klipper's commands, control the corresponding motors and heated bed, and feed back sensor information, etc.
 
-### 2.5.1 建立SSH连接
+### 2.5.1 Establishing an SSH Connection
 
-树莓派的linux的系统连入网络后，可以通过SSH进行远程设置。它不像我们传统的windows操作系统，有图形界面，所有的操作都要通过键盘输入文本或者命令来执行，所以接下来先给大家介绍如何远程连接到树莓派。
+After the Raspberry Pi's Linux system connects to the network, it can be remotely configured via SSH. Unlike our traditional Windows operating system, it does not have a graphical interface; all operations must be performed by entering text or commands via the keyboard. So next, let me introduce how to remotely connect to the Raspberry Pi.
 
-打开XShell软件 ，建立新的连接：
+Open the XShell software and create a new connection:
 
-名称：可任意输入
+Name: can be entered arbitrarily
 
-协议：选择“SSH”
+Protocol: select "SSH"
 
-主机：在路由器里查询到的树莓派IP地址
+Host: the Raspberry Pi IP address found in the router
 
-端口号：22
+Port number: 22
 
 ![img](/images/wps42.jpg) 
 
 ![img](/images/wps43.jpg) 
 
-接受并保存安全密钥，输入用户名：pi，密码：raspberry
+Accept and save the security key, enter username: pi, password: raspberry
 
-注意：为了安全起见，建议使用 sudo raspiconfig命令进入树莓派配置界面，通过System
+Note: For security reasons, it is recommended to use the sudo raspi-config command to enter the Raspberry Pi configuration interface and change the password via the System
 
-Options>--Password选项更改密码。
+Options >--Password option.
 
 ![img](/images/wps44.jpg) 
 
@@ -146,287 +157,293 @@ Options>--Password选项更改密码。
 
 ![img](/images/wps46.jpg) 
 
-在通过以上的验证后，将会看到下图的界面，这个就是linux操作系统的用户界面，称之为shell。
+After passing the above verification, you will see the interface shown below; this is the user interface of the Linux operating system, called the shell.
 
 ![img](/images/wps47.jpg) 
 
-### 2.5.2 树莓派换国内源
+### 2.5.2 Changing the Raspberry Pi to Domestic Sources
 
-树莓派系统里安装软件，就像我们的苹果手机一样，有一个专门的软件仓库。默认的仓库地址是国外的服务器，所以在进行一些软件安装的时候会非常的慢，我们可以通过下面的操作把仓库的地址设置为国内镜像服务器的地址。
+Installing software in the Raspberry Pi system is like our iPhone—there is a dedicated software repository. The default repository address is a foreign server, so installing some software can be very slow. We can set the repository address to a domestic mirror server address through the following operations.
 
-在shell中输入sudo nano /etc/apt/sources.list
+Enter sudo nano /etc/apt/sources.list in the shell
 
 ![img](/images/wps48.jpg) 
 
-修改树莓派应用软件源
+Modify the Raspberry Pi application software source
 
-进入文档编辑界面，将原国外服务器地址前加#进行注释，换行输入国内镜像服务器地址：
+Enter the document editing interface, add # before the original foreign server address to comment it out, and enter the domestic mirror server address on a new line:
 
 deb http://mirrors.ustc.edu.cn/raspbian/raspbian/ buster main contrib non-free rpi
 
-修改完“Ctrl+X”保存退出。如下图
+After modifying, press "Ctrl+X" to save and exit. As shown below
 
 ![img](/images/wps49.jpg) 
 
-修改树莓派系统源
+Modify the Raspberry Pi system source
 
-在shell输入 sudo nano /etc/apt/sources.list.d/raspi.list
+Enter sudo nano /etc/apt/sources.list.d/raspi.list in the shell
 
-进入文档编辑界面，将原国外服务器地址前加#进行注释，换行输入国内镜像服务器地址：
+Enter the document editing interface, add # before the original foreign server address to comment it out, and enter the domestic mirror server address on a new line:
 
 deb http://mirrors.ustc.edu.cn/archive.raspberrypi.org/debian/ buster main
 
 ![img](/images/wps50.jpg)
 
-修改完“Ctrl+X”保存退出。
+After modifying, press "Ctrl+X" to save and exit.
 
-### 2.5.3 升级树莓派系统及软件
+### 2.5.3 Upgrading the Raspberry Pi System and Software
 
-更换好国内源，就可以对树莓派的系统和软件进行升级，新的系统和软件会修复一些已知的bug，建议升级。（此步骤不是必须的，也可跳过）
+After changing to domestic sources, you can upgrade the Raspberry Pi system and software. New systems and software will fix some known bugs, so upgrading is recommended. (This step is not mandatory and can be skipped)
 
-在shell中输入 sudo apt-get update && sudo apt-get upgrade -y
+Enter sudo apt-get update && sudo apt-get upgrade -y in the shell
 
-约5-10分钟左右升级完毕
+The upgrade will be completed in about 5-10 minutes
 
 ![img](/images/wps51.jpg)
 
-输入sudo reboot 重启树莓派。
+Enter sudo reboot to restart the Raspberry Pi.
 
-### 2.5.4 升级klipper
+### 2.5.4 Upgrading Klipper
 
-klipper不是linux自带的软件，所以还是需要手动升级。新的版本会支持一些新的功能，建议及时升级。升级方法如下：
+Klipper is not software that comes with Linux, so it still needs to be upgraded manually. New versions will support some new features, so it is recommended to upgrade in time. The upgrade method is as follows:
 
-重新连接SSH
+Reconnect via SSH
 
-在shell中输入 cd ~/klipper && git pull
+Enter cd ~/klipper && git pull in the shell
 
-约1-2分钟左右会自动执行完升级。升级成功后会有如下显示
+The upgrade will be executed automatically in about 1-2 minutes. After a successful upgrade, it will display as follows
 
 ![img](/images/wps52.jpg)
 
-有些时候，由于服务器连接速度等原因，可能会升级不成功，可重复执行命令进行升级。
+Sometimes, due to server connection speed and other reasons, the upgrade may fail; you can repeat the command to upgrade.
 
-### 2.5.5 配置固件参数、生成固件
+### 2.5.5 Configuring Firmware Parameters and Generating Firmware
 
-主控板需要刷入Klipper的固件才可以被树莓派上的Klipper调用控制，生成固件前，需要根据不同的主板进行参数的配置，具体操作如下
+The main control board needs to be flashed with Klipper firmware before it can be called and controlled by Klipper on the Raspberry Pi. Before generating the firmware, parameters need to be configured according to different mainboards. The specific operations are as follows
 
-1、在shell中输入 cd ~/klipper && make menuconfig 进入固件配置界面
+1. Enter cd ~/klipper && make menuconfig in the shell to enter the firmware configuration interface
 
-Spider蜘蛛主板采用USB电缆与树莓派链接，可以采用如下配置方式，配置完毕后按“Q”键退出，再按“Y”键保存。
+The Spider mainboard uses a USB cable to connect to the Raspberry Pi and can be configured as follows. After configuration, press "Q" to exit, then press "Y" to save.
 
-蜘蛛主板默认自带32k bootloader,如果在烧录过程中丢失，请按照如下方式选择：
+The Spider mainboard comes with a 32k bootloader by default. If it is lost during the flashing process, please select as follows:
 
 ![img](/images/wps53.png) 
 
 
 ![img](/images/wps54.jpg)
 
-2、在shell中输入 make clean ，清除前一次的编译所产生的object文件及可执行文件。
+2. Enter make clean in the shell to clear the object files and executable files generated by the previous compilation.
 
 ![img](/images/wps55.jpg)
 
-3、在shell中输入 make ，系统开始编译固件，直至完成。编译完成，会显示当前klipper的版本号，生成的固件名称为klipper.bin，存放在~/klipper/out目录下。
+3. Enter make in the shell; the system will begin compiling the firmware until completion. When compilation is complete, it will display the current Klipper version number. The generated firmware is named klipper.bin and is stored in the ~/klipper/out directory.
 
-4、使用WinSCP复制klipper.bin文件到你的桌面，并将其重命名为firmware.bin。
+4. Use WinSCP to copy the klipper.bin file to your desktop and rename it to firmware.bin.
 
 ![img](/images/wps56.jpg) 
 
-## 2.6 蜘蛛主板烧录固件
+## 2.6 Flashing Firmware to the Spider Mainboard
 
-### 2.6.1 使用TF卡烧录固件
+### 2.6.1 Flashing Firmware Using a TF Card
 
-- 准备一张容量不大于32G的TF卡，使用SDformater工具，将其格式化为Fat32格式，将前面生成的firmware.bin拷入卡中。
+- Prepare a TF card with a capacity of no more than 32G, use the SDformatter tool to format it as Fat32, and copy the previously generated firmware.bin into the card.
 
 ![img](/images/wps57.jpg) 
 
-- **确保蜘蛛主板没有通电，将TF卡插入蜘蛛主板。**
+- **Make sure the Spider mainboard is not powered, and insert the TF card into the Spider mainboard.**
 
-- 给主板通电，等待20S左右后，断开电源，取出TF卡插回电脑，如果固件已被重命名，说明固件已烧录成功。
+- Power on the mainboard, wait about 20S, then disconnect the power, remove the TF card and insert it back into the computer. If the firmware has been renamed, it means the firmware was flashed successfully.
 
 ![img](/images/wps58.jpg)
 
-### 2.6.2 使用DFU方式烧录固件（线刷）
+### 2.6.2 Flashing Firmware Using DFU Mode (Wired Flashing)
 
-- 正常的情况加建议大家用卡刷的方式来烧录固件，如果主板的Bootloader被破坏，没有办法进行卡刷，可以用以下方式来恢复主板的Bootloader。
+- Under normal circumstances, it is recommended to use card flashing to flash the firmware. If the mainboard's Bootloader is damaged and card flashing is not possible, you can use the following method to restore the mainboard's Bootloader.
 
-- 什么是Bootloader，其实它是一段特殊的程序，他会在主板上电的时候检测TF卡槽内是否插入了卡片，如果已经插入了TF卡，它会去卡片内检索是否有firmware.bin文件存在，如果有这个文件存在，便开始更新主板MCU Flash存储器内部的程序，更新完成后会将firmware.bin重命名为old.bin。如果主板上电启动的时候，没有发现TF卡，或者TF卡里没有firmware.bin文件，Bootloader将会自动跳转到Bootloader offset设定的地址，运行我们烧录进去的程序。所以一旦Bootloader offset设置错误以后，固件虽然烧录进去了，但是主板往往是不会正常工作的。
+- What is a Bootloader? Actually, it is a special program. When the mainboard is powered on, it checks whether a card is inserted in the TF card slot. If a TF card is inserted, it searches the card for the presence of a firmware.bin file. If this file exists, it begins updating the program inside the mainboard MCU Flash memory; after the update is complete, it renames firmware.bin to old.bin. If no TF card is found when the mainboard is powered on, or there is no firmware.bin file in the TF card, the Bootloader will automatically jump to the address set by the Bootloader offset and run the program we flashed in. Therefore, once the Bootloader offset is set incorrectly, although the firmware is flashed in, the mainboard often will not work properly.
 
-- 下载并安装烧录软件[stm32cubeprogrammer](https://www.st.com/zh/development-tools/stm32cubeprog.html)
+- Download and install the flashing software [stm32cubeprogrammer](https://www.st.com/zh/development-tools/stm32cubeprog.html)
 
-- 下-载蜘蛛主板的[bootloader固件](https://gitee.com/fysetc-mirrors/FYSETC-SPIDER/tree/main/bootloader)
+- Download the Spider mainboard's [bootloader firmware](https://gitee.com/fysetc-mirrors/FYSETC-SPIDER/tree/main/bootloader)
 
 ![img](/images/wps59.jpg) 
 
- - 按下图对主板跳线U5V，再按下Bt0 3.3V 复位键，使用TypeC数据线将主控板与PC连接（无需24V供电）
+ - Set the mainboard jumper U5V as shown below, then press the Bt0 3.3V reset key, and use a TypeC data cable to connect the main control board to the PC (no 24V power supply required)
 
 ![](/images/wps60.jpg)
 
-- 打开stm32cubeprogrammer，选择USB连接后，刷新端口，会自动检测到主控板的端口，如果没有检测到，可以尝试按一下主板上的reset按键，或者检查线缆连接是否正确，主板跳线是否正确。
+- Open stm32cubeprogrammer, select USB connection, refresh the port, and it will automatically detect the main control board's port. If it is not detected, try pressing the reset button on the mainboard, or check whether the cable connection is correct and whether the mainboard jumpers are correct.
 
 ![img](/images/wps61.jpg)
 
-- 点击“connect”，连接主控板
+- Click "connect" to connect to the main control board
 
 ![img](/images/wps62-16883459045601.jpg) 
 
 ![img](/images/wps63.jpg)
 
-- 点击左侧“下载”选项卡，选择Bootloader的固件，并点击“Start Programming”开始烧录
+- Click the "Download" tab on the left, select the Bootloader firmware, and click "Start Programming" to begin flashing
 
-约3-4S，烧录完成并提示成功。
+After about 3-4S, flashing is complete and success is indicated.
 
 ![img](/images/wps64.jpg) 
 
 
-- 主控板断开USB线缆，并将跳线恢复至下图所示：
+- Disconnect the USB cable from the main control board and restore the jumpers as shown below:
 
 ![](/images/wps65.jpg)
 
-- 以上方式为STM32系列MCU通用烧录方式，不限于Bootloader固件，其他的固件烧录也可使用，烧录时注意设置正确的偏移地址。
+- The above method is a general flashing method for STM32 series MCUs, not limited to Bootloader firmware; other firmware can also be flashed this way. When flashing, pay attention to setting the correct offset address.
 
-## 2.7 主板ID的读取
+## 2.7 Reading the Mainboard ID
 
-主板的ID是主板的唯一识别码，klipper可以通过识别ID来同时控制多块主板协同工作，这个ID也是klipper配置文件里必不可少的参数，下面就来看下如何读取ID。
+The mainboard ID is the unique identification code of the mainboard. Klipper can control multiple mainboards working together simultaneously by identifying the ID. This ID is also an essential parameter in the Klipper configuration file. Let's see how to read the ID below.
 
-将树莓派通过USB TypeC电缆与树莓派相连（连接方法见1.12.2），并接通树莓派与主控板的电源
+Connect the Raspberry Pi to the mainboard via a USB TypeC cable (see 1.12.2 for the connection method), and connect the power to the Raspberry Pi and the main control board
 
-在shell中输入 ls /dev/serial/by-id/*
+Enter ls /dev/serial/by-id/* in the shell
 
-![img](/images/wps66.jpg)如果主板的固件烧录正确，将会有如下显示
+![img](/images/wps66.jpg)
 
-其中蓝色字符部分 /dev/serial/by-id/usb-Klipper_stm32f446xx_0C001C00115053424E363620-if00即为主板的ID，将其复制保存到文本文件中备用。
+If the mainboard firmware is flashed correctly, it will display as follows
 
-## 2.8 printer.cfg文件修改
+The blue character part /dev/serial/by-id/usb-Klipper_stm32f446xx_0C001C00115053424E363620-if00 is the mainboard ID. Copy and save it to a text file for later use.
 
-printer.cfg是klipper重要的配置文件，关于打印机的所有参数，都是需要在这份文件里进行配置。
+## 2.8 Modifying the printer.cfg File
 
-蜘蛛主板提供了针对Voron2.4打印机的配置文件（见附录1），或者参考 FYSETC 的配置文件
+printer.cfg is an important configuration file for Klipper; all parameters related to the printer need to be configured in this file.
+
+The Spider mainboard provides a configuration file for the Voron 2.4 printer (see Appendix 1), or refer to FYSETC's configuration file
 
 github: [FYSETC-SPIDER/printer.cfg at main · FYSETC/FYSETC-SPIDER (github.com)](https://github.com/FYSETC/FYSETC-SPIDER/blob/main/firmware/Klipper/printer.cfg)
 
-gitee: [firmware/Klipper/printer.cfg · FYSETC/FYSETC-SPIDER - 码云 - 开源中国 (gitee.com)](https://gitee.com/fysetc/FYSETC-SPIDER/blob/main/firmware/Klipper/printer.cfg)
+gitee: [firmware/Klipper/printer.cfg · FYSETC/FYSETC-SPIDER - Gitee - Open Source China (gitee.com)](https://gitee.com/fysetc/FYSETC-SPIDER/blob/main/firmware/Klipper/printer.cfg)
 
-![img](/images/wps67.jpg)在“配置”选项卡里找到“+”，点击添加文件（如下图）
+![img](/images/wps67.jpg)
+
+In the "Configuration" tab, find "+" and click to add a file (as shown below)
 
 
-输入文件名“printer.cfg”，点击保存。
+Enter the file name "printer.cfg" and click save.
 
 ![img](/images/wps68.jpg) 
 
-单击新添加的文件“printer.cfg”，选择“编辑”。
+Click the newly added file "printer.cfg" and select "Edit".
 
 ![img](/images/wps69.jpg) 
 
-进入编辑界面，将本文最后附录内的SPIDER主板的配置信息复制粘贴到此文件内，并根据配置文件的中文注释，修改相关内容。最后点击保存并重启。
+Enter the editing interface, copy and paste the SPIDER mainboard configuration information from the appendix at the end of this article into this file, and modify the relevant content according to the Chinese comments in the configuration file. Finally, click save and restart.
 
 ![img](/images/wps70.jpg) 
 
-如各项参数全部正确，Klipper会自动连接打印机，工具栏等会自动显示，按钮可以操作。
+If all parameters are correct, Klipper will automatically connect to the printer, the toolbar etc. will be displayed automatically, and the buttons can be operated.
 
 ![img](/images/wps71.jpg) 
 
-## 2.9 Klipper常见错误
+## 2.9 Common Klipper Errors
 
-TMC UART Error:TMC驱动程序和Spider主板之间的通讯失效时，就会出现这种情况。引起上述故障可能没有给Spider主板提供24V的电源（TMC驱动器没有启动），或者TMC步进驱动模块没有插入正确的位置，或者驱动器的跳线设置错误，请重新检查以上问题点。
+TMC UART Error: This occurs when communication between the TMC driver and the Spider mainboard fails. The above fault may be caused by not supplying 24V power to the Spider mainboard (the TMC driver is not started), or the TMC stepper driver module not being inserted in the correct position, or the driver jumper settings being incorrect. Please recheck the above points.
 
 ![img](/images/wps72.jpg) 
 
-***\**ADC Error:\**\*** ADC是 "模数转换器 "的缩写，用于将热敏电阻读数转换为挤出头和热床的温度。作为一 种安全预防措施，一旦Klipper检测到温度超过最大或最小阀值（热敏电阻可能开路或者短路），系统将进入关闭保护模式。请仔细检查，确保热敏电阻被插入到正确的插座上。
+***\**ADC Error:\**\*** ADC stands for "Analog-to-Digital Converter" and is used to convert thermistor readings into the temperature of the extruder head and heated bed. As a safety precaution, once Klipper detects that the temperature exceeds the maximum or minimum threshold (the thermistor may be open or shorted), the system will enter shutdown protection mode. Please check carefully to ensure the thermistor is plugged into the correct socket.
 
 ![img](/images/wps73.jpg) 
 
-Currently Throttled： 树莓派供电不足或电压不稳时，将会有如下报错，需更换更粗的电源线或者更换
+Currently Throttled: When the Raspberry Pi has insufficient power or unstable voltage, the following error will appear; you need to replace with a thicker power cable or a
 
-更大功率的电源。
+higher-power power supply.
 
 ![img](/images/wps74.jpg) 
 
-## 2.10 Klipper故障排除
+## 2.10 Klipper Troubleshooting
 
-可以通过下载和分析“KLIPPER.LOG”日志文件，协助查找引起故障的原因。
+You can help find the cause of the fault by downloading and analyzing the "KLIPPER.LOG" log file.
 
 ![img](/images/wps75.jpg)
 
-## 2.11 Klipper 配置检查
+## 2.11 Klipper Configuration Checks
 
-期待已久的时刻——您的打印机终于能工作了！ Klipper有一个非常有用的配置检查指南，它将有
+The long-awaited moment—your printer finally works! Klipper has a very useful configuration check guide that will
 
-助于确保打印机各个部件工作正常。 请按照以下网址中详细说明的步骤操作：
+help ensure that all parts of the printer work properly. Please follow the steps detailed at the following URL:
 
 https://github.com/KevinOConnor/klipper/blob/master/docs/Config_checks.md
 
-### 2.11.1 X Y Z轴限位开关检查
+### 2.11.1 X Y Z Axis Endstop Switch Check
 
-确保X、Y和Z轴的限位开关都没有被按下，然后通过终端控制台发送命令：
+Make sure the X, Y, and Z axis endstop switches are not pressed, then send the command through the terminal console:
 
 ```
 QUERY_ENDSTOPS
 ```
 
-终端窗口应有如下返回值 ，如果其中某一个轴的返回值是“triggered”（触发）而不是“open”（打开），请检查限位开关是否被按下。
+The terminal window should return the following values. If the return value of one of the axes is "triggered" instead of "open", please check whether the endstop switch is pressed.
 
 ```
 Send:QUERY_ENDSTOPS
 Recv: x:open y:open z:open
 ```
 
-接下来，手动按住X轴限位开关，再次发送QUERY_ENDSTOPS命令，应显示如下返回值。并且继续用相同的方法测试Y轴和Z轴的限位开关。
+Next, manually press and hold the X-axis endstop switch, send the QUERY_ENDSTOPS command again, and it should display the following return values. Then continue to test the Y-axis and Z-axis endstop switches in the same way.
 
 ```
 Send: QUERY_ENDSTOPS
 Recv: x:triggered y:open z:open
 ```
 
-如果在上述的测试中，某一个限位开关的状态是反的（按下时显示 "open"，不按时显示 "triggered"），请进入打印机的配置文件，找到对应轴的配置，在endstop_pin: 的设置值前添加或删除“！”，来达到状态取反的目的。 例如：
+If in the above test the state of a certain endstop switch is reversed (shows "open" when pressed, and shows "triggered" when not pressed), please enter the printer configuration file, find the configuration of the corresponding axis, and add or delete "!" before the endstop_pin: setting value to invert the state. For example:
 
 **[stepper_y]**
 
 **step_pin: PD8**
 
-**endstop_pin: PB12 #修改前**
+**endstop_pin: PB12 #Before modification**
 
-**endstop_pin: !PB12 #修改后**
+**endstop_pin: !PB12 #After modification**
 
 ……
 
-### 2.11.2 步进电机检查
+### 2.11.2 Stepper Motor Check
 
-要验证每个步进电机是否正确运行，请分别发送以下命令，并观察相应的电机是否以微小的幅度正反转动。
+To verify whether each stepper motor runs correctly, send the following commands separately and observe whether the corresponding motor rotates forward and backward slightly.
 
 
 ```
-STEPPER_BUZZ STEPPER=stepper_x #测试 X 轴电机，电机应左右微转
+STEPPER_BUZZ STEPPER=stepper_x #Test the X-axis motor; the motor should rotate slightly left and right
 
-STEPPER_BUZZ STEPPER=stepper_y #测试 Y 轴电机，电机应左右微转
+STEPPER_BUZZ STEPPER=stepper_y #Test the Y-axis motor; the motor should rotate slightly left and right
 
-STEPPER_BUZZ STEPPER=stepper_z #测试 Z0 轴电机，该轴龙门架应先升后降往复运动
+STEPPER_BUZZ STEPPER=stepper_z #Test the Z0-axis motor; the gantry of this axis should first rise then descend in a reciprocating motion
 
-STEPPER_BUZZ STEPPER=stepper_z1 #测试 Z1 轴电机，该轴龙门架应先升后降往复运动
+STEPPER_BUZZ STEPPER=stepper_z1 #Test the Z1-axis motor; the gantry of this axis should first rise then descend in a reciprocating motion
 
-STEPPER_BUZZ STEPPER=stepper_z2 #测试 Z2 轴电机，该轴龙门架应先升后降往复运动
+STEPPER_BUZZ STEPPER=stepper_z2 #Test the Z2-axis motor; the gantry of this axis should first rise then descend in a reciprocating motion
 
-STEPPER_BUZZ STEPPER=stepper_z3 #测试 Z3 轴电机，该轴龙门架应先升后降往复运动
+STEPPER_BUZZ STEPPER=stepper_z3 #Test the Z3-axis motor; the gantry of this axis should first rise then descend in a reciprocating motion
 ```
 
-注意：测试中，X Y轴电机的方向没有要求，测试 Z轴时，对应电机带动的龙门架应该先升后降，否则请修改电机方向参数。 如果步进电机不转动，请检查接线是否有错误或有松动。
+Note: During the test, there is no requirement for the direction of the X and Y axis motors. When testing the Z axis, the gantry driven by the corresponding motor should first rise then descend; otherwise, please modify the motor direction parameter. If the stepper motor does not rotate, please check whether the wiring is incorrect or loose.
 
-如需改变电机的运转方向，找到对应轴的配置，在dir_pin: 的设置值前添加或删除“！”，来达到反向的目的。 例如：
+If you need to change the motor's rotation direction, find the configuration of the corresponding axis and add or delete "!" before the dir_pin: setting value to reverse the direction. For example:
 
 **[stepper_y]**
 
 **step_pin: PD8**
 
-**dir_pin: !PB12#修改前**
+**dir_pin: !PB12#Before modification**
 
-**dir_pin: PB12# 修改后**
+**dir_pin: PB12# After modification**
 
 ...
 
-电机的位置如图：
+The motor positions are shown in the figure:
+
 ![img](/images/wps80.png)
 
 
-### 2.11.3 XY归位检查
+### 2.11.3 XY Homing Check
+
 ![img](/images/wps81.png)
 
 
@@ -434,9 +451,9 @@ STEPPER_BUZZ STEPPER=stepper_z3 #测试 Z3 轴电机，该轴龙门架应先升�
 
 
 
-电机都能正常工作后，就可以开始测试X和Y的归位了! 在测试过程中，为防止因电机方向错误导致的碰撞，可能需要使用急停功能。以下几种方式可以使打印机急停，一种方法是使用Mini12864显示屏旋钮下方的E-stop按钮，按下按钮，所有的电机将停止动作，喉管的散热风扇会自动开启，Octoprint的web界面仍然会运行，但与Klipper的连接会断开。按Klipper左上角的 "Connect "键，然后在Octoprint终端窗口中发送一个FIRMWARE_RESTART命令，可以让你的打印机恢复待机状态。另一种方法是让你的笔记本电脑紧挨着打印机，在Octoprint的界面上，按下E-STOP按钮。最后一种硬核的方法，是在出现问题时关闭整个打印机的电源。一般不要选择个方法，因为这样做可能会损坏SD卡上的文件，导致您必须从头开始重新安装所有内容。当你开始测试打印机归位功能时，如果它走错了方向，采用以上的合适的方法来立即停止打印机当前的动作。
+Once the motors all work properly, you can start testing X and Y homing! During the test, to prevent collisions caused by incorrect motor direction, you may need to use the emergency stop function. The following methods can make the printer emergency stop. One method is to use the E-stop button below the knob of the Mini12864 display; pressing the button will stop all motors, the hotend cooling fan will automatically turn on, and the Octoprint web interface will still run, but the connection to Klipper will be disconnected. Press the "Connect" button in the upper left corner of Klipper, then send a FIRMWARE_RESTART command in the Octoprint terminal window to restore your printer to standby state. Another method is to place your laptop right next to the printer and press the E-STOP button on the Octoprint interface. The last hardcore method is to cut off the power to the entire printer when a problem occurs. Generally do not choose this method, because doing so may damage the files on the SD card, causing you to have to reinstall everything from scratch. When you start testing the printer homing function, if it moves in the wrong direction, use the appropriate method above to immediately stop the printer's current action.
 
-在终端窗口发送发送X Y轴的归位命令：
+Send the X Y axis homing command in the terminal window:
 
 ```
 
@@ -444,19 +461,19 @@ G28 X Y
 
 ```
 
-正视打印机，打印头应该先向右移动，直到触发了X轴限位传感器后精确归位，然后向打印机后方移动，直到触发Y轴限位传感器后精确归位。Voron2.4使用的是CoreXY结构，因此打印头在做横向或纵向移动时，每个电机都必须转动，如果打印头的移动方向不正确，请参考下表以确定如何纠正。如果您需要将其中一个马达反转，请将方向针脚反转（在pin脚前加上 !，可参见2.11.2）。
+Facing the printer, the print head should first move to the right until it triggers the X-axis limit sensor and then precisely homes, then move toward the rear of the printer until it triggers the Y-axis limit sensor and then precisely homes. Voron 2.4 uses a CoreXY structure, so when the print head moves horizontally or vertically, each motor must rotate. If the print head's movement direction is incorrect, please refer to the table below to determine how to correct it. If you need to reverse one of the motors, reverse the direction pin (add ! before the pin, see 2.11.2).
 
 [stepper x] => Motor B
 
 [stepper y] => Motor A
 
-### 2.11.4 定义（0,0）点
+### 2.11.4 Defining the (0,0) Point
 
-使用G28 X Y命令归位 X Y ，然后手动点动将喷嘴移到热床的左前角。
+Use the G28 X Y command to home X Y, then manually jog the nozzle to the front-left corner of the heated bed.
 
-1、如果X Y的坐标都已经为0，但喷嘴还没能移动到热床的左前角，就需要调整热床及热床底部的型材的位置，使喷嘴能够在热床左上角的正上方。如果调整了热床的位置，同时要调整Z限位开关，确保喷嘴能够正常触发Z限位开关。
+1. If the X Y coordinates are already 0 but the nozzle has not yet been able to move to the front-left corner of the heated bed, you need to adjust the position of the heated bed and the profile at the bottom of the heated bed so that the nozzle can be directly above the top-left corner of the heated bed. If you adjust the position of the heated bed, you must also adjust the Z limit switch at the same time to ensure the nozzle can properly trigger the Z limit switch.
 
-2、如果X Y的坐标还没有为0，但喷嘴已经在热床左上角的上方，就发送M114命令。如果X和Y不是~0-5mm，更新[stepper_x]和[position_endstop]的 "position_max "和 "position_endstop"。
+2. If the X Y coordinates are not yet 0 but the nozzle is already above the top-left corner of the heated bed, send the M114 command. If X and Y are not ~0-5mm, update the "position_max" and "position_endstop" of [stepper_x] and [position_endstop].
 
 [steple_y]:
 
@@ -464,15 +481,15 @@ For X: New = Current – Get Position X Result
 
 For Y: New = Current – Get Position Y Result
 
-如果您更新了配置文件中的任何内容，请保存配置文件，然后使用FIRMWARE_RESTART重新启动Klipper。
+If you have updated anything in the configuration file, save the configuration file, then restart Klipper using FIRMWARE_RESTART.
 
 ![img](/images/wps83.jpg) 
 
  
 
-### 2.11.5 Z轴复位传感器位置定义
+### 2.11.5 Defining the Z-Axis Reset Sensor Position
 
-执行一次G28 X Y，然后利用控制台点动移动喷嘴的X或Y位置，直到喷嘴位于Z轴限位开关的正上方。发送M114命令并记录X轴和Y轴的坐标值。打开printer.cfg文件，更新回原点宏例程（[homing_override]）如下图，然后保存文件并重启klipper。
+Execute G28 X Y once, then use the console to jog the nozzle's X or Y position until the nozzle is directly above the Z-axis limit switch. Send the M114 command and record the X-axis and Y-axis coordinate values. Open the printer.cfg file, update the homing override macro routine ([homing_override]) as shown below, then save the file and restart Klipper.
 ```
 [homing_override]
 
@@ -494,7 +511,7 @@ G28 X Y
 
 ##Z Endstop Pin Location Definition step.
 
-G0 X232 Y338 F3600 #更新此处X Y坐标
+G0 X232 Y338 F3600 #Update the X Y coordinates here
 
 G28 Z
 
@@ -504,50 +521,46 @@ G0 X175 Y175 Z20.05 F3600
 ```
 
 
-如果您是使用[safe_z_home]，那么可采用上述方法进行参数的更新替换。
+If you are using [safe_z_home], you can use the above method to update and replace the parameters.
 
-修改完毕后，可尝试使用G28命令完成完整的复位动作。如果在G28结束时，您的喷嘴没有超过热床的平面，请调整Z抬升高度。
+After modification, try using the G28 command to complete the full homing action. If at the end of G28 your nozzle has not risen above the plane of the heated bed, please adjust the Z lift height.
 
-### 2.11.6 调平传感器Probe的检查
+### 2.11.6 Checking the Leveling Sensor Probe
 
-首次使用热床自动调平功能之前，请确认Probe传感器工作是否正常工作。
+Before using the heated bed automatic leveling function for the first time, please confirm whether the Probe sensor works properly.
 
-可以通过发送命令： QUERY_PROBE 来测试传感器，以下以PL08传感器为例：
+You can test the sensor by sending the command: QUERY_PROBE. The following uses the PL08 sensor as an example:
 
-PL08为非接触式磁性金属传感器，当喷嘴组件下降，PL08检测面与PEI弹簧钢板的距离小于8mm时，
+PL08 is a non-contact magnetic metal sensor. When the nozzle assembly descends and the distance between the PL08 detection surface and the PEI spring steel sheet is less than 8mm,
 
-PL08应被触发，并且PL08自身的触发状态灯应被点亮，此时发送QUERY_PROBE 应返回 triggered 触
+PL08 should be triggered, and the PL08's own trigger status light should be lit. At this time, sending QUERY_PROBE should return triggered.
 
-发。
+When the nozzle assembly is far from the spring steel sheet, the PL08's own trigger status light should go out. At this time, sending QUERY_PROBE should return open.
 
-当喷嘴组件远离弹簧钢板，PL08自身的触发状态灯应熄灭，此时发送QUERY_PROBE 应返回 open 断
-
-开。
-
-如果信号反转，请在probe传感器引脚定义前增加或删除"！"
+If the signal is reversed, please add or delete "!" before the probe sensor pin definition
 
 ```
 [probe]
 
 pin: PA3
 
-pin: ！PA3 #或者
+pin: !PA3 #or
 ```
 
 
-请注意PL08传感器的安装高度，其检测端面不应低于喷嘴，否则在打印过程中会擦碰打印件。单也不可过高，应确保每次运行QUERY_PROBE 时，喷嘴没有接触到热床表面。
+Please note the installation height of the PL08 sensor; its detection end face should not be lower than the nozzle, otherwise it will scrape the printed part during printing. But it also should not be too high; ensure that the nozzle does not touch the heated bed surface each time QUERY_PROBE is run.
 
-### 2.11.7 probe传感器精度
+### 2.11.7 Probe Sensor Accuracy
 
-首次测试probe传感器，不需要加热喷头和热床，G28复位后将打印头移到热床的中心，然后发送命令：
+When testing the probe sensor for the first time, there is no need to heat the hotend and heated bed. After G28 homing, move the print head to the center of the heated bed, then send the command:
 
 ```
 PROBE_ACCURACY
 ```
 
-此时喷头会自动下降直至probe传感器被触发后反向抬升，如此r连续探测热床10次，并在最后输出一个标准偏差值，标准偏差应小于0.003mm。如果每次的探测值不稳定或者是呈趋势性的变化，需要检查Z轴皮带的松紧度。劣质的传感器也会影响重复探测的精度。
+At this time the nozzle will automatically descend until the probe sensor is triggered and then rise in reverse. In this way it continuously probes the heated bed 10 times and finally outputs a standard deviation value; the standard deviation should be less than 0.003mm. If the probe value is unstable each time or shows a trending change, you need to check the tightness of the Z-axis belt. Poor-quality sensors will also affect the repeat probing accuracy.
 
-PROBE_ACCURACY不稳定的例子如下（预热期间呈下降趋势）。
+An example of unstable PROBE_ACCURACY is as follows (showing a downward trend during preheating).
 
 Send: PROBE_ACCURACY
 Recv: // PROBE_ACCURACY at X:125.000 Y:125.000 Z:7.173 (samples=10 retract=2.000
@@ -567,19 +580,19 @@ Recv: // probe accuracy results: maximum 4.975000, minimum 4.932500, range
 0.042500, average 4.949000, median 4.948750,
 standard deviation 0.011948
 
-### 2.11.8 四轴龙门调平（或Z倾斜）
+### 2.11.8 Four-Axis Gantry Leveling (or Z Tilt)
 
-在进行4Z调平操作之前，先打开printer.cfg配置文件，找到4Z调平的宏[quad_gantry_level]，根据热床大小调整4个探测点的坐标位置，确保探测点都在热床打印区域以内。
+Before performing the 4Z leveling operation, first open the printer.cfg configuration file, find the 4Z leveling macro [quad_gantry_level], and adjust the coordinate positions of the 4 probe points according to the heated bed size, ensuring that the probe points are all within the heated bed printing area.
 ```
 [quad_gantry_level]
 gantry_corners:
 -60,-10
 360,370
 points:
-25,25 #左下角
-25,275 #左上角
-275,275 #右上角
-275,25 #右下角
+25,25 #Bottom left corner
+25,275 #Top left corner
+275,275 #Top right corner
+275,25 #Bottom right corner
 speed: 100
 horizontal_move_z: 10
 retries: 5
@@ -588,88 +601,88 @@ max_adjust: 10
 ```
 
 
-第一次运行4Z调平前，请先用手将龙门的4个角高度调至差不多一致，先运行一次G28 归位，然后发送命令：
+Before running 4Z leveling for the first time, please manually adjust the heights of the 4 corners of the gantry to be roughly the same, run G28 homing once, then send the command:
 
-Quad_Gantry_Level 或 Z_Tilt (Voron2.2或Voron1.8)
+Quad_Gantry_Level or Z_Tilt (Voron2.2 or Voron1.8)
 
-打印机开始执行4Z自动调平动作，喷头从左下角开始采集高度数据，并按逆时针依次探测完4个点。每次探测完，系统会自动计算出一个平均的公差值，并自动调整4个角的高度。重复探测2-3次，直至公差值小于retry_tolerance: 的设定值，即完成了4Z调平的动作。
+The printer begins the 4Z automatic leveling action. The nozzle starts collecting height data from the bottom-left corner and probes the 4 points counterclockwise in sequence. After each probe, the system automatically calculates an average tolerance value and automatically adjusts the heights of the 4 corners. Repeat the probing 2-3 times until the tolerance value is less than the retry_tolerance: setting value, and the 4Z leveling action is complete.
 
-注意：果偏差越来越大，请检查是电机的顺序是否正确。如果探测次数超过5圈仍未达到预设公差，系统将会报错。Z轴皮带的松紧程度以及劣质的传感器都会影响重复探测的精度。
+Note: If the deviation gets larger and larger, please check whether the motor order is correct. If the number of probes exceeds 5 rounds and the preset tolerance is still not reached, the system will report an error. The tightness of the Z-axis belt and poor-quality sensors will both affect the repeat probing accuracy.
 
-### 2.11.9 热床的PID校正
+### 2.11.9 PID Calibration of the Heated Bed
 
-G28归位后，将喷嘴移至热床中心，高出床面约5-10mm，然后发送命令
+After G28 homing, move the nozzle to the center of the heated bed, about 5-10mm above the bed surface, then send the command
 
 PID_CALIBRATE HEATER=heater_bed TARGET=100
 
-它将执行一个PID校准程序，将持续约10分钟。完成后发送保存命令
+It will execute a PID calibration procedure, which will last about 10 minutes. After completion, send the save command
 
 SAVE_CONFIG
 
-将自动把参数保存到配置文件中。
+The parameters will be automatically saved to the configuration file.
 
-### 2.11.10 挤出头的PID校正
+### 2.11.10 PID Calibration of the Extruder Head
 
-先将模型冷却风扇设置为25%的转速（ M106 S64 ），然后发送命令
+First set the model cooling fan to 25% speed (M106 S64), then send the command
 
 PID_CALIBRATE HEATER=extruder TARGET=245
 
-它将执行一个PID校准程序，将持续约5分钟。一旦完成，完成后发送保存命令
+It will execute a PID calibration procedure, which will last about 5 minutes. Once complete, send the save command
 
 SAVE_CONFIG
 
-### 2.11.11 在热仓中运行四轴龙门调平
+### 2.11.11 Running Four-Axis Gantry Leveling in a Heated Chamber
 
-运行G28命令将打印机归位
+Run the G28 command to home the printer
 
-第一次在高室温下运行四龙门调平，为验证Probe传感器能稳定工作，
+Running the four-gantry leveling at high chamber temperature for the first time, to verify that the Probe sensor can work stably,
 
-1、先将热床和挤出头预热，热床预热温度100C和挤出头预热温度240C；
+1. First preheat the heated bed and extruder head; preheat the heated bed to 100C and the extruder head to 240C;
 
-2、预热约15-20分钟后，将喷头移动至热床中心，试运行PROBE_ACCURACY 。如果10次探测数值呈上升或下降趋势，或标准偏差大于0.003mm，请再等5分钟后再试。需要在读数稳定后，方可运行QUAD_GANTRY_LEVEL 进行4Z调平动作。
+2. After preheating for about 15-20 minutes, move the nozzle to the center of the heated bed and try running PROBE_ACCURACY. If the 10 probe values show an upward or downward trend, or the standard deviation is greater than 0.003mm, please wait another 5 minutes and try again. You need to wait until the readings are stable before running QUAD_GANTRY_LEVEL for the 4Z leveling action.
 
-重要：因为热床铝板在加热过程中会存在热变形，每次开始打印时记住这一点--从冷机到开始打印通常需要预热10-20分钟，以确保温度稳定下来，热床加热变形稳定后，再执行打印工作。
+Important: Because the heated bed aluminum plate will undergo thermal deformation during heating, remember this every time you start printing—it usually takes 10-20 minutes of preheating from cold start to the start of printing to ensure the temperature stabilizes. After the heated bed heating deformation stabilizes, then execute the printing work.
 
-### 2.11.12 Z复位偏移调整
+### 2.11.12 Z Reset Offset Adjustment
 
-对Z复位偏移的调整，其实就是是调整Z轴在高度为0时，喷嘴距热床的高度，他关系到打印时，首层的高度是否正确，料丝是否能良好的粘附在热床上。在做此项操作前，请将挤出机设置为240℃，热床加热至100℃，预热15分钟后开始以下操作。
+Adjusting the Z reset offset is actually adjusting the height of the nozzle from the heated bed when the Z axis is at height 0. It is related to whether the first layer height is correct during printing and whether the filament can adhere well to the heated bed. Before doing this operation, please set the extruder to 240°C, heat the heated bed to 100°C, preheat for 15 minutes, and then start the following operations.
 
-1、先执行一次G32 。
+1. First execute G32 once.
 
-2、然后将打印头移至热床中心，运行命令
+2. Then move the print head to the center of the heated bed and run the command
 
 Z_ENDSTOP_CALIBRATE
 
-然后使用 命令 TESTZ Z=-1 缓慢地将喷头移向热床表面，直到喷头离热床表面约1mm时，在热床与喷嘴之间垫一张A4白纸，然后使用微调指令 TESTZ Z=-0.1 使喷嘴慢慢接近热床表面，直至喷嘴接接触到A4纸，用手抽拉白纸有轻微阻力，此时可执行确认命令 ACCEPT ，然后执行保存命令 SAVE_CONFIG ，将自动把参数保存到配置文件中。 。
+Then use the command TESTZ Z=-1 to slowly move the nozzle toward the heated bed surface until the nozzle is about 1mm from the heated bed surface. Place a piece of A4 white paper between the heated bed and the nozzle, then use the fine-tuning command TESTZ Z=-0.1 to make the nozzle slowly approach the heated bed surface until the nozzle touches the A4 paper and there is slight resistance when pulling the white paper by hand. At this time, you can execute the confirm command ACCEPT, then execute the save command SAVE_CONFIG, and the parameters will be automatically saved to the configuration file. .
 
-在上述调试过程中，如果喷头下降的太多，导致A4纸抽拉不动，可使用正数 TESTZ Z=0.1 ，使喷嘴抬高。
+During the above debugging process, if the nozzle descends too much and the A4 paper cannot be pulled, you can use a positive number TESTZ Z=0.1 to raise the nozzle.
 
-**重要：**在保存完参数后，马上执行 G28 复位，使喷头离开热床表面，以免烫坏PEI膜。
+**Important:** After saving the parameters, immediately execute G28 homing to move the nozzle away from the heated bed surface to avoid burning the PEI film.
 
-如果在执行过程中出现报错(越界)，一般是由于Z限位传感器的的轴太长，可能会在打印过程中卡住打印头。最好切割轴，使其与 PEI 的表面平齐。
+If an error (out of bounds) occurs during execution, it is generally because the Z limit sensor's shaft is too long and may jam the print head during printing. It is best to cut the shaft so that it is flush with the PEI surface.
 
-### 2.11.13 挤出机校准
+### 2.11.13 Extruder Calibration
 
-在第一次打印之前，需要确保挤出机能挤出正确长度的材料。根据打印材料所需的温度，加热挤出头，从挤出机进料口的铁氟龙管口处量120mm料丝，并在120mm处用美工刀做一个标记。在Fluidd中，手动操作挤出50mm2次，共100mm（Klipper的单次挤出量不允许超过50mm）。待挤出机停止后，测量从挤出机进料口到标记处的长度x。如果挤出量正确的时候，x应该为20mm（120mm - 100mm =20mm）。但实际是会有偏差的，找到配置文件中的现有挤出值，并使用以下方法更新它。
+Before the first print, you need to ensure that the extruder can extrude the correct length of material. According to the temperature required for the printing material, heat the extruder head, measure 120mm of filament from the PTFE tube opening at the extruder feed port, and make a mark at 120mm with a utility knife. In Fluidd, manually operate the extrusion of 50mm twice, for a total of 100mm (Klipper does not allow a single extrusion amount exceeding 50mm). After the extruder stops, measure the length x from the extruder feed port to the mark. If the extrusion amount is correct, x should be 20mm (120mm - 100mm = 20mm). But in reality there will be deviations. Find the existing extrusion value in the configuration file and update it using the following method.
 ```
 [extruder]
 ...
-rotation_distance: 25.12 #值越大，挤出的料越少
+rotation_distance: 25.12 #The larger the value, the less material is extruded
 ...
 ```
 
 
-新收缩值=旧收缩值*（实际挤出量/目标挤出量）
+New rotation value = Old rotation value * (actual extrusion amount / target extrusion amount)
 
-将新值替换配置文件中，保存并重启klipper。然后按上述方法重新再验证一遍，如果挤出量在目标值的±0.5%范围内（即，目标值为99.5-100.5mm，目标挤出长度为100mm），挤出机就校准好了。
+Replace the new value in the configuration file, save and restart Klipper. Then verify again using the above method. If the extrusion amount is within ±0.5% of the target value (i.e., the target value is 99.5-100.5mm, and the target extrusion length is 100mm), the extruder is calibrated.
 
-### 2.11.14 动态微调Z轴高度
-打印过程中，可以使用工具面板上的Z偏移微调按钮来动态调整喷嘴的高度
+### 2.11.14 Dynamically Fine-Tuning the Z-Axis Height
+During printing, you can use the Z offset fine-tuning button on the tool panel to dynamically adjust the nozzle height
 
 ![img](/images/wps89.jpg)
 
 
-如果希望系统一直使用当前高度，可以将当前的偏移值累加到原有的偏移值上。在配置文件最底部找到Z复位偏移值
+If you want the system to always use the current height, you can add the current offset value to the original offset value. Find the Z reset offset value at the very bottom of the configuration file
 ```
 \#*# <---------------------- SAVE_CONFIG ---------------------->
 
@@ -682,28 +695,28 @@ rotation_distance: 25.12 #值越大，挤出的料越少
 \#*# position_endstop
 ```
 
-New Position = Old Position - Z偏移（上图中）
+New Position = Old Position - Z offset (in the figure above)
 
-请注意，position_endstop值越大，喷嘴将更接近热床。
+Please note that the larger the position_endstop value, the closer the nozzle will be to the heated bed.
 
-举例：
+Example:
 
-New Position = Old Position（7.25）-Z偏移 (-0.005) = 7.25 + 0.005=7.255
+New Position = Old Position (7.25) - Z offset (-0.005) = 7.25 + 0.005=7.255
 
-### 2.11.15 切片设置和首次打印
+### 2.11.15 Slicing Settings and First Print
 
-建议使用Ultimaker Cura软件进行模型切片，在下载安装完成后要先不要运行。在[slicer_profiles/cura](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/slicer_profiles/cura/Voron_Cura)下载最新的Voron Cura设置文件，然后将rar文件夹解压到C:\Program Files\Ultimaker CuraX.X\resources中。然后打开Ultimaker Cura，在 "非网络打印机 "下选择Voron标签，并选择打印机的大小。
+It is recommended to use Ultimaker Cura software for model slicing. After downloading and installing, do not run it yet. Download the latest Voron Cura settings file at [slicer_profiles/cura](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/slicer_profiles/cura/Voron_Cura), then extract the rar folder to C:\Program Files\Ultimaker CuraX.X\resources. Then open Ultimaker Cura, select the Voron tab under "Non-Network Printer", and select the printer size.
 
-如果你对切片软件的参数不是很了解，可以先试用默认的参数。
+If you are not very familiar with the slicing software parameters, you can try the default parameters first.
 
-首次打印
+First Print
 
-从Voron Github页面下载[voron_design_cube_v7.stl](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/TEST_PRINTS)，打开Ultimaker Cura，使用默认的切片设置对模型进行切片，同时要确保挤出头温度和热床温度与使用的耗材相对应。
+Download [voron_design_cube_v7.stl](https://github.com/VoronDesign/Voron-2/tree/Voron2.4/STLs/TEST_PRINTS) from the Voron Github page, open Ultimaker Cura, and slice the model using the default slicing settings, while ensuring that the extruder head temperature and heated bed temperature correspond to the filament used.
 
-一般推荐：
+General recommendations:
 
-ABS：热床100C，挤出头250C
+ABS: heated bed 100C, extruder head 250C
 
-PLA：热床60C，挤出头195C
+PLA: heated bed 60C, extruder head 195C
 
-打印质量的好坏，与切片的参数及机器的调试密不可分，需要一定的耐心来慢慢完善。
+The print quality is closely related to the slicing parameters and machine debugging, and it takes some patience to gradually improve it.

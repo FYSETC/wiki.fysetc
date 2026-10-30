@@ -43,8 +43,8 @@ npm.cmd run serve -- --host 127.0.0.1 --port 3000 --no-open
 
 - 英文首页：`http://127.0.0.1:3000/wiki.fysetc/`
 - 中文首页：`http://127.0.0.1:3000/wiki.fysetc/zh-Hans/`
-- 第一篇英文文章：`http://127.0.0.1:3000/wiki.fysetc/docs/first-article/`
-- 第一篇中文文章：`http://127.0.0.1:3000/wiki.fysetc/zh-Hans/docs/first-article/`
+- 英文文档总览：`http://127.0.0.1:3000/wiki.fysetc/docs/overview/`
+- 中文文档总览：`http://127.0.0.1:3000/wiki.fysetc/zh-Hans/docs/overview/`
 
 生产构建会为原来的 /en/ 页面生成跳转，旧英文链接仍可访问。
 
@@ -66,9 +66,13 @@ npm.cmd run serve -- --host 127.0.0.1 --port 3000 --no-open
 
 原 `docs/` 保留迁移时的文件，不参与当前站点构建。当前中文和英文文章分别从各自的 i18n 目录读取。
 
+HelpLook 文档已在本地按原分类层级补齐，新增图片位于 `static/images/`。已有文章正文和页面地址保留，完整对应关系、原文缺失资源和验证方式见 [迁移记录](migration/README.md)。本次迁移没有提交或推送到远程仓库。
+
 ## 主题与文档功能
 
 首页、导航栏、文档页和暗色样式使用 FYSETC 自定义主题，字体文件在 static/fonts/inter/。文档支持本地搜索、数学公式、图片放大和驱动参考电压计算器。scripts/sync-navigation.mjs 仅更新文档导航，不生成迁移记录，也不准备 CMS。
+
+文档已启用 `remark-breaks`：普通段落中的单次换行会显示为换行，空行仍表示新段落，中英文均适用。英文原稿若仅为源码排版而手动折行，也会按这些换行显示；希望显示为连续文字时，应在源码中写成一行。代码块、表格行和 HTML 标签属性继续按各自语法处理。修改此配置后需重启开发预览；静态预览需重新构建。
 
 ## 部署地址
 

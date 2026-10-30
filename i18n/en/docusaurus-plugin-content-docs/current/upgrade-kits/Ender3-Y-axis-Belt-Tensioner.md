@@ -1,9 +1,9 @@
 ---
-sidebar_position: 30
 id: Ender3-Y-axis-Belt-Tensioner
 title: Ender3 Y-axis Belt Tensioner
-description: Product name：Ender3 Y-axis Belt Tensioner
 slug: /Ender3-Y-axis-Belt-Tensioner
+sidebar_position: 30
+description: Product name：Ender3 Y-axis Belt Tensioner
 source_file: Ender3 Y-axis Belt Tensioner.md
 source_language: en
 ---
@@ -48,7 +48,6 @@ Refer to the assembly tutorial to avoid installation errors.
 
 ## Shop
 
-------
 
 -  [Aliexpress](https://www.aliexpress.com/item/32995039077.html?spm=a2g0o.productlist.0.0.72e01b49kJZIVV&algo_pvid=ce0f2168-231b-48bf-a480-1a6f9b9ac96d&algo_expid=ce0f2168-231b-48bf-a480-1a6f9b9ac96d-57&btsid=0bb47a1a15961838083517430ed198&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_).
 -  [Amazon](https://www.amazon.com/FYSETC-Aluminum-Synchronous-Straighten-Tensioner/dp/B07VXT4GDH/ref=sr_1_17?dchild=1&m=A17REXMFA4MBN8&marketplaceID=ATVPDKIKX0DER&qid=1596182691&s=merchant-items&sr=1-17).

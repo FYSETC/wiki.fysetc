@@ -59,10 +59,16 @@ dcStep                                    | yes
 ## Pin Functions
 ---
 ### V3.0
+
 ![2209引脚图V3.0](/images/2209%E5%BC%95%E8%84%9A%E5%9B%BEV3.0.jpg)
+
 ### V3.1
-![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)![image-20230508160723032]
+
+![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)
+
+![image-20230508160723032]
 ### V4.0
+
 ![TMC2209_V40_引脚图](/images/image-20230508160723032.png)
 
 Pin|Function
@@ -160,6 +166,7 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 
 
 ### V3.0 Hardware Connection
+
 ![2209串口接线V30](/images/2209%E4%B8%B2%E5%8F%A3%E6%8E%A5%E7%BA%BFV30.jpg)
 
 
@@ -174,6 +181,7 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 
 
 ### V3.1 Hardware Connection
+
 ![2209V3.1原理图](/images/2209V3.1%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 
 1. add CLK pin ，not connect in default，tie to GND via 0R

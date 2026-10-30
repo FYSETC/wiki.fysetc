@@ -1,11 +1,9 @@
 ---
-sidebar_position: 50
 id: Cheetah_Board_V20
-title: FYSETC Cheetah v2.0
-description: Cheetah 2.0 is a single-head main control board based on STM32F401,
-  with 4 TMC2209 onboard, supports sensor-less homing, can be connected to a
-  variety of displays, compatible with the installation…
+title: Cheetah v2.0
 slug: /Cheetah_Board_V20
+sidebar_position: 70
+description: Cheetah 2.0 is a single-head main control board based on STM32F401, with 4 TMC2209 onboard, supports sensor-less homing, can be connected to a variety of displays, compatible with the installation…
 source_file: Cheetah_Board_V20.md
 source_language: en
 ---
@@ -25,10 +23,10 @@ Cheetah 2.0 is a single-head main control board based on STM32F401, with 4 TMC22
 - **STM32F401MCU (Run Marlin 2.0****/****Klipper** **)** 
 - 4X TMC2209 stepper drivers, Support sensor-less homing
 - UNIVERSAL POWER: 
--     Can be used with 12V/24V for motors / heated bed 
--     24V to 12V/2A DC-DC for fans 
--     Integrated high precision power regulators (DC/DC): 5V 2A Max and 3.3V 600mA Max LDO 
--     12V&24V power pin out 
+- Can be used with 12V/24V for motors / heated bed 
+- 24V to 12V/2A DC-DC for fans 
+- Integrated high precision power regulators (DC/DC): 5V 2A Max and 3.3V 600mA Max LDO 
+- 12V&24V power pin out 
 - Onboard TF card socket- EXP3 for 12864 display panel (Creality 12864 panel or FYSETC Generic12864)
 - **EXP1&EXP2 RepRapDiscount SmartController compatible pin header on board**
 - **EXP4 with I2C and UART1**
@@ -245,7 +243,10 @@ This method works in linux, that means should work in raspberry pi.
 1. Enter DFU mode first
    
    - First power off the board
-   - Place jumper on BT0 and 3.3V pin![image-20211130182000593](/images/boot_jumper.png) 
+   - Place jumper on BT0 and 3.3V pin
+
+     ![image-20211130182000593](/images/boot_jumper.png)
+
    - Connect USB cable to the board and your computer 
    - Power up the board with 24v 
 
@@ -293,7 +294,10 @@ Open the STM32CubeProgrammer software.
 ##### Step 2. Enter DFU mode
 
 1. First power off the board
-2. Place jumper on BT0 and 3.3V pin![image-20211130182000593](/images/boot_jumper.png) 
+2. Place jumper on BT0 and 3.3V pin
+
+   ![image-20211130182000593](/images/boot_jumper.png)
+
 3. Connect USB cable to the board and your computer 
 4. Power up the board with 24v 
 
@@ -323,7 +327,10 @@ If you compile Marlin yourself with platformio,you can follow the instructions b
 ##### Step 1. Enter DFU mode first
 
 - First power off the board
-- Place jumper on BT0 and 3.3V pin![image-20211130182000593](/images/boot_jumper.png) 
+- Place jumper on BT0 and 3.3V pin
+
+  ![image-20211130182000593](/images/boot_jumper.png)
+
 - Connect USB cable to the board and your computer 
 - Power up the board with 24v 
 

@@ -1,11 +1,9 @@
 ---
-sidebar_position: 40
 id: UCAN
 title: UCAN
-description: UCAN is an open source USB-to-CAN interface board, based on the
-  STM32F072 chip and candleLight open source firmware. It supports linux,
-  windows, and mac. Of course, you can also develop your own…
 slug: /UCAN
+sidebar_position: 70
+description: UCAN is an open source USB-to-CAN interface board, based on the STM32F072 chip and candleLight open source firmware. It supports linux, windows, and mac. Of course, you can also develop your own…
 source_file: UCAN.md
 source_language: en
 ---
@@ -36,7 +34,7 @@ UCAN is an open source USB-to-CAN interface board, based on the STM32F072 chip a
 
   
 
-# 3.hardware
+# 3.Hardware
 
 UCAN is based on the STM32F072CBT6, so PA11/PA12 is connected to USB-C, and PA8/PA9 is connected to CAN interface. Please refer to the circuit diagram for more information.
 
@@ -44,7 +42,6 @@ UCAN is based on the STM32F072CBT6, so PA11/PA12 is connected to USB-C, and PA8/
 
 Currently there are two ways to terminate the resistor. The default termination is composed of two 59R resistors (R1/R2), as shown in the red position in the figure below. The alternate location consists of a 120R resistor and a two-pin jumper, shown in magenta. There is no performance difference, but the default is the 2 59R resistors. For more info please check the [Schematic Diagram](https://github.com/FYSETC/UCAN/blob/main/Hardware/UCAN%20V1.0%20SCH.pdf).
 
-我们提供了两种端接电阻的方式，默认是由两颗59R电阻（R1/R2）组成，如图红色位置。备用位置是由120R电阻和一个两pin跳线组成，如图洋红色所示。一般地使用这并没有区别，默认板载即可。
 
 ![image-20230526154004328](/images/UCAN-Terminating.png)
 

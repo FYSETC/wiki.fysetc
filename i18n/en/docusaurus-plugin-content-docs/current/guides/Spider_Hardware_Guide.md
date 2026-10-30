@@ -1,154 +1,156 @@
 ---
-sidebar_position: 30
 id: Spider_Hardware_Guide
-title: Spider hardware guide
-description: "Spider hardware guide: original FYSETC documentation and related references."
+title: Spider Hardware Guide
 slug: /Spider_Hardware_Guide
+sidebar_position: 20
+description: 'Spider hardware guide: original FYSETC documentation and related references.'
 source_file: Spider_Hardware_Guide.zh.md
 source_language: zh
 ---
 
-####  蜘 蛛 宝 典
+#### Spider Bible
 
-用蜘蛛3.0主板玩转Voron2.4
+Using the Spider 3.0 motherboard to master the Voron 2.4
 
-本教程基于大树代笔的葵花宝典第一版更新修改版权所有，未经许可，切勿用作商业用途，违者必究！ 
+This tutorial is based on the first edition of the Sunflower Bible ghostwritten by Dashu, updated and revised. All rights reserved. Without permission, do not use for commercial purposes. Violators will be prosecuted!
 
-####  前言
+#### Preface
 
-大家好，当你看到这篇文章，我想你一定是对一台叫做Voron的3D打印机产生了兴趣，或者你正在组装一台属于你自己的Voron2.4打印机。的确，Voron是非常棒的全球开源3D打印机项目。无论从外观设计、功能先进性到最终优秀的打印效果，都是创客手中不可多得的必备工具。Voron官方为每一个机型都准备了机械安装手册，但是很多爱好者都卡壳在电控方面的安装和调试。为了能让大家少走弯路，我决定整理一份关于Voron2.4的电控教程，帮大家避避坑。能力有限，还望大家多多提出宝贵意见。
+Hello everyone. When you see this article, I think you must be interested in a 3D printer called Voron, or you are assembling your own Voron 2.4 printer. Indeed, Voron is an excellent global open-source 3D printer project. From appearance design and advanced functionality to the final excellent printing results, it is an indispensable tool for makers. Voron officially provides a mechanical installation manual for each model, but many enthusiasts get stuck on the electronic control installation and debugging. To help everyone avoid detours, I decided to compile an electronic control tutorial for the Voron 2.4 to help everyone avoid pitfalls. My abilities are limited, and I welcome everyone's valuable suggestions.
 
-大家也可以访问VoronDesign的官方网站www.vorondesign.com或中文网站www.cnvoron.com获取更多有关开源Voron打印机的相关信息。
+You can also visit the official VoronDesign website www.vorondesign.com or the Chinese website www.cnvoron.com to obtain more information about open-source Voron printers.
 
 ![img](/images/wps2.png) 
 
-# 安全
+# Safety
 
-重要的事当然是放在最前面说啦。在Voron2.4电子线路布线时，你会用到交流220V市电。在接触任何带电的电线或端子之前，请务必拔掉打印机的插头，且等待1-2分钟，确保电源中的所有电容已放电。很多机友家中的三脚插座可能没有按规范接线，火线零线接反，还有些插座内没有接地线，或者全屋接地悬空。如果对自己家的插座不放心，可以买个简易测试仪（如下图）测试一下。为了确保人身安全，请确保打印机的框架可靠接地，并使用带有漏电保护功能的插座、接线板。
+The important things should of course be said first. When wiring the Voron 2.4 electronics, you will use AC 220V mains power. Before touching any live wires or terminals, be sure to unplug the printer and wait 1-2 minutes to ensure that all capacitors in the power supply have discharged. Many enthusiasts' home three-prong outlets may not be wired according to standards, with live and neutral reversed, and some outlets have no ground wire, or the whole house's grounding is floating. If you are unsure about your home's outlets, you can buy a simple tester (as shown below) to test them. To ensure personal safety, please make sure the printer frame is reliably grounded, and use outlets and power strips with leakage protection.
 
 ![img](/images/wps3.jpg) 
 
- 打印机通电时，切勿插拔任何设备（无论是高电压或低电压）除了存在安全隐患外，还很可能会损坏电子元件。特别值得注意的是步进驱动器，在通电时插拔步进电机的线束，很容易造成驱动器的永久损坏，切记！切记！切记！
+ When the printer is powered on, never plug or unplug any device (whether high voltage or low voltage). Besides safety hazards, it is also very likely to damage electronic components. Of particular note are stepper drivers: plugging or unplugging stepper motor wiring while powered can easily cause permanent damage to the driver. Remember! Remember! Remember!
 
-#  1、硬件篇
+#  1. Hardware
 
-## 1.1 蜘蛛是个啥 
+## 1.1 What is the Spider
 
-这里说的蜘蛛可不是八脚恐怖爬虫，而是Spider主板，是深圳富源盛电子科技有限公司FYSETC全新打造的一款可以支持8路步进电机的3D打印机控制主板。
+The spider mentioned here is not the terrifying eight-legged crawler, but the Spider motherboard, a 3D printer control motherboard newly created by FYSETC of Shenzhen Fuyuansheng Electronic Technology Co., Ltd. that can support 8 stepper motors.
 
 ![img](/images/wps4.jpg) 
 
-## 1.2 蜘蛛主板的参数和特性
+## 1.2 Spider motherboard parameters and features
 
-- 外观尺寸： 155.3mm x 76.5mm
+- Dimensions: 155.3mm x 76.5mm
 
-- 基于 STM32F446 180Mhz 主控设计，所有 IO 都能承受 5V 电压
+- Designed based on STM32F446 180Mhz main control; all IO can withstand 5V voltage
 
-- 支持8 路 TMC 电机驱动，支持 UART及SPI 协议
+- Supports 8 TMC motor drivers, supports UART and SPI protocols
 
-- V2.2：增加两个最大 60V 电压支持的电机驱动插座，改进TMC驱动跳线设置，更简单、更容易
+- V2.2: Adds two motor driver sockets supporting up to 60V voltage, improves TMC driver jumper settings, simpler and easier
 
-- V2.2: 最大 28V 输入，集成 12V@3A DC-DC，5V@5A DC-DC (用于树莓派)，5V@3A DC-DC ( 用于MCU 和 RGB ) , 两路 [3.3V@0.8A](mailto:3.3V@0.8A) LDO ( 用于MCU 和电机 )
+- V2.2: Maximum 28V input, integrated 12V@3A DC-DC, 5V@5A DC-DC (for Raspberry Pi), 5V@3A DC-DC (for MCU and RGB), two [3.3V@0.8A](mailto:3.3V@0.8A) LDOs (for MCU and motors)
 
-- 配置两路汽车保险丝为主电源输入和热床输入提供保护
+- Equipped with two automotive fuses to protect the main power input and heated bed input
 
-- 限位开关 24V/5V/3.3V 三级电压可选，同时支持更多的位置检测设备，如接近开关，BL-Touch 等
+- Limit switches selectable at 24V/5V/3.3V three voltage levels, while supporting more position detection devices, such as proximity switches, BL-Touch, etc.
 
-- XH2.54 接插件
+- XH2.54 connectors
 
-- 10路 PWM 功率场效应管输出（1路热床，3路热端，3路风扇，3路 RGB 灯带）
+- 10 PWM power MOSFET outputs (1 heated bed, 3 hotends, 3 fans, 3 RGB light strips)
 
-- V2.2: 支持最多 6 路温度传感器
+- V2.2: Supports up to 6 temperature sensors
 
-- 最多 8 路 PWM 风扇输出（在只有1个挤出头和无 RGB的情况下），支持2路 RGB 灯（12V & 24V 电压可选），1 路 5V RGB 灯（NEO-PIXEL / WS2812）
+- Up to 8 PWM fan outputs (with only 1 extruder and no RGB), supports 2 RGB lights (12V & 24V voltage selectable), 1 5V RGB light (NEO-PIXEL / WS2812)
 
-- 板载 RepRapDiscount SmartController 屏幕兼容接线插座
+- Onboard RepRapDiscount SmartController screen compatible wiring socket
 
-- 提供 2X5 树莓派串口及供电（5V@8A）接线端子
+- Provides 2X5 Raspberry Pi serial port and power supply (5V@8A) wiring terminals
 
-- 提供用于SD 卡外接模块的 2X4 接线端子
+- Provides 2X4 wiring terminals for SD card external module
 
-- 板载 micro-SD 卡座
+- Onboard micro-SD card slot
 
-- Type-C 和 Type-B USB 接口可选
+- Type-C and Type-B USB interfaces optional
 
-- EXP1 & EXP2 提供更多复用功能，如 USART, I2C, CAN
+- EXP1 & EXP2 provide more multiplexing functions, such as USART, I2C, CAN
 
-- 支持 SD card & USB 固件上传
+- Supports SD card & USB firmware upload
 
-- 板载温度传感器端口 4.7k 0.1% 上拉电阻，可直接接 PT1000，PT100 也可通过运放模块接入。
+- Onboard temperature sensor port with 4.7k 0.1% pull-up resistor, can directly connect PT1000; PT100 can also be connected via an op-amp module.
 
-- V2.2: 增加更多保护电路 （每路电机驱动增加 TVS 管，限流电阻，增加 VMOT 保险丝）
+- V2.2: Adds more protection circuits (TVS diodes, current-limiting resistors for each motor driver, adds VMOT fuse)
 
-## 1.3 蜘蛛主板的接线---电源输入、输出
+## 1.3 Spider motherboard wiring---power input and output
 
-很多新手会很迷茫，在拿到主板以后就迫不及待的把主板安装到机器上。其实一块新的主板还需要做很多的准备工作，确认可以正常工作了，再装到机器上接线，这样可以避免很多不必要的麻烦，先来看看怎么给蜘蛛主板供电吧。
+Many beginners will be confused, and after getting the motherboard they can't wait to install it on the machine. In fact, a new motherboard still needs a lot of preparation work. Confirm that it can work normally, then install it on the machine and wire it. This can avoid a lot of unnecessary trouble. Let's first look at how to supply power to the Spider motherboard.
 
-**Power In**：蜘蛛主板推荐使用24V供电，根据外设的数量，选用200-300W的优质开关电源供电（例如：明纬电源、普德新星电源）。使用AWG18# - AWG14#线从开关电源的DC输出端子接至主板Power In端子 。使用足够粗的供电线缆可以减小电压降，保障主板的稳定。
-
-
-**Power Out**：可输出两路12V和两路24V电压，用于给其他外部设备供电，请注意总电流不要超过主板最大输出范围。
-
-新增48V输出接口：为M1、M2驱动位输出电压提供更多选择。
+**Power In**: The Spider motherboard recommends 24V power supply. According to the number of peripherals, choose a high-quality switching power supply of 200-300W (for example: Mean Well power supply, Pude Xinxing power supply). Use AWG18# - AWG14# wire to connect from the DC output terminal of the switching power supply to the Power In terminal of the motherboard. Using sufficiently thick power cables can reduce voltage drop and ensure the stability of the motherboard.
 
 
-选择48v / 24v 供电，电压输入端子接线如下图展示，驱动 24v 接线方式——短接24v-PIN与48v-PIN，驱动外接48v电源接线——短接48V-PIN和GND-PIN。
+**Power Out**: Can output two 12V and two 24V voltages for powering other external devices. Please note that the total current should not exceed the maximum output range of the motherboard.
+
+New 48V output interface: provides more choices for the output voltage of the M1 and M2 driver positions.
+
+
+Select 48v / 24v power supply. The voltage input terminal wiring is shown in the figure below. Driver 24v wiring method—short the 24v-PIN and 48v-PIN; driver external 48v power supply wiring—short the 48V-PIN and GND-PIN.
 
  
 
-**MCU Power**：MCU供电选择跳线，可以由USB供电或由内部DC-DC电源供电，在烧录固件及调试主板时可以使用USB供电（EXP1和EXP2没有连接在USB供电上，所以仅由USB供电的时候连接在此处的设备不会工作，比如屏幕不会亮起），平常使用请选择内部DC-DC电源供电。
+**MCU Power**: MCU power selection jumper, can be powered by USB or by internal DC-DC power supply. When flashing firmware and debugging the motherboard, USB power can be used (EXP1 and EXP2 are not connected to USB power, so devices connected here will not work when powered only by USB, for example the screen will not light up). For normal use, please select internal DC-DC power supply.
 
 ![img](/images/wps5.jpg)
 
-### 1.4 步进电机的接线
+### 1.4 Stepper motor wiring
 
-#### 1.4.1 步进驱动器的跳线设置
+#### 1.4.1 Stepper driver jumper settings
 
-常见的步进驱动模块无外乎3种：一种是STEP/DIR模式。主要通过硬件跳线来设置细分，通过调电位器来改变电流大小，比如最常见最经典的A4988驱动。如果使用这类传统步进驱动，需要查询所使用的步进驱动厂家提供的细分配置表，然后用跳线帽来进行细分设置。 **注意：高电平在上，低电平在下。**
+Common stepper driver modules are basically of 3 types: one is STEP/DIR mode. Microstepping is mainly set through hardware jumpers, and current is changed by adjusting the potentiometer, such as the most common and classic A4988 driver. If using this type of traditional stepper driver, you need to check the microstep configuration table provided by the stepper driver manufacturer and use jumpers for microstep settings. **Note: High level is on top, low level is below.**
 
 ![img](/images/wps6.png)
 
-第二种是UART模式。最具代表性是德国Trinamic公司的TMC2208 TMC2209 TMC2225 TMC2226等，这类芯片可与主控IC进行Uart异步串行通信，所以细分设置、电流大小、静音功能等，都可以通过软件进行调节。UART模式时，需要按下图方式进行跳线设置。
+ The second is UART mode. The most representative are TMC2208, TMC2209, TMC2225, TMC2226, etc. from Germany's Trinamic. These chips can perform UART asynchronous serial communication with the main control IC, so microstep settings, current size, silent function, etc. can all be adjusted through software. In UART mode, jumper settings need to be made as shown below.
 
 ![img](/images/wps7.png) 
 
-第三种是SPI模式。最具代表性是德国Trinamic公司的TMC2230 TMC5160 TMC5161 TMC2240等，这类芯片可与主控IC进行SPI通步串行通信，通信速率更快，且这类芯片都具备一些高级功能，都需要通过SPI总线进行配置，例如堵转检测，电流动态控制，防抖动功能，静音驱动，斜坡发生器，力矩动态调节等等。**SPI模式时，需要按下图方式进行跳线设置。**
+The third is SPI mode. The most representative are TMC2230, TMC5160, TMC5161, TMC2240, etc. from Germany's Trinamic. These chips can perform SPI synchronous serial communication with the main control IC, with faster communication rates, and these chips all have some advanced functions that need to be configured through the SPI bus, such as stall detection, dynamic current control, anti-vibration function, silent drive, ramp generator, dynamic torque adjustment, etc. **In SPI mode, jumper settings need to be made as shown below.**
 
 ![img](/images/wps8.png) 
 
  
 
-**如果你使用的是其他厂家的步进驱动，引脚可能有所不同。请根据所购模块厂家提供的资料进行跳线、使用。**
+**If you are using stepper drivers from other manufacturers, the pins may be different. Please refer to the information provided by the manufacturer of the module you purchased for jumpering and use.**
 
-### 1.4.2 步进驱动器的安装
+### 1.4.2 Stepper driver installation
 
-将驱动器附赠的散热片贴在**步进驱动器铜箔的顶部**，有条件的话，建议使用风扇对驱动器进行辅助散热，否则你可能会打印件错层等其他问题。这一点对于TMC 2208s尤为重要，因为它们具有更高的RDSon，在相同的电流下会产生更多的热量。
+Attach the heatsink included with the driver to the **top of the copper foil of the stepper driver**. If possible, it is recommended to use a fan for auxiliary cooling of the driver; otherwise you may have problems such as layer shifting in prints. This is especially important for TMC 2208s because they have higher RDSon and generate more heat at the same current.
+
 ![img](/images/wps9.jpg)
 
-**注意！！！**
+**Note!!!**
 
-安装驱动模块时一定要确保方向正确。如果你把驱动器插反了，可能你会看见“昂贵的烟花”。步进驱动器的两排杜邦插座使用了不同的颜色，一排是黑色的，一排是蓝色的，请将驱动模块按颜色与插座的一一对应插入。
+When installing the driver module, be sure to ensure the direction is correct. If you insert the driver backwards, you may see "expensive fireworks." The two rows of DuPont sockets on the stepper driver use different colors, one row is black and one row is blue. Please insert the driver module so that it matches the socket colors one-to-one.
 
 ![img](/images/wps10.jpg)
 
-### 1.4.3 步进电机的接线
+### 1.4.3 Stepper motor wiring
 
-3D打印机一般使用的都是两相步进电机，其内部是由两组线圈绕制而成，原理图如下。使用万用表蜂鸣档测量步进电机的4根线，同相线圈的两根线会发出声音，不同相不会有声音。插座上1/2为一相，3/4为另外一相，交换两相的位置可以变换电机转动方向。
+3D printers generally use two-phase stepper motors, which are internally wound with two sets of coils. The schematic is as follows. Use the buzzer mode of a multimeter to measure the 4 wires of the stepper motor. The two wires of the same phase coil will produce a sound, while different phases will not. On the socket, 1/2 is one phase and 3/4 is the other phase. Swapping the positions of the two phases can change the motor rotation direction.
+
 ![img](/images/wps11.jpg)
 
-将XY电机、挤出机电机和4Z的电机（共7个电机）插入对应的插座（除X、Y电机有48V输出需求外，电机插座顺序和位置皆没有特别要求，但是配置的时候需要正确设置每个电机驱动的对应Pin脚）。
+Insert the XY motors, extruder motor, and 4Z motors (7 motors in total) into the corresponding sockets (except that the X and Y motors have 48V output requirements, there are no special requirements for the order and position of the motor sockets, but when configuring you need to correctly set the corresponding Pin for each motor driver).
 
-余出的1个驱动插座为预留的第二挤出机的电机驱动使用，如果不使用，可以不插驱动器。
+The remaining 1 driver socket is reserved for the motor driver of a second extruder. If not used, the driver can be left unplugged.
 
 ![img](/images/wps12.jpg) 
 
-## 1.5 热床、喷头加热块接线
+## 1.5 Heated bed and hotend heater block wiring
 
-Voron2.4是一款可以封箱打印高温材料的打印机，所以需要一款大功率的交流热床，才能在打印过程中保障床身温度的稳定及仓温的稳定。一般的打印机主板不能直接控制交流热床，需要借助交流固态继电器（SSR）来进行控制，具体的接线见下图。
+Voron 2.4 is a printer that can be enclosed to print high-temperature materials, so a high-power AC heated bed is needed to ensure stable bed temperature and stable chamber temperature during printing. General printer motherboards cannot directly control an AC heated bed and need an AC solid state relay (SSR) for control. See the figure below for specific wiring.
 
-**加热棒**的接线不区分正负极，请将加热棒接至主板**E0 OUT**接口。
+**The heater cartridge** wiring does not distinguish positive and negative poles. Please connect the heater cartridge to the motherboard's **E0 OUT** interface.
 
-**注意！！！**为确保用电安全，请将金属机架进行可靠接地。
+**Note!!!** To ensure electrical safety, please reliably ground the metal frame.
 
  
 
@@ -156,66 +158,68 @@ Voron2.4是一款可以封箱打印高温材料的打印机，所以需要一款
 
 
 
-## 1.6 温度传感器的接线
+## 1.6 Temperature sensor wiring
 
-蜘蛛主板可以接入6路温度传感器，可以满足Voron2.4的测温需要。常规的NTC100K热敏电阻可按照下图接线方式直接连接：
+The Spider motherboard can connect 6 temperature sensors, which can meet the temperature measurement needs of the Voron 2.4. Conventional NTC100K thermistors can be connected directly according to the wiring method below:
 
 ![img](/images/wps14.jpg) 
 
-## 1.7 散热风扇的接线
+## 1.7 Cooling fan wiring
 
 ![img](/images/wps15.jpg) 
 
-## 1.8 限位传感器的接线
+## 1.8 Limit sensor wiring
 
-限位开关有常开（NO）和常闭（NC）之分。在Voron2.4的机型上，我建议大家使用常闭（NC）的方式（如下图），这样在线缆开路或者开关触点接触不良时，软件会有报错提示，可以避免因复位开关失灵而导致的撞头。
+Limit switches are divided into normally open (NO) and normally closed (NC). On the Voron 2.4 model, I recommend using normally closed (NC) mode (as shown below). In this way, when the cable is open or the switch contacts have poor contact, the software will report an error, which can avoid head crashes caused by a failed homing switch.
 
 ![img](/images/wps16.jpg) 
 
 
-## 1.9 Probe调平传感器
+## 1.9 Probe bed leveling sensor
 
-Voron2.4官方建议使用的是PL08N传感器来进行热床调平，由于PL08N是使用24V供电，它的输出引脚在高电平状态下为24V，这大大超出了MCU 引脚的耐受范围。蜘蛛主板的Z+端口，内置了BAT85二极管用作高低电平隔离，所以可以直接将PL08N传感器直接插入Z+端口，而不需另外去外接二极管。另外Z+端口的供电是可以通过跳线帽去选择的，在使用PL08N传感器时，请将跳线帽按下图位置插入。
+Voron 2.4 officially recommends using the PL08N sensor for heated bed leveling. Since the PL08N uses 24V power supply, its output pin is 24V in the high-level state, which greatly exceeds the tolerance range of the MCU pin. The Z+ port of the Spider motherboard has a built-in BAT85 diode for high/low level isolation, so the PL08N sensor can be directly plugged into the Z+ port without the need for an additional external diode. In addition, the power supply of the Z+ port can be selected via a jumper. When using the PL08N sensor, please insert the jumper in the position shown below.
 
-由于市面上很少能买到PL08N的正品，所以很多网友想改用BL-Touch传感器来进行热床调平。BL-Touch需要3根线为舵机供电，2根线用作信号的输出，使用时按上图所示进行连接，请仔细确认连线是否正确
+Since genuine PL08N are rarely available on the market, many netizens want to switch to the BL-Touch sensor for heated bed leveling. BL-Touch needs 3 wires to power the servo and 2 wires for signal output. Connect as shown in the figure above when using it, and please carefully confirm whether the wiring is correct.
 
 
-**注意：BL-Touch是5V供电的器件，必须要按上图将Z+的供电跳线插入5V端。错误的电压设置可能会永久性损坏主板及传感器，切记切记切记！！！**
+**Note: BL-Touch is a 5V-powered device. You must insert the Z+ power jumper into the 5V end as shown in the figure above. Incorrect voltage settings may permanently damage the motherboard and sensor. Remember, remember, remember!!!**
 
-## ![img](/images/wps17.jpg) ![img](/images/wps18.jpg)
+## ![img](/images/wps17.jpg)
 
-## 1.10 Mini12864接线
+![img](/images/wps18.jpg)
 
-Voron2.4官方推荐是字符型的Mini12864显示屏，需要使用2根16pin的排线将Mini12864与蜘蛛相连接，排线和插座有防呆设计，直接将排线插头的凸起点对准插座的缺口插入即可。
+## 1.10 Mini12864 wiring
 
-**注意：在连接排线的时候，Spider需要按照下图的提示，Exp1对exp1，Exp2对exp2，否则可能无法正常点亮显示屏，切记切记切记！！！**
-由于各个厂家的引脚定义不同，如需连接其他厂家的Mini2864，可以至[FYSETC-SPIDER说明文档](/docs/Spider/#32-wiring--fysetc-mini-12864-v21)查看相关信息。
+Voron 2.4 officially recommends the character-type Mini12864 display, which requires two 16-pin ribbon cables to connect the Mini12864 to the Spider. The ribbon cables and sockets have keyed designs; simply align the raised point of the ribbon cable connector with the notch of the socket and insert.
+
+**Note: When connecting the ribbon cables, the Spider needs to follow the prompt in the figure below, Exp1 to exp1, Exp2 to exp2, otherwise the display may not light up properly. Remember, remember, remember!!!**
+Since the pin definitions of different manufacturers are different, if you need to connect a Mini2864 from another manufacturer, you can go to the [FYSETC-SPIDER documentation](/docs/Spider/#32-wiring--fysetc-mini-12864-v21) to view relevant information.
 
 ![img](/images/wps19.jpg)
 
-## 1.11 RGB灯带接线
+## 1.11 RGB light strip wiring
 
-为了让机器机箱内更漂亮更炫，可以在机箱内使用RGB全彩灯带来作为氛围灯，并且可以编辑一些自定义的宏，让灯带自动的变换颜色。这里给大家介绍的是采用内置WS2812驱动的灯带，它主需要一组5V供电和1根信号线，便可以控制灯带的色彩、亮度的变换。蜘蛛主板提供了专用的接口，接线方式如下图。
+To make the machine enclosure more beautiful and dazzling, RGB full-color light strips can be used inside the enclosure as ambient lighting, and some custom macros can be edited to make the light strip automatically change colors. Here we introduce the light strip using a built-in WS2812 driver. It mainly requires one set of 5V power supply and one signal wire to control the color and brightness changes of the light strip. The Spider motherboard provides a dedicated interface, and the wiring method is as follows.
 
-**注意：主板5V最大输出8A（当输出电流大于6A时，DCDC电路需要加散热片）。如果你的蜘蛛主板同时也在给树莓派供电，那么建议RGB灯带不要超过50个灯珠，以免主板电压不稳定，影响到打印。**
+**Note: The motherboard 5V maximum output is 8A (when the output current is greater than 6A, the DCDC circuit needs a heatsink). If your Spider motherboard is also powering a Raspberry Pi at the same time, it is recommended that the RGB light strip not exceed 50 LEDs, to avoid unstable motherboard voltage affecting printing.**
 
 ![img](/images/wps20.jpg)
 
-## 1.12 树莓派接线
+## 1.12 Raspberry Pi wiring
 
-蜘蛛主板提供了2种通讯方式与树莓派连接，一种是使用USB端口，一种是Uart端口，并且蜘蛛主板可以直接为树莓派供电，这样可以省去单独的5V开关电源。下面我来介绍下两种方式。
+The Spider motherboard provides 2 communication methods to connect to the Raspberry Pi: one is using the USB port, and the other is the Uart port. The Spider motherboard can directly power the Raspberry Pi, which can save a separate 5V switching power supply. Below I will introduce the two methods.
 
-### 1.12.1 蜘蛛主板与树莓派的连接--Uart
+### 1.12.1 Connection between Spider motherboard and Raspberry Pi--Uart
 
-可以使用蜘蛛主板包装内附送的线束，按下图所示方式将蜘蛛主板与树莓派进行连接，在主板接通24V电源的同时，树莓派也将得电启动。
+You can use the wiring harness included in the Spider motherboard package to connect the Spider motherboard to the Raspberry Pi as shown below. When the motherboard is connected to 24V power, the Raspberry Pi will also power on and start.
 
 ![img](/images/wps21.jpg)
 
-由于树莓派3、3B、4等型号，板载的蓝牙串口占用资源，需要通过下列操作，将串口功能重新映射到GPIO14和GPIO15后才可正常工作。
+Because models such as Raspberry Pi 3, 3B, and 4 have onboard Bluetooth serial ports occupying resources, you need to perform the following operations to remap the serial port function to GPIO14 and GPIO15 before it can work normally.
 
-**第一步**
+**Step 1**
 
-输入以下命令配置树莓派串口
+Enter the following command to configure the Raspberry Pi serial port
 
 sudo raspi-config
 
@@ -223,36 +227,36 @@ sudo raspi-config
 
 ![img](/images/wps22.jpg) 
 
-**第二步**
+**Step 2**
 
-输入以下命令编辑/boot/config.txt
+Enter the following command to edit /boot/config.txt
 
 sudo nano /boot/config.txt
 
-=> 在文件最底部添加如下字段 :
+=> Add the following field at the very bottom of the file:
 
 dtoverlay=pi3-disable-bt
 
-保存退出，输入一下命令重启
+Save and exit, then enter the following command to reboot
 
 sudo reboot
 
 ![img](/images/wps23.jpg) 
 
-**第三步**
+**Step 3**
 
 sudo nano /boot/cmdline.txt
 
-=>删除以下字段 ： "console=serial0,115200"或者 "console=ttyAMA0,115200"
+=>Delete the following field: "console=serial0,115200" or "console=ttyAMA0,115200"
 
 sudo reboot
 
-### 1.12.2 蜘蛛主板与树莓派的连接--USB
+### 1.12.2 Connection between Spider motherboard and Raspberry Pi--USB
 
-使用USB Type C线缆连接蜘蛛主板与树莓派，此时树莓派供电可以使用上述Uart线束，或者使用其他5V电源给树莓派供电也可。
+Use a USB Type C cable to connect the Spider motherboard to the Raspberry Pi. At this time, the Raspberry Pi can be powered using the above Uart wiring harness, or another 5V power supply can be used to power the Raspberry Pi.
 
-使用USB方式连接，不需要进行特别的软件设置。
+When using USB connection, no special software settings are required.
 
 ![img](/images/wps24.jpg)
 
-以上介绍了基本硬件的连接及注意事项，机友们在接线过程中一定要仔细看清楚，通电前再次的仔细检查，特别是供电的线束正确的连接，避免烧毁硬件，影响装机的心情。
+The above introduces the basic hardware connections and precautions. Enthusiasts must read carefully during the wiring process and check carefully again before powering on, especially that the power wiring harness is connected correctly, to avoid burning hardware and affecting the mood of the build.

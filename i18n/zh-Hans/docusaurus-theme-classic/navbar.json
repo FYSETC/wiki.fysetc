@@ -29,9 +29,6 @@
   "item.label.Guides & setup": {
     "message": "教程与配置"
   },
-  "item.label.Resources": {
-    "message": "补充资料"
-  },
   "item.label.Community & support": {
     "message": "社区与支持"
   },
@@ -58,11 +55,5 @@
   },
   "item.label.Tutorial": {
     "message": "教程"
-  },
-  "item.label.Getting started": {
-    "message": "快速开始"
-  },
-  "item.label.Additional resources": {
-    "message": "补充资料"
   }
 }

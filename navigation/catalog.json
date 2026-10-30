@@ -81,20 +81,12 @@
       "path": "category/guides"
     },
     {
-      "id": "getting-started",
-      "zh": "快速开始",
-      "en": "Getting started",
-      "icon": "folder",
-      "position": 120,
-      "path": "intro"
-    },
-    {
-      "id": "resources",
-      "zh": "补充资料",
-      "en": "Additional resources",
-      "icon": "folder",
-      "position": 130,
-      "path": "category/resources"
+      "id": "faq",
+      "zh": "常见问题",
+      "en": "FAQ",
+      "icon": "book",
+      "position": 116,
+      "path": "category/faq"
     }
   ]
 }

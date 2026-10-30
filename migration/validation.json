@@ -1,0 +1,30 @@
+{
+  "articlesPerLocale": [
+    131,
+    131
+  ],
+  "sourceDocuments": 138,
+  "mappedSourceArticles": 128,
+  "localImageReferences": 1826,
+  "externalImages": [],
+  "newImages": 458,
+  "newDuplicateImages": [],
+  "errors": [
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\1.-Introduction\\1.1.-Introduction.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\1.-Introduction\\1.1.-Introduction.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\1.-Introduction\\1.1.-Introduction.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\1.-Introduction\\1.1.-Introduction.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\2.-Assembly-Guide\\2.-Assembly-Guide.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\2.-Assembly-Guide\\2.-Assembly-Guide.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\2.-Assembly-Guide\\2.-Assembly-Guide.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\2.-Assembly-Guide\\2.-Assembly-Guide.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\3.-Electronics-Guide\\3.3-Head-Tool-Board.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\3.-Electronics-Guide\\3.3-Head-Tool-Board.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\3.-Electronics-Guide\\3.3-Head-Tool-Board.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\3.-Electronics-Guide\\3.3-Head-Tool-Board.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\5.-FAQ\\5.-FAQ.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\en\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\5.-FAQ\\5.-FAQ.md",
+    "Missing article: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\5.-FAQ\\5.-FAQ.md",
+    "Changed page URL: C:\\Users\\kg\\Desktop\\wiki.fysetc\\i18n\\zh-Hans\\docusaurus-plugin-content-docs\\current\\printer-kits\\Venture-XL\\5.-FAQ\\5.-FAQ.md"
+  ]
+}

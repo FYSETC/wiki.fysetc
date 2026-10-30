@@ -1,0 +1,880 @@
+{
+  "time": "2026-10-29T07:12:56.901Z",
+  "categories": [
+    {
+      "id": "268409",
+      "title": "Controllers",
+      "type": "1",
+      "slug": "Controllers",
+      "stringId": "KuoY8w5u",
+      "status": "1",
+      "children": [
+        {
+          "id": "721257",
+          "title": "CATALYST.K",
+          "type": "2",
+          "slug": "CATALYST-K",
+          "stringId": "MNT9Vlou",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "692297",
+          "title": "CHAMELEON X5",
+          "type": "2",
+          "slug": "CHAMELEON-X5",
+          "stringId": "vwHKrP9T",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278532",
+          "title": "SPIDER_V1-3_F446",
+          "type": "2",
+          "slug": "Spider",
+          "stringId": "kaUIjIb7",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "801248",
+          "title": "SPIDER_V3_H723",
+          "type": "2",
+          "slug": "SPIDERV3H7",
+          "stringId": "6arDqwbf",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278491",
+          "title": "FYSETC-SPIDER-KING",
+          "type": "2",
+          "slug": "FYSETCSPIDERKING",
+          "stringId": "AVEVbpG4",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278473",
+          "title": "CHEETAH",
+          "type": "2",
+          "slug": "CheetahBoard",
+          "stringId": "8aTkr2mM",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278472",
+          "title": "CHEETAH_V2.0",
+          "type": "2",
+          "slug": "CheetahBoardV20",
+          "stringId": "Lnt1zLg3",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278470",
+          "title": "CHEETAH_V3.0",
+          "type": "2",
+          "slug": "CheatahBoardV30",
+          "stringId": "1xsfinFa",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278477",
+          "title": "E4",
+          "type": "2",
+          "slug": "E4",
+          "stringId": "0LEO6hIH",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278487",
+          "title": "FYSETC_S6",
+          "type": "2",
+          "slug": "FYSETCS6",
+          "stringId": "HA1wb87v",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278483",
+          "title": "F6_V1.3",
+          "type": "2",
+          "slug": "F6V1-3",
+          "stringId": "8Nywl3wY",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278476",
+          "title": "BIG-DIPPER",
+          "type": "2",
+          "slug": "BIGDIPPER",
+          "stringId": "JYyguNUR",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278538",
+          "title": "STRIDEMAX_DUAL_FD_V2",
+          "type": "2",
+          "slug": "StrideMaxDualFDV2",
+          "stringId": "zKoz9jnO",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278466",
+          "title": "AIO_II",
+          "type": "2",
+          "slug": "AIOII-h0sQ",
+          "stringId": "aYV6iFOr",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268437",
+      "title": "Stepper Drivers",
+      "type": "1",
+      "slug": "drivers",
+      "stringId": "JIvehb5x",
+      "status": "1",
+      "children": [
+        {
+          "id": "278516",
+          "title": "QHV5160",
+          "type": "2",
+          "slug": "QHV5160",
+          "stringId": "mYhWKVCf",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278528",
+          "title": "SILENT_2209",
+          "type": "2",
+          "slug": "Silent2209",
+          "stringId": "bwJ3NNQT",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278522",
+          "title": "S2210",
+          "type": "2",
+          "slug": "S2210",
+          "stringId": "zAKkmzO7",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278547",
+          "title": "TMC2130",
+          "type": "2",
+          "slug": "TMC2130",
+          "stringId": "3dMqSxzZ",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278481",
+          "title": "EXT2160",
+          "type": "2",
+          "slug": "EXT2160",
+          "stringId": "nhedEqst",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278545",
+          "title": "TMC2208",
+          "type": "2",
+          "slug": "TMC2208",
+          "stringId": "dH9rkRIO",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278544",
+          "title": "TMC2226",
+          "type": "2",
+          "slug": "TMC2226",
+          "stringId": "VPW6F3kL",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278542",
+          "title": "TMC2225",
+          "type": "2",
+          "slug": "TMC2225",
+          "stringId": "LGiyAjcf",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278543",
+          "title": "TMC2208.zh",
+          "type": "2",
+          "slug": "TMC2208-zh",
+          "stringId": "Zk5lBel3",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278541",
+          "title": "TMC2130.zh",
+          "type": "2",
+          "slug": "TMC2130-zh",
+          "stringId": "sIBhvH5K",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278540",
+          "title": "TMC2100",
+          "type": "2",
+          "slug": "TMC2100",
+          "stringId": "P1ny8nSl",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278539",
+          "title": "TMC2100.zh",
+          "type": "2",
+          "slug": "TMC2100-zh",
+          "stringId": "VIYbTfkI",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278534",
+          "title": "ST820_V1.0",
+          "type": "2",
+          "slug": "ST820V1",
+          "stringId": "OQIuV12W",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278520",
+          "title": "S6128_V1.1.zh",
+          "type": "2",
+          "slug": "S6128V1-1-zh",
+          "stringId": "WV0Pk4k6",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278519",
+          "title": "S6128_V1.1",
+          "type": "2",
+          "slug": "S6128V1-1",
+          "stringId": "RlJhJzb1",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278518",
+          "title": "S5161_V1.1",
+          "type": "2",
+          "slug": "S5161V1-1",
+          "stringId": "HS3vb69o",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278517",
+          "title": "S5160_V1.2",
+          "type": "2",
+          "slug": "S5160V1-2",
+          "stringId": "MzSPe1JP",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278515",
+          "title": "S109_V1.1.zh",
+          "type": "2",
+          "slug": "S109V1-1-zh",
+          "stringId": "EwkEWCsg",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278514",
+          "title": "S109_V1.1",
+          "type": "2",
+          "slug": "S109V1-1",
+          "stringId": "XlKSVWBv",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278496",
+          "title": "LV8729_V1.0",
+          "type": "2",
+          "slug": "LV8729V1",
+          "stringId": "69eYj2Qj",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278493",
+          "title": "HV5160",
+          "type": "2",
+          "slug": "HV5160",
+          "stringId": "pcbiuvcn",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278486",
+          "title": "EXT2160.zh",
+          "type": "2",
+          "slug": "EXT2160-zh",
+          "stringId": "IRUnmWjW",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268439",
+      "title": "Modules",
+      "type": "1",
+      "slug": "modules",
+      "stringId": "me4W4ri3",
+      "status": "1",
+      "children": [
+        {
+          "id": "713094",
+          "title": "H36 Combo V2",
+          "type": "2",
+          "slug": "H36-Combo-V2",
+          "stringId": "2AiSKcsy",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "721278",
+          "title": "Catalyst.K ToolHead",
+          "type": "2",
+          "slug": "Catalyst-K-ToolHead",
+          "stringId": "Yo6J22mg",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278525",
+          "title": "SB_Combo_V2",
+          "type": "2",
+          "slug": "SBComboV2",
+          "stringId": "Kln0qWzq",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "337409",
+          "title": "H36 Combo",
+          "type": "2",
+          "slug": "H36-Combo",
+          "stringId": "LiN1rCKj",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "444328",
+          "title": "Hexa Distro Fusion",
+          "type": "2",
+          "slug": "hexa_distro_fusion",
+          "stringId": "MsYx9Vdt",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278524",
+          "title": "SB CAN ToolHead.zh",
+          "type": "2",
+          "slug": "SB-CAN-ToolHead-zh",
+          "stringId": "G0x6yPep",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278523",
+          "title": "SB CAN ToolHead",
+          "type": "2",
+          "slug": "SB-CAN-ToolHead",
+          "stringId": "SKr76vZp",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278548",
+          "title": "UCAN",
+          "type": "2",
+          "slug": "UCAN",
+          "stringId": "ikHSqeiw",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278498",
+          "title": "M36_HUB_V1",
+          "type": "2",
+          "slug": "M36HUBV1",
+          "stringId": "PBZRSJAW",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278506",
+          "title": "NanoDLP_Shield_V1.1.zh",
+          "type": "2",
+          "slug": "NanoDLPShieldV1-1-zh",
+          "stringId": "sMhgvw6m",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278505",
+          "title": "NanoDLP_Shield_V1.1",
+          "type": "2",
+          "slug": "NanoDLPShieldV1-1",
+          "stringId": "MkwxmpSc",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278485",
+          "title": "LED_Driver_V1.0.zh",
+          "type": "2",
+          "slug": "FYSBoostLEDDriverV1-zh",
+          "stringId": "sz8ZYBs8",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278484",
+          "title": "LED_Driver_V1.0",
+          "type": "2",
+          "slug": "FYSBoostLEDDriverV1",
+          "stringId": "1a5yFKjj",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268440",
+      "title": "Sensors",
+      "type": "1",
+      "slug": "sensors",
+      "stringId": "Z4pUUhYD",
+      "status": "1",
+      "children": [
+        {
+          "id": "278513",
+          "title": "PT100_STICK",
+          "type": "2",
+          "slug": "PT100STICK",
+          "stringId": "93Y986Jb",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268441",
+      "title": "Wireless",
+      "type": "1",
+      "slug": "wireless",
+      "stringId": "dDPzRHbE",
+      "status": "1",
+      "children": [
+        {
+          "id": "340298",
+          "title": "SD WiFi Pro",
+          "type": "2",
+          "slug": "SD-WiFi-Pro",
+          "stringId": "JsWJtmyk",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268438",
+      "title": "Mechanical Parts",
+      "type": "1",
+      "slug": "mechanical",
+      "stringId": "EpwRmZVB",
+      "status": "1",
+      "children": [
+        {
+          "id": "278529",
+          "title": "Sherpa-extruder",
+          "type": "2",
+          "slug": "Sherpaextruder",
+          "stringId": "u9gXP7kG",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278502",
+          "title": "Mk8 Grey Extruder",
+          "type": "2",
+          "slug": "Mk8-Grey-Extruder",
+          "stringId": "fNGZOotc",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278501",
+          "title": "Metal BMG right hand extruder",
+          "type": "2",
+          "slug": "Metal-BMG-right-hand-extruder",
+          "stringId": "G8KuTGD5",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278500",
+          "title": "Metal BMG Left  hand extruder",
+          "type": "2",
+          "slug": "Metal-BMG-Left-hand-extruder",
+          "stringId": "NvGy0jNA",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278469",
+          "title": "Black BMG Extruder",
+          "type": "2",
+          "slug": "Black-BMG-Extruder",
+          "stringId": "xvXGpX5d",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "278550",
+      "title": "Upgrade Kits",
+      "type": "1",
+      "slug": "upgrade",
+      "stringId": "vf0ycVf5",
+      "status": "1",
+      "children": [
+        {
+          "id": "278511",
+          "title": "Prusa mini BMG V1 Extruder",
+          "type": "2",
+          "slug": "Prusa-mini-BMG-V1-Extruder",
+          "stringId": "8uZojDLP",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278510",
+          "title": "PRUSA-MK3S-Bear-Upgrade-kit",
+          "type": "2",
+          "slug": "PRUSAMK3SBearUpgradekit",
+          "stringId": "Cw4SLMIG",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278482",
+          "title": "Ender3 Y-axis Belt Tensioner",
+          "type": "2",
+          "slug": "Ender3-Yaxis-Belt-Tensioner",
+          "stringId": "UGQ25KPP",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278480",
+          "title": "Ender 5 3D printer Direct Drive Extruder Plate",
+          "type": "2",
+          "slug": "Ender-5-3D-printer-Direct-Drive-Extruder-Plate",
+          "stringId": "YHOMjtbT",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278479",
+          "title": "Ender3 belt double Z upgrade kit",
+          "type": "2",
+          "slug": "Ender3-belt-double-Z-upgrade-kit",
+          "stringId": "SB8gzuTf",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278478",
+          "title": "Ender 3 3D printer Direct Drive Extruder Plate",
+          "type": "2",
+          "slug": "Ender-3-3D-printer-Direct-Drive-Extruder-Plate",
+          "stringId": "1Xj0svFH",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278475",
+          "title": "CREALITY X-axis Belt Tensioner",
+          "type": "2",
+          "slug": "CREALITY-Xaxis-Belt-Tensioner",
+          "stringId": "zTU1aeQV",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278474",
+          "title": "CREALITY  CR10 Y-axis Belt Tensioner",
+          "type": "2",
+          "slug": "CREALITY-CR10-Yaxis-Belt-Tensioner",
+          "stringId": "sDgmP0yC",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "663740",
+          "title": "FLASHFORGE_AD5X Enclosure Kit",
+          "type": "2",
+          "slug": "FLASHFORGEAD5X-3D-Printer-Enclosure-Kit",
+          "stringId": "dnLbMRIR",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "692197",
+          "title": "FYSETC-QuattroBox",
+          "type": "2",
+          "slug": "FYSETCQuattroBox",
+          "stringId": "ZOPDUQeF",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "719833",
+          "title": "Adventurer_AD5M_AD5M Pro_AD5X Light Board",
+          "type": "2",
+          "slug": "AdventurerAD5MAD5M-ProLight-Board-Bracket",
+          "stringId": "crzjoPKr",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "719969",
+          "title": "Adventurer AD5M_AD5M Pro_AD5X_Series Camera",
+          "type": "2",
+          "slug": "AdventurerAD5MAD5M-ProSeries-Universal-Camera",
+          "stringId": "dZfH4WpC",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "720090",
+          "title": "X1/P1S Door Hinge Upgrade",
+          "type": "2",
+          "slug": "X1-P1S-door-hinge",
+          "stringId": "mqY5Ogpj",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "762286",
+          "title": "Creality K1 MAX 8mm Graphite Build Plate & Heated Bed",
+          "type": "2",
+          "slug": "Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed",
+          "stringId": "SiULNq1b",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "778438",
+          "title": "90° Heat Insert Adaptor",
+          "type": "2",
+          "slug": "90-Angle-Connector-for-Hot-Melt-Nut-Press-Head",
+          "stringId": "4iQV4ckn",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "829892",
+          "title": "Sparkx i7 LED Upgrade",
+          "type": "2",
+          "slug": "Sparkxi7LedSystem",
+          "stringId": "pz1Ocln9",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "853988",
+          "title": "PSF Feedback Sensor",
+          "type": "2",
+          "slug": "FC-Product-Manual",
+          "stringId": "XqLvsdNH",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268410",
+      "title": "Displays",
+      "type": "1",
+      "slug": "displays",
+      "stringId": "r9ldmtRZ",
+      "status": "1",
+      "children": [
+        {
+          "id": "278537",
+          "title": "TFT81050",
+          "type": "2",
+          "slug": "TFT81050",
+          "stringId": "yWgFhJuV",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278503",
+          "title": "Mini12864_Panel",
+          "type": "2",
+          "slug": "Mini12864Panel",
+          "stringId": "FIl7Kkto",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278490",
+          "title": "Generic_12864_Panel",
+          "type": "2",
+          "slug": "Generic12864Panel",
+          "stringId": "qnB1JLc1",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278488",
+          "title": "FYS_Touch_Panel",
+          "type": "2",
+          "slug": "FYSTouchPanel",
+          "stringId": "7nA0Ql3Y",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "886128",
+          "title": "Raspberry Pi 5\" DSI Touch Screen MIPI LCD V1.1",
+          "type": "2",
+          "slug": "Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1-1",
+          "stringId": "APwoi6uM",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "927370",
+          "title": "FYSETC Paneldue 5i/7i",
+          "type": "2",
+          "slug": "FYSETC-Paneldue-5i-7i",
+          "stringId": "xd4iHYGl",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268442",
+      "title": "Tutorial",
+      "type": "1",
+      "slug": "tutorial",
+      "stringId": "P5Gfr4uY",
+      "status": "1",
+      "children": [
+        {
+          "id": "278535",
+          "title": "Spider_Software_Guide.zh",
+          "type": "2",
+          "slug": "SpiderSoftwareGuide-zh",
+          "stringId": "CuqUvc91",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278531",
+          "title": "Spider_Hardware_Guide.zh",
+          "type": "2",
+          "slug": "SpiderHardwareGuide-zh",
+          "stringId": "jN8zMeK0",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278497",
+          "title": "Manual_for_Mini_panel_on_SKR",
+          "type": "2",
+          "slug": "ManualforMinipanelonSKR",
+          "stringId": "jcddsVDY",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278492",
+          "title": "How_to_Configure_TMC2208_on_FYSETC-F6-Board",
+          "type": "2",
+          "slug": "HowtoConfigureTMC2208onFYSETCF6Board",
+          "stringId": "FsC3LGEz",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278489",
+          "title": "How_to_Configure_TMC2130_on_FYSETC-F6-Board",
+          "type": "2",
+          "slug": "HowtoConfigureTMC2130onFYSETCF6Board",
+          "stringId": "vNMYoIQI",
+          "status": "1",
+          "children": 0
+        },
+        {
+          "id": "278467",
+          "title": "BIQU12864_On_Spider",
+          "type": "2",
+          "slug": "BIQU12864OnSpider",
+          "stringId": "O6SaYr0w",
+          "status": "1",
+          "children": 0
+        }
+      ]
+    },
+    {
+      "id": "268444",
+      "title": "Cables",
+      "type": "1",
+      "slug": "cables",
+      "stringId": "4zzzw2xh",
+      "status": "1",
+      "children": []
+    },
+    {
+      "id": "268443",
+      "title": "Others",
+      "type": "1",
+      "slug": "others",
+      "stringId": "4BxAcKNN",
+      "status": "1",
+      "children": []
+    }
+  ],
+  "source": "https://wiki.fysetc.com/",
+  "excludedCategory": "3D Printer Kits"
+}

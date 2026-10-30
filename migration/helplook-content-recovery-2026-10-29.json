@@ -1,0 +1,164 @@
+{
+  "date": "2026-10-29",
+  "sourceRoot": "C:\\Users\\kg\\Desktop\\helplook-new-version\\docs",
+  "backupRoot": "migration/helplook-content-audit-backup-2026-10-29",
+  "findings": [
+    "SPIDER retained the earlier Wiki body and omitted v3.0 wiring, CAN and pinout sections.",
+    "English CHAMELEON-X5.md was a zero-byte file; Chinese remained intact.",
+    "Other retained Wiki bodies contained older BIG-DIPPER, H36 Combo, SB Combo V2, QHV5160, TMC2130 and M36 data; H42 command placeholders were hidden by HTML parsing."
+  ],
+  "preservedChineseChameleon": {
+    "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+    "sha256": "54f2f4409059400fae5c3e2fabf17aacff8d08da59b45594427cbecbab0c10f3"
+  },
+  "files": [
+    {
+      "source": "Controllers/SPIDER_V1-3_F446.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/SPIDER_V1-3_F446.md",
+      "beforeSha256": "bc14973c2f0ca8f525263670ab678e1bd313d35747f28ca0c0fd4fa07840abe1",
+      "afterSha256": "b93324dd3e9c116a889a4bc93d656489d57812de23c516a8102def7f96f343b6",
+      "bytes": 36791
+    },
+    {
+      "source": "Controllers/SPIDER_V1-3_F446.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/SPIDER_V1-3_F446.md",
+      "beforeSha256": "6a207bcb11141fdbab5c7fc9857157b9bb2a5d2538983fa5f84192e9e4f86764",
+      "afterSha256": "b93324dd3e9c116a889a4bc93d656489d57812de23c516a8102def7f96f343b6",
+      "bytes": 36791
+    },
+    {
+      "source": "Controllers/CHAMELEON X5.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "beforeSha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "afterSha256": "b5c9e18159bc577042d5a97a5e31868fbe7d6bf31e286193ccfb9a3fbd028742",
+      "bytes": 8405
+    },
+    {
+      "source": "Controllers/BIG-DIPPER.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/BIG-DIPPER.md",
+      "beforeSha256": "3fe32c8fe52447fbb8a79d164f6b1c6754ec4294eb7086d15ffaa0d19f8f272b",
+      "afterSha256": "ac9545b41a438837e2abf52645d0f6b6db05789a21359888cffb2c58448155ad",
+      "bytes": 45038,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Controllers/BIG-DIPPER.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/BIG-DIPPER.md",
+      "beforeSha256": "ff6743f74c4e94321f81ea644d0961092bd0a755937a2976828aada136e4e120",
+      "afterSha256": "c52b98e5d81592e2bc059f0b9800fc909dfa88aca4b6ae0754043d7de237175b",
+      "bytes": 45045,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/H36 Combo.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H36_Combo.md",
+      "beforeSha256": "b1e5e3ee5d29aad56788d8c57ec6c7f802f940b0ed6c0f61aae09af7084de8e2",
+      "afterSha256": "4bcbf1911e061d88d63a6fd4372a61f6f13848333c325f466c8dfbcdc0172031",
+      "bytes": 20322,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/H36 Combo.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H36_Combo.md",
+      "beforeSha256": "b1e5e3ee5d29aad56788d8c57ec6c7f802f940b0ed6c0f61aae09af7084de8e2",
+      "afterSha256": "4bcbf1911e061d88d63a6fd4372a61f6f13848333c325f466c8dfbcdc0172031",
+      "bytes": 20322,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/SB_Combo_V2.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/SB_Combo_V2.md",
+      "beforeSha256": "5189ba9ba962e81e6af2718265a94f4be97d3099b78cf386f1394fe7ac95e0f9",
+      "afterSha256": "a905f0c13f7660ad2a0f272892797886226e1f4c3ee80334a28f35a3a35200a9",
+      "bytes": 16733,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/SB_Combo_V2.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/SB_Combo_V2.md",
+      "beforeSha256": "5189ba9ba962e81e6af2718265a94f4be97d3099b78cf386f1394fe7ac95e0f9",
+      "afterSha256": "a905f0c13f7660ad2a0f272892797886226e1f4c3ee80334a28f35a3a35200a9",
+      "bytes": 16733,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Stepper Drivers/QHV5160.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/QHV5160.md",
+      "beforeSha256": "f6b597f6f5904c5fb737e6af632d20daf00afef4e78e5c89d9a764f757349987",
+      "afterSha256": "af924fd00c730a9d4ed9499b58140d037084ad6feed50a5553e5d313113922cd",
+      "bytes": 18558,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Stepper Drivers/QHV5160.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/QHV5160.md",
+      "beforeSha256": "f6b597f6f5904c5fb737e6af632d20daf00afef4e78e5c89d9a764f757349987",
+      "afterSha256": "af924fd00c730a9d4ed9499b58140d037084ad6feed50a5553e5d313113922cd",
+      "bytes": 18558,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Stepper Drivers/TMC2130.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/TMC2130.md",
+      "beforeSha256": "469a81aac3401e517ac11709570ff85cab71e9146643ec323b7070ba22e94256",
+      "afterSha256": "26b024d9facd919e84d7f4c289cf4302d567a57539d16b692f6d699fc4381db2",
+      "bytes": 5299,
+      "calculatorPreserved": true
+    },
+    {
+      "source": "Stepper Drivers/TMC2130.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/TMC2130.md",
+      "beforeSha256": "469a81aac3401e517ac11709570ff85cab71e9146643ec323b7070ba22e94256",
+      "afterSha256": "26b024d9facd919e84d7f4c289cf4302d567a57539d16b692f6d699fc4381db2",
+      "bytes": 5299,
+      "calculatorPreserved": true
+    },
+    {
+      "source": "Modules/M36_HUB_V1.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/M36_HUB_V1.md",
+      "beforeSha256": "2a98d741b21cbd4984379b2729da6cbb1247fe37d952c25ed7ff397329334b7e",
+      "afterSha256": "b1bc37531a7c94be1dc17e8f55fe8e2f5e9af6f38ac608e90c4c653ecb4c43b5",
+      "bytes": 7604,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/M36_HUB_V1.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/M36_HUB_V1.md",
+      "beforeSha256": "2a98d741b21cbd4984379b2729da6cbb1247fe37d952c25ed7ff397329334b7e",
+      "afterSha256": "b1bc37531a7c94be1dc17e8f55fe8e2f5e9af6f38ac608e90c4c653ecb4c43b5",
+      "bytes": 7604,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/H42_V1.0.md",
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H42_V1.0.md",
+      "beforeSha256": "eb2e613329e14895c5e9f649d00dd111e0f15520ce2ac2b5ffc51545e77165a5",
+      "afterSha256": "c35d148e7f6f059fbf4bc673bff629698730cb67add0aaee82b6deca7664567d",
+      "bytes": 11267,
+      "calculatorPreserved": false
+    },
+    {
+      "source": "Modules/H42_V1.0.md",
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H42_V1.0.md",
+      "beforeSha256": "eb2e613329e14895c5e9f649d00dd111e0f15520ce2ac2b5ffc51545e77165a5",
+      "afterSha256": "c35d148e7f6f059fbf4bc673bff629698730cb67add0aaee82b6deca7664567d",
+      "bytes": 11267,
+      "calculatorPreserved": false
+    }
+  ],
+  "missingImages": [],
+  "cmsSafetyFix": {
+    "project": "fysetc-cms",
+    "testsPassed": 19,
+    "emptyMarkdownOverwriteBlocked": true,
+    "abortFailedWrites": true,
+    "exactIncidentTriggerKnown": false,
+    "requiresCmsPageRefresh": true
+  },
+  "validation": {
+    "report": "migration/content-recovery-validation.json",
+    "devServer": "http://localhost:3000/wiki.fysetc/",
+    "startedAnotherWikiServer": false,
+    "zeroByteLocaleFiles": 0
+  }
+}

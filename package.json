@@ -20,21 +20,23 @@
     "prebuild": "node scripts/sync-navigation.mjs",
     "postbuild": "node scripts/legacy-english-redirects.mjs",
     "nav:sync": "node scripts/sync-navigation.mjs",
-    "test:navigation": "node --test scripts/folder-navigation.test.mjs"
+    "test:navigation": "node --test scripts/folder-navigation.test.mjs",
+    "test:markdown": "node --test scripts/markdown-line-breaks.test.mjs"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
     "@docusaurus/faster": "3.10.2",
     "@docusaurus/preset-classic": "3.10.2",
+    "@easyops-cn/docusaurus-search-local": "0.55.0",
     "@mdx-js/react": "^3.0.0",
     "clsx": "^2.0.0",
+    "katex": "0.16.47",
     "prism-react-renderer": "^2.3.0",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
-    "@easyops-cn/docusaurus-search-local": "0.55.0",
-    "remark-math": "^6.0.0",
     "rehype-katex": "^7.0.1",
-    "katex": "0.16.47",
+    "remark-breaks": "^4.0.0",
+    "remark-math": "^6.0.0",
     "yaml": "^2.8.1"
   },
   "devDependencies": {

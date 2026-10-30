@@ -1,9 +1,9 @@
 ---
-sidebar_position: 30
 id: Spider_Hardware_Guide
-title: Spider hardware guide
-description: "Spider hardware guide: original FYSETC documentation and related references."
+title: 蜘蛛硬件指南
 slug: /Spider_Hardware_Guide
+sidebar_position: 20
+description: Spider 硬件指南：原始 FYSETC 文档及相关参考资料。
 source_file: Spider_Hardware_Guide.zh.md
 source_language: zh
 ---
@@ -123,6 +123,7 @@ source_language: zh
 ### 1.4.2 步进驱动器的安装
 
 将驱动器附赠的散热片贴在**步进驱动器铜箔的顶部**，有条件的话，建议使用风扇对驱动器进行辅助散热，否则你可能会打印件错层等其他问题。这一点对于TMC 2208s尤为重要，因为它们具有更高的RDSon，在相同的电流下会产生更多的热量。
+
 ![img](/images/wps9.jpg)
 
 **注意！！！**
@@ -134,6 +135,7 @@ source_language: zh
 ### 1.4.3 步进电机的接线
 
 3D打印机一般使用的都是两相步进电机，其内部是由两组线圈绕制而成，原理图如下。使用万用表蜂鸣档测量步进电机的4根线，同相线圈的两根线会发出声音，不同相不会有声音。插座上1/2为一相，3/4为另外一相，交换两相的位置可以变换电机转动方向。
+
 ![img](/images/wps11.jpg)
 
 将XY电机、挤出机电机和4Z的电机（共7个电机）插入对应的插座（除X、Y电机有48V输出需求外，电机插座顺序和位置皆没有特别要求，但是配置的时候需要正确设置每个电机驱动的对应Pin脚）。
@@ -182,7 +184,9 @@ Voron2.4官方建议使用的是PL08N传感器来进行热床调平，由于PL08
 
 **注意：BL-Touch是5V供电的器件，必须要按上图将Z+的供电跳线插入5V端。错误的电压设置可能会永久性损坏主板及传感器，切记切记切记！！！**
 
-## ![img](/images/wps17.jpg) ![img](/images/wps18.jpg)
+## ![img](/images/wps17.jpg)
+
+![img](/images/wps18.jpg)
 
 ## 1.10 Mini12864接线
 

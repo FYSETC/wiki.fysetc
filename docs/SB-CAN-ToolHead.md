@@ -83,6 +83,7 @@ STLs 可以在国内 git 站点找到：[FYSETC/FYSETC-SB-TH-CAN - FYSETC-SB-TH-
 ![SB CAN ToolHead](/images/SB%20CAN%20ToolHead_Wiring.png)
 
 ![](/images/SB-CAN-TH.Wiring.png)
+
 ####  V1.3
 
 ![SB_CAN_ToolHead_V13_Wiring](/images/SB_CAN_ToolHead_V13_Wiring.png)

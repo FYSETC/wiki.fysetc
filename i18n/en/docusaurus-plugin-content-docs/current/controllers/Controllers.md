@@ -1,14 +1,13 @@
 ---
-sidebar_position: 10
-title: Controllers Introduction
-nointro: null
-comment: false
 id: Controllers
-description: Find product introductions, wiring references, and configuration
-  guides for Spider, Cheetah, F6, and other controllers.
+title: Controllers Introduction
 slug: /Controllers
+sidebar_position: 160
+description: Find product introductions, wiring references, and configuration guides for Spider, Cheetah, F6, and other controllers.
 source_file: Controllers.md
 source_language: en
+comment: false
+nointro: null
 ---
 
 ---

@@ -148,11 +148,15 @@ RGB: PC14
 ## CAN / USB Switcher 
 
 ![img](/images/SB_Combo_V2_switcher.png)
+
 - 如图所示，绿色标记拨动开关负责输入CAN / USB切换，处于XT30连接器上；
 - 橙色标记拨动开关负责标记为USB2的连接器（MX1.25-4P）处 CAN / USB切换。
 - As shown in the figure, the green-marked toggle switch is responsible for the input CAN/USB switching, which is located on the XT30 connector; the orange-marked toggle - switch is responsible for the CAN/USB switching at the connector marked as USB2 (MX1.25-4P).
 
-## Jumpers：![image-20240902163114843](/images/SB_Combo_V2_jumpers.png)
+## Jumpers：
+
+![image-20240902163114843](/images/SB_Combo_V2_jumpers.png)
+
 IO.0+1和IO.2可以通过跳线帽进行供电电压选择，如图所示，左侧两个Pin连接在一起为5V，右侧两个Pin连接在一起为24V。
 
 IO.0+1 and IO.2 can select the power supply voltage through the jumper cap. As shown in the figure, the two pins on the left are connected together for 5V, and the two pins on the right are connected together for 24V.
@@ -205,7 +209,9 @@ TAP
 ## 固件配置和编译
 
 ### Katapult Bootloader
+
 ![SB_Combo_V2_katakulpt_menuconfig_8k_CAN](/images/SB_Combo_V2_katakulpt_menuconfig_8k_CAN.png)
+
 ![SB_Combo_V2_katakulpt_menuconfig_8k_USB](/images/SB_Combo_V2_katakulpt_menuconfig_8k_USB.png)
 
 ### Klipper

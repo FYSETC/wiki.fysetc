@@ -1,10 +1,9 @@
 ---
-sidebar_position: 20
 id: Sherpa-extruder
-title: Annex-Engineering Sherpa extruder
-description: FYSETC manufacturing information of Sherpa series extruder designed
-  by Annex Engineering
+title: Sherpa-extruder
 slug: /Sherpa-extruder
+sidebar_position: 10
+description: FYSETC manufacturing information of Sherpa series extruder designed by Annex Engineering
 source_file: Sherpa-extruder.md
 source_language: en
 ---

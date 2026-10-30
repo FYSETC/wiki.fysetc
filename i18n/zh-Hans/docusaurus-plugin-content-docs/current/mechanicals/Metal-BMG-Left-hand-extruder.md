@@ -1,62 +1,61 @@
 ---
-sidebar_position: 50
 id: Metal-BMG-Left-hand-extruder
-title: Metal BMG Left  hand extruder
-description: Product name：Metal BMG Left hand extruder
+title: 金属BMG左手挤出机
 slug: /Metal-BMG-Left-hand-extruder
+sidebar_position: 40
+description: 产品名称：金属BMG左手挤出机
 source_file: Metal BMG Left  hand extruder.md
 source_language: en
 ---
 
-# Metal BMG Left  hand extruder
+# 金属 BMG 左手挤出机
 
-## Product Introduction
+## 产品介绍
 
-![Metal BMG Left  hand extruder](/images/Metal%20BMG%20Left%20%20hand%20extruder.jpg)
+![金属 BMG 左手挤出机](/images/Metal%20BMG%20Left%20%20hand%20extruder.jpg)
 
-Product name：Metal BMG Left  hand extruder
+产品名称：金属 BMG 左手挤出机
 
-Material：Aluminum alloy
+材质：铝合金
 
-Weight:189.2
+重量：189.2
 
-## Applicable machine：
-CR10 、Ender3 and other 3D printers .
+## 适用机型：
+CR10 、Ender3 及其他 3D 打印机。
 
-## Features
+## 特点
 
-- Provide greater torque for the extruder
-- Improve the surface quality of printed matter
-- Metal material, strong and stable, long service life
-- Easy to install and easy to remove.
+- 为挤出机提供更大的扭矩
+- 改善打印件表面质量
+- 金属材质，坚固稳定，使用寿命长
+- 易于安装，易于拆卸。
 
-## Assembly steps
+## 组装步骤
 
-You can watch  the assembly video（待上传）.
+您可以观看组装视频（待上传）。
 
-## Attention
+## 注意事项
 
-Refer to the assembly tutorial to avoid installation errors.
+请参考组装教程，以避免安装错误。
 
-## FAQ
+## 常见问题
 
-1. Q: How to install to my 3D printer? A: You can watch  the assembly video（待上传）.
-2. Q：Does the installation require additional printed fixtures?  A：Yes, some models need to be used.
-
-## Attachments
+1. 问：如何安装到我的 3D 打印机上？ 答：您可以观看组装视频（待上传）。
+2. 问：安装是否需要额外的打印固定件？ 答：是的，部分型号需要使用。
 
 
 
-## Shop
 
-------
+## 商店
 
-- [Aliexpress](https://www.aliexpress.com/item/33051147571.html?spm=2114.12010615.8148356.1.63c875fd4i1KEX).
 
-## Tech Support
 
-facebook group：https://www.facebook.com/groups/197476557529090/
+- [速卖通](https://www.aliexpress.com/item/33051147571.html?spm=2114.12010615.8148356.1.63c875fd4i1KEX)。
 
-Tech Support Email： hunter@fysetc.com 
+## 技术支持
 
-Forum：https://forum.fysetc.com/
+Facebook 群组：https://www.facebook.com/groups/197476557529090/
+
+技术支持邮箱： hunter@fysetc.com 
+
+论坛：https://forum.fysetc.com/

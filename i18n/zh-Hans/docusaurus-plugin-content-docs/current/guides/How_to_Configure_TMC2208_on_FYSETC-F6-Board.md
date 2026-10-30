@@ -1,26 +1,24 @@
 ---
-sidebar_position: 50
 id: How_to_Configure_TMC2208_on_FYSETC-F6-Board
-title: How to Configure TMC2208 on FYSETC F6 Board
-description: "For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper
-  library , you can find it here : https://github.com/FYSETC/TMC2208Stepper.
-  Download the library and copy the TMC2208 Stepper folder…"
+title: 如何在FYSETC-F6板上配置TMC2208
 slug: /How_to_Configure_TMC2208_on_FYSETC-F6-Board
+sidebar_position: 40
+description: 对于FYSETC F6主板，我们上传了一个仅适用于F6主板的TMC2208步进电机库，您可以在这里找到：https://github.com/FYSETC/TMC2208Stepper。下载该库并复制TMC2208 Stepper文件夹…
 source_file: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
 source_language: en
 ---
 
-# Configure TMC2208
+# 配置 TMC2208
 
-## Step1:Download TMC2208 Stepper Library
----
+## 步骤1：下载 TMC2208 步进电机库
 
-For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper library , you can find it here : https://github.com/FYSETC/TMC2208Stepper. Download the library and  copy the TMC2208 Stepper folder to your Arduino software library to the Arduino library directory (mostly:C:\Program Files (x86)\arduino-1.8.5\libraries ).
 
-## Step2:Modify Marlin Firmware TMC2208 Part Code
----
+对于 FYSETC F6 主板，我们上传了一个仅适用于 F6 主板的 TMC2208 步进电机库，您可以在这里找到：https://github.com/FYSETC/TMC2208Stepper。下载该库并将 TMC2208 Stepper 文件夹复制到您的 Arduino 软件库目录中（通常是：C:\Program Files (x86)\arduino-1.8.5\libraries）。
 
-Open stepper_indirection.cpp file , modify it as below shows.
+## 步骤2：修改 Marlin 固件 TMC2208 部分代码
+
+
+打开 stepper_indirection.cpp 文件，按如下所示进行修改。
 
 ```c++
 //#define _TMC2208_DEFINE_SOFTWARE(ST) SoftwareSerial stepper##ST##_serial = SoftwareSerial(ST##_SERIAL_RX_PIN, ST##_SERIAL_TX_PIN); \
@@ -30,16 +28,16 @@ Open stepper_indirection.cpp file , modify it as below shows.
 TMC2208Stepper stepper##ST(&stepper##ST##_serial, false)
 ```
 
-Just comment the old defines and change it to the added defines.
+只需注释掉旧的宏定义，并将其更改为新增的宏定义。
 
-And then add below two lines to tmc2208_init function,
+然后在 tmc2208_init 函数中添加以下两行，
 
 ```c++
 st.beginSerial(115200);   // Start software serial
 st.push();             	  // Reset registers ，default: Use PDN/UART pin for communication
 ```
 
-and the function become:
+该函数变为：
 
 ```c++
 // Use internal reference voltage for current calculations. This is the default.
@@ -84,10 +82,10 @@ and the function become:
 
  
 
-## Step3:Change the Configuration in Configuration_adv.h File
----
+## 步骤3：修改 Configuration_adv.h 文件中的配置
 
-Uncomment the TMC2208 configuration and choose the axis that your 3d printer have, like our test machine we will do like this:
+
+取消注释 TMC2208 配置，并选择您的 3D 打印机所拥有的轴，例如我们的测试机器，我们将这样操作：
 
 ```c++
 /**
@@ -130,9 +128,8 @@ Uncomment the TMC2208 configuration and choose the axis that your 3d printer hav
   //#define E4_IS_TMC2208
 ```
 
-As our test machine have X, Y, Z and E0 axis.
+因为我们的测试机器有 X、Y、Z 和 E0 轴。
 
-## Tech Support
+## 技术支持
 
----
-Please submit any technical issue into our [forum](http://forum.fysetc.com/)
+请将任何技术问题提交到我们的[论坛](http://forum.fysetc.com/)

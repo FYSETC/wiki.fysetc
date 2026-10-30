@@ -1,11 +1,9 @@
 ---
-sidebar_position: 30
 id: Mini12864_Panel
-title: Mini12864 Panel
-description: This is a opensouce, cheap, with RGB indicator, common to marlin's
-  display, supports offline printing, resolution is 12864, display area is
-  2.4'', SD card holder can be side or vertical, convenient…
+title: Mini12864_Panel
 slug: /Mini12864_Panel
+sidebar_position: 20
+description: This is a opensouce, cheap, with RGB indicator, common to marlin's display, supports offline printing, resolution is 12864, display area is 2.4'', SD card holder can be side or vertical, convenient…
 source_file: Mini12864_Panel.md
 source_language: en
 ---
@@ -46,17 +44,18 @@ V2.1 with  two RGB LEDs around the encoder，the  back-light is  RGB  and contro
 
 
 ## Typical  Wiring
+
 ![](/images/Mini12864-bottom.svg)
 
 ![](/images/Mini12864-EXP1.svg)
 
 ![](/images/Mini12864-EXP2.svg)
 
-## 注意/NOTICE:
+## NOTICE:
 
 ![](/images/Spider_notice.png)
 
-    为了兼容某些主板，如RAMPS1.4，FYSETC mini12864 设置了 RST(R3) 和 KILL(R4) 的可选择电阻。目前，有些主板（S6/Spider）将 KILL 换成 5V，此时，请确认 mini12864 上 R4处于空贴状态，否则按下屏幕上的按钮会致使 5V 与 GND 短路，长时间操作会导致主板损坏。<br/>   In order to be compatible with some motherboards, such as RAMPS1.4, mini12864 is equipped with RST (R3) and KILL (R4) optional resistors. At present, some motherboards (S6/Spider) change the KILL to 5V. At this time, please make sure that R4 on the mini12864 is in the empty state, otherwise pressing the button on the screen will cause a short circuit between 5V and GND, and long-term operation will cause the motherboard to be damaged.
+In order to be compatible with some motherboards, such as RAMPS1.4, mini12864 is equipped with RST (R3) and KILL (R4) optional resistors. At present, some motherboards (S6/Spider) change the KILL to 5V. At this time, please make sure that R4 on the mini12864 is in the empty state, otherwise pressing the button on the screen will cause a short circuit between 5V and GND, and long-term operation will cause the motherboard to be damaged.
 
 ## Firmware config
 
@@ -189,9 +188,9 @@ You can find the schematics for the three versions on [github](https://github.co
 **For detailed dimensions please check dwg/step file on [github](https://github.com/FYSETC/Mini-12864-Panel).**
 
 ## Shop
----
+
 - LCD (link not supplied in source)
 
 ## Tech Support
----
+
 Please submit any technical issue into our [forum](http://forum.fysetc.com/) or [facebook](https://www.facebook.com/groups/197476557529090/).

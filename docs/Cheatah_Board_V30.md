@@ -87,8 +87,11 @@ Use SSH software to connect to your Raspberry Pi and enter the following command
 lsusb
 ```
 You should see the device as shown below:
+
 ![Image01.png](/images/Image01.png)
+
 If not, please go back and check the power supply and wiring of the motherboard to ensure that each power indicator light is on.
+
 ![Image02.png](/images/Image02.png)
 
 
@@ -97,14 +100,17 @@ Enter the following command to get the board ID:
 ls /dev/serial/by-id
 ```
 Copy the ID with Crtl+C
+
 ![Image03.png](/images/Image03.png)
 
 Use the browser to enter the IP address of the Raspberry Pi to enter the mainsail interface
 Click on MACHINE
 Click printer.cfg in the list to enter the editing interface
+
 ![Image04.png](/images/Image04.png)
 
 Replace the ID in the [mcu] section
+
 ![Image05.png](/images/Image05.png)
 
 Click SAVE & RESTART

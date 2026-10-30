@@ -35,12 +35,7 @@ const copy = {
     categoriesTitle: '按类别浏览', categoriesIntro: '从产品分类进入完整文档目录。', allDocs: '文档总览',
     tabsLabel: '文档浏览方式', productTab: '产品目录', guideTab: '使用指南', filtersLabel: '筛选产品类别', allProducts: '全部推荐',
     catalogIntro: '常用产品的说明、引脚与配置资料。', guideIntro: '按任务查找接线、通信和固件配置教程。', currentCategory: '查看完整分类', guidesLink: '全部教程', resultCount: '个产品',
-    readGuide: '查看指南', resourcesTitle: '更多文档资源',
-    resources: [
-      {slug: 'overview', icon: 'book', title: '文档总览', description: '浏览所有产品类别和资料入口。'},
-      {slug: 'category/resources/', icon: 'folder', title: '补充资料', description: '查看未归入产品目录的说明与参考资料。'},
-      {slug: 'About', icon: 'support', title: '关于 FYSETC', description: '了解 FYSETC 硬件平台。'},
-    ],
+    readGuide: '查看指南',
   },
   en: {
     title: 'FYSETC Wiki · Product Documentation', description: 'Browse FYSETC product documentation, pinouts, wiring diagrams, and configuration guides.',
@@ -48,12 +43,7 @@ const copy = {
     categoriesTitle: 'Browse by category', categoriesIntro: 'Explore the complete documentation for each product category.', allDocs: 'All documentation',
     tabsLabel: 'Documentation view', productTab: 'Product catalog', guideTab: 'How-to guides', filtersLabel: 'Filter product categories', allProducts: 'All featured',
     catalogIntro: 'Specifications, pinouts, and configuration for commonly used products.', guideIntro: 'Find practical guides for wiring, communication, and firmware setup.', currentCategory: 'Explore the category', guidesLink: 'All guides', resultCount: 'products',
-    readGuide: 'Read the guide', resourcesTitle: 'More documentation resources',
-    resources: [
-      {slug: 'overview', icon: 'book', title: 'Documentation overview', description: 'Browse all product categories and documentation entry points.'},
-      {slug: 'category/resources/', icon: 'folder', title: 'Additional resources', description: 'Explore reference material beyond the product catalog.'},
-      {slug: 'About', icon: 'support', title: 'About FYSETC', description: 'Read the introduction to the FYSETC hardware platform.'},
-    ],
+    readGuide: 'Read the guide',
   },
 };
 
@@ -142,7 +132,6 @@ export default function Home() {
             </div>
           </section>
 
-          <section className={styles.resourcesSection} aria-labelledby="resources-title"><h2 id="resources-title">{text.resourcesTitle}</h2><div className={styles.resourceGrid}>{text.resources.map(resource => <Link className={styles.resourceCard} key={resource.slug} to={`${docsBase}${resource.slug}`}><Icon kind={resource.icon}/><div><h3>{resource.title}</h3><p>{resource.description}</p></div><Arrow className={styles.resourceArrow}/></Link>)}</div></section>
         </div>
       </main>
     </Layout>

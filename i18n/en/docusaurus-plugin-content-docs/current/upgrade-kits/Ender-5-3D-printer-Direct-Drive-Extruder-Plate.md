@@ -1,9 +1,9 @@
 ---
-sidebar_position: 40
 id: Ender-5-3D-printer-Direct-Drive-Extruder-Plate
 title: Ender 5 3D printer Direct Drive Extruder Plate
-description: Product name：Ender 5 3D printer Direct Drive Extruder Plate
 slug: /Ender-5-3D-printer-Direct-Drive-Extruder-Plate
+sidebar_position: 40
+description: Product name：Ender 5 3D printer Direct Drive Extruder Plate
 source_file: Ender 5 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---
@@ -48,7 +48,6 @@ Refer to the assembly tutorial to avoid installation errors.
 
 ## Shop
 
-------
 
 -  [Aliexpress](https://es.aliexpress.com/item/4000959198767.html?spm=a2g0o.productlist.0.0.437e3823GImpCL&algo_pvid=04b7f19d-3a47-45d1-8edf-d8b9670b3867&algo_expid=04b7f19d-3a47-45d1-8edf-d8b9670b3867-5&btsid=0b86d80215998140004337372e8dff&ws_ab_test=searchweb0_0,searchweb201602_,searchweb201603_).
 -  [Amazon](https://www.amazon.com/BCZAMD-Accessories-Aluminum-Compatible-Extruder/dp/B088BKHVYJ/ref=sr_1_51?dchild=1&keywords=bczamd&qid=1599813822&sr=8-51).

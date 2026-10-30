@@ -1,11 +1,9 @@
 ---
-sidebar_position: 80
 id: FYSETC_S6
-title: FYSETC S6
-description: The S6 is based on the STM32F446 32bit mcu, like the F6, has six
-  drive sockets and supports the full range of TMC drives. We have fully
-  extended the resources of the MCU so that you can maximize its…
+title: FYSETC_S6
 slug: /FYSETC_S6
+sidebar_position: 100
+description: The S6 is based on the STM32F446 32bit mcu, like the F6, has six drive sockets and supports the full range of TMC drives. We have fully extended the resources of the MCU so that you can maximize its…
 source_file: FYSETC_S6.md
 source_language: en
 ---
@@ -51,7 +49,6 @@ The S6 is based on the STM32F446 32bit mcu, like the F6, has six drive sockets a
 
 ## 2. Application
 
----
 
 - 3D printer 
 
@@ -90,7 +87,6 @@ The S6 is based on the STM32F446 32bit mcu, like the F6, has six drive sockets a
 
 ### 3.2 Jumpers
 
----
 
 **Just like the F6 V1.4, the two Z-motor sockets are changed from parallel to series. If you only use one of the sockets, the other must be connected with a jumper cap, otherwise a Z-axis motor will not work.**
 

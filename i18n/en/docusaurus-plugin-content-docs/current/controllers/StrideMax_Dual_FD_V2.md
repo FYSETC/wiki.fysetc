@@ -1,11 +1,9 @@
 ---
-sidebar_position: 110
 id: StrideMax_Dual_FD_V2
-title: FYSETC StrideMax Dual FD
-description: StrideMax Dual FD is a RP2040-based control board with dual TMC5160
-  drivers that can run RRF firmware or Klipper firmware. Each 5160 driver group
-  has 8 high-power MOSFETs and is covered by a heat…
+title: STRIDEMAX_DUAL_FD_V2
 slug: /StrideMax_Dual_FD_V2
+sidebar_position: 130
+description: StrideMax Dual FD is a RP2040-based control board with dual TMC5160 drivers that can run RRF firmware or Klipper firmware. Each 5160 driver group has 8 high-power MOSFETs and is covered by a heat…
 source_file: StrideMax_Dual_FD_V2.md
 source_language: en
 ---
@@ -112,9 +110,12 @@ Flow × phase resistance).
 ## Pin and jumper config
 
 ![img](/images/image-20231222183712370.png)
+
 # Firmware Configuration
 We have made an example of the klipper configuration, which you can find at the following address. RRF firmware and configuration are also provided for reference.
 ## Klipper
+
+![Klipper configuration](/images/stridemax-dual-fd-v2--klipper.png)
 
 https://github.com/FYSETC/Stridemax_Dual_FD/tree/main/klipper
 

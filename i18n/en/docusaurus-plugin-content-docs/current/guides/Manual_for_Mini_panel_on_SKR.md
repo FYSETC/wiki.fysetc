@@ -1,10 +1,9 @@
 ---
-sidebar_position: 40
 id: Manual_for_Mini_panel_on_SKR
-title: How to Use Mini 12864 on SKR Board
-description: If you use or select an other version we do not guarantee this
-  manual to work. https://wiki.fysetc.com/Mini12864_Panel/
+title: Manual for Mini panel on SKR
 slug: /Manual_for_Mini_panel_on_SKR
+sidebar_position: 30
+description: If you use or select an other version we do not guarantee this manual to work. https://wiki.fysetc.com/Mini12864_Panel/
 source_file: Manual_for_Mini_panel_on_SKR.md
 source_language: en
 ---

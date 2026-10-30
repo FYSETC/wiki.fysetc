@@ -1,25 +1,22 @@
 ---
-sidebar_position: 60
 id: NanoDLP_Shield_V1.1
 title: NanoDLP Shield V1.1
-description: This expansion board is designed for the Raspberry Pi 3B which is
-  used for SLA/DLP 3D printers running NanoDLP . The board contains a 9-28V to
-  5V circuit that provides a maximum of 3A and other…
 slug: /NanoDLP_Shield_V1.1
+sidebar_position: 90
+description: This expansion board is designed for the Raspberry Pi 3B which is used for SLA/DLP 3D printers running NanoDLP . The board contains a 9-28V to 5V circuit that provides a maximum of 3A and other…
 source_file: NanoDLP_Shield_V1.1.md
 source_language: en
 ---
 
 ## Product Introduction
 
----
+
 ![NanoDLP_Shield](/images/NanoDLP-Shield.jpg)
 
 This expansion board is designed for the Raspberry Pi 3B which is used for SLA/DLP 3D printers  running NanoDLP . The board contains a 9-28V to 5V circuit that provides a maximum of 3A and other interfaces required by NanoDLP. See the instructions below.
 
 ## Features
 
----
 
 - 9V-28V to 5V@3A Buck Converter
 - DRV8825 Stepper Driver 
@@ -33,13 +30,11 @@ This expansion board is designed for the Raspberry Pi 3B which is used for SLA/D
 
 ## Application
 
----
 
 - For NanoDLP software on Raspberry Pi
 
 ## Specifications
 
----
 
   Board Name	    |  NanoDLP Shield 
   :--------------------:         | ---------------------
@@ -55,7 +50,7 @@ This expansion board is designed for the Raspberry Pi 3B which is used for SLA/D
   Output                        |   5V@3A max, 9-28V@3A max
 
 ## Interface Resources
----
+
 
 ### Interface Layout
 
@@ -78,19 +73,15 @@ MS2|MS1|MS0|Microsteps
 
 ## Pin Definition
 
----
 
 ![NanoDLP_Shield_PIN局部](/images/NanoDLP-Shield-PIN%E5%B1%80%E9%83%A8.png)
 
 ## Schematic
 
----
 
 ![NanoDLP_Shield原理图](/images/NanoDLP-Shield%E5%8E%9F%E7%90%86%E5%9B%BE.jpg)
 
 ## Wiring Diagram
-
----
 
 ![NanoDLP-Shield-V1.1接线图](/images/NanoDLP-Shield-V1.1%E6%8E%A5%E7%BA%BF%E5%9B%BE.png)
 
@@ -107,12 +98,10 @@ MS2|MS1|MS0|Microsteps
 
 
 ## Shop
----
 
 - [NanoDLP Shield V1.1](https://www.aliexpress.com/store/product/NanoDLP-Shield-V1-1-Expansion-Board-With-DRV8825-Controled-MOS-For-Raspberry-Pi-3B-And-NanoDLP/3480083_32885581951.html)
 
 
 ## Tech Support
 
----
 Please submit any technical issue into our [forum](http://forum.fysetc.com/)

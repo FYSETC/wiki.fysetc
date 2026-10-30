@@ -1,17 +1,15 @@
 ---
-sidebar_position: 30
 id: Silent2209
-title: Silent2209
-description: The TMC2209 is an ultra-silent motor driver IC for two phase
-  stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as
-  well as to the TMC2208. TRINAMICs sophisticated…
+title: SILENT_2209
 slug: /Silent2209
+sidebar_position: 20
+description: TMC2209 是一款用于两相步进电机的超静音电机驱动 IC。TMC2209 的引脚兼容多种传统驱动器以及 TMC2208。TRINAMIC 先进的…
 source_file: Silent2209.md
 source_language: en
 ---
 
-## Product Introduction
----
+## 产品介绍
+
 
 ![Silent2209](/images/2209v3.0.png)
 
@@ -19,91 +17,96 @@ source_language: en
 
 
 
-The TMC2209 is an ultra-silent motor driver IC for two phase stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as well as to the TMC2208. TRINAMICs sophisticated StealthChop2 chopper ensures noiseless operation,maximum efficiency and best motor torque. Its fast current regulation and optional combination with SpreadCycle allow highly dynamic motion while adding. StallGuard for sensorless homing. The integrated power MOSFETs handle motor currents up to 2A RMS with protection and diagnostic features for robust and reliable operation. A simple to use UART interface opens up tuning and control options. Store application tuning to OTP memory.Industries’ most advanced STEP/DIR stepper motor driver family upgrades designs to noiseless and most precise operation for cost-effective and highly competitive solutions.Step/Dir Drivers for Two-Phase Bipolar Stepper Motors up to 2.8A peak –StealthChop™ for Quiet Movement – UART Interface Option –Sensorless Stall Detection StallGuard4. 
+TMC2209 是一款用于两相步进电机的超静音电机驱动 IC。TMC2209 的引脚与多种传统驱动器以及 TMC2208 兼容。TRINAMIC 先进的 StealthChop2 斩波器确保无噪声运行、最高效率和最佳电机扭矩。其快速电流调节以及可选与 SpreadCycle 组合，可实现高动态运动，同时增加 StallGuard 用于无传感器归位。集成的功率 MOSFET 可处理高达 2A RMS 的电机电流，并具有保护和诊断功能，实现稳健可靠的运行。简单易用的 UART 接口开启了调谐和控制选项。将应用调谐存储到 OTP 存储器中。业界最先进的 STEP/DIR 步进电机驱动器系列将设计升级为无噪声和最精确的运行，实现高性价比和极具竞争力的解决方案。用于两相双极步进电机的 Step/Dir 驱动器，峰值电流高达 2.8A – StealthChop™ 实现安静运动 – UART 接口选项 – 无传感器失速检测 StallGuard4。
 
-## Features
----
+## 特性
 
-- 2-phase stepper motors up to 2.8A coil current (peak), 2A RMS 
-- STEP/DIR Interface with 8, 16, 32 or 64 microstep pin setting
-- Smooth Running 256 microsteps by MicroPlyer™ interpolation 
-- StealthChop2™ silent motor operation 
-- SpreadCycle™ highly dynamic motor control chopper
-- StallGuard4™ load and stall detection for StealthChop 
-- CoolStep™ current control for energy savings up to 75%
-- Low RDSon, Low Heat-Up LS 170mΩ & HS 170mΩ (typ. at 25°C) t
-- Voltage Range 4.75… 29V DC 
-- Low Power Standby to fit standby energy regulations
-- Internal Sense Resistor option (no sense resistors required) 
-- Passive Braking, Freewheeling, and automatic power down 
-- Single Wire UART & OTP for advanced configuration options 
-- Integrated Pulse Generator for standalone motion 
-- Full Protection & Diagnostics 
 
-## Technical Specifications
+- 两相步进电机，线圈电流高达 2.8A（峰值），2A RMS
+- STEP/DIR 接口，具有 8、16、32 或 64 微步引脚设置
+- 通过 MicroPlyer™ 插值实现 256 微步的平滑运行
+- StealthChop2™ 静音电机运行
+- SpreadCycle™ 高动态电机控制斩波器
+- StallGuard4™ 用于 StealthChop 的负载和失速检测
+- CoolStep™ 电流控制，节能高达 75%
+- 低 RDSon，低发热 LS 170mΩ 和 HS 170mΩ（25°C 时的典型值）
+- 电压范围 4.75… 29V DC
+- 低功耗待机，符合待机能耗法规
+- 内部采样电阻选项（无需采样电阻）
+- 被动制动、续流和自动断电
+- 单线 UART 和 OTP 用于高级配置选项
+- 集成脉冲发生器用于独立运动
+- 全面保护与诊断
 
-Model                                    | TMC2209 
+## 技术规格
+
+型号                                    | TMC2209 
 :---:|:---:
-Interface                                |   Step/Dir 
-Configuration                       |   CFG Pins or UART
-Native Microsteps               |   up to 1/256
-microPlyer Microsteps          |    1/256
-Logic Voltage (VIO)                 |    3-5V
-Motor Voltage (VM)                | 5.5-28V 
-Motor Phase Current  max        | 2A RMS, 2.8A Peak 
-Internal V-  Regulator         |    enabled
-RDSon                                    |0.1 Ohm (HV 0.2 Ohm)
-stealthChop (quiet)               | yes
-spreadCycle                           |      yes
-coolStep                                | yes 
-stallGuard                              | yes 
-dcStep                                    | yes 
+接口                                |   Step/Dir 
+配置                       |   CFG 引脚或 UART
+原生微步               |   高达 1/256
+microPlyer 微步          |    1/256
+逻辑电压 (VIO)                 |    3-5V
+电机电压 (VM)                | 5.5-28V 
+电机相电流 最大        | 2A RMS, 2.8A 峰值 
+内部 V- 稳压器         |    启用
+RDSon                                    |0.1 欧姆 (HV 0.2 欧姆)
+stealthChop (静音)               | 是
+spreadCycle                           |      是
+coolStep                                | 是 
+stallGuard                              | 是 
+dcStep                                    | 是 
 
-## Pin Functions
----
+## 引脚功能
+
 ### V3.0
+
 ![2209引脚图V3.0](/images/2209%E5%BC%95%E8%84%9A%E5%9B%BEV3.0.jpg)
+
 ### V3.1
-![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)![image-20230508160723032]
+
+![TMC2209_V31_引脚图](/images/TMC2209_V31_%E5%BC%95%E8%84%9A%E5%9B%BE.png)
+
 ### V4.0
+
 ![TMC2209_V40_引脚图](/images/image-20230508160723032.png)
 
-Pin|Function
+引脚|功能
 :---:|---
- |**Power Supply**
- GND|	Ground
-VM|	Motor Supply Voltage
-VIO	|Logic Supply Voltage
-|**Motor Outputs**
-M1A|	Motor Coil 1
-M1B	|Motor Coil 1
-M2A|	Motor Coil 2
-M2B	|Motor Coil 2
-|**Control Inputs**
-STEP	|Step-Signal Input
-DIR	|Direction-Signal Input
+ |**电源**
+ GND|	接地
+VM|	电机电源电压
+VIO	|逻辑电源电压
+|**电机输出**
+M1A|	电机线圈 1
+M1B	|电机线圈 1
+M2A|	电机线圈 2
+M2B	|电机线圈 2
+|**控制输入**
+STEP	|步进信号输入
+DIR	|方向信号输入
 |**TMC2209**
- EN|	Enable Motor Outputs: GND=on, VIO=off
-MS1| Microstep resolution configuration (internal pull-down resistors)
-MS2| MS1: 00: 1/8, 01: 1/2, 10: 1/4 11: 1/16 For UART based configuration selection of UART Address 0…3 
-SP	|Chopper mode selection: Low/pin open=StealthChop, High=SpreadCycle
-CLK	|CLK input. Tie to GND using short wire for internal clock or supply external clock.
-**TYPE**	|<font color="red"> **The V4.0 version replaces the original CLK pin with a module type identification pin, which is mainly used for spider king.**</font>
-TX	|UART TX,   Connected to the PDN via a 1K resistor on board
-RX	|UART RX,   Directly connected to the PDN
-DIAG	|Diagnostic and StallGuard output. Hi level upon stall detection or driver error. Reset error condition by ENN=high.
-INDEX	|Configurable index output. Provides index pulse.
-VREF|	Analog Reference Voltage
+ EN|	使能电机输出：GND=开启，VIO=关闭
+MS1| 微步分辨率配置（内部下拉电阻）
+MS2| MS1: 00: 1/8, 01: 1/2, 10: 1/4 11: 1/16 用于基于 UART 的配置选择 UART 地址 0…3 
+SP	|斩波模式选择：低/引脚悬空=StealthChop，高=SpreadCycle
+CLK	|CLK 输入。使用短导线连接到 GND 以使用内部时钟，或提供外部时钟。
+**TYPE**	|<font color="red"> **V4.0 版本将原来的 CLK 引脚替换为模块类型识别引脚，主要用于蜘蛛王。**</font>
+TX	|UART TX，通过板上的 1K 电阻连接到 PDN
+RX	|UART RX，直接连接到 PDN
+DIAG	|诊断和 StallGuard 输出。失速检测或驱动器错误时为高电平。通过 ENN=高电平复位错误状态。
+INDEX	|可配置索引输出。提供索引脉冲。
+VREF|	模拟参考电压
 
-## Interface Resources
----
-###  Wiring Diagram
+## 接口资源
+
+###  接线图
 
 ![2209接线图](/images/TMC2209_wiring.png)
 
-### Motor Current Setting
+### 电机电流设置
 
-**Below  V2.1:** 
+**V2.1 以下：** 
 
 ![2209测vref](/images/2209%E6%B5%8Bvref.png)
 
@@ -111,58 +114,58 @@ VREF|	Analog Reference Voltage
 
 ![2209测vref](/images/TMC2209_vref_V30.jpg)
 
-The best way to set the motor current is by measuring the voltage on the Vref pin (0…2.5V) and adjusting the voltage with the potentiometer. The maximum settable motor current is 1.77A RMS (0.11Ohm sense resistors), but the SilentStepSticks can only be used up to 1.2A RMS.  
+设置电机电流的最佳方法是测量 Vref 引脚上的电压（0…2.5V），并通过电位器调节电压。最大可设置的电机电流为 1.77A RMS（0.11 欧姆采样电阻），但 SilentStepSticks 只能使用到 1.2A RMS。  
 Irms = (Vref * 1.77A) / 2.5V = Vref * 0.71  
 Vref = (Irms * 2.5V) / 1.77A = Irms * 1.41 = Imax   
-Vref -> Voltage on Vref pin  
-Irms -> RMS (Root Mean Square) current per phase (Irms = Imax / 1.41)  
-Imax -> Maximum current per phase (Imax = Irms * 1.41)   
+Vref -> Vref 引脚上的电压  
+Irms -> 每相 RMS（均方根）电流（Irms = Imax / 1.41）  
+Imax -> 每相最大电流（Imax = Irms * 1.41）   
 
 
 :::note
 
-1. Vref measures Gnd and the voltage at the middle of the potentiometer.  
-2. Do not connect the motor when measuring the voltage, otherwise it is easy to burn the driver.  
-3. Power should be connected when measuring voltage, do not just connect USB power supply.  
-4. <font color="red">**Please pay special attention to directions!**</font>
+1. Vref 测量 Gnd 和电位器中间的电压。  
+2. 测量电压时不要连接电机，否则容易烧毁驱动器。  
+3. 测量电压时应连接电源，不要只连接 USB 电源。  
+4. <font color="red">**请特别注意方向！**</font>
 
 :::
 
 
-### Calculator
+### 计算器
 
 
 <driver-calculator type="Silent2209"></driver-calculator>
 
 
-### Micro-stepping
+### 微步
 
-MS2(-)	|MS1(-)|	Steps(-)|	Interpolation(-)|	Mode(-)
+MS2(-)	|MS1(-)|	步数(-)|	插值(-)|	模式(-)
 :---:|:---:|:---:|:---:|:---:
 GND |	VIO | 1⁄2 | 1⁄256 | stealthChop2
 VIO	| GND | 1⁄4 | 1⁄256 | stealthChop2
 GND | GND | 1⁄8 | 1⁄256 | stealthChop2
 VIO	| VIO | 1⁄16 | 1⁄256 | stealthChop2
 
-## Setting Method
+## 设置方法
 
-----
 
-### V2.1 Hardware Connection
+### V2.1 硬件连接
 
 ![2209串口接线](/images/2209%E4%B8%B2%E5%8F%A3%E6%8E%A5%E7%BA%BF.jpg)
 
-You can use every RS232 serial adapter with 0-5V logic levels (e.g. FTDI-Breakout) and the SilentStepStick Tester/Programmer can be used as connection adapter.
+您可以使用任何具有 0-5V 逻辑电平的 RS232 串行适配器（例如 FTDI-Breakout），SilentStepStick 测试器/编程器可用作连接适配器。
 
 
 :::tip
 
-The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins are lengthened for easy wiring. You only need to follow the silk screen to wire and use.
+FYSETC TMC2209V2.1 版本已设置跳线，TX 和 RX 引脚已加长以便于接线。您只需按照丝印进行接线和使用。
 
 :::
 
 
-### V3.0 Hardware Connection
+### V3.0 硬件连接
+
 ![2209串口接线V30](/images/2209%E4%B8%B2%E5%8F%A3%E6%8E%A5%E7%BA%BFV30.jpg)
 
 
@@ -176,30 +179,27 @@ The FYSETC TMC2209V2.1 version has been set with jumpers, and the TX and RX pins
 :::
 
 
-### V3.1 Hardware Connection
+### V3.1 硬件连接
+
 ![2209V3.1原理图](/images/2209V3.1%E5%8E%9F%E7%90%86%E5%9B%BE.png)
 
-1. add CLK pin ，not connect in default，tie to GND via 0R
+1. 添加 CLK 引脚，默认不连接，通过 0R 连接到 GND
 
-2. SPREAD pin is floating. Reserve pull-up and pull-down resistors.
+2. SPREAD 引脚悬空。保留上拉和下拉电阻。
 
-3. Move TX from 3 to 5
+3. 将 TX 从 3 移到 5
 
-4. UART mode is compatible with F6,S6,SKR series and MKS series motherboards.
+4. UART 模式兼容 F6、S6、SKR 系列和 MKS 系列主板。
 
-### V4.0 Hardware Connection
+### V4.0 硬件连接
 
 ![image-20230508161953018](/images/image-20230508161953018.png)
 
 
----
+## 商店	
 
-## Shop	
-
----
 - [TMC2209](https://www.aliexpress.com/item/33025556705.html)
 
-## Tech Support
+## 技术支持
 
----
-Please submit any technical issue into our [forum](http://forum.fysetc.com/)
+请将任何技术问题提交到我们的[论坛](http://forum.fysetc.com/)

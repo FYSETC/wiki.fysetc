@@ -17,8 +17,11 @@
   "sidebar.wikiSidebar.category.drivers.link.generated-index.title": {
     "message": "步进电机驱动"
   },
-  "sidebar.wikiSidebar.category.getting-started": {
-    "message": "快速开始"
+  "sidebar.wikiSidebar.category.faq": {
+    "message": "常见问题"
+  },
+  "sidebar.wikiSidebar.category.faq.link.generated-index.title": {
+    "message": "常见问题"
   },
   "sidebar.wikiSidebar.category.guides": {
     "message": "教程"
@@ -41,8 +44,38 @@
   "sidebar.wikiSidebar.category.printer-kits": {
     "message": "3D 打印机套件"
   },
-  "sidebar.wikiSidebar.category.resources": {
-    "message": "补充资料"
+  "sidebar.wikiSidebar.category.printer-kits/others": {
+    "message": "其他"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/others.link.generated-index.title": {
+    "message": "其他"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL": {
+    "message": "Venture XL"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/1.-Introduction": {
+    "message": "1. Introduction"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/2.-Assembly-Guide": {
+    "message": "2. Assembly Guide"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/2.-Assembly-Guide.link.generated-index.title": {
+    "message": "2. Assembly Guide"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/3.-Electronics-Guide": {
+    "message": "3. Electronics Guide"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/4.-Firmware-Guide": {
+    "message": "4. Firmware Guide"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/5.-FAQ": {
+    "message": "5. FAQ"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/5.-FAQ.link.generated-index.title": {
+    "message": "5. FAQ"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit": {
+    "message": "Voron V2.4 Kit"
   },
   "sidebar.wikiSidebar.category.sensors": {
     "message": "传感器"

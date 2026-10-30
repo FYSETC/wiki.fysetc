@@ -1,45 +1,44 @@
 ---
-sidebar_position: 20
 id: Sherpa-extruder
-title: Annex-Engineering Sherpa extruder
-description: FYSETC manufacturing information of Sherpa series extruder designed
-  by Annex Engineering
+title: Sherpa-extruder
 slug: /Sherpa-extruder
+sidebar_position: 10
+description: FYSETC 制造的 Sherpa 系列挤出机，由 Annex Engineering 设计
 source_file: Sherpa-extruder.md
 source_language: en
 ---
 
 # FYSETC-Annex-Engineering-Sherpa
 
-FYSETC manufacturing information of Sherpa series extruder designed by Annex Engineering
+由 Annex Engineering 设计的 Sherpa 系列挤出机的 FYSETC 制造信息
 
 ## Sherpa mini
 
-### 1. Project source
+### 1. 项目来源
 
-You can find the original project [here](https://github.com/Annex-Engineering/Sherpa_Mini-Extruder).
+你可以在[这里](https://github.com/Annex-Engineering/Sherpa_Mini-Extruder)找到原始项目。
 
-### 2. Applications
+### 2. 应用
 
-If you can design extruder holder for you printer, it can apply to almost any FDM/FFF 3D printer. You can find the known application on machines below.  
+如果你能为你的打印机设计挤出机支架，它可以应用于几乎任何 FDM/FFF 3D 打印机。你可以在下面的机器上找到已知的应用。
 
 CR-10, CR10S, CR-10 4S, CR-10 5S, CR-10 MINI, CR-20, ENDER-2,ENDER-3, ENDER-3 PRO, ENDER-3 V2，VORON，Gasherbrum K3
 
-### 3. Common specifications
+### 3. 通用规格
 
-Escept specifications below, more spec on each revision, check the `4. Revisions` section.
+除以下规格外，每个版本的更多规格请查看 `4. 版本` 部分。
 
-| Parameters              | Specifications    |
+| 参数              | 规格    |
 | ----------------------- | ----------------- |
-| Housing Color           | black             |
-| Housing forming process | SLS               |
-| Housing material        | PA                |
-| Weight                  | About 136g        |
-| Motor cable             | PTFE, 1.2m length |
+| 外壳颜色           | 黑色             |
+| 外壳成型工艺 | SLS               |
+| 外壳材料        | PA                |
+| 重量                  | 约 136g        |
+| 电机线缆             | PTFE，1.2m 长度 |
 
-### 4. Revisions
+### 4. 版本
 
-Check our manufacturing revisions below.
+查看我们下面的制造版本。
 
 #### Rev 1.0
 
@@ -47,61 +46,61 @@ Check our manufacturing revisions below.
 
 #### Rev 1.1
 
-Stepper motor: 10 teeth Stepper motor, [G36HSY4407-6D-1200A](https://github.com/FYSETC/FYSETC-MOTORS/tree/main/G36HSY4407-6D-1200A)
+步进电机：10 齿步进电机，[G36HSY4407-6D-1200A](https://github.com/FYSETC/FYSETC-MOTORS/tree/main/G36HSY4407-6D-1200A)
 
-Reduction ratio: 5:1
+减速比：5:1
 
-Advantages comparing to Rev 1.0:
+与 Rev 1.0 相比的优势：
 
-1. Deticated large torque 36 stepper motor
+1. 专用大扭矩 36 步进电机
 
-2. PTFE motor cable
+2. PTFE 电机线缆
 
 #### Rev 1.5
 
-Stepper motor: 8 teeth Stepper motor, [G36HSY4405-6D-1200A](https://github.com/FYSETC/FYSETC-MOTORS/tree/main/G36HSY4405-6D-1200A)
+步进电机：8 齿步进电机，[G36HSY4405-6D-1200A](https://github.com/FYSETC/FYSETC-MOTORS/tree/main/G36HSY4405-6D-1200A)
 
-Reduction ratio: 6.25:1
+减速比：6.25:1
 
-Advantages comparing to Rev 1.1:
+与 Rev 1.1 相比的优势：
 
-1. 8t motor, 25% more torque
+1. 8t 电机，扭矩增加 25%
 
-2. New CNC hollowed-out POM [50t gear](https://github.com/Annex-Engineering/Sherpa_Mini-Extruder/blob/master/STLs/FDM_STLs/optional_parts/printable_sherpa_mini_gear_50t_sl_x1_rev1.stl), higher intensity, more precise
+2. 全新 CNC 镂空 POM [50t 齿轮](https://github.com/Annex-Engineering/Sherpa_Mini-Extruder/blob/master/STLs/FDM_STLs/optional_parts/printable_sherpa_mini_gear_50t_sl_x1_rev1.stl)，强度更高，更精确
 
-3. Isolate the gear positioning, seamless installation, more precise, check the blue part below.
+3. 隔离齿轮定位，无缝安装，更精确，请查看下面的蓝色部分。
    
    ![](/images/isolation.png)
 
-### 5. Mods
+### 5. 改装
 
-We make some mods for different machine application cases.
+我们针对不同的机器应用场景制作了一些改装。
 
 [Sherpa Mini Extruder master holder for CR10 Ender3 by FYSETC_Ltd - Thingiverse](https://www.thingiverse.com/thing:4807684)
 
-### 6. Matters need attention
+### 6. 注意事项
 
-You need to change your E stepper AXIS_STEPS_PER_UNIT parameter. Like Ender3 as an example, you need to set AXIS_STEPS_PER_UNIT to 870 using our Sherpa mini rev1.5. How to change it?
+你需要更改你的 E 步进电机 AXIS_STEPS_PER_UNIT 参数。以 Ender3 为例，使用我们的 Sherpa mini rev1.5 时，你需要将 AXIS_STEPS_PER_UNIT 设置为 870。如何更改？
 
 Marlin - Ender3
 
-Method 1: Change the parameter on your firmware
+方法 1：在固件上更改参数
 
 ```
-#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 870 }
+#define DEFAULT_AXIS_STEPS_PER_UNIT   { 80, 80, 400, 870 }
 ```
 
-Method 2: Send Gcode to change it
+方法 2：发送 Gcode 进行更改
 
 ```
 M92 E870
 M500
 ```
 
-For some printers, you may need to adjust the stepper motor E current to prevent overtemp on the stepper motor. Like Ender3, we recommend to set it to 0.35A.
+对于某些打印机，你可能需要调整步进电机 E 电流以防止步进电机过热。以 Ender3 为例，我们建议将其设置为 0.35A。
 
-### 7. Where to buy
+### 7. 购买渠道
 
-## Tech Support
+## 技术支持
 
-Please submit any technical issue into our [forum](http://forum.fysetc.com/) ，[github](https://github.com/FYSETC/FYSETC-Annex-Engineering-Sherpa/issues)，[facebook](https://www.facebook.com/groups/197476557529090), discord
+请将任何技术问题提交到我们的[论坛](http://forum.fysetc.com/)，[github](https://github.com/FYSETC/FYSETC-Annex-Engineering-Sherpa/issues)，[facebook](https://www.facebook.com/groups/197476557529090)，discord

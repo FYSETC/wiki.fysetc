@@ -1,0 +1,14 @@
+{
+  "label": "常见问题",
+  "key": "faq",
+  "position": 116,
+  "collapsed": true,
+  "link": {
+    "type": "generated-index",
+    "title": "常见问题",
+    "slug": "/category/faq"
+  },
+  "customProps": {
+    "icon": "book"
+  }
+}

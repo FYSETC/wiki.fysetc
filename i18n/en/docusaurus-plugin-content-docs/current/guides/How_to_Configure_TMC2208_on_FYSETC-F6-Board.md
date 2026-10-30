@@ -1,11 +1,9 @@
 ---
-sidebar_position: 50
 id: How_to_Configure_TMC2208_on_FYSETC-F6-Board
-title: How to Configure TMC2208 on FYSETC F6 Board
-description: "For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper
-  library , you can find it here : https://github.com/FYSETC/TMC2208Stepper.
-  Download the library and copy the TMC2208 Stepper folder…"
+title: How to Configure TMC2208 on FYSETC-F6-Board
 slug: /How_to_Configure_TMC2208_on_FYSETC-F6-Board
+sidebar_position: 40
+description: 'For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper library , you can find it here : https://github.com/FYSETC/TMC2208Stepper. Download the library and copy the TMC2208 Stepper folder…'
 source_file: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
 source_language: en
 ---
@@ -13,12 +11,12 @@ source_language: en
 # Configure TMC2208
 
 ## Step1:Download TMC2208 Stepper Library
----
+
 
 For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper library , you can find it here : https://github.com/FYSETC/TMC2208Stepper. Download the library and  copy the TMC2208 Stepper folder to your Arduino software library to the Arduino library directory (mostly:C:\Program Files (x86)\arduino-1.8.5\libraries ).
 
 ## Step2:Modify Marlin Firmware TMC2208 Part Code
----
+
 
 Open stepper_indirection.cpp file , modify it as below shows.
 
@@ -85,7 +83,7 @@ and the function become:
  
 
 ## Step3:Change the Configuration in Configuration_adv.h File
----
+
 
 Uncomment the TMC2208 configuration and choose the axis that your 3d printer have, like our test machine we will do like this:
 
@@ -134,5 +132,4 @@ As our test machine have X, Y, Z and E0 axis.
 
 ## Tech Support
 
----
 Please submit any technical issue into our [forum](http://forum.fysetc.com/)

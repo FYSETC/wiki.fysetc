@@ -1,9 +1,9 @@
 ---
-sidebar_position: 30
 id: FYSETC-SPIDER-KING
-title: FYSETC SPIDER KING
-description: 10 axis industrial grade 3D printer motherboard
+title: FYSETC-SPIDER-KING
 slug: /FYSETC-SPIDER-KING
+sidebar_position: 50
+description: 10 axis industrial grade 3D printer motherboard
 source_file: FYSETC-SPIDER-KING.md
 source_language: en
 ---

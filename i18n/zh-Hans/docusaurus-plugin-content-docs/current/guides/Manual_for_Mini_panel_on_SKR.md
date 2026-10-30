@@ -1,26 +1,25 @@
 ---
-sidebar_position: 40
 id: Manual_for_Mini_panel_on_SKR
-title: How to Use Mini 12864 on SKR Board
-description: If you use or select an other version we do not guarantee this
-  manual to work. https://wiki.fysetc.com/Mini12864_Panel/
+title: SKR迷你面板手册
 slug: /Manual_for_Mini_panel_on_SKR
+sidebar_position: 30
+description: 如果您使用或选择其他版本，我们无法保证本手册能够正常使用。https://wiki.fysetc.com/Mini12864_Panel/
 source_file: Manual_for_Mini_panel_on_SKR.md
 source_language: en
 ---
 
-##### Manual for Fysetc Mini panel 12864 V2.1 (Neopixel) in combination with BIGTREETECH SKR V1.3 
+##### Fysetc Mini 面板 12864 V2.1（Neopixel）与 BIGTREETECH SKR V1.3 配合使用手册
 
-##### by Jupa Creations
+##### 作者：Jupa Creations
 
-If you use or select an other version we do not guarantee this manual to work.
+如果您使用或选择其他版本，我们不保证本手册能够正常工作。
 https://wiki.fysetc.com/Mini12864_Panel/
 
-For correct working as described in this manual you have to use the Marlin 2.0 Github version from 25-5-2019 or later.
-Download the latest version if your not certain about your version currently used.
+要按照本手册所述正确工作，您必须使用 2019 年 5 月 25 日或之后发布的 Marlin 2.0 Github 版本。
+如果您不确定当前使用的版本，请下载最新版本。
 https://github.com/MarlinFirmware/Marlin/tree/bugfix-2.0.x
-We expect you to know how to rework Marlin and upload firmware changes to the board. If you have no knowledge first source this information to get this done in a proper way.
-Open the Marlin directory and open the “configuration.h” file In the section "LCD / Controller Selection (Graphical LCDs)" look for:
+我们期望您了解如何修改 Marlin 并将固件更改上传到主板。如果您不了解，请先查阅相关信息，以便正确完成此操作。
+打开 Marlin 目录并打开“configuration.h”文件。在“LCD / Controller Selection (Graphical LCDs)”部分中查找：
 
 ```c++
 // FYSETC variant of the MINI12864 graphic controller with SD support
@@ -30,7 +29,7 @@ Open the Marlin directory and open the “configuration.h” file In the section
 //#define FYSETC_MINI_12864_2_0 // Type A/B. Discreet RGB Backlight
 //#define FYSETC_MINI_12864_2_1 // Type A/B. Neopixel RGB Backlight
 ```
-Change to 
+更改为
 ```c++
 // FYSETC variant of the MINI12864 graphic controller with SD support
 // https://wiki.fysetc.com/Mini12864_Panel/?fbclid=IwAR1FyjuNdVOOy9_xzky3qqo_WeM5h-4gpRnnWhQr_O1Ef3h0AFnFXmCehK8
@@ -39,7 +38,7 @@ Change to
 //#define FYSETC_MINI_12864_2_0 // Type A/B. Discreet RGB Backlight
 #define FYSETC_MINI_12864_2_1 // Type A/B. Neopixel RGB Backlight
 ```
-In the section "Extra Features" look for:
+在“Extra Features”部分中查找：
 ```c++
 // Support for Adafruit Neopixel LED driver
 //#define NEOPIXEL_LED
@@ -55,7 +54,7 @@ In the section "Extra Features" look for:
 //#define NEOPIXEL_BKGD_COLOR { 255, 255, 255, 0 } // R, G, B, W
 #endif
 ```
-Change to
+更改为
 ```c++
 // Support for Adafruit Neopixel LED driver
 #define NEOPIXEL_LED
@@ -69,17 +68,17 @@ Change to
 // Use a single Neopixel LED for static (background) lighting
 // #define NEOPIXEL_BKGD_LED_INDEX 0 // Index of the LED to use - Do not 
 ```
-change this setting
+更改此设置
 ```c++
 //#define NEOPIXEL_BKGD_COLOR { 255, 255, 255, 0 } // R, G, B, W - We have set green background color as standard
 #endif
 ```
-Change to
+更改为
 ```c++
 // Use a single Neopixel LED for static (background) lighting
 #define NEOPIXEL_BKGD_LED_INDEX 0 // Index of the LED to use - Do not change this setting
 #define NEOPIXEL_BKGD_COLOR { 0, 255, 0, 0 } // R, G, B, W - We have set green background color as standard
 #endif
 ```
-To get the display to work you need to reverse one side of the connectors. Easiest option is to lift both black plastic ribbon cable holders with the keyed slot on the rear side of the display with a small screwdriver upwards by wiggling and lifting slowly at both sides. Once the holder is off turn it 180 degrees and relocate by carefully pressing downwards. Do this for Exp1 and Exp2.
-Enjoy the new display and functions.
+要使显示屏正常工作，您需要将连接器的一侧反向。最简单的做法是用小螺丝刀在显示屏背面的带键槽黑色塑料排线固定座两侧轻轻晃动并缓慢向上抬起，将两个固定座都抬起。固定座取下后，将其旋转 180 度，然后小心地向下按压重新安装。对 Exp1 和 Exp2 都执行此操作。
+享受新显示屏和功能吧。

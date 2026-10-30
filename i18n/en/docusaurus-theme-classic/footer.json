@@ -2,9 +2,6 @@
   "link.title.Docs": {
     "message": "Docs"
   },
-  "link.item.label.Getting started": {
-    "message": "Getting started"
-  },
   "copyright": {
     "message": "FYSETC documentation and images · CC BY-SA 4.0 · Local test edition"
   },
@@ -13,9 +10,6 @@
   },
   "link.title.Learning & setup": {
     "message": "Learning & setup"
-  },
-  "link.title.Resources & support": {
-    "message": "Resources & support"
   },
   "link.title.FYSETC": {
     "message": "FYSETC"
@@ -38,9 +32,6 @@
   "link.item.label.Spider software guide": {
     "message": "Spider software guide"
   },
-  "link.item.label.Resources": {
-    "message": "Resources"
-  },
   "link.item.label.Wiki feedback": {
     "message": "Wiki feedback"
   },
@@ -55,5 +46,8 @@
   },
   "link.item.label.Wiki overview": {
     "message": "Wiki overview"
+  },
+  "link.title.Support": {
+    "message": "Support"
   }
 }

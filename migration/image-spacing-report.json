@@ -1,0 +1,715 @@
+{
+  "apply": true,
+  "scannedDocuments": 343,
+  "changedDocuments": 116,
+  "imageBlocks": 2066,
+  "tableImagesPreserved": 64,
+  "blankLineGapsAdded": 834,
+  "literalMarkersEscaped": 5,
+  "files": [
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/wireless/SD-WiFi-Pro.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/Spider_Software_Guide.md",
+      "imageBlocks": 55,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/Spider_Hardware_Guide.md",
+      "imageBlocks": 23,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/guides/BIQU12864_On_Spider.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-door-hinge.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx_i7_Led_System.md",
+      "imageBlocks": 10,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Retracting-Spool-Holder.md",
+      "imageBlocks": 10,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 1
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/FYSETC-QuattroBox.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/CREALITY-X-axis-Belt-Tensioner.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board.md",
+      "imageBlocks": 16,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M-Series-Camera.md",
+      "imageBlocks": 21,
+      "blankLineGapsAdded": 15,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/upgrade-kits/90-Heat-Insert-Adaptor.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/SB_Combo_V2.md",
+      "imageBlocks": 14,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/NanoDLP_Shield_V1.1.md",
+      "imageBlocks": 5,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/Hexa-Distro-Fusion.md",
+      "imageBlocks": 20,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H42_V1.0.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 8,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H36_Combo.md",
+      "imageBlocks": 15,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "imageBlocks": 18,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/modules/Catalyst.K-ToolHead.md",
+      "imageBlocks": 20,
+      "blankLineGapsAdded": 14,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/ST820_V1.0.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 1
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/Silent2209.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 7,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/QHV5160.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/drivers/EXT2160.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/displays/TFT81050.md",
+      "imageBlocks": 6,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/displays/Mini12864_Panel.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/StrideMax_Dual_FD_V2.md",
+      "imageBlocks": 2,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H7.md",
+      "imageBlocks": 11,
+      "blankLineGapsAdded": 4,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Spider.md",
+      "imageBlocks": 41,
+      "blankLineGapsAdded": 8,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/F6_V1.3.md",
+      "imageBlocks": 21,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Cheetah_Board_V20.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Cheetah_Board.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/Cheatah_Board_V30.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "imageBlocks": 11,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "imageBlocks": 17,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/5.-FAQ/Software-issues.md",
+      "imageBlocks": 3,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/4.-Firmware-Guide/How-to-update-the-Spider-Pro.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/4.-Firmware-Guide/How-to-update-the-CM68-img.md",
+      "imageBlocks": 5,
+      "blankLineGapsAdded": 7,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/3.-Electronics-Guide/3.2-Main-Board.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/3.-Electronics-Guide/3.1-Power-Connection.md",
+      "imageBlocks": 2,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/F6_V1.3.md",
+      "imageBlocks": 21,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/CREALITY-X-axis-Belt-Tensioner.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Cheetah_Board_V20.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Cheetah_Board.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Cheatah_Board_V30.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/BIQU12864_On_Spider.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/H36_Combo.md",
+      "imageBlocks": 15,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Mini12864_Panel.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/QHV5160.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/TFT81050.md",
+      "imageBlocks": 6,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/StrideMax_Dual_FD_V2.md",
+      "imageBlocks": 2,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/ST820_V1.0.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 1
+    },
+    {
+      "file": "docs/Spider_Software_Guide.md",
+      "imageBlocks": 55,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Spider_Hardware_Guide.md",
+      "imageBlocks": 23,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Spider.md",
+      "imageBlocks": 41,
+      "blankLineGapsAdded": 8,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/Silent2209.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 7,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/SB_Combo_V2.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "docs/SB-CAN-ToolHead.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.9-Rack-and-sealing-acrylic.md",
+      "imageBlocks": 32,
+      "blankLineGapsAdded": 43,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.8-Electrical-components.md",
+      "imageBlocks": 15,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.7-Caster-Assembly.md",
+      "imageBlocks": 3,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.6-Drag-chain-components.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 9,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.5-Extrusion-head-assembly.md",
+      "imageBlocks": 9,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.4-Hot-bed-components.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 9,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.3-Gantry-components.md",
+      "imageBlocks": 41,
+      "blankLineGapsAdded": 70,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.2-Z-motor-and-tensioner-assembly.md",
+      "imageBlocks": 18,
+      "blankLineGapsAdded": 19,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/zh-Hans/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.1-Frame-assembly.md",
+      "imageBlocks": 22,
+      "blankLineGapsAdded": 23,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/StrideMax_Dual_FD_V2.md",
+      "imageBlocks": 2,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/SPIDER_V3_H7.md",
+      "imageBlocks": 11,
+      "blankLineGapsAdded": 4,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Spider.md",
+      "imageBlocks": 41,
+      "blankLineGapsAdded": 8,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/F6_V1.3.md",
+      "imageBlocks": 21,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Cheetah_Board_V20.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Cheetah_Board.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/Cheatah_Board_V30.md",
+      "imageBlocks": 12,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CHAMELEON-X5.md",
+      "imageBlocks": 11,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/controllers/CATALYST.K.md",
+      "imageBlocks": 17,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/ST820_V1.0.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 1
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/Silent2209.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 7,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/QHV5160.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/drivers/EXT2160.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/wireless/SD-WiFi-Pro.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/displays/TFT81050.md",
+      "imageBlocks": 6,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/displays/Mini12864_Panel.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/SB_Combo_V2.md",
+      "imageBlocks": 14,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/NanoDLP_Shield_V1.1.md",
+      "imageBlocks": 5,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/Hexa-Distro-Fusion.md",
+      "imageBlocks": 20,
+      "blankLineGapsAdded": 6,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H42_V1.0.md",
+      "imageBlocks": 13,
+      "blankLineGapsAdded": 8,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H36_Combo.md",
+      "imageBlocks": 15,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/H36-Combo-V2.md",
+      "imageBlocks": 18,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/modules/Catalyst.K-ToolHead.md",
+      "imageBlocks": 20,
+      "blankLineGapsAdded": 14,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/X1P1S-door-hinge.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Sparkx_i7_Led_System.md",
+      "imageBlocks": 10,
+      "blankLineGapsAdded": 2,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Retracting-Spool-Holder.md",
+      "imageBlocks": 10,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 1
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/FYSETC-QuattroBox.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/CREALITY-X-axis-Belt-Tensioner.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board.md",
+      "imageBlocks": 16,
+      "blankLineGapsAdded": 5,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/Adventurer-AD5M-Series-Camera.md",
+      "imageBlocks": 21,
+      "blankLineGapsAdded": 15,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/upgrade-kits/90-Heat-Insert-Adaptor.md",
+      "imageBlocks": 4,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/guides/Spider_Software_Guide.md",
+      "imageBlocks": 55,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/guides/Spider_Hardware_Guide.md",
+      "imageBlocks": 23,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/guides/BIQU12864_On_Spider.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.9-Rack-and-sealing-acrylic.md",
+      "imageBlocks": 32,
+      "blankLineGapsAdded": 43,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.8-Electrical-components.md",
+      "imageBlocks": 15,
+      "blankLineGapsAdded": 12,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.7-Caster-Assembly.md",
+      "imageBlocks": 3,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.6-Drag-chain-components.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 9,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.5-Extrusion-head-assembly.md",
+      "imageBlocks": 9,
+      "blankLineGapsAdded": 10,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.4-Hot-bed-components.md",
+      "imageBlocks": 7,
+      "blankLineGapsAdded": 9,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.3-Gantry-components.md",
+      "imageBlocks": 41,
+      "blankLineGapsAdded": 68,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.2-Z-motor-and-tensioner-assembly.md",
+      "imageBlocks": 18,
+      "blankLineGapsAdded": 19,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/2.-Assembly-Guide/2.1-Frame-assembly.md",
+      "imageBlocks": 22,
+      "blankLineGapsAdded": 22,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/5.-FAQ/Software-issues.md",
+      "imageBlocks": 3,
+      "blankLineGapsAdded": 3,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/4.-Firmware-Guide/How-to-update-the-CM68-img.md",
+      "imageBlocks": 5,
+      "blankLineGapsAdded": 7,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/4.-Firmware-Guide/How-to-update-the-Spider-Pro.md",
+      "imageBlocks": 8,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/3.-Electronics-Guide/3.2-Main-Board.md",
+      "imageBlocks": 1,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    },
+    {
+      "file": "i18n/en/docusaurus-plugin-content-docs/current/printer-kits/Venture-XL/3.-Electronics-Guide/3.1-Power-Connection.md",
+      "imageBlocks": 2,
+      "blankLineGapsAdded": 1,
+      "literalMarkersEscaped": 0
+    }
+  ],
+  "validation": {
+    "contentAndImageReferencesPreserved": true,
+    "codeAndTablesPreserved": true,
+    "formattingIsIdempotent": true,
+    "bilingualBuildPassed": true,
+    "renderedPagesChecked": 286,
+    "paragraphsMixingImagesAndText": []
+  }
+}

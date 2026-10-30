@@ -43,6 +43,7 @@ V2.1 with  two RGB LEDs around the encoder，the  back-light is  RGB  and contro
 
 
 ## Typical  Wiring
+
 ![](/images/Mini12864-bottom.svg)
 
 ![](/images/Mini12864-EXP1.svg)

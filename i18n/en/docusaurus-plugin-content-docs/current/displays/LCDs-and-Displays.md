@@ -1,5 +1,5 @@
 ---
-sidebar_position: 10
+sidebar_position: 70
 title: LCDs and Displays Introduction
 nointro: null
 id: LCDs-and-Displays

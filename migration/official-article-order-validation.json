@@ -1,0 +1,135 @@
+{
+  "source": "https://wiki.fysetc.com/",
+  "verifiedCategories": 9,
+  "localeChecks": 18,
+  "printerKitsUnchanged": true,
+  "articleContentUnchanged": true,
+  "results": [
+    {
+      "category": "Controllers",
+      "locale": "en",
+      "status": 200,
+      "articles": 16,
+      "matches": true
+    },
+    {
+      "category": "Stepper Drivers",
+      "locale": "en",
+      "status": 200,
+      "articles": 18,
+      "matches": true
+    },
+    {
+      "category": "Modules",
+      "locale": "en",
+      "status": 200,
+      "articles": 16,
+      "matches": true
+    },
+    {
+      "category": "Sensors",
+      "locale": "en",
+      "status": 200,
+      "articles": 2,
+      "matches": true
+    },
+    {
+      "category": "Wireless",
+      "locale": "en",
+      "status": 200,
+      "articles": 2,
+      "matches": true
+    },
+    {
+      "category": "Mechanical Parts",
+      "locale": "en",
+      "status": 200,
+      "articles": 7,
+      "matches": true
+    },
+    {
+      "category": "Upgrade Kits",
+      "locale": "en",
+      "status": 200,
+      "articles": 19,
+      "matches": true
+    },
+    {
+      "category": "Displays",
+      "locale": "en",
+      "status": 200,
+      "articles": 7,
+      "matches": true
+    },
+    {
+      "category": "Tutorial",
+      "locale": "en",
+      "status": 200,
+      "articles": 9,
+      "matches": true
+    },
+    {
+      "category": "Controllers",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 16,
+      "matches": true
+    },
+    {
+      "category": "Stepper Drivers",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 18,
+      "matches": true
+    },
+    {
+      "category": "Modules",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 16,
+      "matches": true
+    },
+    {
+      "category": "Sensors",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 2,
+      "matches": true
+    },
+    {
+      "category": "Wireless",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 2,
+      "matches": true
+    },
+    {
+      "category": "Mechanical Parts",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 7,
+      "matches": true
+    },
+    {
+      "category": "Upgrade Kits",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 19,
+      "matches": true
+    },
+    {
+      "category": "Displays",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 7,
+      "matches": true
+    },
+    {
+      "category": "Tutorial",
+      "locale": "zh-Hans",
+      "status": 200,
+      "articles": 9,
+      "matches": true
+    }
+  ]
+}
