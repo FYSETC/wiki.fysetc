@@ -144,10 +144,6 @@ button, input, select, textarea { font-family: var(--ifm-font-family-base); }
 .pagination-nav__sublabel { font-size: 12px; color: var(--wiki-muted); }
 .theme-doc-footer-edit-meta-row { border-top: 1px solid var(--wiki-border); margin-top: 28px; padding-top: 18px; }
 .theme-edit-this-page { font-size: 13px; }
-.wiki-doc-meta { display: flex; align-items: center; flex-wrap: wrap; gap: 9px; color: var(--wiki-muted); font-size: 12px; margin-bottom: 14px; }
-.wiki-doc-meta > span:first-child { font-weight: 650; letter-spacing: .04em; color: var(--ifm-color-primary); }
-.wiki-doc-language { border: 1px solid var(--wiki-border); border-radius: 4px; padding: 2px 7px; background: var(--wiki-surface); }
-.wiki-source-note { background: var(--wiki-surface); border-left: 3px solid var(--wiki-brand); padding: 11px 15px; margin-bottom: 23px; font-size: 13px; color: var(--wiki-muted); line-height: 1.7; }
 .card { border-color: var(--wiki-border); border-radius: 7px; }
 .card:hover { border-color: var(--wiki-brand); }
 .footer { border-top: 1px solid var(--wiki-border); padding: 45px 28px 28px; }
@@ -182,5 +178,4 @@ button, input, select, textarea { font-family: var(--ifm-font-family-base); }
   .theme-doc-markdown pre { font-size: 12px; }
   .footer { padding: 30px 20px 22px; }
 }
-@media print { .wiki-doc-meta, .wiki-source-note { display: none; } }
 

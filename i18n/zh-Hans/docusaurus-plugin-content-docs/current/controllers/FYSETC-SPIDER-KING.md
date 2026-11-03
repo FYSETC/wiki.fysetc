@@ -243,7 +243,7 @@ Marlin 固件位于 git 仓库 [GitHub](https://github.com/FYSETC/FYSETC-SPIDER-
 
 #### 4.1.4 上传固件
 
-遵循[此处](#44-firmware-upload)的固件更新指南。
+遵循[此处](#44-固件上传)的固件更新指南。
 
 ### 4.2 Klipper
 
@@ -311,7 +311,7 @@ make
 
 #### 4.2.3 上传固件
 
-遵循[此处](#44-firmware-upload)的固件更新指南。
+遵循[此处](#44-固件上传)的固件更新指南。
 
 ### 4.3 RRF
 

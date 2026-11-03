@@ -244,7 +244,7 @@ USB_DP: PA12
 
 ![](/images/catalyst-k--peripheral-connection.png)
 
-外设端子定义请参阅[连接说明](#description-of-connections)。
+外设端子定义请参阅[连接说明](#连接说明)。
 
 ----
 
@@ -317,9 +317,9 @@ https://github.com/Arksine/katapult?tab=readme-ov-file#uploading-klipper
 
 :::warning Waining
 
-- 刷写固件前，请使用 USB 线连接 Raspberry Pi 和 CATALYST.K，参阅连接图[<u>*USB 通信模式（推荐）*</u>](#usb-communication-mode-recommended)。
-- 刷写固件前，必须完成固件配置，参阅[<u>*固件配置*</u>](#firmware-configuration)
-- 如果固件配置为 CAN 模式，请在固件刷写过程完成后重新验证接线连接，参阅连接图[<u>*CAN 通信模式*</u>](#can-communication-mode)。
+- 刷写固件前，请使用 USB 线连接 Raspberry Pi 和 CATALYST.K，参阅连接图[<u>*USB 通信模式（推荐）*</u>](#usb-通信模式推荐)。
+- 刷写固件前，必须完成固件配置，参阅[<u>*固件配置*</u>](#固件配置)
+- 如果固件配置为 CAN 模式，请在固件刷写过程完成后重新验证接线连接，参阅连接图[<u>*CAN 通信模式*</u>](#can-通信模式)。
 
 :::
 
@@ -351,7 +351,7 @@ make flash FLASH_DEVICE=0483:df11
 
 :::warning 警告
 
-- 只有在固件刷写过程完成后才能识别 ID。如果尚未完成，请参阅[<u>*固件上传*</u>](#firmware-upload)部分。
+- 只有在固件刷写过程完成后才能识别 ID。如果尚未完成，请参阅[<u>*固件上传*</u>](#固件上传)部分。
 - 如果 Mainsail 或 KlipperScreen 指示无法连接到 MCU，则必须先修改 MCU ID，然后再尝试重新连接。
 
 :::

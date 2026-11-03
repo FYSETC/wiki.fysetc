@@ -235,7 +235,7 @@ USB_DP: PA12
 
 ![](/images/catalyst-k--peripheral-connection.png)
 
-外设端子定义请参考[连接说明](#description-of-connections)。
+外设端子定义请参考[连接说明](#连接说明)。
 
 ----
 

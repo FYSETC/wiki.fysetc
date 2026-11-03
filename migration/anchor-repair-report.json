@@ -1,0 +1,92 @@
+{
+  "documents": 117,
+  "checkedLinks": 39,
+  "internalLinks": 16,
+  "changedFiles": 4,
+  "replacements": 9,
+  "applied": true,
+  "changes": [
+    {
+      "file": "controllers/CATALYST.K.md",
+      "line": 247,
+      "url": "#description-of-connections",
+      "target": "controllers/CATALYST.K.md",
+      "from": "description-of-connections",
+      "to": "连接说明",
+      "targetHeading": "连接说明"
+    },
+    {
+      "file": "controllers/CATALYST.K.md",
+      "line": 320,
+      "url": "#usb-communication-mode-recommended",
+      "target": "controllers/CATALYST.K.md",
+      "from": "usb-communication-mode-recommended",
+      "to": "usb-通信模式推荐",
+      "targetHeading": "USB 通信模式（推荐）"
+    },
+    {
+      "file": "controllers/CATALYST.K.md",
+      "line": 321,
+      "url": "#firmware-configuration",
+      "target": "controllers/CATALYST.K.md",
+      "from": "firmware-configuration",
+      "to": "固件配置",
+      "targetHeading": "固件配置"
+    },
+    {
+      "file": "controllers/CATALYST.K.md",
+      "line": 322,
+      "url": "#can-communication-mode",
+      "target": "controllers/CATALYST.K.md",
+      "from": "can-communication-mode",
+      "to": "can-通信模式",
+      "targetHeading": "CAN 通信模式"
+    },
+    {
+      "file": "controllers/CATALYST.K.md",
+      "line": 354,
+      "url": "#firmware-upload",
+      "target": "controllers/CATALYST.K.md",
+      "from": "firmware-upload",
+      "to": "固件上传",
+      "targetHeading": "固件上传"
+    },
+    {
+      "file": "controllers/Catalyst.K_Mainboard_V1.1.md",
+      "line": 238,
+      "url": "#description-of-connections",
+      "target": "controllers/Catalyst.K_Mainboard_V1.1.md",
+      "from": "description-of-connections",
+      "to": "连接说明",
+      "targetHeading": "连接说明"
+    },
+    {
+      "file": "controllers/FYSETC-SPIDER-KING.md",
+      "line": 246,
+      "url": "#44-firmware-upload",
+      "target": "controllers/FYSETC-SPIDER-KING.md",
+      "from": "44-firmware-upload",
+      "to": "44-固件上传",
+      "targetHeading": "4.4 固件上传"
+    },
+    {
+      "file": "controllers/FYSETC-SPIDER-KING.md",
+      "line": 314,
+      "url": "#44-firmware-upload",
+      "target": "controllers/FYSETC-SPIDER-KING.md",
+      "from": "44-firmware-upload",
+      "to": "44-固件上传",
+      "targetHeading": "4.4 固件上传"
+    },
+    {
+      "file": "guides/Spider_Hardware_Guide.md",
+      "line": 196,
+      "url": "/docs/Spider/#32-wiring--fysetc-mini-12864-v21",
+      "target": "controllers/SPIDER_V1-3_F446.md",
+      "from": "32-wiring--fysetc-mini-12864-v21",
+      "to": "32-接线fysetc-mini-12864-v21",
+      "targetHeading": "3.2 接线：FYSETC mini 12864 v2.1"
+    }
+  ],
+  "unresolved": []
+}

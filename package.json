@@ -21,7 +21,9 @@
     "postbuild": "node scripts/legacy-english-redirects.mjs",
     "nav:sync": "node scripts/sync-navigation.mjs",
     "test:navigation": "node --test scripts/folder-navigation.test.mjs",
-    "test:markdown": "node --test scripts/markdown-line-breaks.test.mjs"
+    "test:markdown": "node --test scripts/markdown-line-breaks.test.mjs",
+    "check:anchors": "node scripts/check-document-anchors.mjs",
+    "fix:anchors": "node scripts/check-document-anchors.mjs --fix"
   },
   "dependencies": {
     "@docusaurus/core": "3.10.2",
