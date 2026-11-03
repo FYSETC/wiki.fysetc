@@ -9,4 +9,4 @@ helplook_source: 3D Printer Kits/Venture XL/Venture XL.md
 
 ![](/images/VentureXL_bunner.png)
 
-The **Venture XL**, a 600mm3 coreXY printer kit, is inspired by the classic VORON V2.4. The key components of this kit are high-precision CNC-machined parts, demonstrating outstanding quality. Meanwhile, it comes with the necessary printing components and tools considerately, and the print head and control box have been pre - assembled, enabling you to start the installation process effortlessly without the need to prepare additional parts. Once the installation is completed, you can immediately engage in the printing work and enjoy an efficient and convenient printing experience.
+**Venture XL** 是一款 600mm³ coreXY 打印机套件，灵感源自经典的 VORON V2.4。该套件的关键组件为高精度 CNC 加工零件，展现出卓越的品质。同时，它还贴心地配备了必要的打印组件和工具，并且打印头和控制盒已预先组装完成，让您能够轻松开始安装过程，无需准备额外零件。安装完成后，您即可立即投入打印工作，享受高效便捷的打印体验。

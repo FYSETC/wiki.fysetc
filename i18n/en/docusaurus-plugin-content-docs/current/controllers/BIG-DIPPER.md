@@ -123,7 +123,6 @@ SBC mode allows part of the functionality to be handled by the SBC. For example 
 |:-------------------------------------------------------------------------- | ----------------------------------------------------------------------------------------------------------- |
 | **Support for attached Raspberry Pi or other Single Board Computer (SBC)** | Yes                                                                                                         |
 | **External stepper driver support**                                        | Multiple expansion via the CAN-FD bus.                                                                      |
-|                                               |                                                                             |
 | **PT100 and thermocouple daughterboard support**                           | Supports 1 x daughterboard (2 channels) on board. More via CAN-FD-connected expansion boards.               |
 | **LCD support**                                                            | PanelDue colour touch screen, mini 12864 mono graphics display using ST7567 controller (3.3V signal levels) |
 | **LED strip support**                                                      | RGB Neopixel (max. 60 LEDs, external 5V power required)                                                     |

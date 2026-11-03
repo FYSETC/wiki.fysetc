@@ -77,6 +77,9 @@
   "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit": {
     "message": "Voron V2.4 Kit"
   },
+  "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit.link.generated-index.title": {
+    "message": "Voron V2.4 Kit"
+  },
   "sidebar.wikiSidebar.category.sensors": {
     "message": "传感器"
   },

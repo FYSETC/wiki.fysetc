@@ -1,6 +1,6 @@
 ---
 id: Adventurer-AD5M-Series-Camera
-title: Adventurer AD5M_AD5M Pro_AD5X_Series Camera
+title: Adventurer AD5M/AD5M Pro/AD5X Series Camera
 slug: /Adventurer-AD5M-Series-Camera
 sidebar_position: 120
 source_file: Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md
@@ -27,7 +27,7 @@ helplook_source: Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md
 
 You can watch  [the assembly video](https://www.youtube.com/watch?v=A9rln2BYaC4).
 
-<iframe width="1181" height="664" src="https://www.youtube.com/embed/A9rln2BYaC4" title="Camera Replacement Kit for AD5M/ 5M Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="590" height="332" src="https://www.youtube.com/embed/A9rln2BYaC4" title="Camera Replacement Kit for AD5M/ 5M Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 You can also scan the QR code to view.
 
@@ -164,7 +164,7 @@ You can also scan the QR code to view.
 If the firmware version is already the latest, skip the first two steps and proceed directly to Step 3. For Steps 3-9, you can refer to the video guide at   [the assembly video](https://www.youtube.com/watch?v=2sfb2OtY7wM).
 
 
-<iframe width="1500" height="844" src="https://www.youtube.com/embed/2sfb2OtY7wM" title="Install zmod to AD5X / AD5M / AD5MPro @Belovv_ilya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="750" height="422" src="https://www.youtube.com/embed/2sfb2OtY7wM" title="Install zmod to AD5X / AD5M / AD5MPro @Belovv_ilya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 

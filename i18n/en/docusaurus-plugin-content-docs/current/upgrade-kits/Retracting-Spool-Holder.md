@@ -124,7 +124,6 @@ Refer to the assembly tutorial to avoid installation errors.
 
 ## Shop
 
-------
 
 -  [Aliexpress](https://www.aliexpress.com/item/1005009576711964.html).
   

@@ -269,9 +269,4 @@ For new firmware,the default config is not for cheetah board anymore as we have 
 
 ## Tech Support
 
-Please submit any technical issue into our [forum](http://forum.fysetc.com/) 
-
-
-```
-
-```
+Please submit any technical issue into our [forum](http://forum.fysetc.com/)

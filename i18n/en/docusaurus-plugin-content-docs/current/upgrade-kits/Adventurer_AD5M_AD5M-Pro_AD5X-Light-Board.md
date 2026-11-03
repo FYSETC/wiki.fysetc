@@ -1,6 +1,6 @@
 ---
-id: Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board
-title: Adventurer_AD5M_AD5M Pro_AD5X Light Board
+id: Adventurer-AD5M-AD5M-Pro-AD5X-Light-Board
+title: Adventurer AD5M/AD5M Pro/AD5X Light Board
 slug: /Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board
 sidebar_position: 110
 source_file: Adventurer_AD5M_AD5M Pro_AD5X Light Board.md
@@ -97,7 +97,7 @@ You can also scan the QR code to view.
 ### Assembly steps
 
 You can watch  [the assembly video](https://www.youtube.com/watch?v=3c4qJQSLIu8).
-<iframe width="1203" height="752" src="https://www.youtube.com/embed/3c4qJQSLIu8" title="Imdinnogo 5M Pro Light Board" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="600" height="375" src="https://www.youtube.com/embed/3c4qJQSLIu8" title="Imdinnogo 5M Pro Light Board" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 You can also scan the QR code to view.

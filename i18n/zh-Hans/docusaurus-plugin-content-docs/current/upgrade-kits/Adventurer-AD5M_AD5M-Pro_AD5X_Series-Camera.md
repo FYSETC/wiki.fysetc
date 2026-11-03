@@ -1,6 +1,6 @@
 ---
 id: Adventurer-AD5M-Series-Camera
-title: Adventure AD5M_AD5M Pro_AD5X_系列相机
+title: Adventure AD5M/AD5M Pro/AD5X系列相机
 slug: /Adventurer-AD5M-Series-Camera
 sidebar_position: 120
 source_file: Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md
@@ -27,7 +27,7 @@ helplook_source: Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md
 
 您可以观看[组装视频](https://www.youtube.com/watch?v=A9rln2BYaC4)。
 
-<iframe width="1181" height="664" src="https://www.youtube.com/embed/A9rln2BYaC4" title="Camera Replacement Kit for AD5M/ 5M Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="590" height="332" src="https://www.youtube.com/embed/A9rln2BYaC4" title="Camera Replacement Kit for AD5M/ 5M Pro" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 您也可以扫描二维码查看。
 
@@ -164,7 +164,7 @@ helplook_source: Upgrade Kits/Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md
 如果固件版本已是最新，请跳过前两步，直接进入步骤 3。步骤 3-9 可参考视频指南[组装视频](https://www.youtube.com/watch?v=2sfb2OtY7wM)。
 
 
-<iframe width="1500" height="844" src="https://www.youtube.com/embed/2sfb2OtY7wM" title="Install zmod to AD5X / AD5M / AD5MPro @Belovv_ilya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+<iframe width="750" height="422" src="https://www.youtube.com/embed/2sfb2OtY7wM" title="Install zmod to AD5X / AD5M / AD5MPro @Belovv_ilya" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
 
 
 
