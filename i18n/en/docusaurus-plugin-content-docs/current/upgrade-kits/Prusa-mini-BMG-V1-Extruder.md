@@ -3,7 +3,7 @@ id: Prusa-mini-BMG-V1-Extruder
 title: Prusa mini BMG V1 Extruder
 slug: /Prusa-mini-BMG-V1-Extruder
 sidebar_position: 10
-description: Product name：Prusa mini BMG V1 Extruder
+description: "Prusa mini BMG V1 extruder built from printed parts for the Prusa Mini, adding extruder torque and improving surface quality with easy installation."
 source_file: Prusa mini BMG V1 Extruder.md
 source_language: en
 ---

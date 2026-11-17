@@ -3,7 +3,7 @@ id: Mini12864_Panel
 title: Mini12864_Panel
 slug: /Mini12864_Panel
 sidebar_position: 20
-description: 这是一款开源、廉价的显示器，带有RGB指示灯，兼容Marlin固件，支持离线打印，分辨率为12864，显示区域为2.4英寸，SD卡座可侧装或竖装，十分方便……
+description: "FYSETC Mini12864 是一款面向小型打印机的图形液晶显示屏，介绍三个硬件版本、编码器背光控制、典型接线、引脚修改、固件配置和不同安装场合。"
 source_file: Mini12864_Panel.md
 source_language: en
 ---

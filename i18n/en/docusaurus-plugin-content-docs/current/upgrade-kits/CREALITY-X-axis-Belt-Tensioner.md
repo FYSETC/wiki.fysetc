@@ -3,7 +3,7 @@ id: CREALITY-X-axis-Belt-Tensioner
 title: CREALITY X-axis Belt Tensioner
 slug: /CREALITY-X-axis-Belt-Tensioner
 sidebar_position: 70
-description: Product name：CREALITY X-axis Belt Tensioner
+description: "CREALITY X-axis belt tensioner in aluminum alloy for Ender-3, Ender-3 Pro, CR-10, CR10 Pro, CR10 V2 and Ender-5, with step by step screw fitting."
 source_file: CREALITY X-axis Belt Tensioner.md
 source_language: en
 ---

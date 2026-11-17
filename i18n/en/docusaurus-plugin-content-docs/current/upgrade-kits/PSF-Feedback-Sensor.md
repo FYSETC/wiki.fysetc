@@ -1,6 +1,7 @@
 ---
 id: FC-Product-Manual
 title: PSF Feedback Sensor
+description: "PSF feedback sensor using a linear Hall effect design to send analog position data to Happy Hare, with BOM, printed parts, wiring and MMU configuration."
 slug: /FC-Product-Manual
 sidebar_position: 170
 source_file: PSF Feedback Sensor.md

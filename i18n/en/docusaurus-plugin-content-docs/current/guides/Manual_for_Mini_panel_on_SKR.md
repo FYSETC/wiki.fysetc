@@ -3,7 +3,7 @@ id: Manual_for_Mini_panel_on_SKR
 title: Manual for Mini panel on SKR
 slug: /Manual_for_Mini_panel_on_SKR
 sidebar_position: 30
-description: If you use or select an other version we do not guarantee this manual to work. https://wiki.fysetc.com/Mini12864_Panel/
+description: "Set up a FYSETC Mini 12864 V2.1 Neopixel panel on a BIGTREETECH SKR V1.3 with Marlin 2.0: LCD and Neopixel options plus reversing the EXP connectors."
 source_file: Manual_for_Mini_panel_on_SKR.md
 source_language: en
 ---

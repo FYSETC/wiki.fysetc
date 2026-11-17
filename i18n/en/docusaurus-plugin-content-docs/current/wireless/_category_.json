@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Wireless",
-    "slug": "/category/wireless"
+    "slug": "/category/wireless",
+    "description": "FYSETC wireless product documentation for SD WiFi Pro and related modules, covering setup, file transfer, pinout and firmware."
   },
   "customProps": {
     "icon": "wireless"

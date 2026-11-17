@@ -4,6 +4,7 @@
   "position": 2,
   "collapsed": true,
   "link": {
-  "type": "generated-index"
-}
+    "type": "generated-index",
+    "description": "Venture XL assembly guide covering frame, Z motors, gantry, hot bed, extrusion head, drag chains, casters and electrical components."
+  }
 }

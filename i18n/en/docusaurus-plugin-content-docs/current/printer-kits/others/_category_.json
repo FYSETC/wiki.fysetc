@@ -6,6 +6,7 @@
   "link": {
     "type": "generated-index",
     "title": "Others",
-    "slug": "/category/printer-kits/others"
+    "slug": "/category/printer-kits/others",
+    "description": "FYSETC Prusa clone kit resources for Mini, MK3S and MMU2S builds, covering STL files, assembly tutorials and knowledge base links."
   }
 }

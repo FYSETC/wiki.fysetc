@@ -3,7 +3,7 @@ id: Cheetah_Board
 title: CHEETAH
 slug: /Cheetah_Board
 sidebar_position: 60
-description: 专为单头3D打印机设计，预留了众多接口以支持更多功能。例如交流电检测、耗材检测、使用BL-touch或其他传感器进行调平。
+description: "CHEETAH 单头主板基于 STM32F103，配 4 个 TMC2209 或 TMC2208 驱动，含跳线定义与 Marlin 固件说明。"
 source_file: Cheetah_Board.md
 source_language: en
 ---

@@ -3,7 +3,7 @@ id: Sherpa-extruder
 title: Sherpa-extruder
 slug: /Sherpa-extruder
 sidebar_position: 10
-description: FYSETC manufacturing information of Sherpa series extruder designed by Annex Engineering
+description: "FYSETC Sherpa mini extruder designed by Annex Engineering, covering supported printers, common specs, Rev 1.0 to 1.5 changes, mods and E-step settings."
 source_file: Sherpa-extruder.md
 source_language: en
 ---

@@ -1,6 +1,7 @@
 ---
 id: SPIDER_V3_H7
 title: SPIDER_V3_H723
+description: "FYSETC Spider V3.0 H7 board with STM32H723VGT6 at 550MHz, motor power input to 60V peak, per-driver voltage selectors, DotStar RGB and full GPIO pinout."
 slug: /SPIDER_V3_H7
 sidebar_position: 40
 source_file: SPIDER_V3_H723.md

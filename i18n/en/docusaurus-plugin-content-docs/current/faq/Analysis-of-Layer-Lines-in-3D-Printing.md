@@ -1,6 +1,7 @@
 ---
 id: Analysis-of-Layer-Lines-in-3D-Printing
 title: Analysis of Layer Lines in 3D Printing
+description: "Diagnose layer lines and stair-stepping in 3D prints: layer height, extrusion and E-steps, temperature stability, mechanics, cooling and post-processing."
 slug: /Analysis-of-Layer-Lines-in-3D-Printing
 source_file: Analysis of Layer Lines in 3D Printing.md
 source_language: en

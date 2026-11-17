@@ -1,6 +1,7 @@
 ---
 id: Catalyst.K_Mainboard_V1.1
 title: Catalyst.K_Mainboard_V1.1
+description: "CATALYST.K V1.1 主板说明，涵盖 STM32H723 规格、工作限制、24V/48V 跳线设置、DFU 与 CAN 模式 LED 指示及引脚定义。"
 slug: /Catalyst-K-Mainboard-V1-1
 sidebar_position: 150
 source_file: Catalyst.K_Mainboard_V1.1.md

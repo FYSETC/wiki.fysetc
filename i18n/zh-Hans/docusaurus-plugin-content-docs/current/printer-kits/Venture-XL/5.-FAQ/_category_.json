@@ -4,6 +4,7 @@
   "position": 5,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Venture XL 常见问题，汇总 MCU 连接错误、校准提示等软件与硬件问题的排查和解决方法。"
   }
 }

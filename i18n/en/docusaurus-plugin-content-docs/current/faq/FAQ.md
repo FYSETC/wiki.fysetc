@@ -1,6 +1,7 @@
 ---
 id: FAQ
 title: FAQ
+description: "FYSETC Wiki FAQ section gathering recurring 3D printer hardware questions and publishing the resolved answers as reference entries for boards and firmware."
 slug: /FAQ
 source_file: FAQ.md
 source_language: en

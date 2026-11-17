@@ -5,7 +5,8 @@
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "slug": "/category/controllers"
+    "slug": "/category/controllers",
+    "description": "FYSETC controller board documentation for Spider, Cheetah, F6, S6 and Catalyst.K, including specs, pinouts, wiring and firmware setup."
   },
   "customProps": {
     "icon": "board"

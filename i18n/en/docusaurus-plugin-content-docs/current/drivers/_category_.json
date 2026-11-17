@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Stepper Drivers",
-    "slug": "/category/drivers"
+    "slug": "/category/drivers",
+    "description": "FYSETC stepper driver documentation for TMC2208, TMC2209, TMC5160, Silent2209 and compatible modules, with current settings and wiring."
   },
   "customProps": {
     "icon": "driver"

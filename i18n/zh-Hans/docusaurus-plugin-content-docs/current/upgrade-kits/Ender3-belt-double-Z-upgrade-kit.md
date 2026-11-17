@@ -3,7 +3,7 @@ id: Ender3-belt-double-Z-upgrade-kit
 title: Ender3 皮带双 Z 升级套件
 slug: /Ender3-belt-double-Z-upgrade-kit
 sidebar_position: 50
-description: 产品名称：Ender3 皮带双Z轴升级套件
+description: "Ender3 皮带双 Z 轴升级套件采用金属与 SPCC 材质，适用于 Ender-3、Ender-3S 与 Ender-3 Pro，可改善 Z 轴运动力矩并保持 X 轴左右平衡，提升打印质量。"
 source_file: Ender3 belt double Z upgrade kit.md
 source_language: en
 ---

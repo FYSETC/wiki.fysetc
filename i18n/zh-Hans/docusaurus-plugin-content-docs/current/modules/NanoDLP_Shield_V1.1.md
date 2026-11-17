@@ -3,7 +3,7 @@ id: NanoDLP_Shield_V1.1
 title: NanoDLP Shield V1.1
 slug: /NanoDLP_Shield_V1.1
 sidebar_position: 90
-description: 该扩展板专为Raspberry Pi 3B设计，用于运行NanoDLP的SLA/DLP 3D打印机。该板包含一个9-28V转5V电路，最大提供3A电流，以及其他…
+description: "NanoDLP Shield V1.1扩展板介绍，用于树莓派3B运行NanoDLP的SLA/DLP打印机，含供电、DRV8825驱动与接口引脚定义。"
 source_file: NanoDLP_Shield_V1.1.md
 source_language: en
 ---

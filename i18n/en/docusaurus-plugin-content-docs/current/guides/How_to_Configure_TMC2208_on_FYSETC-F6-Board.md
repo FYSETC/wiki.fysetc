@@ -3,7 +3,7 @@ id: How_to_Configure_TMC2208_on_FYSETC-F6-Board
 title: How to Configure TMC2208 on FYSETC-F6-Board
 slug: /How_to_Configure_TMC2208_on_FYSETC-F6-Board
 sidebar_position: 40
-description: 'For FYSETC F6 boards , we upload a F6-board-only TMC2208 stepper library , you can find it here : https://github.com/FYSETC/TMC2208Stepper. Download the library and copy the TMC2208 Stepper folder…'
+description: "Install the FYSETC TMC2208 library and patch Marlin for the F6: stepper indirection.cpp edits, tmc2208 init changes and Configuration_adv.h axis settings."
 source_file: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
 source_language: en
 ---

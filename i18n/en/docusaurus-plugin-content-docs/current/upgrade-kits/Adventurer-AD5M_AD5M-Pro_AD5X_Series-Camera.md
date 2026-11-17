@@ -1,6 +1,7 @@
 ---
 id: Adventurer-AD5M-Series-Camera
 title: Adventurer AD5M/AD5M Pro/AD5X Series Camera
+description: "Universal camera for Adventurer AD5M, AD5M Pro and AD5X printers, with assembly video, Flashforge slicer enabling steps and AD5X firmware flashing options."
 slug: /Adventurer-AD5M-Series-Camera
 sidebar_position: 120
 source_file: Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md

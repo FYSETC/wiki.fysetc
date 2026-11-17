@@ -1,6 +1,7 @@
 ---
 id: Analysis-of-Layer-Lines-in-3D-Printing
 title: 3D打印层纹分析
+description: "分析3D打印层纹与阶梯效应，讲解层高、挤出、温度、机械结构、冷却与速度等成因，并给出切片参数调整、后处理与硬件优化的解决思路。"
 slug: /Analysis-of-Layer-Lines-in-3D-Printing
 source_file: Analysis of Layer Lines in 3D Printing.md
 source_language: en

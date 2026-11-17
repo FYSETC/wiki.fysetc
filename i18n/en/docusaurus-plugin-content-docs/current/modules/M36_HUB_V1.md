@@ -3,7 +3,7 @@ id: M36_HUB_V1
 title: M36 HUB v1
 slug: /M36_HUB_V1
 sidebar_position: 80
-description: 'M36 HUB v1: original FYSETC documentation and related references.'
+description: "M36 HUB v1 board for 36 mm NEMA14 motors on mini Stealthburner heads: STM32F072, TMC2209 or GC6609 Lite, fan and RGB outputs, wiring and Klipper firmware."
 source_file: M36_HUB_V1.md
 source_language: en
 ---

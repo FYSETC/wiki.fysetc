@@ -3,7 +3,7 @@ id: Spider_Software_Guide
 title: Spider Software Guide
 slug: /Spider_Software_Guide
 sidebar_position: 10
-description: 'Spider software guide: original FYSETC documentation and related references.'
+description: "FYSETC Spider software guide for the Voron 2.4: Klipper basics, flashing the Fluidd image to a Raspberry Pi, Wi-Fi setup and the first Fluidd launch."
 source_file: Spider_Software_Guide.md
 source_language: en
 ---

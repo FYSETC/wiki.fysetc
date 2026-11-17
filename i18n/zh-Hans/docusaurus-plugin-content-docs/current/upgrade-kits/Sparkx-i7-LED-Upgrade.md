@@ -1,6 +1,7 @@
 ---
 id: Sparkx_i7_Led_System
 title: Sparkx i7 LED 升级
+description: "Sparkx i7 LED 升级在 HLS 设计基础上简化了安装与接线，含控制板、打印灯带支架与 USB 供电模块，安装完成后触摸左侧即可开关 X 轴照明。"
 slug: /Sparkx_i7_Led_System
 sidebar_position: 160
 source_file: Sparkx i7 LED Upgrade.md

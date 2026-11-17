@@ -1,6 +1,7 @@
 ---
 id: FC-Product-Manual
 title: PSF 反馈传感器
+description: "PSF 反馈传感器通过线性霍尔元件向 Happy Hare 提供实时位置遥测并微调齿轮步进电机旋转距离，含物料清单、组装接线与 MMU 参数配置说明。"
 slug: /FC-Product-Manual
 sidebar_position: 170
 source_file: PSF Feedback Sensor.md

@@ -3,7 +3,7 @@ id: SB_Combo_V2
 title: SB Combo V2
 slug: /SB_Combo_V2
 sidebar_position: 30
-description: 'SB CAN V2 is a newly designed SB tool board running Klipper firmware. Based on STM32F072, it provides two communication modes: CANBUS and USB. The onboard USBHUB has up to three USB interfaces,…'
+description: "SB Combo V2 toolboard for the Voron Stealthburner: STM32F072 with CAN or USB, TMC2209, ADXL345, USB hub, AUX board support and cable pinout warnings."
 source_file: SB_Combo_V2.md
 source_language: en
 ---

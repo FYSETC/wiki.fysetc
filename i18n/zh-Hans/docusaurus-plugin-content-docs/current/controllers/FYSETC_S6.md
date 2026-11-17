@@ -3,7 +3,7 @@ id: FYSETC_S6
 title: FYSETC_S6
 slug: /FYSETC_S6
 sidebar_position: 100
-description: S6基于STM32F446 32位MCU，与F6一样，具有六个驱动插座，并支持全系列TMC驱动器。我们已充分扩展了MCU的资源，以便您能够最大限度地发挥其…
+description: "S6 主板基于 180MHz STM32F446，提供六个 TMC 驱动插座，支持 28V 输入与多种限位电压，含跳线与引脚定义。"
 source_file: FYSETC_S6.md
 source_language: en
 ---

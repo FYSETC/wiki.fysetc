@@ -3,7 +3,7 @@ id: Ender-5-3D-printer-Direct-Drive-Extruder-Plate
 title: Ender 5 3D printer Direct Drive Extruder Plate
 slug: /Ender-5-3D-printer-Direct-Drive-Extruder-Plate
 sidebar_position: 40
-description: Product name：Ender 5 3D printer Direct Drive Extruder Plate
+description: "Ender 5 direct drive extruder plate in aluminum alloy for the Ender 5, providing a stable fixing method for a short range extruder with easy removal."
 source_file: Ender 5 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---

@@ -3,7 +3,7 @@ id: Cheetah_Board
 title: CHEETAH
 slug: /Cheetah_Board
 sidebar_position: 60
-description: Designed for a single-head 3D printer, many interfaces are reserved for more features. Such as AC detection, filament detection, leveling with BL-touch or other sensors.
+description: "FYSETC CHEETAH single-head board with STM32F103, four TMC2209 or TMC2208 drivers, 7-35V input, V1.1 and V1.2 jumper maps, and Marlin firmware steps."
 source_file: Cheetah_Board.md
 source_language: en
 ---

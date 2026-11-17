@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Displays",
-    "slug": "/category/displays"
+    "slug": "/category/displays",
+    "description": "FYSETC display documentation for Mini12864, TFT81050, PanelDue and touch screens, covering wiring, firmware and Marlin or Klipper setup."
   },
   "customProps": {
     "icon": "screen"

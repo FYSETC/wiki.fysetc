@@ -3,7 +3,7 @@ id: StrideMax_Dual_FD_V2
 title: STRIDEMAX_DUAL_FD_V2
 slug: /StrideMax_Dual_FD_V2
 sidebar_position: 130
-description: StrideMax Dual FD is a RP2040-based control board with dual TMC5160 drivers that can run RRF firmware or Klipper firmware. Each 5160 driver group has 8 high-power MOSFETs and is covered by a heat…
+description: "FYSETC StrideMax Dual FD V2 with RP2040 and dual TMC5160 drivers at up to 10A, 19-60V input, CAN, CANFD and USB, plus power and motor wiring setup."
 source_file: StrideMax_Dual_FD_V2.md
 source_language: en
 ---

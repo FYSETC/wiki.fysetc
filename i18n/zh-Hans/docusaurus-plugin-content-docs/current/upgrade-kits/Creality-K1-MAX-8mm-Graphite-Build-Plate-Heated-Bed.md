@@ -1,6 +1,7 @@
 ---
 id: Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed
 title: Creality K1 MAX 8mm 石墨构建板与加热床
+description: "Creality K1 MAX 8mm 石墨打印板与加热床升级说明，含硅胶加热垫贴合、SSR 接线、床体组装与打印表面安装步骤，并提供三种购买套装。"
 slug: /Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed
 sidebar_position: 140
 source_file: Creality K1 MAX 8mm Graphite Build Plate & Heated Bed.md

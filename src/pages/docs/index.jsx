@@ -11,7 +11,10 @@ export default function DocumentationOverview() {
   const chinese = i18n.currentLocale === 'zh-Hans';
   const docsBase = useBaseUrl('/docs/');
   const title = chinese ? '文档总览' : 'Documentation overview';
-  return <Layout title={title}>
+  const description = chinese
+    ? '按产品分类浏览 FYSETC 产品文档、引脚定义、接线图与配置教程。'
+    : 'Browse FYSETC product documentation, pinout references, wiring diagrams, and configuration guides by category.';
+  return <Layout title={title} description={description}>
     <main className="container margin-vert--lg">
       <h1>{title}</h1>
       <p>{chinese ? '按类别浏览产品资料和使用指南。' : 'Browse product documentation and guides by category.'}</p>

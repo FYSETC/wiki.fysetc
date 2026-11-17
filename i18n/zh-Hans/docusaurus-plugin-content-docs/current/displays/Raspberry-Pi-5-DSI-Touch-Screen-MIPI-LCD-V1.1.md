@@ -1,6 +1,7 @@
 ---
 id: Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1
 title: Raspberry Pi 5" DSI Touch Screen MIPI LCD V1.1
+description: "Raspberry Pi 5 英寸 DSI 触摸屏 V1.1 支持五点电容触控，介绍屏幕分辨率与显示区域、排线接线方向、安装视频、驱动模块修改和固件配置步骤。"
 slug: /Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1-1
 sidebar_position: 50
 source_file: Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md

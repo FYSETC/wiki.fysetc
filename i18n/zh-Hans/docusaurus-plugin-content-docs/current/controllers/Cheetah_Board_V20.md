@@ -3,7 +3,7 @@ id: Cheetah_Board_V20
 title: Cheetah v2.0
 slug: /Cheetah_Board_V20
 sidebar_position: 70
-description: Cheetah 2.0 是一款基于 STM32F401 的单头主控板，板载 4 个 TMC2209，支持无传感器归零，可连接多种显示屏，兼容安装……
+description: "Cheetah v2.0 单头主板基于 STM32F401，板载 4 个 TMC2209，兼容 Ender 3 与 Ender 5，含引脚定义。"
 source_file: Cheetah_Board_V20.md
 source_language: en
 ---

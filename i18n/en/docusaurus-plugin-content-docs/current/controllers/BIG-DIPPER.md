@@ -3,7 +3,7 @@ id: BIG-DIPPER
 title: BIG-DIPPER
 slug: /BIG-DIPPER
 sidebar_position: 120
-description: BIG-DIPPER is a combination of Duet3 mini5+ and Mini 2+. It's based on ATSAME54P20A and pin assignments are exactly the same as those of mini5+, so the mini5+ firmware can be used directly.
+description: "FYSETC BIG-DIPPER pairs Duet3 mini5+ with Mini 2+ on ATSAME54P20A, 7x TMC2209, RRF 3.2, WiFi or Ethernet modules, plus mounting and cooling specs."
 source_file: BIG-DIPPER.md
 source_language: en
 ---

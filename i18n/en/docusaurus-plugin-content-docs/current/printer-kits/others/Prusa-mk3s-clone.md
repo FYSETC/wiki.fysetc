@@ -3,7 +3,7 @@ id: Prusa-mk3s-clone
 title: Prusa-mk3s-clone
 slug: /Prusa-mk3s-clone
 sidebar_position: 20
-description: 'FYSETC/FYSETC-Prusa-MK3S-clone: FYSETC Prusa MK3S clone Kit Database (github.com)'
+description: "FYSETC Prusa MK3S clone kit database with STL files, a detailed five-step video assembly tutorial, and a knowledge base for building the printer."
 source_file: Prusa-mk3s-clone.md
 source_language: en
 displayed_sidebar: wikiSidebar

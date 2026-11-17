@@ -3,7 +3,7 @@ id: Spider
 title: SPIDER_V1-3_F446
 slug: /Spider
 sidebar_position: 30
-description: SPIDER is a small but powerful 3D printer control board. In a limited space, it integrates 8 stepper motor drives, 5A 12V power supply, 8A 5V power supply, which provides powerful energy for fans of…
+description: "SPIDER V1.3 F446 控制板集成 8 个步进驱动插槽与 12V/5A、5V/8A 电源，含接线与 TMC2209 说明。"
 source_file: SPIDER_V1-3_F446.md
 source_language: en
 helplook_source: Controllers/SPIDER_V1-3_F446.md

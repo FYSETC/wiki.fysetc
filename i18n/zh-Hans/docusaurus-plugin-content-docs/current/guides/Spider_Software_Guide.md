@@ -3,7 +3,7 @@ id: Spider_Software_Guide
 title: 蜘蛛软件指南
 slug: /Spider_Software_Guide
 sidebar_position: 10
-description: 蜘蛛软件指南：FYSETC 原始文档及相关参考资料。
+description: "FYSETC Spider蜘蛛主板软件指南，介绍Voron 2.4使用的Klipper固件、Fluidd系统镜像烧录、树莓派无线网络设置及首次打开Web界面。"
 source_file: Spider_Software_Guide.zh.md
 source_language: zh
 ---

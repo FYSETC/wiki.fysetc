@@ -1,6 +1,7 @@
 ---
 id: SPIDER_V3_H7
 title: SPIDER_V3_H723
+description: "Spider V3.0 H7 主板采用 550MHz STM32H723VGT6，电机电源输入峰值 60V，每驱动带电压选择，含包装清单与完整引脚定义。"
 slug: /SPIDER_V3_H7
 sidebar_position: 40
 source_file: SPIDER_V3_H723.md

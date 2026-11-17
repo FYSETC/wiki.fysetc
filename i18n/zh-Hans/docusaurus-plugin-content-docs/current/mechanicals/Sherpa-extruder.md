@@ -3,7 +3,7 @@ id: Sherpa-extruder
 title: Sherpa-extruder
 slug: /Sherpa-extruder
 sidebar_position: 10
-description: FYSETC 制造的 Sherpa 系列挤出机，由 Annex Engineering 设计
+description: "FYSETC Sherpa mini 是由第三方设计的挤出机，介绍项目来源、适用机型、通用规格、各版本减速比与电机差异、改装支架、步进参数和电流设置方法。"
 source_file: Sherpa-extruder.md
 source_language: en
 ---

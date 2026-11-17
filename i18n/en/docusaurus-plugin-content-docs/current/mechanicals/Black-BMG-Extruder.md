@@ -3,7 +3,7 @@ id: Black-BMG-Extruder
 title: Black BMG Extruder
 slug: /Black-BMG-Extruder
 sidebar_position: 50
-description: 'Black BMG Extruder: original FYSETC documentation and related references.'
+description: "FYSETC Black BMG Extruder in ABS for CR10, Ender3 and other 3D printers, covering product specs, assembly steps, installation notes and FAQ."
 source_file: Black BMG Extruder.md
 source_language: en
 ---

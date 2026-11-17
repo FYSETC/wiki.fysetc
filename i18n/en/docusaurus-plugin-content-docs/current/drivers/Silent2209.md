@@ -3,7 +3,7 @@ id: Silent2209
 title: SILENT_2209
 slug: /Silent2209
 sidebar_position: 20
-description: The TMC2209 is an ultra-silent motor driver IC for two phase stepper motors. TMC2209 pinning is compatible to a number of legacy drivers as well as to the TMC2208. TRINAMICs sophisticated…
+description: "FYSETC Silent2209 module based on the TMC2209 driver, covering 2A RMS current, UART tuning, StallGuard4 sensorless homing and version differences."
 source_file: Silent2209.md
 source_language: en
 ---

@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "显示面板",
-    "slug": "/category/displays"
+    "slug": "/category/displays",
+    "description": "FYSETC 显示面板文档，涵盖 Mini12864、TFT81050、PanelDue 与触摸屏的接线、固件及 Marlin/Klipper 配置。"
   },
   "customProps": {
     "icon": "screen"

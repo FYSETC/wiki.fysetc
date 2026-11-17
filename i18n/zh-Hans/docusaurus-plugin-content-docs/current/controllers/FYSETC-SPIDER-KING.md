@@ -3,7 +3,7 @@ id: FYSETC-SPIDER-KING
 title: FYSETC SPIDER KING
 slug: /FYSETC-SPIDER-KING
 sidebar_position: 50
-description: 10轴工业级3D打印机主板
+description: "SPIDER KING 十轴工业级主板，控制核心可选 RP2040、STM32F446、F407 或 H7，具备 5000V IO 隔离，含引脚定义与驱动指南。"
 source_file: FYSETC-SPIDER-KING.md
 source_language: en
 ---

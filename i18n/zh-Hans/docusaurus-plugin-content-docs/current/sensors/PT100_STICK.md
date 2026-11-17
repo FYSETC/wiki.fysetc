@@ -3,7 +3,7 @@ id: PT100_STICK
 title: PT100 Stick
 slug: /PT100_STICK
 sidebar_position: 10
-description: FYSETC-PT100Stick 是一款 Pololu 外形尺寸的 MAX31865 转接板，适用于 FYSETC S6/Spider 及类似的 32 位 3D 打印机控制板。它基于 VORON PT100Stick。
+description: "FYSETC PT100 Stick 是一款温度采集转接板，适用于三十二位控制板，介绍跳线设置、固件配置、温度校准、读数异常与欠压过压等故障排除方法。"
 source_file: PT100_STICK.md
 source_language: en
 ---

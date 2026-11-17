@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Modules",
-    "slug": "/category/modules"
+    "slug": "/category/modules",
+    "description": "FYSETC module documentation for toolhead boards, CAN and USB hubs, UCAN adapters and LED drivers, with pinouts and firmware guides."
   },
   "customProps": {
     "icon": "module"

@@ -3,7 +3,7 @@ id: Ender-3-3D-printer-Direct-Drive-Extruder-Plate
 title: Ender 3 3D printer Direct Drive Extruder Plate
 slug: /Ender-3-3D-printer-Direct-Drive-Extruder-Plate
 sidebar_position: 60
-description: Product name：Ender 3 3D printer Direct Drive Extruder Plate
+description: "Ender 3 direct drive extruder plate in aluminum alloy for Ender 3 and CR10 printers, giving a short range extruder a secure mounting point and easy fit."
 source_file: Ender 3 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---

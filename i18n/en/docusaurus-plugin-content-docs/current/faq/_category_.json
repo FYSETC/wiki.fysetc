@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "FAQ",
-    "slug": "/category/faq"
+    "slug": "/category/faq",
+    "description": "FYSETC FAQ with troubleshooting answers for layer lines, nozzle scratching, hardware faults and common 3D printing problems."
   },
   "customProps": {
     "icon": "book"

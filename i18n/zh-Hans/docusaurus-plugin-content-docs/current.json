@@ -5,11 +5,17 @@
   "sidebar.wikiSidebar.category.controllers.link.generated-index.title": {
     "message": "控制板"
   },
+  "sidebar.wikiSidebar.category.controllers.link.generated-index.description": {
+    "message": "FYSETC 控制板文档，涵盖 Spider、Cheetah、F6、S6 与 Catalyst.K 的规格、引脚、接线和固件配置。"
+  },
   "sidebar.wikiSidebar.category.displays": {
     "message": "显示面板"
   },
   "sidebar.wikiSidebar.category.displays.link.generated-index.title": {
     "message": "显示面板"
+  },
+  "sidebar.wikiSidebar.category.displays.link.generated-index.description": {
+    "message": "FYSETC 显示面板文档，涵盖 Mini12864、TFT81050、PanelDue 与触摸屏的接线、固件及 Marlin/Klipper 配置。"
   },
   "sidebar.wikiSidebar.category.drivers": {
     "message": "步进电机驱动"
@@ -17,11 +23,17 @@
   "sidebar.wikiSidebar.category.drivers.link.generated-index.title": {
     "message": "步进电机驱动"
   },
+  "sidebar.wikiSidebar.category.drivers.link.generated-index.description": {
+    "message": "FYSETC 步进驱动文档，涵盖 TMC2208、TMC2209、TMC5160、Silent2209 等模块的电流设置、接线与散热说明。"
+  },
   "sidebar.wikiSidebar.category.faq": {
     "message": "常见问题"
   },
   "sidebar.wikiSidebar.category.faq.link.generated-index.title": {
     "message": "常见问题"
+  },
+  "sidebar.wikiSidebar.category.faq.link.generated-index.description": {
+    "message": "FYSETC 常见问题，汇总层纹、喷嘴刮擦、硬件故障等 3D 打印常见问题的排查与解决方法。"
   },
   "sidebar.wikiSidebar.category.guides": {
     "message": "教程"
@@ -29,17 +41,26 @@
   "sidebar.wikiSidebar.category.guides.link.generated-index.title": {
     "message": "教程"
   },
+  "sidebar.wikiSidebar.category.guides.link.generated-index.description": {
+    "message": "FYSETC 使用指南，涵盖主板接线、TMC 驱动配置、Klipper 安装与硬件组装的分步教程。"
+  },
   "sidebar.wikiSidebar.category.mechanicals": {
     "message": "机械部件"
   },
   "sidebar.wikiSidebar.category.mechanicals.link.generated-index.title": {
     "message": "机械部件"
   },
+  "sidebar.wikiSidebar.category.mechanicals.link.generated-index.description": {
+    "message": "FYSETC 机械部件文档，涵盖 BMG 与 MK8 挤出机的适用机型、组装步骤、安装与维护说明。"
+  },
   "sidebar.wikiSidebar.category.modules": {
     "message": "模块"
   },
   "sidebar.wikiSidebar.category.modules.link.generated-index.title": {
     "message": "模块"
+  },
+  "sidebar.wikiSidebar.category.modules.link.generated-index.description": {
+    "message": "FYSETC 模块文档，涵盖工具头板、CAN 与 USB 集线器、UCAN 转接板和 LED 驱动器，含引脚与固件说明。"
   },
   "sidebar.wikiSidebar.category.printer-kits": {
     "message": "3D 打印机套件"
@@ -49,6 +70,9 @@
   },
   "sidebar.wikiSidebar.category.printer-kits/others.link.generated-index.title": {
     "message": "其他"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/others.link.generated-index.description": {
+    "message": "FYSETC Prusa 克隆套件资料，涵盖 Mini、MK3S 与 MMU2S 的 STL 文件、组装教程和知识库链接。"
   },
   "sidebar.wikiSidebar.category.printer-kits/Venture-XL": {
     "message": "Venture XL"
@@ -62,6 +86,9 @@
   "sidebar.wikiSidebar.category.printer-kits/Venture-XL/2.-Assembly-Guide.link.generated-index.title": {
     "message": "2. Assembly Guide"
   },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/2.-Assembly-Guide.link.generated-index.description": {
+    "message": "Venture XL 组装指南，涵盖框架、Z 电机、龙门、热床、挤出机头、拖链、脚轮与电气组件的安装步骤。"
+  },
   "sidebar.wikiSidebar.category.printer-kits/Venture-XL/3.-Electronics-Guide": {
     "message": "3. Electronics Guide"
   },
@@ -74,11 +101,17 @@
   "sidebar.wikiSidebar.category.printer-kits/Venture-XL/5.-FAQ.link.generated-index.title": {
     "message": "5. FAQ"
   },
+  "sidebar.wikiSidebar.category.printer-kits/Venture-XL/5.-FAQ.link.generated-index.description": {
+    "message": "Venture XL 常见问题，汇总 MCU 连接错误、校准提示等软件与硬件问题的排查和解决方法。"
+  },
   "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit": {
     "message": "Voron V2.4 Kit"
   },
   "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit.link.generated-index.title": {
     "message": "Voron V2.4 Kit"
+  },
+  "sidebar.wikiSidebar.category.printer-kits/Voron-V2.4-Kit.link.generated-index.description": {
+    "message": "FYSETC Voron V2.4 套件文档，涵盖 Spider V3 与 SB CAN 工具头板、CAN 网络设置、固件烧录与接线。"
   },
   "sidebar.wikiSidebar.category.sensors": {
     "message": "传感器"
@@ -86,16 +119,25 @@
   "sidebar.wikiSidebar.category.sensors.link.generated-index.title": {
     "message": "传感器"
   },
+  "sidebar.wikiSidebar.category.sensors.link.generated-index.description": {
+    "message": "FYSETC 传感器文档，涵盖 PT100 温度采集板与探针接线、固件配置、温度校准和故障排查。"
+  },
   "sidebar.wikiSidebar.category.upgrade-kits": {
     "message": "升级套件"
   },
   "sidebar.wikiSidebar.category.upgrade-kits.link.generated-index.title": {
     "message": "升级套件"
   },
+  "sidebar.wikiSidebar.category.upgrade-kits.link.generated-index.description": {
+    "message": "FYSETC 升级套件文档，涵盖 Ender、Creality、Prusa 与 Bambu Lab 机型的兼容性、配件清单和安装步骤。"
+  },
   "sidebar.wikiSidebar.category.wireless": {
     "message": "无线产品"
   },
   "sidebar.wikiSidebar.category.wireless.link.generated-index.title": {
     "message": "无线产品"
+  },
+  "sidebar.wikiSidebar.category.wireless.link.generated-index.description": {
+    "message": "FYSETC 无线产品文档，涵盖 SD WiFi Pro 等模块的设置、文件传输、引脚定义与固件说明。"
   }
 }

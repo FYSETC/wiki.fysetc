@@ -3,7 +3,7 @@ id: Ender3-Y-axis-Belt-Tensioner
 title: Ender3 Y-axis Belt Tensioner
 slug: /Ender3-Y-axis-Belt-Tensioner
 sidebar_position: 30
-description: Product name：Ender3 Y-axis Belt Tensioner
+description: "Ender3 Y-axis belt tensioner in aluminum alloy for the Ender-3 and other 20V slot profiles, adding manual belt tension adjustment through a simple install."
 source_file: Ender3 Y-axis Belt Tensioner.md
 source_language: en
 ---

@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "升级套件",
-    "slug": "/category/upgrade-kits"
+    "slug": "/category/upgrade-kits",
+    "description": "FYSETC 升级套件文档，涵盖 Ender、Creality、Prusa 与 Bambu Lab 机型的兼容性、配件清单和安装步骤。"
   },
   "customProps": {
     "icon": "upgrade"

@@ -1,6 +1,7 @@
 ---
 id: CATALYST.K
 title: CATALYST.K
+description: "CATALYST.K 是基于 STM32H723 的 Klipper 主板，提供五个 StepStick 插槽与 24V/48V 电机供电，含引脚与接线说明。"
 slug: /CATALYST.K
 sidebar_position: 10
 source_file: CATALYST.K.md

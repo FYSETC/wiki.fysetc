@@ -3,7 +3,7 @@ id: Ender3-belt-double-Z-upgrade-kit
 title: Ender3 belt double Z upgrade kit
 slug: /Ender3-belt-double-Z-upgrade-kit
 sidebar_position: 50
-description: Product name：Ender3 belt double Z upgrade kit
+description: "Ender3 belt double Z upgrade kit in metal and SPCC for Ender-3, Ender-3S and Ender-3 Pro, balancing the X axis and improving Z accuracy and print quality."
 source_file: Ender3 belt double Z upgrade kit.md
 source_language: en
 ---

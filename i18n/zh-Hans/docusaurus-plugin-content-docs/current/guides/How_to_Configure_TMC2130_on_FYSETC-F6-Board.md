@@ -3,7 +3,7 @@ id: How_to_Configure_TMC2130_on_FYSETC-F6-Board
 title: 如何在FYSETC-F6板上配置TMC2208
 slug: /How_to_Configure_TMC2130_on_FYSETC-F6-Board
 sidebar_position: 50
-description: 如果您想将2130用作步进电机驱动器，请按照configuration_adv.h中所示启用它
+description: "在FYSETC F6主板上配置TMC2130驱动，介绍在Marlin配置文件中启用驱动、为各轴开启对应选项与驱动状态监控的方法。"
 source_file: How_to_Configure_TMC2130_on_FYSETC-F6-Board.md
 source_language: en
 ---

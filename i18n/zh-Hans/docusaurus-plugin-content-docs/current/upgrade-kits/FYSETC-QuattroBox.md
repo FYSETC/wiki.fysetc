@@ -1,6 +1,7 @@
 ---
 id: FYSETC-QuattroBox
 title: FYSETC-QuattroBox
+description: "FYSETC QuattroBox 项目数据库，说明在官方资料基础上所做的改动，包括 X5 主板与转接板、Binky 编码器、NEMA 17 步进电机、机械限位开关及打印部件下载。"
 slug: /FYSETC-QuattroBox
 sidebar_position: 100
 source_file: FYSETC-QuattroBox.md

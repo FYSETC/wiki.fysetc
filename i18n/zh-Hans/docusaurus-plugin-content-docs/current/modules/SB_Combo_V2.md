@@ -3,7 +3,7 @@ id: SB_Combo_V2
 title: SB Combo V2
 slug: /SB_Combo_V2
 sidebar_position: 30
-description: SB CAN V2 是一款全新设计的 SB 工具板，运行 Klipper 固件。它基于 STM32F072，提供 CANBUS 和 USB 两种通信模式。板载 USBHUB 最多提供三个 USB 接口，…
+description: "SB Combo V2工具板介绍，面向Voron Stealthburner，基于STM32F072，含TMC2209、USB HUB与接线说明。"
 source_file: SB_Combo_V2.md
 source_language: en
 ---

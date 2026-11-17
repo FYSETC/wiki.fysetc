@@ -1,6 +1,7 @@
 ---
 id: CHAMELEON-X5
 title: CHAMELEON X5
+description: "FYSETC CHAMELEON X5 multi-color board with STM32F407VET6, five TMC2209 drivers, five-channel feed and drying, plus DC jack, MicroFit3, USB and CAN wiring."
 slug: /CHAMELEON-X5
 sidebar_position: 20
 source_file: CHAMELEON X5.md

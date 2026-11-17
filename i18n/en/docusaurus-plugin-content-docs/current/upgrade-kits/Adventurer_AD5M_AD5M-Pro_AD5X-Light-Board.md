@@ -1,6 +1,7 @@
 ---
 id: Adventurer-AD5M-AD5M-Pro-AD5X-Light-Board
 title: Adventurer AD5M/AD5M Pro/AD5X Light Board
+description: "Adventurer AD5M, AD5M Pro and AD5X light board kit covering light strip assembly and the AD5M Pro system upgrade that adds on screen LED control."
 slug: /Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board
 sidebar_position: 110
 source_file: Adventurer_AD5M_AD5M Pro_AD5X Light Board.md

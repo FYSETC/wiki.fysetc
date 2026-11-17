@@ -3,7 +3,7 @@ id: FYSETC_S6
 title: FYSETC_S6
 slug: /FYSETC_S6
 sidebar_position: 100
-description: The S6 is based on the STM32F446 32bit mcu, like the F6, has six drive sockets and supports the full range of TMC drives. We have fully extended the resources of the MCU so that you can maximize its…
+description: "FYSETC S6 board based on STM32F446 at 180MHz, six TMC driver sockets, jumper settings, 28V input, 24V/5V/3.3V endstop options and Marlin configuration."
 source_file: FYSETC_S6.md
 source_language: en
 ---

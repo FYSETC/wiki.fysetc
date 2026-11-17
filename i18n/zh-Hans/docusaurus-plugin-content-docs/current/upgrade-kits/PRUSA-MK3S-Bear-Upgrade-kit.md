@@ -3,7 +3,7 @@ id: PRUSA-MK3S-Bear-Upgrade-kit
 title: Prusa mk3s bear 升级套件
 slug: /PRUSA-MK3S-Bear-Upgrade-kit
 sidebar_position: 20
-description: 1.Prusa-MK3S-Bear-Upgrade-v2.0 STL 文件更新 2020.7.31
+description: "Prusa MK3S Bear 升级套件 v2.0 资料库，含更新于 2020 年的 STL 打印文件、由 pekcitron 设计的打印部件、六段视频组装教程、详细图文步骤与购买链接。"
 source_file: PRUSA-MK3S-Bear-Upgrade-kit.md
 source_language: en
 ---

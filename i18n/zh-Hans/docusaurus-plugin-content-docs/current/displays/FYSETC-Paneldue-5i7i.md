@@ -1,6 +1,7 @@
 ---
 id: FYSETC-Paneldue-5i7i
 title: FYSETC Paneldue 5i/7i
+description: "FYSETC PanelDue 5i/7i 是彩色触摸屏控制器，介绍分辨率与供电规格、四线电缆和十芯排线接线、屏幕支架安装、固件升级及配置文件参数设置说明。"
 slug: /FYSETC-Paneldue-5i7i
 sidebar_position: 60
 source_file: FYSETC Paneldue 5i7i.md

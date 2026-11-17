@@ -3,7 +3,7 @@ id: SB-CAN-ToolHead
 title: SB CAN ToolHead
 slug: /SB-CAN-ToolHead
 sidebar_position: 60
-description: The SB CAN Tool Board is a highly integrated printhead control board. Based on STM32F072, running Klipper firmware. Onboard TMC2209 stepper motor driver, AXL345 acceleration sensor, and other…
+description: "SB CAN Tool Board for Stealthburner toolheads: STM32F072 running Klipper, TMC2209, ADXL345, fan and heater outputs, CAN wiring and firmware flashing steps."
 source_file: SB CAN ToolHead.md
 source_language: en
 ---

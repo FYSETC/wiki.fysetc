@@ -4,6 +4,7 @@
   "position": 5,
   "collapsed": true,
   "link": {
-    "type": "generated-index"
+    "type": "generated-index",
+    "description": "Venture XL FAQ with software and hardware troubleshooting for MCU connection errors, calibration messages and common build issues."
   }
 }

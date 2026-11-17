@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "无线产品",
-    "slug": "/category/wireless"
+    "slug": "/category/wireless",
+    "description": "FYSETC 无线产品文档，涵盖 SD WiFi Pro 等模块的设置、文件传输、引脚定义与固件说明。"
   },
   "customProps": {
     "icon": "wireless"

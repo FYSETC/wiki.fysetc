@@ -3,7 +3,7 @@ id: StrideMax_Dual_FD_V2
 title: STRIDEMAX_DUAL_FD_V2
 slug: /StrideMax_Dual_FD_V2
 sidebar_position: 130
-description: StrideMax Dual FD 是一款基于 RP2040 的控制板，配备双 TMC5160 驱动器，可运行 RRF 固件或 Klipper 固件。每组 5160 驱动器配有 8 个高功率 MOSFET，并由散热…
+description: "StrideMax Dual FD V2 基于 RP2040，双 TMC5160 可达 10A，支持 19-60V 与 CAN、USB，含安装与电机接线说明。"
 source_file: StrideMax_Dual_FD_V2.md
 source_language: en
 ---

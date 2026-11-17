@@ -1,6 +1,7 @@
 ---
 id: 90-Heat-Insert-Adaptor
 title: 90° 热熔嵌入适配器
+description: "FYSETC 90°热熔螺母压头直角连接器采用黄铜材质，内置 M4 内外螺纹转接头，适用于配 M4 螺纹枪头的热熔螺母枪，可在转角处快速安装短型与标准型螺母，附组装说明。"
 slug: /90-Heat-Insert-Adaptor
 sidebar_position: 150
 source_file: 90° Heat Insert Adaptor.md

@@ -3,7 +3,7 @@ id: FYS_Boost_LED_Driver_V1.0
 title: LED Driver V1.0
 slug: /FYS_Boost_LED_Driver_V1.0
 sidebar_position: 100
-description: FYS Boost LED驱动器是一款经济实惠且易于使用的驱动器，最大输出为60V/5A（需要您更换Rs电阻）。默认情况下，可提供900mA ± 5%的电流输出，适用于30W…
+description: "FYS Boost LED驱动器V1.0介绍，支持5V至32V输入与最高60V升压输出，默认900mA驱动30W LED模块，含发热注意与更换Rs电阻调流方法。"
 source_file: FYS_Boost_LED_Driver_V1.0.md
 source_language: en
 ---

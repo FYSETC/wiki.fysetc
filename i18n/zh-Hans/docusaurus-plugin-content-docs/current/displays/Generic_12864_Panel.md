@@ -3,7 +3,7 @@ id: Generic_12864_Panel
 title: Generic_12864_Panel
 slug: /Generic_12864_Panel
 sidebar_position: 30
-description: 这是一款开源、廉价的显示器，带有RGB指示灯，兼容Marlin固件，支持离线打印，分辨率为12864，显示区域为3.2英寸，SD卡座可侧装或竖装，尺寸…
+description: "FYSETC Generic 12864 是一款带背光指示并支持离线打印的图形液晶显示屏，介绍显示样式、串口通信方式、典型接线、固件配置和可选存储卡模块。"
 source_file: Generic_12864_Panel.md
 source_language: en
 ---

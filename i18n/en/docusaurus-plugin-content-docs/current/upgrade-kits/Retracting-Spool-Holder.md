@@ -1,6 +1,7 @@
 ---
 id: Retracting-Spool-Holder
 title: Retracting Spool Holder
+description: "Retracting spool holder with a sealed dry box, hygrometer opening, TPU shaft seal, rotary wheel and desiccant cartridge, plus assembly and loading steps."
 slug: /Retracting-Spool-Holder
 sidebar_position: 180
 source_file: Retracting Spool Holder.md

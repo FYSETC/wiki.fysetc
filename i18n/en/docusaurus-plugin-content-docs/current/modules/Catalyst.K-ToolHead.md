@@ -1,6 +1,7 @@
 ---
 id: Catalyst.K-ToolHead
 title: Catalyst.K ToolHead
+description: "Catalyst.K ToolHead overview: a 47 mm by 44 mm Klipper toolboard with STM32G431, TMC2209, ADXL345, USB, CAN and RS-232, plus pinout and connection details."
 slug: /Catalyst.K-ToolHead
 sidebar_position: 20
 source_file: Catalyst.K ToolHead.md

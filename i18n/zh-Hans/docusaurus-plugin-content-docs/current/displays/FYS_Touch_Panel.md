@@ -3,7 +3,7 @@ id: FYS_Touch_Panel
 title: FYS_Touch_Panel
 slug: /FYS_Touch_Panel
 sidebar_position: 40
-description: 目前此固件仅适用于F6/S6板，请使用以下板级固件：
+description: "FYSETC FYS_Touch_Panel 是用于常见主板的串口触摸屏，介绍触摸屏布局与接线图、主板固件配置、屏幕固件烧录步骤、存储卡模块用途和购买渠道。"
 source_file: FYS_Touch_Panel.md
 source_language: en
 ---

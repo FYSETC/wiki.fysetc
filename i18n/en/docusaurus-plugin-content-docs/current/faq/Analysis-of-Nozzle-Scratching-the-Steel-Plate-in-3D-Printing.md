@@ -1,6 +1,7 @@
 ---
 id: Analysis-of-Nozzle-Scratching-the-Steel-Plate-in-3D-Printing
 title: Analysis of Nozzle Scratching the Steel Plate in 3D Printing
+description: "Fix nozzle scratching on a spring steel plate: bed leveling accuracy, Z-axis mechanics, Z-offset and contaminants, plus cleaning and calibration steps."
 slug: /Analysis-of-Nozzle-Scratching-the-Steel-Plate-in-3D-Printing
 source_file: Analysis of Nozzle Scratching the Steel Plate in 3D Printing.md
 source_language: en

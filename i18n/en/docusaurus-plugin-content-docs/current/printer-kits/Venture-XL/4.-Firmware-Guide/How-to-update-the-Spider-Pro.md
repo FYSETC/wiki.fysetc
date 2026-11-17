@@ -1,6 +1,7 @@
 ---
 id: How-to-update-the-Spider-Pro
 title: How to update the Spider Pro
+description: "Steps to update Venture XL Spider Pro firmware, covering DFU mode entry, SSH access to the Klipper host, and compiling and uploading the build."
 slug: /How-to-update-the-Spider-Pro
 source_file: How to update the Spider Pro.md
 source_language: en

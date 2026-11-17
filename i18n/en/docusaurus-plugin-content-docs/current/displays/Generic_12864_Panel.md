@@ -3,7 +3,7 @@ id: Generic_12864_Panel
 title: Generic_12864_Panel
 slug: /Generic_12864_Panel
 sidebar_position: 30
-description: This is a opensouce, cheap, with RGB indicator, common to marlin's display, supports offline printing, resolution is 12864, display area is 3.2'', SD card holder can be side or vertical, Dimensional…
+description: "FYSETC Generic 12864 panel for Marlin 3D printers, covering 3.2 inch display, RGB backlight, wiring, Marlin and Klipper config and optional SD module."
 source_file: Generic_12864_Panel.md
 source_language: en
 ---

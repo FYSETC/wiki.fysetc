@@ -3,7 +3,7 @@ id: Mk8-Grey-Extruder
 title: Mk8 Grey Extruder
 slug: /Mk8-Grey-Extruder
 sidebar_position: 20
-description: Refer to the assembly tutorial to avoid installation errors.
+description: "FYSETC Mk8 Grey Extruder in aluminum alloy for Ender-3, CR-10 and similar 3D printers, with specs, assembly steps, installation tips and FAQ."
 source_file: Mk8 Grey Extruder.md
 source_language: en
 ---

@@ -1,6 +1,7 @@
 ---
 id: Venture-XL
 title: Venture XL
+description: "Venture XL overview of the 600mm coreXY 3D printer kit based on VORON V2.4, covering CNC parts, pre-assembled print head and control box."
 slug: /Venture-XL
 source_file: Venture XL.md
 source_language: en

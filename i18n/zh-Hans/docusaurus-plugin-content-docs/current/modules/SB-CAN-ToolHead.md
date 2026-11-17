@@ -3,7 +3,7 @@ id: SB-CAN-ToolHead
 title: SB CAN ToolHead
 slug: /SB-CAN-ToolHead
 sidebar_position: 60
-description: SB CAN Tool Board 是一款高度集成的打印头控制板。基于 STM32F072，运行 Klipper 固件。板载 TMC2209 步进电机驱动器、AXL345 加速度传感器等……
+description: "SB CAN ToolHead打印头板介绍，基于STM32F072运行Klipper，集成TMC2209与ADXL345，含安装、接线与固件烧录说明。"
 source_file: SB CAN ToolHead.md
 source_language: en
 ---

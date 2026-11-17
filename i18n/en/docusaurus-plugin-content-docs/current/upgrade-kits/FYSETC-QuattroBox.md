@@ -1,6 +1,7 @@
 ---
 id: FYSETC-QuattroBox
 title: FYSETC-QuattroBox
+description: "FYSETC QuattroBox project database covering the modifications, X5 motherboard and adapter board, Binky encoder, NEMA 17 motor and printed parts files."
 slug: /FYSETC-QuattroBox
 sidebar_position: 100
 source_file: FYSETC-QuattroBox.md

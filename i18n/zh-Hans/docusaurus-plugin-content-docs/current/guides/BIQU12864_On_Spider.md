@@ -3,7 +3,7 @@ id: BIQU12864_On_Spider
 title: Spider 上的 BIQU12864
 slug: /BIQU12864_On_Spider
 sidebar_position: 60
-description: BIQU 的 12864 屏幕在复位引脚上有一个电容和一个 10K 下拉电阻，这会导致 Spider 主板的 RST 引脚（带有 100K 上拉电阻和一个接地的 0.1uF 电容）始终处于…
+description: "介绍在Spider主板上使用BIQU mini12864显示屏的方法，说明复位引脚始终为低电平的原因，以及旋转连接器180度、拆除R1和C6的处理步骤。"
 source_file: BIQU12864_On_Spider.md
 source_language: en
 ---

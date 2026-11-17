@@ -3,7 +3,7 @@ id: CAN-Setup-Guide
 title: SB CAN 设置指南
 slug: /CAN-Setup-Guide
 sidebar_position: 80
-description: The latest release of the Fysetc Voron 2.4 Pro Kit comes with the Spider V3 and a SB CAN Toolhead Board. This guide will walk you through the setup process of the CAN network. The Spider has a built…
+description: "Voron V2.4 Pro Kit 的 SB CAN 设置指南，先为树莓派创建网络配置文件，再让 Spider 主板与工具头板进入 DFU 模式，完成固件编译刷写并读取 UUID，便于排查通信问题。"
 source_file: CAN Setup Guide
 source_language: en
 displayed_sidebar: wikiSidebar

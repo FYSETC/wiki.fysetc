@@ -1,6 +1,7 @@
 ---
 id: 90-Heat-Insert-Adaptor
 title: 90° Heat Insert Adaptor
+description: "90 degree heat insert adaptor for hot melt nut press heads with M4 threaded gun heads, using a brass right angle connector and M4 thread adapters."
 slug: /90-Heat-Insert-Adaptor
 sidebar_position: 150
 source_file: 90° Heat Insert Adaptor.md

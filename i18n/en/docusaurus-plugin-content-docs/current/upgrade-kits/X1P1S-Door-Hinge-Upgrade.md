@@ -1,6 +1,7 @@
 ---
 id: X1P1S-door-hinge
 title: X1P1S Door Hinge Upgrade
+description: "X1/P1S door hinge upgrade for Bambu Lab P1S and X1C/X1 printers, replacing the stock hinge to raise the door opening angle from 120 to 180 or 270 degrees."
 slug: /X1P1S-door-hinge
 sidebar_position: 130
 source_file: X1P1S Door Hinge Upgrade.md

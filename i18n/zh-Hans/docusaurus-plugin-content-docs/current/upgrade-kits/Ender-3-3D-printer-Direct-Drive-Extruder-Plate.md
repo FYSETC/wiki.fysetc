@@ -3,7 +3,7 @@ id: Ender-3-3D-printer-Direct-Drive-Extruder-Plate
 title: Ender 3 3D打印机直驱挤出机板
 slug: /Ender-3-3D-printer-Direct-Drive-Extruder-Plate
 sidebar_position: 60
-description: 产品名称：Ender 3 3D打印机直驱挤出机板
+description: "Ender 3 3D打印机近程挤出机板采用铝合金材质，适用于 Ender3 与 CR10，为近程挤出机提供稳固安装固定方式，附组装视频、注意事项与常见问题。"
 source_file: Ender 3 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---

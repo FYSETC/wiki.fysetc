@@ -3,7 +3,7 @@ id: How_to_Configure_TMC2130_on_FYSETC-F6-Board
 title: How to Configure TMC2208 on FYSETC-F6-Board
 slug: /How_to_Configure_TMC2130_on_FYSETC-F6-Board
 sidebar_position: 50
-description: If you want to use 2130 as your stepper driver, enable it as below shows in configuration_adv.h
+description: "Enable a TMC2130 stepper driver on the FYSETC F6 board in Marlin: configuration_adv.h options, selecting the X, Y, Z or E axis, and MONITOR_DRIVER_STATUS."
 source_file: How_to_Configure_TMC2130_on_FYSETC-F6-Board.md
 source_language: en
 ---

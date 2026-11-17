@@ -3,7 +3,7 @@ id: FYSETC-SPIDER-KING
 title: FYSETC-SPIDER-KING
 slug: /FYSETC-SPIDER-KING
 sidebar_position: 50
-description: 10 axis industrial grade 3D printer motherboard
+description: "FYSETC SPIDER KING 10-axis industrial board with replaceable RP2040, STM32F446, F407 or H7 core, 5000V IO isolation, pinout and driver guide."
 source_file: FYSETC-SPIDER-KING.md
 source_language: en
 ---

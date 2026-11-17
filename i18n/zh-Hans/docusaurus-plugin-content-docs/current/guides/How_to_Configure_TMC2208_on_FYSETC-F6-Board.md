@@ -3,7 +3,7 @@ id: How_to_Configure_TMC2208_on_FYSETC-F6-Board
 title: 如何在FYSETC-F6板上配置TMC2208
 slug: /How_to_Configure_TMC2208_on_FYSETC-F6-Board
 sidebar_position: 40
-description: 对于FYSETC F6主板，我们上传了一个仅适用于F6主板的TMC2208步进电机库，您可以在这里找到：https://github.com/FYSETC/TMC2208Stepper。下载该库并复制TMC2208 Stepper文件夹…
+description: "在FYSETC F6主板上配置TMC2208驱动，介绍专用步进电机库安装、Marlin代码修改与配置文件的轴设置。"
 source_file: How_to_Configure_TMC2208_on_FYSETC-F6-Board.md
 source_language: en
 ---

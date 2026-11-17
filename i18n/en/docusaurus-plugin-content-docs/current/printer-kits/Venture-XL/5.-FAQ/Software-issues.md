@@ -1,6 +1,7 @@
 ---
 id: Software-issues
 title: Software  issues
+description: "Venture XL software troubleshooting for MCU unable to connect errors and the deprecated scanner calibration option message, with checks and fixes."
 slug: /Software-issues
 source_file: Software  issues.md
 source_language: en

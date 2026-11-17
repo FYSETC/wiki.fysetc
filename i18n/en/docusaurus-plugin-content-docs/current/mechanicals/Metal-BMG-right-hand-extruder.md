@@ -3,7 +3,7 @@ id: Metal-BMG-right-hand-extruder
 title: Metal BMG right hand extruder
 slug: /Metal-BMG-right-hand-extruder
 sidebar_position: 30
-description: Product name：Metal BMG right hand extruder
+description: "FYSETC Metal BMG right hand extruder in aluminum alloy for CR10, Ender3 and other 3D printers, with specs, assembly steps, installation tips and FAQ."
 source_file: Metal BMG right hand extruder.md
 source_language: en
 ---

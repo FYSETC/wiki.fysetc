@@ -1,6 +1,7 @@
 ---
 id: Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1.1
 title: Raspberry Pi 5" DSI Touch Screen MIPI LCD V1.1
+description: "FYSETC Raspberry Pi 5 inch DSI touch screen MIPI LCD V1.1, covering 800x480 specs, 5-point touch, wiring, installation video and firmware config."
 slug: /Raspberry-Pi-5-DSI-Touch-Screen-MIPI-LCD-V1-1
 sidebar_position: 50
 source_file: Raspberry Pi 5 DSI Touch Screen MIPI LCD V1.1.md

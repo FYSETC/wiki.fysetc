@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Mechanical Parts",
-    "slug": "/category/mechanicals"
+    "slug": "/category/mechanicals",
+    "description": "FYSETC mechanical part documentation for BMG and MK8 extruders, covering compatibility, assembly steps, installation and maintenance."
   },
   "customProps": {
     "icon": "mechanical"

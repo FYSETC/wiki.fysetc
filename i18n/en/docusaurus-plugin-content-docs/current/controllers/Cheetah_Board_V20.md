@@ -3,7 +3,7 @@ id: Cheetah_Board_V20
 title: Cheetah v2.0
 slug: /Cheetah_Board_V20
 sidebar_position: 70
-description: Cheetah 2.0 is a single-head main control board based on STM32F401, with 4 TMC2209 onboard, supports sensor-less homing, can be connected to a variety of displays, compatible with the installation…
+description: "FYSETC Cheetah v2.0 single-head board with STM32F401, four TMC2209 drivers, sensorless homing, Ender 3 and Ender 5 mounting, 12864 display and pinout."
 source_file: Cheetah_Board_V20.md
 source_language: en
 ---

@@ -1,6 +1,7 @@
 ---
 id: Retracting-Spool-Holder
 title: 回缩式线轴支架
+description: "回缩式料盘支架安装说明，含带湿度计开口的密封干燥盒、TPU 轴封、旋转轮与干燥剂筒的组装步骤，以及耗材装载与防止滑回的使用方法。"
 slug: /Retracting-Spool-Holder
 sidebar_position: 180
 source_file: Retracting Spool Holder.md

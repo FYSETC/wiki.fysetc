@@ -3,7 +3,7 @@ id: Original-Prusa-MMU2S-clone
 title: Original Prusa MMU2S clone
 slug: /Original-Prusa-MMU2S-clone
 sidebar_position: 10
-description: 'FYSETC/Original-Prusa-MMU2S-clone: Original Prusa MMU2S clone database (github.com)'
+description: "FYSETC Prusa MMU2S clone database page with updated STL print files, an assembly tutorial, a knowledge base and purchase links for the kit."
 source_file: Original-Prusa-MMU2S-clone.md
 source_language: en
 displayed_sidebar: wikiSidebar

@@ -1,6 +1,7 @@
 ---
 id: Software-issues
 title: 软件问题
+description: "Venture XL 软件问题排查，说明 MCU 无法连接时如何检查线缆、USB 设备与 CAN2 UUID 配置，并处理 Cartographer 校准项弃用的报错。"
 slug: /Software-issues
 source_file: Software  issues.md
 source_language: en

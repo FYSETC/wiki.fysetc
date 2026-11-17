@@ -5,7 +5,8 @@
   "collapsed": true,
   "link": {
     "type": "generated-index",
-    "slug": "/category/controllers"
+    "slug": "/category/controllers",
+    "description": "FYSETC 控制板文档，涵盖 Spider、Cheetah、F6、S6 与 Catalyst.K 的规格、引脚、接线和固件配置。"
   },
   "customProps": {
     "icon": "board"

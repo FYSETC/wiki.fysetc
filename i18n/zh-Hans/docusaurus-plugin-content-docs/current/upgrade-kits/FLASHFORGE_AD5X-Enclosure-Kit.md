@@ -1,6 +1,7 @@
 ---
 id: FLASHFORGE_AD5X-Enclosure-Kit
 title: FLASHFORGE_AD5X 封闭式套件
+description: "FLASHFORGE AD5X 封闭式套件安装指南，含配件包与零件清单、可打印防护板文件、铰链与 A1 至 D2 各防护板组装步骤，以及安装所需的工具提示。"
 slug: /FLASHFORGE_AD5X-Enclosure-Kit
 sidebar_position: 90
 source_file: FLASHFORGE_AD5X Enclosure Kit.md

@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Tutorial",
-    "slug": "/category/guides"
+    "slug": "/category/guides",
+    "description": "FYSETC how-to guides for board wiring, TMC driver configuration, Klipper setup and hardware installation, with step by step instructions."
   },
   "customProps": {
     "icon": "book"

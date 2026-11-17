@@ -1,6 +1,7 @@
 ---
 id: Hexa-Distro-Fusion
 title: Hexa Distro Fusion
+description: "HEXA DISTRO FUSION集线器介绍，为工具更换器提供6路CAN与USB扩展、六路7.5A电源分配及可配置IO，含接线示例与LED状态说明。"
 slug: /Hexa-Distro-Fusion
 sidebar_position: 50
 source_file: Hexa Distro Fusion.md

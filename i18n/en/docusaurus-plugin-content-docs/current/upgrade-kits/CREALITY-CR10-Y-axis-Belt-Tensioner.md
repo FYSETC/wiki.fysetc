@@ -3,7 +3,7 @@ id: CREALITY-CR10-Y-axis-Belt-Tensioner
 title: CREALITY CR10 Y-axis Belt Tensioner
 slug: /CREALITY-CR10-Y-axis-Belt-Tensioner
 sidebar_position: 80
-description: Product name：CREALITY CR10 Y-axis Belt Tensioner
+description: "CREALITY CR10 Y-axis belt tensioner in SPCC for CR-10, CR-10S, CR10 Pro, CR10 V2 and 2040 V-slot profiles, with manual tension adjustment and video."
 source_file: CREALITY  CR10 Y-axis Belt Tensioner.md
 source_language: en
 ---

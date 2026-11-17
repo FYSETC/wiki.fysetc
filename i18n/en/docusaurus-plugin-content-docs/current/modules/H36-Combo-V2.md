@@ -1,6 +1,7 @@
 ---
 id: H36-Combo-V2
 title: H36 Combo V2
+description: "H36 Combo V2 high temperature Klipper toolboard: STM32G431CBT3, 125 C operation in CAN mode, TMC2209, ADXL345, USB hub, pinout and silkscreen corrections."
 slug: /H36-Combo-V2
 sidebar_position: 10
 source_file: H36 Combo V2.md

@@ -1,6 +1,7 @@
 ---
 id: How-to-update-the-CM68-img
 title: 如何更新 CM68 镜像
+description: "在 Windows 下更新 Venture XL 的 CM68 系统镜像，涵盖镜像解压、RK3568 驱动安装、RKDevTool 恢复模式与固件升级步骤，并提示断电风险。"
 slug: /How-to-update-the-CM68-img
 source_file: How to update the CM68 img.md
 source_language: en

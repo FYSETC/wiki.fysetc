@@ -3,7 +3,7 @@ id: Ender3-Y-axis-Belt-Tensioner
 title: Ender3 Y轴皮带张紧器
 slug: /Ender3-Y-axis-Belt-Tensioner
 sidebar_position: 30
-description: 产品名称：Ender3 Y轴皮带张紧器
+description: "Ender3 Y轴皮带张紧器采用铝合金材质，适用于 Ender-3 及其他 20V 槽型材，可手动调节皮带松紧以提升运动精度，附组装视频与安装注意事项。"
 source_file: Ender3 Y-axis Belt Tensioner.md
 source_language: en
 ---

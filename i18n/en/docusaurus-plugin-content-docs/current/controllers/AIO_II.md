@@ -1,6 +1,7 @@
 ---
 id: AIO_II
 title: AIO II
+description: "FYSETC AIO II all-in-one 3D printer board with STM32F103, four ST820 drivers, 7-35V input, SD slot, RGB mini12864 LCD, pinout and Marlin firmware guide."
 slug: /AIO_II
 sidebar_position: 140
 source_file: AIO_II.md

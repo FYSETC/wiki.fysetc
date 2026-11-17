@@ -1,6 +1,7 @@
 ---
 id: X1P1S-door-hinge
 title: X1P1S 门铰链升级
+description: "X1/P1S 门铰链升级适用于 Bambu Lab P1S 与 X1C/X1 打印机，采用全金属材质，可将开门角度由 120 度扩展至 180 度甚至 270 度，避免意外碰损玻璃门。"
 slug: /X1P1S-door-hinge
 sidebar_position: 130
 source_file: X1P1S Door Hinge Upgrade.md

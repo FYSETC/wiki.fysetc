@@ -1,6 +1,7 @@
 ---
 id: Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed
 title: Creality K1 MAX 8mm Graphite Build Plate & Heated Bed
+description: "Creality K1 MAX 8mm graphite build plate and heated bed upgrade covering heating pad fitting, SSR wiring, bed assembly and print surface installation."
 slug: /Creality-K1-MAX-8mm-Graphite-Build-Plate-Heated-Bed
 sidebar_position: 140
 source_file: Creality K1 MAX 8mm Graphite Build Plate & Heated Bed.md

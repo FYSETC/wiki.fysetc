@@ -3,7 +3,7 @@ id: Cheatah_Board_V30
 title: Cheetah v3.0
 slug: /Cheatah_Board_V30
 sidebar_position: 80
-description: The redesigned Cheetah uses a 180Mhz master controller to provide higher speed control. At the same time, in order to improve the ease of use, some commonly used interfaces are added, such as…
+description: "FYSETC Cheetah v3.0 board with 180MHz STM32F446RCT6, CAN and BL-Touch ports, 5V for Raspberry Pi, plus firmware build and installation steps."
 source_file: Cheatah_Board_V30.md
 source_language: en
 ---

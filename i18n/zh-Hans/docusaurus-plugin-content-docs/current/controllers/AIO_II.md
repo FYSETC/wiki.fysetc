@@ -1,6 +1,7 @@
 ---
 id: AIO_II
 title: AIO II
+description: "AIO II 一体式主板采用 STM32F103 与 4 个 ST820 驱动，支持 7-35V 供电与 SD 卡，含引脚定义和 Marlin 固件说明。"
 slug: /AIO_II
 sidebar_position: 140
 source_file: AIO_II.md

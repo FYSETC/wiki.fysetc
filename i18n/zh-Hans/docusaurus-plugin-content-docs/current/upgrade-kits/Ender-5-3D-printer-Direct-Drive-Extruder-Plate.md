@@ -3,7 +3,7 @@ id: Ender-5-3D-printer-Direct-Drive-Extruder-Plate
 title: Ender 5 3D打印机直驱挤出机板
 slug: /Ender-5-3D-printer-Direct-Drive-Extruder-Plate
 sidebar_position: 40
-description: 产品名称：Ender 5 3D打印机直驱挤出机板
+description: "Ender 5 3D打印机直驱挤出机板采用铝合金材质，适用于 Ender5，为短距离挤出机提供安装固定方式，附组装步骤、注意事项与常见问题。"
 source_file: Ender 5 3D printer Direct Drive Extruder Plate.md
 source_language: en
 ---

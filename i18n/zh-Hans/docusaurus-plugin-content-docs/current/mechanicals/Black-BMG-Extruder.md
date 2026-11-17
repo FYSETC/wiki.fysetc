@@ -3,7 +3,7 @@ id: Black-BMG-Extruder
 title: 黑色 BMG 挤出机
 slug: /Black-BMG-Extruder
 sidebar_position: 50
-description: 黑色 BMG 挤出机：原始 FYSETC 文档及相关参考资料。
+description: "FYSETC Black BMG 挤出机采用 ABS 材质，为打印机提供更大挤出扭矩并便于拆卸，介绍适用机型、产品特点、组装步骤、安装注意事项和常见问题解答。"
 source_file: Black BMG Extruder.md
 source_language: en
 ---

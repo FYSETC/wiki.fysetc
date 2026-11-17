@@ -3,7 +3,7 @@ id: Prusa-mini-BMG-V1-Extruder
 title: Prusa mini BMG V1 挤出机
 slug: /Prusa-mini-BMG-V1-Extruder
 sidebar_position: 10
-description: 产品名称：Prusa mini BMG V1 挤出机
+description: "Prusa mini BMG V1 挤出机采用打印件制作，适用于 Prusa Mini，可为挤出机提供更大扭矩并改善打印表面质量，安装与拆卸简便，附组装视频。"
 source_file: Prusa mini BMG V1 Extruder.md
 source_language: en
 ---

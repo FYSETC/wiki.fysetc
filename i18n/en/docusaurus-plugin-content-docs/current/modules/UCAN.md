@@ -3,7 +3,7 @@ id: UCAN
 title: UCAN
 slug: /UCAN
 sidebar_position: 70
-description: UCAN is an open source USB-to-CAN interface board, based on the STM32F072 chip and candleLight open source firmware. It supports linux, windows, and mac. Of course, you can also develop your own…
+description: "UCAN USB to CAN adapter: STM32F072 running candleLight firmware, CAN 2.0A and B up to 1M, socketcan support, termination resistors and firmware flashing."
 source_file: UCAN.md
 source_language: en
 ---

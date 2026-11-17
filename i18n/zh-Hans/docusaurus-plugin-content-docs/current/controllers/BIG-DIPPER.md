@@ -3,7 +3,7 @@ id: BIG-DIPPER
 title: BIG-DIPPER
 slug: /BIG-DIPPER
 sidebar_position: 120
-description: BIG-DIPPER 是 Duet3 mini5+ 和 Mini 2+ 的组合。它基于 ATSAME54P20A，引脚分配与 mini5+ 完全相同，因此可以直接使用 mini5+ 固件。
+description: "BIG-DIPPER 基于 ATSAME54P20A，板载 7 个 TMC2209，支持 RRF 3.2 与独立或 SBC 模式，含规格与散热安装说明。"
 source_file: BIG-DIPPER.md
 source_language: en
 ---

@@ -1,6 +1,7 @@
 ---
 id: CHAMELEON-X5
 title: CHAMELEON X5
+description: "CHAMELEON X5 多色控制板基于 STM32F407VET6，板载 5 个 TMC2209，支持五通道送料与干燥，含 USB 与 CAN 接线说明。"
 slug: /CHAMELEON-X5
 sidebar_position: 20
 source_file: CHAMELEON X5.md

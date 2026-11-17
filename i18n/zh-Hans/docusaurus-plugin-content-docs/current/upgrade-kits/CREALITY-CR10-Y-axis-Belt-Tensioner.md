@@ -3,7 +3,7 @@ id: CREALITY-CR10-Y-axis-Belt-Tensioner
 title: CREALITY CR10 Y轴皮带张紧器
 slug: /CREALITY-CR10-Y-axis-Belt-Tensioner
 sidebar_position: 80
-description: 产品名称：CREALITY CR10 Y轴皮带张紧器
+description: "CREALITY CR10 Y轴皮带张紧器采用 SPCC 材质，适用于 CR-10、CR-10S、CR10 Pro、CR10 V2 与 2040V 型材，可手动调节皮带松紧以提升打印精度。"
 source_file: CREALITY  CR10 Y-axis Belt Tensioner.md
 source_language: en
 ---

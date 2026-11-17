@@ -3,7 +3,7 @@ id: Manual_for_Mini_panel_on_SKR
 title: SKR迷你面板手册
 slug: /Manual_for_Mini_panel_on_SKR
 sidebar_position: 30
-description: 如果您使用或选择其他版本，我们无法保证本手册能够正常使用。https://wiki.fysetc.com/Mini12864_Panel/
+description: "介绍FYSETC Mini12864面板在SKR主板上配合Marlin固件的使用，含LCD配置与排线反向步骤。"
 source_file: Manual_for_Mini_panel_on_SKR.md
 source_language: en
 ---

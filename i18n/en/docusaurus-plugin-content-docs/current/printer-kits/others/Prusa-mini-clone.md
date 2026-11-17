@@ -3,7 +3,7 @@ id: Prusa-mini-clone
 title: Prusa mini clone
 slug: /Prusa-mini-clone
 sidebar_position: 30
-description: 1.Prusa mini STL file update 2020.7.7 These print files are suitable for FYSETC prusa mini 3D printer. The two parts are different official versions, MINI-extruder-rear and MINI-z-bottom. The other…
+description: "FYSETC Prusa Mini clone resources including updated STL files, a five-step assembly tutorial with video, and details on the 3.2-inch display option."
 source_file: Prusa-mini-clone.md
 source_language: en
 displayed_sidebar: wikiSidebar

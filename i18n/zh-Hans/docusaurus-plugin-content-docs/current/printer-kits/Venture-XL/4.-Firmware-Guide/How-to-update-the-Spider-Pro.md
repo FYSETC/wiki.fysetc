@@ -1,6 +1,7 @@
 ---
 id: How-to-update-the-Spider-Pro
 title: 如何更新 Spider Pro
+description: "更新 Venture XL Spider Pro 固件：进入 DFU 下载模式，通过 SSH 登录 Klipper 主机，编译并上传固件，解决 MCU 无法连接或版本不一致问题。"
 slug: /How-to-update-the-Spider-Pro
 source_file: How to update the Spider Pro.md
 source_language: en

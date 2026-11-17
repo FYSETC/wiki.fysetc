@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "传感器",
-    "slug": "/category/sensors"
+    "slug": "/category/sensors",
+    "description": "FYSETC 传感器文档，涵盖 PT100 温度采集板与探针接线、固件配置、温度校准和故障排查。"
   },
   "customProps": {
     "icon": "sensor"

@@ -3,7 +3,7 @@ id: NanoDLP_Shield_V1.1
 title: NanoDLP Shield V1.1
 slug: /NanoDLP_Shield_V1.1
 sidebar_position: 90
-description: This expansion board is designed for the Raspberry Pi 3B which is used for SLA/DLP 3D printers running NanoDLP . The board contains a 9-28V to 5V circuit that provides a maximum of 3A and other…
+description: "NanoDLP Shield V1.1 for Raspberry Pi 3B on SLA and DLP printers: 9-28V to 5V 3A converter, DRV8825 driver, endstops, shutter, I2C LCD and pin definitions."
 source_file: NanoDLP_Shield_V1.1.md
 source_language: en
 ---

@@ -1,6 +1,7 @@
 ---
 id: Hexa-Distro-Fusion
 title: Hexa Distro Fusion
+description: "HEXA DISTRO FUSION hub for 3D printer toolchangers: 6-channel CAN and USB 2.0 expansion, six 7.5A power outputs, configurable IO and LED status codes."
 slug: /Hexa-Distro-Fusion
 sidebar_position: 50
 source_file: Hexa Distro Fusion.md

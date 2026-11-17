@@ -1,6 +1,7 @@
 ---
 id: SD-WiFi-Pro
 title: SD WiFi Pro
+description: "FYSETC SD WiFi Pro 是一款无线存储卡产品，支持远程管理文件，介绍开源网页服务固件、文件上传下载、引脚功能、开发板说明、固件指南和购买渠道。"
 slug: /SD-WiFi-Pro
 sidebar_position: 10
 source_file: SD WiFi Pro.md

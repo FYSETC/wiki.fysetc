@@ -1,6 +1,7 @@
 ---
 id: Adventurer-AD5M-Series-Camera
 title: Adventure AD5M/AD5M Pro/AD5X系列相机
+description: "Adventurer AD5M、AD5M Pro、AD5X 通用摄像头安装说明，含组装视频与 Flashforge 切片软件启用步骤，并给出 AD5X 摄像头无法启用时的两种固件烧录方案。"
 slug: /Adventurer-AD5M-Series-Camera
 sidebar_position: 120
 source_file: Adventurer AD5M_AD5M Pro_AD5X_Series Camera.md

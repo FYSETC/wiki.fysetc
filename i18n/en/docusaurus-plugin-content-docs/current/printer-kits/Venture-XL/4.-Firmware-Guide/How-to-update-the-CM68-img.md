@@ -1,6 +1,7 @@
 ---
 id: How-to-update-the-CM68-img
 title: How to update the CM68 img
+description: "Venture XL guide to reflashing the CM68 Klipper OS image on the K7 panel, with cautions, download options, and Windows update steps."
 slug: /How-to-update-the-CM68-img
 source_file: How to update the CM68 img.md
 source_language: en

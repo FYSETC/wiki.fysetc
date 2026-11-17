@@ -3,7 +3,7 @@ id: Spider_Hardware_Guide
 title: Spider Hardware Guide
 slug: /Spider_Hardware_Guide
 sidebar_position: 20
-description: 'Spider hardware guide: original FYSETC documentation and related references.'
+description: "FYSETC Spider hardware guide for the Voron 2.4: board specs, mains safety, power input and output wiring, stepper driver installation and motor wiring."
 source_file: Spider_Hardware_Guide.zh.md
 source_language: zh
 ---

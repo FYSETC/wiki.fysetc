@@ -1,6 +1,7 @@
 ---
 id: Analysis-of-Nozzle-Scratching-the-Steel-Plate-in-3D-Printing
 title: 3D打印中喷嘴刮擦钢板的分析
+description: "排查3D打印喷嘴刮擦弹簧钢板的原因，包括调平精度、Z轴机械问题、Z偏移与床面污染物，并提供重新调平、清洁与参数调整的分步解决方法。"
 slug: /Analysis-of-Nozzle-Scratching-the-Steel-Plate-in-3D-Printing
 source_file: Analysis of Nozzle Scratching the Steel Plate in 3D Printing.md
 source_language: en

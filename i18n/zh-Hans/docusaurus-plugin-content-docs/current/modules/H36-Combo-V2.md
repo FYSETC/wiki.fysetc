@@ -1,6 +1,7 @@
 ---
 id: H36-Combo-V2
 title: H36 Combo V2
+description: "H36 Combo V2高温工具板介绍，基于STM32G431CBT3，CAN模式可耐125摄氏度，含TMC2209、ADXL345、引脚定义与丝印更正。"
 slug: /H36-Combo-V2
 sidebar_position: 10
 source_file: H36 Combo V2.md

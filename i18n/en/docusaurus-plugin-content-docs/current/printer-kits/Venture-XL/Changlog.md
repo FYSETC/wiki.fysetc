@@ -1,6 +1,7 @@
 ---
 id: Changlog
 title: Changlog
+description: "Venture XL changelog listing known issues such as Z motor cable lengths and swapped wiring, update notes, accessory requests and CAD file handling."
 slug: /Changlog
 ---
 

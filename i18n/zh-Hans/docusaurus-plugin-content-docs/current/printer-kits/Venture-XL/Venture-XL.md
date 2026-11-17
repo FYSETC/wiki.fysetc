@@ -1,6 +1,7 @@
 ---
 id: Venture-XL
 title: Venture XL
+description: "Venture XL 是 600mm³ CoreXY 打印机套件，灵感源自 VORON V2.4，关键部件均为高精度 CNC 加工件，打印头与控制盒均已预组装，按文档完成安装后即可开始打印。"
 slug: /Venture-XL
 source_file: Venture XL.md
 source_language: en

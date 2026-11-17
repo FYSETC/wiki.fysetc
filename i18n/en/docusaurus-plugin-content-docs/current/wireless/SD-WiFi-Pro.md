@@ -1,6 +1,7 @@
 ---
 id: SD-WiFi-Pro
 title: SD WiFi Pro
+description: "FYSETC SD WiFi Pro ESP32-PICO card in SD 7.0 format with open source web server firmware, covering features, pinout, uploader board and firmware guide."
 slug: /SD-WiFi-Pro
 sidebar_position: 10
 source_file: SD WiFi Pro.md

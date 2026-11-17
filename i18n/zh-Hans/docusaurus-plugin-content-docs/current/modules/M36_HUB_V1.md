@@ -3,7 +3,7 @@ id: M36_HUB_V1
 title: M36 HUB v1
 slug: /M36_HUB_V1
 sidebar_position: 80
-description: M36 HUB v1：原始 FYSETC 文档及相关参考资料。
+description: "M36 HUB v1驱动板介绍，适配36步进电机与mini Stealthburner打印头，含TMC2209版本、接线与Klipper固件刷写。"
 source_file: M36_HUB_V1.md
 source_language: en
 ---

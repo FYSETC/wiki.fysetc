@@ -3,7 +3,7 @@ id: PT100_STICK
 title: PT100 Stick
 slug: /PT100_STICK
 sidebar_position: 10
-description: FYSETC-PT100Stick is a Pololu formfactor MAX31865 breakboard for FYSETC S6/Spider and similar 32 bit 3D printer control boards. It is base on VORON PT100Stick.
+description: "FYSETC PT100 Stick MAX31865 breakout board for S6 and Spider boards, covering jumpers, Klipper and Marlin firmware setup, PID tuning and troubleshooting."
 source_file: PT100_STICK.md
 source_language: en
 ---

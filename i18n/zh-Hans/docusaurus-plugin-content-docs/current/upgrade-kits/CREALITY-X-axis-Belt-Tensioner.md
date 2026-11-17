@@ -3,7 +3,7 @@ id: CREALITY-X-axis-Belt-Tensioner
 title: CREALITY X轴皮带张紧器
 slug: /CREALITY-X-axis-Belt-Tensioner
 sidebar_position: 70
-description: 产品名称：CREALITY X轴皮带张紧器
+description: "CREALITY X轴皮带张紧器采用铝合金材质，适配 Ender-3、CR-10、CR10 Pro、CR10 V2 与 Ender-5，附分步组装与皮带松紧调节说明。"
 source_file: CREALITY X-axis Belt Tensioner.md
 source_language: en
 ---

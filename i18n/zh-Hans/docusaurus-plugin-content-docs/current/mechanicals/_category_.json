@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "机械部件",
-    "slug": "/category/mechanicals"
+    "slug": "/category/mechanicals",
+    "description": "FYSETC 机械部件文档，涵盖 BMG 与 MK8 挤出机的适用机型、组装步骤、安装与维护说明。"
   },
   "customProps": {
     "icon": "mechanical"

@@ -3,7 +3,7 @@ id: Original-Prusa-MMU2S-clone
 title: 原版 Prusa MMU2S 克隆版
 slug: /Original-Prusa-MMU2S-clone
 sidebar_position: 10
-description: 'FYSETC/Original-Prusa-MMU2S-clone: Original Prusa MMU2S clone database (github.com)'
+description: "原版 Prusa MMU2S 克隆资料库，收录 STL 模型与打印文件、组装教程和知识库链接，适用于 FYSETC Prusa MMU2S 多材料打印机，可打印备件并完成整机装配，另附购买参考。"
 source_file: Original-Prusa-MMU2S-clone.md
 source_language: en
 displayed_sidebar: wikiSidebar

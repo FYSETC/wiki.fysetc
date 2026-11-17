@@ -1,6 +1,7 @@
 ---
 id: Catalyst.K-ToolHead
 title: Catalyst.K ToolHead
+description: "Catalyst.K ToolHead紧凑型Klipper工具板介绍，含STM32G431主控、TMC2209、ADXL345、USB与CAN接口及引脚定义。"
 slug: /Catalyst.K-ToolHead
 sidebar_position: 20
 source_file: Catalyst.K ToolHead.md

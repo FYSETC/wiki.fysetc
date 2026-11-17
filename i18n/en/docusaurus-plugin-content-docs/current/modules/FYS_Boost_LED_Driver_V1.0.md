@@ -3,7 +3,7 @@ id: FYS_Boost_LED_Driver_V1.0
 title: LED Driver V1.0
 slug: /FYS_Boost_LED_Driver_V1.0
 sidebar_position: 100
-description: FYS Boost LED Driver is an economical and easy to use driver with a maximum output of 60V/5A (requires you to replace the Rs resistor). By default, a 900mA ± 5% current output is available for 30W…
+description: "FYS Boost LED Driver V1.0: 5V to 32V input, up to 60V boost output, 900mA default output for 30W LED modules, thermal notes and Rs resistor current change."
 source_file: FYS_Boost_LED_Driver_V1.0.md
 source_language: en
 ---

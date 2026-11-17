@@ -3,7 +3,7 @@ id: Spider_Hardware_Guide
 title: 蜘蛛硬件指南
 slug: /Spider_Hardware_Guide
 sidebar_position: 20
-description: Spider 硬件指南：原始 FYSETC 文档及相关参考资料。
+description: "FYSETC Spider蜘蛛主板硬件指南，面向Voron 2.4组装，涵盖主板参数特性、用电安全、电源接线、步进驱动器安装与电机接线。"
 source_file: Spider_Hardware_Guide.zh.md
 source_language: zh
 ---

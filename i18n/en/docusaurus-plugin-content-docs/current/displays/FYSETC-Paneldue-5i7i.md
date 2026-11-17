@@ -1,6 +1,7 @@
 ---
 id: FYSETC-Paneldue-5i7i
 title: FYSETC Paneldue 5i/7i
+description: "FYSETC PanelDue 5i/7i colour touch screen for Duet and RepRap Firmware printers, covering specs, 4-wire and ribbon wiring, firmware and G-code setup."
 slug: /FYSETC-Paneldue-5i7i
 sidebar_position: 60
 source_file: FYSETC Paneldue 5i7i.md

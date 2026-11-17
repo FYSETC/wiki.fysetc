@@ -3,7 +3,7 @@ id: Mk8-Grey-Extruder
 title: Mk8 灰色挤出机
 slug: /Mk8-Grey-Extruder
 sidebar_position: 20
-description: 请参考组装教程，以避免安装错误。
+description: "FYSETC Mk8 灰色挤出机采用铝合金材质，为打印机提供更大的挤出扭矩，介绍适用机型、产品特点、组装步骤、安装注意事项和常见问题。"
 source_file: Mk8 Grey Extruder.md
 source_language: en
 ---

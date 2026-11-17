@@ -1,6 +1,7 @@
 ---
 id: CATALYST.K
 title: CATALYST.K
+description: "FYSETC CATALYST.K Klipper mainboard with STM32H723, five StepStick sockets, 24V or 48V motor power, 24V/10A bed output, plus pinout and wiring details."
 slug: /CATALYST.K
 sidebar_position: 10
 source_file: CATALYST.K.md

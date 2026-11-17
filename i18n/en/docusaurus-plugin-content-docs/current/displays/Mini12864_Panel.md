@@ -3,7 +3,7 @@ id: Mini12864_Panel
 title: Mini12864_Panel
 slug: /Mini12864_Panel
 sidebar_position: 20
-description: This is a opensouce, cheap, with RGB indicator, common to marlin's display, supports offline printing, resolution is 12864, display area is 2.4'', SD card holder can be side or vertical, convenient…
+description: "FYSETC Mini12864 panel for small 3D printers, covering V1.2 to V2.1 versions, RGB LED backlight control, wiring and Marlin pin and firmware changes."
 source_file: Mini12864_Panel.md
 source_language: en
 ---

@@ -4,6 +4,7 @@
   "position": 2,
   "collapsed": true,
   "link": {
-      "type": "generated-index"
-   }
+    "type": "generated-index",
+    "description": "Venture XL 组装指南，涵盖框架、Z 电机、龙门、热床、挤出机头、拖链、脚轮与电气组件的安装步骤。"
+  }
 }

@@ -3,7 +3,7 @@ id: Metal-BMG-right-hand-extruder
 title: 金属BMG右手挤出机
 slug: /Metal-BMG-right-hand-extruder
 sidebar_position: 30
-description: 产品名称：金属BMG右手挤出机
+description: "FYSETC Metal BMG 右手挤出机采用铝合金材质，为打印机提供更大扭矩并便于拆卸，介绍适用机型、产品特点、组装步骤、安装注意事项和常见问题。"
 source_file: Metal BMG right hand extruder.md
 source_language: en
 ---

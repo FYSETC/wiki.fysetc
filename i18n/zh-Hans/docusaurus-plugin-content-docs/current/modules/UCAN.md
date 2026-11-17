@@ -3,7 +3,7 @@ id: UCAN
 title: UCAN
 slug: /UCAN
 sidebar_position: 70
-description: UCAN 是一款开源的 USB 转 CAN 接口板，基于 STM32F072 芯片和 candleLight 开源固件。它支持 Linux、Windows 和 Mac。当然，你也可以开发自己的……
+description: "UCAN开源USB转CAN接口板介绍，基于STM32F072与candleLight固件，支持CAN 2.0A/B，含终端电阻设置与固件烧录步骤。"
 source_file: UCAN.md
 source_language: en
 ---

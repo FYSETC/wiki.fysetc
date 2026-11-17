@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Sensors",
-    "slug": "/category/sensors"
+    "slug": "/category/sensors",
+    "description": "FYSETC sensor documentation covering PT100 temperature boards and probe wiring, firmware configuration, calibration and troubleshooting."
   },
   "customProps": {
     "icon": "sensor"

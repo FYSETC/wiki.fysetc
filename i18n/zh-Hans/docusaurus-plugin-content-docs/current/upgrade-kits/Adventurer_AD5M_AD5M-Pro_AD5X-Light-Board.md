@@ -1,6 +1,7 @@
 ---
 id: Adventurer-AD5M-AD5M-Pro-AD5X-Light-Board
 title: Adventurer AD5M/AD5M Pro/AD5X 灯板
+description: "Adventurer AD5M、AD5M Pro 与 AD5X 灯板安装说明，含灯带组装视频、接线与打印件附件，以及升级 AD5M Pro 系统后在屏幕上控制灯带开关的完整步骤。"
 slug: /Adventurer_AD5M_AD5M-Pro_AD5X-Light-Board
 sidebar_position: 110
 source_file: Adventurer_AD5M_AD5M Pro_AD5X Light Board.md

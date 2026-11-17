@@ -1,6 +1,7 @@
 ---
 id: Catalyst.K_Mainboard_V1.1
 title: Catalyst.K_Mainboard_V1.1
+description: "FYSETC Catalyst.K V1.1 guide covering STM32H723 specs, operating limits, DFU and CAN mode LED indication, 48V motor jumpers, pinout and connections."
 slug: /Catalyst-K-Mainboard-V1-1
 sidebar_position: 150
 source_file: Catalyst.K_Mainboard_V1.1.md

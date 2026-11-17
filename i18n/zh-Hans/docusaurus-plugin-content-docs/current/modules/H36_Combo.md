@@ -3,7 +3,7 @@ id: H36_Combo
 title: H36 Combo
 slug: /H36_Combo
 sidebar_position: 40
-description: H36 Combo V1 是一款全新设计的高温工具板，运行 Klipper 固件。基于 STMG0B1T3，最高工作温度可达 125 摄氏度（仅限 CAN）。它还……
+description: "H36 Combo V1高温工具板介绍，基于STM32G0B1T3，CAN模式可耐125摄氏度，含CAN与USB接线、引脚定义及丝印错误说明。"
 source_file: H36_Combo.md
 source_language: en
 ---

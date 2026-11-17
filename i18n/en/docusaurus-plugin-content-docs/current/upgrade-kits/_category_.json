@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "Upgrade Kits",
-    "slug": "/category/upgrade-kits"
+    "slug": "/category/upgrade-kits",
+    "description": "FYSETC upgrade kit documentation for Ender, Creality, Prusa and Bambu Lab printers, covering compatibility, parts and installation steps."
   },
   "customProps": {
     "icon": "upgrade"

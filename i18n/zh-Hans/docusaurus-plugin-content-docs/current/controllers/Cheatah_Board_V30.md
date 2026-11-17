@@ -3,7 +3,7 @@ id: Cheatah_Board_V30
 title: Cheetah v3.0
 slug: /Cheatah_Board_V30
 sidebar_position: 80
-description: 重新设计的Cheetah采用180MHz主控制器，以实现更高速的控制。同时，为了提高易用性，增加了一些常用接口，例如……
+description: "Cheetah v3.0 采用 180MHz STM32F446RCT6，新增 CAN 与 BL-Touch 接口，含固件编译与 Klipper 配置步骤。"
 source_file: Cheatah_Board_V30.md
 source_language: en
 ---

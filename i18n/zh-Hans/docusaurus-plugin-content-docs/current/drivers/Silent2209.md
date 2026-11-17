@@ -3,7 +3,7 @@ id: Silent2209
 title: SILENT_2209
 slug: /Silent2209
 sidebar_position: 20
-description: TMC2209 是一款用于两相步进电机的超静音电机驱动 IC。TMC2209 的引脚兼容多种传统驱动器以及 TMC2208。TRINAMIC 先进的…
+description: "SILENT_2209 是基于 TMC2209 芯片的超静音驱动模块，介绍串口调参、无传感器归零、引脚功能、微步设置、电流调节方法以及各版本硬件差异与散热要求。"
 source_file: Silent2209.md
 source_language: en
 ---

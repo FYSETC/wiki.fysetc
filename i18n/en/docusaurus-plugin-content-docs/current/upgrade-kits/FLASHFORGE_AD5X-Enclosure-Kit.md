@@ -1,6 +1,7 @@
 ---
 id: FLASHFORGE_AD5X-Enclosure-Kit
 title: FLASHFORGE_AD5X Enclosure Kit
+description: "FLASHFORGE AD5X enclosure kit guide with accessory contents and parts list, printable guard plate files, hinge fitting and panel A1 to D2 assembly steps."
 slug: /FLASHFORGE_AD5X-Enclosure-Kit
 sidebar_position: 90
 source_file: FLASHFORGE_AD5X Enclosure Kit.md

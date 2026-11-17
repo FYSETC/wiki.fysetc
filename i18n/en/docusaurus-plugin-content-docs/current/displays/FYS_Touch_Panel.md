@@ -3,7 +3,7 @@ id: FYS_Touch_Panel
 title: FYS_Touch_Panel
 slug: /FYS_Touch_Panel
 sidebar_position: 40
-description: 'At the moment this firmware only works with F6/S6 board , please use the board firmware below:'
+description: "FYSETC FYS_Touch_Panel touch screen for F6 and S6 boards, covering wiring diagrams, Marlin firmware setup, screen firmware upload and SD card module notes."
 source_file: FYS_Touch_Panel.md
 source_language: en
 ---

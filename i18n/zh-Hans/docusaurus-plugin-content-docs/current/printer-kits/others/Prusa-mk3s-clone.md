@@ -3,7 +3,7 @@ id: Prusa-mk3s-clone
 title: Prusa-mk3s-clone
 slug: /Prusa-mk3s-clone
 sidebar_position: 20
-description: 'FYSETC/FYSETC-Prusa-MK3S-clone: FYSETC Prusa MK3S clone Kit Database (github.com)'
+description: "FYSETC Prusa MK3S 克隆套件资料库，提供 STL 模型、五步组装教程与视频以及知识库链接，并说明 extruder-body R4 等部件与官方版本的差异，便于装配前核对手中的打印件。"
 source_file: Prusa-mk3s-clone.md
 source_language: en
 displayed_sidebar: wikiSidebar

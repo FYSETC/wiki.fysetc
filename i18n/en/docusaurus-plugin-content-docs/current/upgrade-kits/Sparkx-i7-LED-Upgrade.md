@@ -1,6 +1,7 @@
 ---
 id: Sparkx_i7_Led_System
 title: Sparkx i7 LED Upgrade
+description: "Sparkx i7 LED upgrade with a simplified control board, printed LED strip brackets and USB power, adding touch switched lighting along the X axis."
 slug: /Sparkx_i7_Led_System
 sidebar_position: 160
 source_file: Sparkx i7 LED Upgrade.md

@@ -1,6 +1,7 @@
 ---
 id: Changlog
 title: Changlog
+description: "Venture XL 更新日志，汇总电机连接线长度与对调说明、补充配件包领取方式、CAD 文件解压注意事项，以及当前已知问题与致谢名单，装机前建议先阅读。"
 slug: /Changlog
 source_file: Changlog.md
 source_language: en

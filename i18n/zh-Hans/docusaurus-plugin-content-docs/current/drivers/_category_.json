@@ -6,7 +6,8 @@
   "link": {
     "type": "generated-index",
     "title": "步进电机驱动",
-    "slug": "/category/drivers"
+    "slug": "/category/drivers",
+    "description": "FYSETC 步进驱动文档，涵盖 TMC2208、TMC2209、TMC5160、Silent2209 等模块的电流设置、接线与散热说明。"
   },
   "customProps": {
     "icon": "driver"

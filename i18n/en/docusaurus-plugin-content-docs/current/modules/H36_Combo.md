@@ -2,9 +2,7 @@
 sidebar_position: 40
 id: H36_Combo
 title: H36 Combo
-description: H36 Combo V1 is a newly designed high temperature tool board
-  running Klipper firmware. Based on STMG0B1T3, the maximum operating
-  temperature can reach 125 degrees Celsius (CAN only). It also…
+description: "H36 Combo V1 high temperature Klipper toolboard: STM32G0B1T3, 125 C in CAN mode, TMC2209, ADXL345, USB and CAN wiring, pinout and silkscreen errors."
 slug: /H36_Combo
 source_file: H36_Combo.md
 source_language: en
