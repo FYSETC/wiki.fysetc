@@ -81,6 +81,8 @@ button, input, select, textarea { font-family: var(--ifm-font-family-base); }
   --ifm-footer-link-color: #b6c5e2;
   --ifm-footer-title-color: #e5edff;
   --docusaurus-highlighted-code-line-bg: #8daaff1a;
+  /* Infima's search icon is a black data-URI SVG, so give dark mode its own light icon. */
+  --ifm-navbar-search-input-icon: url('data:image/svg+xml;utf8,<svg fill="%23c9d5ec" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16 16" height="16px" width="16px"><path d="M6.02945,10.20327a4.17382,4.17382,0,1,1,4.17382-4.17382A4.15609,4.15609,0,0,1,6.02945,10.20327Zm9.69195,4.2199L10.8989,9.59979A5.88021,5.88021,0,0,0,12.058,6.02856,6.00467,6.00467,0,1,0,9.59979,10.8989l4.82338,4.82338a.89729.89729,0,0,0,1.29912,0,.89749.89749,0,0,0-.00087-1.29909Z" /></svg>');
 }
 .navbar {
   --ifm-navbar-background-color: var(--wiki-brand-color);
@@ -109,6 +111,21 @@ button, input, select, textarea { font-family: var(--ifm-font-family-base); }
 .dropdown__menu { padding: 9px; border: 1px solid var(--wiki-border); border-radius: 7px; box-shadow: 0 10px 30px #1d2c5012; }
 .dropdown__link { font-size: 14px; padding: 7px 11px; }
 .navbar input[type='search'] { border: 1px solid var(--wiki-border); background: var(--wiki-surface); }
+
+/* Document reading layout: use the available width and keep the TOC pinned to the right. */
+@media (min-width: 997px) {
+  html { --doc-sidebar-width: 260px !important; }
+  main[class*='docMainContainer'] .container { max-width: 1660px; padding-left: 16px; padding-right: 16px; }
+  main [class*='docItemCol'] { max-width: none !important; flex: 1 1 0; min-width: 0; }
+  main .container > .row > .col.col--3 {
+    flex: 0 0 clamp(200px, 18vw, 270px);
+    max-width: clamp(200px, 18vw, 270px);
+    display: flex;
+    justify-content: flex-end;
+  }
+  main .container > .row > .col.col--3 > * { width: 100%; max-width: clamp(200px, 18vw, 270px); }
+}
+
 .theme-doc-sidebar-container { background: var(--wiki-surface); border-right: 1px solid var(--wiki-border) !important; }
 .theme-doc-sidebar-menu { padding: 18px 12px; }
 .menu__link { font-size: 14px; line-height: 1.45; padding: 8px 11px; border-radius: 4px; }

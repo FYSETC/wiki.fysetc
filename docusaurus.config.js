@@ -1,6 +1,5 @@
 const {themes} = require('prism-react-renderer');
 const officialNavigation = require('./navigation/catalog.json');
-const siteLinks = require('./navigation/site-links.json');
 const productCategories = officialNavigation.categories.filter(category => category.id !== 'guides');
 
 // Category destinations follow _category_ metadata through the generated catalog.
@@ -83,16 +82,6 @@ module.exports = async function () {
         ],
       },
       docs: {sidebar: {hideable: true, autoCollapseCategories: true}},
-      footer: {
-        style: 'light',
-        links: [
-          {title: 'Product docs', items: [['controllers', 'Controllers'], ['drivers', 'Stepper drivers'], ['displays', 'Displays']].map(([id, label]) => categoryItem(id, label)).filter(Boolean)},
-          {title: 'Learning & setup', items: [categoryItem('guides', 'Guides'), ...siteLinks.footerDocuments.map(item => ({label: item.label, to: `/docs/${item.slug}/`}))].filter(Boolean)},
-          {title: 'Support', items: [{label: 'Wiki feedback', href: 'https://github.com/FYSETC/wiki.fysetc/issues'}, {label: 'Source repository', href: 'https://github.com/FYSETC/wiki.fysetc'}]},
-          {title: 'FYSETC', items: [{label: 'Official website', href: 'https://www.fysetc.com'}, {label: 'Support forum', href: 'http://forum.fysetc.com/'}, {label: 'Wiki overview', to: '/docs/'}]},
-        ].filter(group => group.items.length),
-        copyright: 'FYSETC documentation and images · CC BY-SA 4.0 · Local test edition',
-      },
       prism: {theme: themes.github, darkTheme: themes.dracula, additionalLanguages: ['bash', 'ini', 'diff', 'json', 'python', 'c', 'cpp']},
     },
   };

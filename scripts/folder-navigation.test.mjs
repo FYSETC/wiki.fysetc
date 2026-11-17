@@ -84,7 +84,7 @@ test('site navigation remains valid when the last product or guide category disa
     const config=await require(paths[2])();
     assert.ok(config.themeConfig.navbar.items.some(item=>item.to==='/docs/'));
     assert.ok(config.themeConfig.navbar.items.every(item=>!item.items||item.items.length));
-    assert.ok(config.themeConfig.footer.links.every(group=>group.items.length));
+    assert.ok(!config.themeConfig.footer||config.themeConfig.footer.links.every(group=>group.items.length));
     assert.ok(!JSON.stringify(config.themeConfig).includes('/docs/Tutorial/'));
     assert.ok(!JSON.stringify(config.themeConfig).includes('/docs/overview/'));
   } finally {

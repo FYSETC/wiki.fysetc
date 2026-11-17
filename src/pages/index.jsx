@@ -1,4 +1,4 @@
-import React, {useRef, useState} from 'react';
+import React, {useState} from 'react';
 import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import useBaseUrl from '@docusaurus/useBaseUrl';
@@ -13,19 +13,53 @@ const {products, guides} = siteLinks;
 
 const copy = {
   'zh-Hans': {
-    title: 'FYSETC Wiki · 产品资料与使用指南', description: '浏览 FYSETC 产品文档、引脚定义、接线图与配置教程。',
-    heading: '产品资料与使用指南', intro: '找到你的硬件，查阅规格、接线和配置说明。', test: '本地测试版',
-    categoriesTitle: '按类别浏览', categoriesIntro: '从产品分类进入完整文档目录。', allDocs: '文档总览',
-    tabsLabel: '文档浏览方式', productTab: '产品目录', guideTab: '使用指南', filtersLabel: '筛选产品类别', allProducts: '全部推荐',
-    catalogIntro: '常用产品的说明、引脚与配置资料。', guideIntro: '按任务查找接线、通信和固件配置教程。', currentCategory: '查看完整分类', guidesLink: '全部教程', resultCount: '个产品',
-    readGuide: '查看指南',
+    title: 'FYSETC Wiki · 产品资料与使用指南',
+    description: '浏览 FYSETC 产品文档、引脚定义、接线图与配置教程。',
+    brand: 'FYSETC WIKI',
+    heading: '产品资料与使用指南',
+    intro: '从整机套件到控制板、驱动与配件，查阅规格、接线和固件配置说明。资料按产品分类整理，随硬件版本持续更新。',
+    primaryCta: '浏览全部文档',
+    secondaryCta: '查看使用指南',
+    categoryUnit: '个分类',
+    productUnit: '款推荐产品',
+    guideUnit: '篇使用指南',
+    categoriesTitle: '按类别浏览',
+    categoriesIntro: '从产品分类进入完整文档目录。',
+    allDocs: '文档总览',
+    productsTitle: '推荐产品',
+    productsIntro: '常用硬件的规格、引脚与配置资料。',
+    filterLabel: '筛选产品类别',
+    allProducts: '全部',
+    countUnit: '款产品',
+    viewDoc: '查看文档',
+    guidesTitle: '使用指南',
+    guidesIntro: '按任务查找接线、通信与固件配置教程。',
+    allGuides: '全部教程',
+    readGuide: '阅读指南',
   },
   en: {
-    title: 'FYSETC Wiki · Product Documentation', description: 'Browse FYSETC product documentation, pinouts, wiring diagrams, and configuration guides.',
-    heading: 'Product documentation & guides', intro: 'Find your hardware. Explore specifications, wiring, and configuration.', test: 'Local test edition',
-    categoriesTitle: 'Browse by category', categoriesIntro: 'Explore the complete documentation for each product category.', allDocs: 'All documentation',
-    tabsLabel: 'Documentation view', productTab: 'Product catalog', guideTab: 'How-to guides', filtersLabel: 'Filter product categories', allProducts: 'All featured',
-    catalogIntro: 'Specifications, pinouts, and configuration for commonly used products.', guideIntro: 'Find practical guides for wiring, communication, and firmware setup.', currentCategory: 'Explore the category', guidesLink: 'All guides', resultCount: 'products',
+    title: 'FYSETC Wiki · Product Documentation',
+    description: 'Browse FYSETC product documentation, pinouts, wiring diagrams, and configuration guides.',
+    brand: 'FYSETC WIKI',
+    heading: 'Product documentation & guides',
+    intro: 'From complete printer kits to controllers, drivers, and accessories — find specifications, wiring, and firmware configuration in one place.',
+    primaryCta: 'Browse all documentation',
+    secondaryCta: 'Browse the guides',
+    categoryUnit: 'categories',
+    productUnit: 'featured products',
+    guideUnit: 'how-to guides',
+    categoriesTitle: 'Browse by category',
+    categoriesIntro: 'Open a product category to see its complete documentation.',
+    allDocs: 'All documentation',
+    productsTitle: 'Featured products',
+    productsIntro: 'Specifications, pinouts, and configuration for commonly used hardware.',
+    filterLabel: 'Filter product categories',
+    allProducts: 'All',
+    countUnit: 'products',
+    viewDoc: 'View documentation',
+    guidesTitle: 'How-to guides',
+    guidesIntro: 'Practical walkthroughs for wiring, communication, and firmware setup.',
+    allGuides: 'All guides',
     readGuide: 'Read the guide',
   },
 };
@@ -62,61 +96,105 @@ export default function Home() {
   const text = copy[i18n.currentLocale] || copy.en;
   const docsBase = useBaseUrl('/docs/');
   const assetBase = useBaseUrl('/');
-  const [activeTab, setActiveTab] = useState('products');
   const [activeCategory, setActiveCategory] = useState('all');
-  const tabRefs = useRef([]);
   const visibleProducts = products.filter(product => activeCategory === 'all' || product.category === activeCategory);
   const productCategories = categories.filter(category => products.some(product => product.category === category.id));
-  const selectedCategory = categories.find(category => category.id === activeCategory);
-  const categoryLink = selectedCategory ? `${docsBase}${selectedCategory.path}/` : docsBase;
   const guidesCategory = categories.find(category => category.id === 'guides');
-
-  function handleTabKey(event, index) {
-    let next;
-    if (event.key === 'ArrowRight' || event.key === 'ArrowLeft') next = 1 - index;
-    else if (event.key === 'Home') next = 0;
-    else if (event.key === 'End') next = 1;
-    else return;
-    event.preventDefault();
-    setActiveTab(next === 0 ? 'products' : 'guides');
-    tabRefs.current[next]?.focus();
-  }
 
   return (
     <Layout title={text.title} description={text.description}>
       <main className={styles.home}>
-        <section className={styles.introSection} aria-labelledby="wiki-title">
+        <section className={styles.heroSection} aria-labelledby="wiki-title">
           <div className={styles.container}>
-            <div className={styles.welcomeHeading}><span className={styles.brandLabel}>FYSETC WIKI</span><span className={styles.testBadge}><span />{text.test}</span></div>
-            <h1 id="wiki-title">{text.heading}</h1>
-            <p className={styles.intro}>{text.intro}</p>
+            <div className={styles.heroCard}>
+              <div className={styles.heroCopy}>
+                <div className={styles.heroEyebrow}>
+                  <span className={styles.brandLabel}>{text.brand}</span>
+                </div>
+                <h1 id="wiki-title">{text.heading}</h1>
+                <p className={styles.heroIntro}>{text.intro}</p>
+                <div className={styles.heroActions}>
+                  <Link className={styles.primaryAction} to={docsBase}>{text.primaryCta}<Arrow className={styles.actionArrow} /></Link>
+                  {guidesCategory && <Link className={styles.secondaryAction} to={`${docsBase}${guidesCategory.path}/`}>{text.secondaryCta}</Link>}
+                </div>
+                <div className={styles.heroStats}>
+                  <span><strong>{categories.length}</strong> {text.categoryUnit}</span>
+                  <span className={styles.statSeparator} aria-hidden="true" />
+                  <span><strong>{products.length}</strong> {text.productUnit}</span>
+                  <span className={styles.statSeparator} aria-hidden="true" />
+                  <span><strong>{guides.length}</strong> {text.guideUnit}</span>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <div className={styles.container}>
-          <section className={styles.categoriesSection} aria-labelledby="categories-title">
-            <div className={styles.sectionHeading}><div><h2 id="categories-title">{text.categoriesTitle}</h2><p>{text.categoriesIntro}</p></div><Link className={styles.textLink} to={docsBase}>{text.allDocs}<Arrow /></Link></div>
-            <div className={styles.categoryGrid}>{categories.map(category => <Link key={category.id} className={styles.categoryCard} to={`${docsBase}${category.path}/`}><Icon kind={category.icon}/><span>{category[language]}</span><Arrow className={styles.categoryArrow}/></Link>)}</div>
-          </section>
-
-          <section className={styles.browserSection} aria-label={text.tabsLabel}>
-            <div className={styles.tabBar} role="tablist" aria-label={text.tabsLabel}>
-              {['products', 'guides'].map((tab, index) => <button key={tab} id={`tab-${tab}`} ref={element => {tabRefs.current[index] = element;}} className={`${styles.tabButton} ${activeTab === tab ? styles.activeTab : ''}`} type="button" role="tab" aria-selected={activeTab === tab} aria-controls={`panel-${tab}`} tabIndex={activeTab === tab ? 0 : -1} onClick={() => setActiveTab(tab)} onKeyDown={event => handleTabKey(event, index)}><Icon kind={tab === 'products' ? 'module' : 'book'}/>{tab === 'products' ? text.productTab : text.guideTab}</button>)}
+        <section className={styles.categoriesSection} aria-labelledby="categories-title">
+          <div className={styles.container}>
+            <div className={styles.sectionHead}>
+              <div><h2 id="categories-title">{text.categoriesTitle}</h2><p>{text.categoriesIntro}</p></div>
+              <Link className={styles.textLink} to={docsBase}>{text.allDocs}<Arrow /></Link>
             </div>
-
-            <div id="panel-products" className={styles.panel} role="tabpanel" aria-labelledby="tab-products" hidden={activeTab !== 'products'} tabIndex={0}>
-              <div className={styles.panelIntro}><p>{text.catalogIntro}</p><span aria-live="polite">{visibleProducts.length} {text.resultCount}</span></div>
-              <div className={styles.filterBar}><div className={styles.filterButtons} role="group" aria-label={text.filtersLabel}>{[{id: 'all', zh: text.allProducts, en: text.allProducts}, ...productCategories].map(category => <button key={category.id} className={activeCategory === category.id ? styles.activeFilter : ''} type="button" aria-pressed={activeCategory === category.id} onClick={() => setActiveCategory(category.id)}>{category[language]}</button>)}</div>{selectedCategory && <Link className={styles.textLink} to={categoryLink}>{text.currentCategory}<Arrow /></Link>}</div>
-              <div className={styles.productGrid}>{visibleProducts.map(product => <Link key={product.slug} className={styles.productCard} to={`${docsBase}${product.slug}`}><div className={styles.productImage}><img src={`${assetBase}${product.image}`} alt={`FYSETC ${product.title}`} loading="lazy" /></div><div className={styles.productBody}><span className={styles.productCategory}>{categories.find(category => category.id === product.category)?.[language] || product.category}</span><h3>{product.title}</h3><p>{product[language]}</p><Arrow className={styles.productArrow}/></div></Link>)}</div>
+            <div className={styles.categoryGrid}>
+              {categories.map(category => (
+                <Link key={category.id} className={styles.categoryCard} to={`${docsBase}${category.path}/`}>
+                  <span className={styles.categoryIcon}><Icon kind={category.icon} /></span>
+                  <span className={styles.categoryName}>{category[language]}</span>
+                  <Arrow className={styles.categoryArrow} />
+                </Link>
+              ))}
             </div>
+          </div>
+        </section>
 
-            <div id="panel-guides" className={styles.panel} role="tabpanel" aria-labelledby="tab-guides" hidden={activeTab !== 'guides'} tabIndex={0}>
-              <div className={styles.panelIntro}><p>{text.guideIntro}</p>{guidesCategory && <Link className={styles.textLink} to={`${docsBase}${guidesCategory.path}/`}>{text.guidesLink}<Arrow /></Link>}</div>
-              <div className={styles.guideGrid}>{guides.map(guide => <Link key={guide.slug} className={styles.guideCard} to={`${docsBase}${guide.slug}`}><span className={styles.guideIcon}><Icon kind={guide.icon}/></span><span className={styles.guideTag}>{isEnglish ? guide.enTag : guide.zhTag}</span><h3>{guide[language]}</h3><p>{isEnglish ? guide.enDescription : guide.zhDescription}</p><span className={styles.guideLink}>{text.readGuide}<Arrow /></span></Link>)}</div>
+        <section className={styles.productSection} aria-labelledby="products-title">
+          <div className={styles.container}>
+            <div className={styles.sectionHead}>
+              <div><h2 id="products-title">{text.productsTitle}</h2><p>{text.productsIntro}</p></div>
+              <span className={styles.countBadge} aria-live="polite">{visibleProducts.length} {text.countUnit}</span>
             </div>
-          </section>
+            <div className={styles.filterBar} role="group" aria-label={text.filterLabel}>
+              {[{id: 'all', zh: text.allProducts, en: text.allProducts}, ...productCategories].map(category => (
+                <button key={category.id} type="button" className={activeCategory === category.id ? `${styles.filterButton} ${styles.activeFilter}` : styles.filterButton} aria-pressed={activeCategory === category.id} onClick={() => setActiveCategory(category.id)}>{category[language]}</button>
+              ))}
+            </div>
+            <div className={styles.productGrid}>
+              {visibleProducts.map(product => (
+                <Link key={product.slug} className={styles.productCard} to={`${docsBase}${product.slug}`}>
+                  <span className={styles.productImage}><img src={`${assetBase}${product.image}`} alt={`FYSETC ${product.title}`} loading="lazy" /></span>
+                  <span className={styles.productBody}>
+                    <span className={styles.productCategory}>{categories.find(category => category.id === product.category)?.[language] || product.category}</span>
+                    <span className={styles.productName}>{product.title}</span>
+                    <span className={styles.productDesc}>{product[language]}</span>
+                    <span className={styles.productAction}>{text.viewDoc}<Arrow /></span>
+                  </span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
 
-        </div>
+        <section className={styles.guidesSection} aria-labelledby="guides-title">
+          <div className={styles.container}>
+            <div className={styles.sectionHead}>
+              <div><h2 id="guides-title">{text.guidesTitle}</h2><p>{text.guidesIntro}</p></div>
+              {guidesCategory && <Link className={styles.textLink} to={`${docsBase}${guidesCategory.path}/`}>{text.allGuides}<Arrow /></Link>}
+            </div>
+            <div className={styles.guideGrid}>
+              {guides.map(guide => (
+                <Link key={guide.slug} className={styles.guideCard} to={`${docsBase}${guide.slug}`}>
+                  <span className={styles.guideTop}>
+                    <span className={styles.guideIcon}><Icon kind={guide.icon} /></span>
+                    <span className={styles.guideTag}>{isEnglish ? guide.enTag : guide.zhTag}</span>
+                  </span>
+                  <h3>{guide[language]}</h3>
+                  <p>{isEnglish ? guide.enDescription : guide.zhDescription}</p>
+                  <span className={styles.guideAction}>{text.readGuide}<Arrow /></span>
+                </Link>
+              ))}
+            </div>
+          </div>
+        </section>
       </main>
     </Layout>
   );

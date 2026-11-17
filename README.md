@@ -56,7 +56,7 @@ npm.cmd run serve -- --host 127.0.0.1 --port 3000 --no-open
 - `i18n/zh-Hans/docusaurus-plugin-content-docs/current/`：中文文档，初始内容复制自英文版，后续在这里翻译。
 - `i18n/en/docusaurus-plugin-content-docs/current/`：英文文档，与中文使用相同相对路径和文档 ID。
 - `i18n/en/code.json`：界面翻译资源；当前首页中英文文案位于 src/pages/index.jsx。
-- `i18n/zh-Hans/docusaurus-theme-classic/`：中文导航和页脚翻译；配置中的默认导航文案为英文。
+- `i18n/zh-Hans/docusaurus-theme-classic/`：中文导航翻译；配置中的默认导航文案为英文。
 - `static/images/`：中英文共用的文档图片。
 - `src/`：首页、组件和样式。
 - `docusaurus.config.js`：网站和语言配置。
